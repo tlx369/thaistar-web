@@ -184,29 +184,39 @@ function createEventCard(event, index) {
     meta.appendChild(createBadge(event.type));
   }
 
-  const artist = document.createElement("h3");
-  artist.className = "event-card__artist";
-  artist.textContent = event.star || "—";
+  if (meta.childNodes.length > 0) {
+    body.appendChild(meta);
+  }
 
-  const title = document.createElement("p");
-  title.className = "event-card__title";
-  title.textContent = event.event || "—";
+  const star = event.star?.trim();
+  if (star) {
+    const artist = document.createElement("h3");
+    artist.className = "event-card__artist";
+    artist.textContent = `艺人：${star}`;
+    body.appendChild(artist);
+  }
 
-  body.appendChild(meta);
-  body.appendChild(artist);
-  body.appendChild(title);
+  const eventName = event.event?.trim();
+  if (eventName) {
+    const title = document.createElement("p");
+    title.className = "event-card__title";
+    title.textContent = `活动：${eventName}`;
+    body.appendChild(title);
+  }
 
-  if (event.location) {
+  const location = event.location?.trim();
+  if (location) {
     const loc = document.createElement("p");
     loc.className = "event-card__location";
-    loc.textContent = event.location;
+    loc.textContent = `地址：${location}`;
     body.appendChild(loc);
   }
 
-  if (event.notes) {
+  const notesText = event.notes?.trim();
+  if (notesText) {
     const notes = document.createElement("p");
     notes.className = "event-card__notes";
-    notes.textContent = event.notes;
+    notes.textContent = `注：${notesText}`;
     body.appendChild(notes);
   }
 
