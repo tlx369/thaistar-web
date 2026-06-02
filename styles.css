@@ -157,69 +157,122 @@ body {
   font-weight: 700;
   font-size: 0.9rem;
   letter-spacing: 0.03em;
-  color: var(--pink-500);
-}
-
-.copy-btn {
-  flex-shrink: 0;
-  margin: 0;
-  padding: 0.2rem 0.55rem;
-  font-family: var(--font-body);
-  font-size: 0.68rem;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
   color: var(--mint-500);
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(20, 184, 166, 0.22);
-  border-radius: 999px;
-  box-shadow: 0 2px 8px rgba(20, 184, 166, 0.08);
-  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
 }
 
-.copy-btn:hover {
-  background: var(--mint-50);
-  border-color: rgba(20, 184, 166, 0.35);
+/* 复制胶囊标签 */
+.copy-tag {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0.28rem 0.7rem;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: #3d8f85;
+  cursor: pointer;
+  background: rgba(204, 251, 241, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(45, 212, 191, 0.28);
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(20, 184, 166, 0.12);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.copy-tag__icon {
+  display: block;
+  flex-shrink: 0;
+  color: #5a9e96;
+}
+
+.copy-tag__text {
+  color: #4a7c76;
+}
+
+.copy-tag:hover {
+  background: rgba(204, 251, 241, 0.82);
+  border-color: rgba(45, 212, 191, 0.45);
+  box-shadow: 0 4px 14px rgba(20, 184, 166, 0.16);
   transform: translateY(-1px);
 }
 
-.copy-btn:active {
+.copy-tag:active {
   transform: translateY(0);
 }
 
-.copy-btn:focus-visible {
+.copy-tag:focus-visible {
   outline: 2px solid var(--mint-400);
   outline-offset: 2px;
 }
 
-/* Copy success toast */
-.copy-toast {
+/* 复制成功 Toast — 顶部居中悬浮层 */
+.copy-toast-layer {
   position: fixed;
-  left: 50%;
-  top: 1.25rem;
-  z-index: 100;
-  transform: translateX(-50%) translateY(-0.5rem);
-  padding: 0.65rem 1.15rem;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: max(1rem, env(safe-area-inset-top, 0px));
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.32s ease, visibility 0.32s ease;
+}
+
+.copy-toast-layer--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.copy-toast {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.7rem 1.2rem;
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--slate-800);
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.95);
-  border-radius: 999px;
-  box-shadow: var(--shadow-soft);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.28s ease, transform 0.28s ease;
+  background: rgba(240, 253, 249, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(94, 234, 212, 0.35);
+  border-radius: 20px;
+  box-shadow:
+    0 8px 28px rgba(20, 184, 166, 0.18),
+    0 2px 8px rgba(236, 72, 153, 0.08);
+  transform: translateY(-0.65rem);
+  transition: transform 0.32s ease;
 }
 
-.copy-toast--visible {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
+.copy-toast-layer--visible .copy-toast {
+  transform: translateY(0);
+}
+
+.copy-toast__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--mint-400), var(--mint-500));
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.copy-toast__icon svg {
+  display: block;
+}
+
+.copy-toast__message {
+  letter-spacing: 0.02em;
 }
 
 /* Schedule layout */

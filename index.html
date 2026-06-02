@@ -25,14 +25,29 @@
       <p class="site-header__wechat">
         专属追星管家，助你奔赴热爱！请加微信：<span id="wechat-id">tlx369tlx369</span><button
           type="button"
-          class="copy-btn"
+          class="copy-tag"
           aria-label="复制微信号 tlx369tlx369"
-        >复制</button>
+        >
+          <svg class="copy-tag__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span class="copy-tag__text">复制</span>
+        </button>
       </p>
     </div>
   </header>
 
-  <div id="copy-toast" class="copy-toast" role="status" aria-live="polite" hidden>复制微信号成功</div>
+  <div id="copy-toast" class="copy-toast-layer" role="status" aria-live="polite" aria-hidden="true">
+    <div class="copy-toast">
+      <span class="copy-toast__icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6 9 17l-5-5"></path>
+        </svg>
+      </span>
+      <span class="copy-toast__message">复制微信号成功</span>
+    </div>
+  </div>
 
   <main class="schedule" id="schedule" aria-live="polite">
     <!--
@@ -54,21 +69,21 @@
   <script>
     (function () {
       const WECHAT_ID = "tlx369tlx369";
-      const copyBtn = document.querySelector(".copy-btn");
-      const toast = document.getElementById("copy-toast");
-      let toastTimer;
+      const copyTag = document.querySelector(".copy-tag");
+      const toastLayer = document.getElementById("copy-toast");
+      let hideTimer;
 
       function showToast() {
-        if (!toast) return;
-        clearTimeout(toastTimer);
-        toast.hidden = false;
-        toast.classList.add("copy-toast--visible");
-        toastTimer = setTimeout(function () {
-          toast.classList.remove("copy-toast--visible");
-          toastTimer = setTimeout(function () {
-            toast.hidden = true;
-          }, 280);
-        }, 2200);
+        if (!toastLayer) return;
+        clearTimeout(hideTimer);
+        toastLayer.setAttribute("aria-hidden", "false");
+        toastLayer.classList.add("copy-toast-layer--visible");
+        hideTimer = setTimeout(function () {
+          toastLayer.classList.remove("copy-toast-layer--visible");
+          hideTimer = setTimeout(function () {
+            toastLayer.setAttribute("aria-hidden", "true");
+          }, 320);
+        }, 2000);
       }
 
       function copyText(text) {
@@ -93,8 +108,8 @@
         });
       }
 
-      if (copyBtn) {
-        copyBtn.addEventListener("click", function () {
+      if (copyTag) {
+        copyTag.addEventListener("click", function () {
           copyText(WECHAT_ID)
             .then(showToast)
             .catch(function () {
