@@ -1,70 +1,31 @@
 /**
- * Thai Star Schedule — loads rows from published Google Sheet (CSV).
+ * 泰流行369 行程表 — 从本地 data.json 加载数据
  */
-const SHEET_CSV_URL =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2Esk6BpiuVRHrY0KHAUs95xvKCk25DVRCqOJketwJjixqIawkba0FyLvVdtw05CH8T9okh-j3A2kw/pub?output=csv";
+const DATA_URL = "data.json";
 
-const COLUMNS = ["date", "time", "star", "event", "location", "type", "notes", "image"];
+const EVENT_FIELDS = ["date", "time", "star", "event", "location", "type", "notes", "image"];
 const WEEKDAYS = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
 
 const scheduleEl = document.getElementById("schedule");
 const statusEl = document.getElementById("schedule-status");
 
-function parseCSV(text) {
-  const rows = [];
-  let row = [];
-  let field = "";
-  let inQuotes = false;
-
-  for (let i = 0; i < text.length; i++) {
-    const c = text[i];
-    if (inQuotes) {
-      if (c === '"') {
-        if (text[i + 1] === '"') {
-          field += '"';
-          i++;
-        } else {
-          inQuotes = false;
-        }
-      } else {
-        field += c;
-      }
-    } else if (c === '"') {
-      inQuotes = true;
-    } else if (c === ",") {
-      row.push(field);
-      field = "";
-    } else if (c === "\n" || (c === "\r" && text[i + 1] === "\n")) {
-      row.push(field);
-      field = "";
-      if (row.some((cell) => cell.trim() !== "")) rows.push(row);
-      row = [];
-      if (c === "\r") i++;
-    } else {
-      field += c;
-    }
+/** 将 data.json 解析为统一的事件列表 */
+function normalizeEvents(data) {
+  let list = [];
+  if (Array.isArray(data)) {
+    list = data;
+  } else if (data && Array.isArray(data.events)) {
+    list = data.events;
   }
 
-  if (field.length > 0 || row.length > 0) {
-    row.push(field);
-    if (row.some((cell) => cell.trim() !== "")) rows.push(row);
-  }
-
-  return rows;
-}
-
-function rowsToEvents(tableRows) {
-  if (tableRows.length < 2) return [];
-
-  const header = tableRows[0].map((h) => h.trim().toLowerCase());
   const events = [];
+  for (const item of list) {
+    if (!item || typeof item !== "object") continue;
 
-  for (let r = 1; r < tableRows.length; r++) {
-    const cells = tableRows[r];
     const record = {};
-    COLUMNS.forEach((key) => {
-      const idx = header.indexOf(key);
-      record[key] = idx >= 0 ? (cells[idx] ?? "").trim() : "";
+    EVENT_FIELDS.forEach((key) => {
+      const value = item[key];
+      record[key] = value == null ? "" : String(value).trim();
     });
 
     if (!record.date && !record.star && !record.event) continue;
@@ -131,7 +92,7 @@ function createBadge(type) {
   return span;
 }
 
-/** Returns a safe image URL, or null if missing / invalid. */
+/** Returns image src: https URL, Google Drive link, or site-relative path. */
 function resolveImageUrl(raw) {
   const value = (raw || "").trim();
   if (!value) return null;
@@ -141,16 +102,24 @@ function resolveImageUrl(raw) {
     return `https://drive.google.com/uc?export=view&id=${driveMatch[1]}`;
   }
 
-  try {
-    const url = new URL(value);
-    if (url.protocol === "http:" || url.protocol === "https:") {
-      return url.href;
+  if (/^https?:\/\//i.test(value)) {
+    try {
+      const url = new URL(value);
+      if (url.protocol === "http:" || url.protocol === "https:") {
+        return url.href;
+      }
+    } catch {
+      return null;
     }
-  } catch {
     return null;
   }
 
-  return null;
+  // Block other protocols (javascript:, data:, etc.)
+  if (/^[a-z][a-z0-9+.-]*:/i.test(value)) return null;
+  if (value.includes("..")) return null;
+
+  // Local / site-relative path (e.g. images/202606/03/foo.jpeg)
+  return value.replace(/^\.\//, "");
 }
 
 function createEventCard(event, index) {
@@ -395,7 +364,7 @@ function renderSchedule(grouped) {
   if (grouped.length === 0) {
     const empty = document.createElement("p");
     empty.className = "schedule-empty";
-    empty.textContent = "暂无行程数据，请在 Google 表格中添加活动。";
+    empty.textContent = "暂无行程数据，请在 data.json 中添加活动。";
     scheduleEl.appendChild(empty);
     return;
   }
@@ -475,17 +444,16 @@ async function loadSchedule() {
     status.className = "schedule-status";
     status.id = "schedule-status";
     status.innerHTML =
-      '<span class="schedule-status__spinner" aria-hidden="true"></span>正在从 Google 表格加载行程…';
+      '<span class="schedule-status__spinner" aria-hidden="true"></span>正在加载行程数据…';
     scheduleEl.appendChild(status);
   }
 
   try {
-    const res = await fetch(SHEET_CSV_URL);
+    const res = await fetch(DATA_URL);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
-    const text = await res.text();
-    const tableRows = parseCSV(text);
-    const events = rowsToEvents(tableRows);
+    const data = await res.json();
+    const events = normalizeEvents(data);
     const grouped = groupByDate(events);
 
     if (statusEl) statusEl.remove();
@@ -493,7 +461,7 @@ async function loadSchedule() {
   } catch (err) {
     console.error("Failed to load schedule:", err);
     showError(
-      "无法加载行程数据。请确认表格已发布到网络，并通过本地服务器或网站域名访问本页（直接打开 file:// 可能无法跨域请求）。"
+      "无法加载行程数据。请确认 data.json 与网页在同一目录，并通过本地服务器或网站访问（直接打开 file:// 可能无法读取 JSON）。"
     );
   }
 }

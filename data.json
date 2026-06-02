@@ -1,0 +1,124 @@
+{
+  "events": [
+    {
+      "date": "2026-06-03",
+      "time": "11:00 AM",
+      "star": "JOONG DUNK",
+      "event": "House Of Magnum",
+      "location": "",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加。粉丝可在周边区域表示支持。",
+      "image": "images/202606/03/6-3-11.jpeg"
+    },
+    {
+      "date": "2026-06-03",
+      "time": "06:00 PM",
+      "star": "PERTH SANTA DOMIIA",
+      "event": "Tops Home and Baby Fair 2026 (Downy & Ambi Pur)",
+      "location": "Promotion Zone B, 1st Level, Central WestGate",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/03/6-3-18.jpeg"
+    },
+    {
+      "date": "2026-06-03",
+      "time": "",
+      "star": "NAMTAN",
+      "event": "PRADA MODE NEW YORK",
+      "location": "New York, USA.",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/03/6-3-0.jpeg"
+    },
+    {
+      "date": "2026-06-04",
+      "time": "01:00 PM",
+      "star": "JOSS GAWIN",
+      "event": "กิจกรรมส่งเสริมการมีส่วนร่วม : CSR ระหว่างภาครัฐและภาคเอกชน",
+      "location": "Khao Kheow Open Zoo, Sriracha, Chonburi",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加。",
+      "image": "images/202606/04/6-4-13.jpeg"
+    },
+    {
+      "date": "2026-06-04",
+      "time": "02:00 PM",
+      "star": "WIN",
+      "event": "GENTLE MONSTER VEGGIE COLLECTION POP UP",
+      "location": "GENTLE MONSTER VEGGIE COLLECTION POP UP, HAUS NOWHERE BANGKOK, M FLOOR, ICONSIAM",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加。粉丝可在品牌指定的地点表达支持。",
+      "image": "images/202606/04/6-4-14.jpeg"
+    },
+    {
+      "date": "2026-06-04",
+      "time": "07:00 PM",
+      "star": "JUNIOR",
+      "event": "GO HAIR 6.6 Mid Year Sale with Junior ผมสวยX6 เพราะเมะพกโกแฮร์",
+      "location": "LIVE Shopee: @Go Hair official",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/04/6-4-19-1.jpeg"
+    },
+    {
+      "date": "2026-06-04",
+      "time": "07:00 PM",
+      "star": "FOURTH",
+      "event": "รายการ Flex 104.5",
+      "location": "LIVE YouTube: FlexConnect",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/04/6-4-19.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "",
+      "star": "GEMINI",
+      "event": "L'Oreal Paris Get Your Gloss with Gemini",
+      "location": "",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加。",
+      "image": "images/202606/05/6-5-0.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "01:00 PM",
+      "star": "GREAT BRIGHT",
+      "event": "The Standard 9th Anniversary Open House \"Open The Bookshelf Of Meaning\"",
+      "location": "",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加。",
+      "image": "images/202606/05/6-5-13.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "03:00 PM",
+      "star": "NANON",
+      "event": "Lenovo Activation",
+      "location": "SCBX Next Stage, 4h Floor, Siam Paragon",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/05/6-5-15.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "05:00 PM",
+      "star": "SURF JAVA JAN JINGJING",
+      "event": "THAILAND INTERNATIONAL LGBTQ+ FILM & TV FESTIVAL 2026",
+      "location": "Infinite City Hall, 5'h Floor, Siam Paragon",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/05/6-5-17.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "06:00 PM",
+      "star": "FOURTH",
+      "event": "LIVE: DrPONG×FOURTH",
+      "location": "LIVE TikTok: drpongshop",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/05/6-5-18.jpeg"
+    }
+  ]
+}
