@@ -26,6 +26,9 @@
   --font-display: "Outfit", system-ui, sans-serif;
   --font-body: "Noto Sans SC", system-ui, sans-serif;
   --max-width: 42rem;
+  --poster-width: 110px;
+  --poster-height: 145px;
+  --poster-radius: 0.65rem;
 }
 
 *,
@@ -315,10 +318,12 @@ body {
   gap: 0.875rem;
 }
 
-/* Event cards */
+/* Event cards — flex row: accent | [media] | body */
 .event-card {
   position: relative;
   display: flex;
+  flex-direction: row;
+  align-items: stretch;
   background: var(--card-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -348,31 +353,21 @@ body {
   background: linear-gradient(90deg, rgba(252, 231, 243, 0.25), transparent);
 }
 
-/* Poster layout — only when .event-card--has-image is set */
+/* 左图右文：固定海报尺寸 + 右侧文字纵排 */
 .event-card--has-image {
-  display: grid;
-  grid-template-columns: 5px 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "accent media"
-    "accent body";
-  align-items: stretch;
-}
-
-.event-card--has-image .event-card__accent {
-  grid-area: accent;
-  width: 5px;
-  min-height: 100%;
+  min-height: calc(var(--poster-height) + 1.5rem);
 }
 
 .event-card--has-image .event-card__media {
-  grid-area: media;
-  position: relative;
-  width: 100%;
-  height: 9.5rem;
-  max-height: 9.5rem;
+  flex: 0 0 var(--poster-width);
+  width: var(--poster-width);
+  height: var(--poster-height);
+  margin: 0.75rem 0 0.75rem 0.65rem;
+  align-self: center;
   overflow: hidden;
+  border-radius: var(--poster-radius);
   background: linear-gradient(135deg, var(--mint-50), var(--pink-50));
+  box-shadow: 0 2px 10px rgba(20, 184, 166, 0.1);
 }
 
 .event-card--has-image .event-card__poster {
@@ -380,30 +375,27 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
 }
 
 .event-card--has-image .event-card__body {
-  grid-area: body;
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0.85rem 1rem 0.85rem 0.6rem;
 }
 
-@media (min-width: 520px) {
-  .event-card--has-image {
-    grid-template-columns: 5px 6.75rem 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "accent media body";
-  }
-
-  .event-card--has-image .event-card__media {
-    width: 6.75rem;
-    height: auto;
-    max-height: 10.5rem;
-    min-height: 6.75rem;
-    align-self: stretch;
-  }
+/* 无图：文字区满宽毛玻璃 */
+.event-card:not(.event-card--has-image) .event-card__body {
+  flex: 1 1 100%;
+  width: 100%;
 }
 
 .event-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0.2rem;
   flex: 1;
   padding: 1rem 1.15rem 1.1rem;
   min-width: 0;
@@ -414,7 +406,8 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem 0.65rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.15rem;
+  flex-shrink: 0;
 }
 
 .event-card__time {
@@ -431,7 +424,8 @@ body {
 }
 
 .event-card__artist {
-  margin: 0 0 0.25rem;
+  margin: 0;
+  flex-shrink: 0;
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
@@ -444,13 +438,15 @@ body {
 
 .event-card__title {
   margin: 0;
+  flex-shrink: 0;
   font-size: 0.9rem;
   color: var(--slate-600);
   line-height: 1.45;
 }
 
 .event-card__location {
-  margin: 0.4rem 0 0;
+  margin: 0.25rem 0 0;
+  flex-shrink: 0;
   padding-left: 1.1rem;
   font-size: 0.82rem;
   color: var(--slate-400);
@@ -471,7 +467,8 @@ body {
 }
 
 .event-card__notes {
-  margin: 0.75rem 0 0;
+  margin: 0.5rem 0 0;
+  flex-shrink: 0;
   padding: 0.6rem 0.75rem;
   font-size: 0.78rem;
   line-height: 1.55;
@@ -479,6 +476,10 @@ body {
   background: linear-gradient(135deg, rgba(241, 245, 249, 0.65), rgba(240, 253, 249, 0.5));
   border-radius: 0.65rem;
   border-left: 2px solid var(--pink-300);
+}
+
+.event-card--has-image .event-card__notes {
+  margin-top: auto;
 }
 
 /* Loading & empty states */
