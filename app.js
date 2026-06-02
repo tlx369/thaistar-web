@@ -4,7 +4,7 @@
 const SHEET_CSV_URL =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2Esk6BpiuVRHrY0KHAUs95xvKCk25DVRCqOJketwJjixqIawkba0FyLvVdtw05CH8T9okh-j3A2kw/pub?output=csv";
 
-const COLUMNS = ["date", "time", "star", "event", "location", "type", "notes"];
+const COLUMNS = ["date", "time", "star", "event", "location", "type", "notes", "image"];
 const WEEKDAYS = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
 
 const scheduleEl = document.getElementById("schedule");
@@ -131,11 +131,36 @@ function createBadge(type) {
   return span;
 }
 
+/** Returns a safe image URL, or null if missing / invalid. */
+function resolveImageUrl(raw) {
+  const value = (raw || "").trim();
+  if (!value) return null;
+
+  const driveMatch = value.match(/drive\.google\.com\/file\/d\/([^/]+)/);
+  if (driveMatch) {
+    return `https://drive.google.com/uc?export=view&id=${driveMatch[1]}`;
+  }
+
+  try {
+    const url = new URL(value);
+    if (url.protocol === "http:" || url.protocol === "https:") {
+      return url.href;
+    }
+  } catch {
+    return null;
+  }
+
+  return null;
+}
+
 function createEventCard(event, index) {
   const alt = index % 2 === 1;
+  const imageUrl = resolveImageUrl(event.image);
 
   const article = document.createElement("article");
-  article.className = `event-card${alt ? " event-card--alt" : ""}`;
+  article.className = `event-card${alt ? " event-card--alt" : ""}${
+    imageUrl ? " event-card--has-image" : ""
+  }`;
 
   const accent = document.createElement("div");
   accent.className = `event-card__accent${alt ? " event-card__accent--pink" : ""}`;
@@ -186,6 +211,29 @@ function createEventCard(event, index) {
   }
 
   article.appendChild(accent);
+
+  if (imageUrl) {
+    const media = document.createElement("div");
+    media.className = "event-card__media";
+
+    const img = document.createElement("img");
+    img.className = "event-card__poster";
+    img.src = imageUrl;
+    img.alt = event.event
+      ? `${event.star || "活动"} · ${event.event} 海报`
+      : `${event.star || "活动"} 海报`;
+    img.loading = "lazy";
+    img.decoding = "async";
+
+    img.addEventListener("error", () => {
+      media.remove();
+      article.classList.remove("event-card--has-image");
+    });
+
+    media.appendChild(img);
+    article.appendChild(media);
+  }
+
   article.appendChild(body);
   return article;
 }
