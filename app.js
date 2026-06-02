@@ -208,7 +208,8 @@ function createEventCard(event, index) {
   if (location) {
     const loc = document.createElement("p");
     loc.className = "event-card__location";
-    loc.textContent = `地址：${location}`;
+    const locationPrefix = isOnlineType(event.type || "") ? "频道：" : "地址：";
+    loc.textContent = `${locationPrefix}${location}`;
     body.appendChild(loc);
   }
 
