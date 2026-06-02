@@ -88,7 +88,7 @@ function timeSortKey(timeStr) {
   return h * 60 + m;
 }
 
-/** Group by date; tabs ordered newest → oldest. */
+/** Group by date; tabs ordered oldest → newest (ascending). */
 function groupByDate(events) {
   const map = new Map();
   for (const ev of events) {
@@ -101,7 +101,7 @@ function groupByDate(events) {
     list.sort((a, b) => timeSortKey(a.time) - timeSortKey(b.time));
   }
 
-  return [...map.entries()].sort(([a], [b]) => b.localeCompare(a));
+  return [...map.entries()].sort(([a], [b]) => a.localeCompare(b));
 }
 
 function formatDateMeta(isoDate) {
