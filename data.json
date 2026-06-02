@@ -249,6 +249,46 @@
       "type": "线上",
       "notes": "",
       "image": "images/202606/06/19.jpeg"
+    },
+    {
+      "date": "2026-06-07",
+      "time": "01:00 PM",
+      "star": "PREM",
+      "event": "Friendly Me Shinee Candy Lip Tint Exclusive Workshop with PREM",
+      "location": "",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加",
+      "image": "images/202606/07/13.jpeg"
+    },
+    {
+      "date": "2026-06-07",
+      "time": "02:00 PM",
+      "star": "PREM",
+      "event": "รายการ ท้า..ร้องท่อนฮุก",
+      "location": "YouTube : ตู้ซ่อนหมี",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/07/14-1.jpeg"
+    },
+    {
+      "date": "2026-06-07",
+      "time": "02:45 PM",
+      "star": "PHUWIN",
+      "event": "CAT TSHIRT 2026",
+      "location": "Queen Sirikit National Convention Center (QSNCC)",
+      "type": "线下",
+      "notes": "需要门票",
+      "image": "images/202606/07/14.jpeg"
+    },
+    {
+      "date": "2026-06-07",
+      "time": "03:00 PM",
+      "star": "LEGO",
+      "event": "mami Fresh & Fun with LEGO Rapeepong",
+      "location": "",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加",
+      "image": "images/202606/07/15.jpeg"
     }
   ]
 }
