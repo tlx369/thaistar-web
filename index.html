@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thai Star 行程表 — 泰系爱豆活动与节目一览" />
+  <title>Thai Star · 行程表</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-blob bg-blob--mint" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob--pink" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <p class="site-header__eyebrow">✦ Schedule</p>
+      <h1 class="site-header__title">
+        <span class="site-header__title-th">Thai Star</span>
+        <span class="site-header__title-zh">行程表</span>
+      </h1>
+      <p class="site-header__tagline">泰系爱豆活动 · 节目 · 见面会</p>
+    </div>
+  </header>
+
+  <main class="schedule" id="schedule" aria-live="polite">
+    <p class="schedule-status" id="schedule-status">
+      <span class="schedule-status__spinner" aria-hidden="true"></span>
+      正在从 Google 表格加载行程…
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <p id="footer-text">数据同步自 Google 表格 · Thai Star Schedule</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
