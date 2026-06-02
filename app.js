@@ -88,6 +88,7 @@ function timeSortKey(timeStr) {
   return h * 60 + m;
 }
 
+/** Group by date; tabs ordered newest → oldest. */
 function groupByDate(events) {
   const map = new Map();
   for (const ev of events) {
@@ -100,16 +101,16 @@ function groupByDate(events) {
     list.sort((a, b) => timeSortKey(a.time) - timeSortKey(b.time));
   }
 
-  return [...map.entries()].sort(([a], [b]) => a.localeCompare(b));
+  return [...map.entries()].sort(([a], [b]) => b.localeCompare(a));
 }
 
-function formatDateHeading(isoDate) {
+function formatDateMeta(isoDate) {
   const d = new Date(`${isoDate}T12:00:00`);
   if (Number.isNaN(d.getTime())) {
-    return { label: isoDate, weekday: "", iso: isoDate };
+    return { tabLabel: isoDate, weekday: "", iso: isoDate };
   }
   return {
-    label: `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`,
+    tabLabel: `${d.getMonth() + 1}月${d.getDate()}日`,
     weekday: WEEKDAYS[d.getDay()],
     iso: isoDate,
   };
@@ -131,7 +132,6 @@ function createBadge(type) {
 }
 
 function createEventCard(event, index) {
-  const online = isOnlineType(event.type);
   const alt = index % 2 === 1;
 
   const article = document.createElement("article");
@@ -190,6 +190,146 @@ function createEventCard(event, index) {
   return article;
 }
 
+function createDayPanel(dateKey, events, isActive) {
+  const { iso } = formatDateMeta(dateKey);
+  const panelId = `panel-${iso}`;
+  const tabId = `tab-${iso}`;
+
+  const panel = document.createElement("section");
+  panel.className = "day-panel";
+  panel.id = panelId;
+  panel.role = "tabpanel";
+  panel.setAttribute("aria-labelledby", tabId);
+  panel.dataset.date = iso;
+
+  if (!isActive) {
+    panel.hidden = true;
+  } else {
+    panel.classList.add("day-panel--active");
+  }
+
+  const list = document.createElement("ul");
+  list.className = "card-list";
+
+  if (events.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "day-panel__empty";
+    empty.textContent = "这一天暂无行程安排。";
+    panel.appendChild(empty);
+  } else {
+    events.forEach((ev, i) => {
+      const li = document.createElement("li");
+      li.appendChild(createEventCard(ev, i));
+      list.appendChild(li);
+    });
+    panel.appendChild(list);
+  }
+
+  return panel;
+}
+
+function createDateTab(dateKey, isActive) {
+  const { tabLabel, weekday, iso } = formatDateMeta(dateKey);
+  const tabId = `tab-${iso}`;
+  const panelId = `panel-${iso}`;
+
+  const tab = document.createElement("button");
+  tab.type = "button";
+  tab.className = `date-tab${isActive ? " date-tab--active" : ""}`;
+  tab.id = tabId;
+  tab.role = "tab";
+  tab.setAttribute("aria-selected", isActive ? "true" : "false");
+  tab.setAttribute("aria-controls", panelId);
+  tab.tabIndex = isActive ? 0 : -1;
+  tab.dataset.date = iso;
+
+  const label = document.createElement("span");
+  label.className = "date-tab__label";
+  label.textContent = tabLabel;
+  tab.appendChild(label);
+
+  if (weekday) {
+    const wd = document.createElement("span");
+    wd.className = "date-tab__weekday";
+    wd.textContent = weekday;
+    tab.appendChild(wd);
+  }
+
+  return tab;
+}
+
+function scrollTabIntoView(tab, scrollContainer) {
+  if (!tab || !scrollContainer) return;
+  const tabRect = tab.getBoundingClientRect();
+  const containerRect = scrollContainer.getBoundingClientRect();
+  if (tabRect.left < containerRect.left || tabRect.right > containerRect.right) {
+    tab.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+  }
+}
+
+const PANEL_TRANSITION_MS = 280;
+
+function activateDateTab(iso, tabList) {
+  const { tabs, panels, scrollEl } = tabList;
+
+  tabs.forEach((tab) => {
+    const isActive = tab.dataset.date === iso;
+    tab.classList.toggle("date-tab--active", isActive);
+    tab.setAttribute("aria-selected", isActive ? "true" : "false");
+    tab.tabIndex = isActive ? 0 : -1;
+  });
+
+  panels.forEach((panel) => {
+    const isActive = panel.dataset.date === iso;
+
+    if (isActive) {
+      panel.hidden = false;
+      requestAnimationFrame(() => panel.classList.add("day-panel--active"));
+      return;
+    }
+
+    if (panel.classList.contains("day-panel--active")) {
+      panel.classList.remove("day-panel--active");
+      window.setTimeout(() => {
+        if (!panel.classList.contains("day-panel--active")) {
+          panel.hidden = true;
+        }
+      }, PANEL_TRANSITION_MS);
+    } else {
+      panel.hidden = true;
+      panel.classList.remove("day-panel--active");
+    }
+  });
+
+  const activeTab = tabs.find((t) => t.dataset.date === iso);
+  scrollTabIntoView(activeTab, scrollEl);
+}
+
+function wireTabKeyboard(tabs, tabList) {
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("keydown", (e) => {
+      let nextIndex = index;
+      if (e.key === "ArrowRight") {
+        nextIndex = (index + 1) % tabs.length;
+        e.preventDefault();
+      } else if (e.key === "ArrowLeft") {
+        nextIndex = (index - 1 + tabs.length) % tabs.length;
+        e.preventDefault();
+      } else if (e.key === "Home") {
+        nextIndex = 0;
+        e.preventDefault();
+      } else if (e.key === "End") {
+        nextIndex = tabs.length - 1;
+        e.preventDefault();
+      } else {
+        return;
+      }
+      tabs[nextIndex].focus();
+      activateDateTab(tabs[nextIndex].dataset.date, tabList);
+    });
+  });
+}
+
 function renderSchedule(grouped) {
   scheduleEl.replaceChildren();
 
@@ -201,41 +341,49 @@ function renderSchedule(grouped) {
     return;
   }
 
-  for (const [dateKey, events] of grouped) {
-    const { label, weekday, iso } = formatDateHeading(dateKey);
+  const shell = document.createElement("div");
+  shell.className = "schedule-shell";
 
-    const section = document.createElement("section");
-    section.className = "day-group";
-    section.dataset.date = iso;
+  const tabsNav = document.createElement("nav");
+  tabsNav.className = "date-tabs";
+  tabsNav.setAttribute("role", "tablist");
+  tabsNav.setAttribute("aria-label", "选择日期");
 
-    const heading = document.createElement("h2");
-    heading.className = "day-group__heading";
+  const scrollEl = document.createElement("div");
+  scrollEl.className = "date-tabs__scroll";
 
-    const timeEl = document.createElement("time");
-    timeEl.dateTime = iso;
-    timeEl.textContent = label;
-    heading.appendChild(timeEl);
+  const panelsWrap = document.createElement("div");
+  panelsWrap.className = "schedule-panels";
 
-    if (weekday) {
-      const wd = document.createElement("span");
-      wd.className = "day-group__weekday";
-      wd.textContent = weekday;
-      heading.appendChild(wd);
-    }
+  const tabs = [];
+  const panels = [];
 
-    const list = document.createElement("ul");
-    list.className = "card-list";
+  grouped.forEach(([dateKey, events], index) => {
+    const isActive = index === 0;
+    const tab = createDateTab(dateKey, isActive);
+    const panel = createDayPanel(dateKey, events, isActive);
 
-    events.forEach((ev, i) => {
-      const li = document.createElement("li");
-      li.appendChild(createEventCard(ev, i));
-      list.appendChild(li);
+    tabs.push(tab);
+    panels.push(panel);
+    scrollEl.appendChild(tab);
+    panelsWrap.appendChild(panel);
+  });
+
+  const tabList = { tabs, panels, scrollEl };
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      if (tab.classList.contains("date-tab--active")) return;
+      activateDateTab(tab.dataset.date, tabList);
     });
+  });
 
-    section.appendChild(heading);
-    section.appendChild(list);
-    scheduleEl.appendChild(section);
-  }
+  wireTabKeyboard(tabs, tabList);
+
+  tabsNav.appendChild(scrollEl);
+  shell.appendChild(tabsNav);
+  shell.appendChild(panelsWrap);
+  scheduleEl.appendChild(shell);
 }
 
 function showError(message) {

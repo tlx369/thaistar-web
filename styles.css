@@ -138,36 +138,172 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.25rem 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
-.day-group__heading {
+.schedule-shell {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Date tabs navigation */
+.date-tabs {
+  position: relative;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+  margin: 0 -0.25rem;
+}
+
+.date-tabs::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(45, 212, 191, 0.35) 20%,
+    rgba(244, 114, 182, 0.35) 80%,
+    transparent
+  );
+  pointer-events: none;
+}
+
+.date-tabs__scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.25rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0 0.25rem 0;
+  margin-bottom: -1px;
+}
+
+.date-tabs__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.date-tab {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.5rem 0.75rem;
-  margin: 0 0 1rem;
-  padding-bottom: 0.65rem;
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(90deg, var(--mint-400), var(--pink-400)) 1;
-  font-size: 1.05rem;
-  font-weight: 600;
+  gap: 0.15rem;
+  padding: 0.65rem 1rem 0.75rem;
+  margin: 0;
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  cursor: pointer;
+  color: var(--slate-400);
+  position: relative;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.date-tab__label {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  transition: font-weight 0.2s ease, color 0.2s ease;
+}
+
+.date-tab__weekday {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--slate-400);
+  opacity: 0.85;
+  transition: color 0.2s ease;
+}
+
+.date-tab::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(90deg, var(--mint-400), var(--pink-400));
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
+}
+
+.date-tab:hover {
+  color: var(--slate-600);
+}
+
+.date-tab:hover .date-tab__label {
+  color: var(--slate-700);
+}
+
+.date-tab--active {
   color: var(--slate-900);
 }
 
-.day-group__heading time {
-  font-variant-numeric: tabular-nums;
+.date-tab--active .date-tab__label {
+  font-weight: 700;
+  color: var(--slate-900);
 }
 
-.day-group__weekday {
-  font-size: 0.8rem;
-  font-weight: 500;
+.date-tab--active .date-tab__weekday {
+  color: var(--mint-500);
+  opacity: 1;
+}
+
+.date-tab--active::after {
+  width: calc(100% - 1.25rem);
+  min-width: 2.5rem;
+}
+
+.date-tab:focus-visible {
+  outline: 2px solid var(--mint-400);
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+}
+
+/* Day panels (tab content) */
+.schedule-panels {
+  position: relative;
+  min-height: 4rem;
+}
+
+.day-panel {
+  width: 100%;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+  pointer-events: none;
+}
+
+.day-panel:not(.day-panel--active):not([hidden]) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.day-panel--active {
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.day-panel[hidden] {
+  display: none !important;
+}
+
+.day-panel__empty {
+  margin: 1.5rem 0;
+  text-align: center;
+  font-size: 0.88rem;
   color: var(--slate-400);
-  padding: 0.15rem 0.55rem;
-  background: var(--slate-100);
-  border-radius: 999px;
 }
 
 .card-list {
@@ -395,11 +531,18 @@ body {
 
   .schedule {
     padding-bottom: 4rem;
-    gap: 2.5rem;
   }
 
-  .day-group__heading {
-    font-size: 1.15rem;
+  .schedule-shell {
+    gap: 1.5rem;
+  }
+
+  .date-tab__label {
+    font-size: 1.05rem;
+  }
+
+  .date-tab {
+    padding: 0.75rem 1.15rem 0.85rem;
   }
 
   .event-card__body {
@@ -442,5 +585,14 @@ body {
 
   .schedule-status__spinner {
     animation: none;
+  }
+
+  .day-panel {
+    transition: none;
+    transform: none;
+  }
+
+  .date-tab::after {
+    transition: none;
   }
 }
