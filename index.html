@@ -21,9 +21,18 @@
         <span class="site-header__title-th">Thai Star</span>
         <span class="site-header__title-zh">行程表</span>
       </h1>
-      <p class="site-header__tagline">泰系爱豆活动 · 节目 · 见面会</p>
+      <p class="site-header__services">🔍 更多活动资讯 | 线下追星群组 | 票务周边 | 活动代排</p>
+      <p class="site-header__wechat">
+        专属追星管家，助你奔赴热爱！请加微信：<span id="wechat-id">tlx369tlx369</span><button
+          type="button"
+          class="copy-btn"
+          aria-label="复制微信号 tlx369tlx369"
+        >复制</button>
+      </p>
     </div>
   </header>
+
+  <div id="copy-toast" class="copy-toast" role="status" aria-live="polite" hidden>复制微信号成功</div>
 
   <main class="schedule" id="schedule" aria-live="polite">
     <!--
@@ -42,5 +51,58 @@
   </footer>
 
   <script src="app.js" defer></script>
+  <script>
+    (function () {
+      const WECHAT_ID = "tlx369tlx369";
+      const copyBtn = document.querySelector(".copy-btn");
+      const toast = document.getElementById("copy-toast");
+      let toastTimer;
+
+      function showToast() {
+        if (!toast) return;
+        clearTimeout(toastTimer);
+        toast.hidden = false;
+        toast.classList.add("copy-toast--visible");
+        toastTimer = setTimeout(function () {
+          toast.classList.remove("copy-toast--visible");
+          toastTimer = setTimeout(function () {
+            toast.hidden = true;
+          }, 280);
+        }, 2200);
+      }
+
+      function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          return navigator.clipboard.writeText(text);
+        }
+        return new Promise(function (resolve, reject) {
+          const textarea = document.createElement("textarea");
+          textarea.value = text;
+          textarea.setAttribute("readonly", "");
+          textarea.style.position = "fixed";
+          textarea.style.left = "-9999px";
+          document.body.appendChild(textarea);
+          textarea.select();
+          try {
+            document.execCommand("copy") ? resolve() : reject();
+          } catch (err) {
+            reject(err);
+          } finally {
+            document.body.removeChild(textarea);
+          }
+        });
+      }
+
+      if (copyBtn) {
+        copyBtn.addEventListener("click", function () {
+          copyText(WECHAT_ID)
+            .then(showToast)
+            .catch(function () {
+              window.alert("复制失败，请手动选择微信号复制");
+            });
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
