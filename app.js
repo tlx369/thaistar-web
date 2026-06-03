@@ -49,6 +49,19 @@ function timeSortKey(timeStr) {
   return h * 60 + m;
 }
 
+function getTodayDateKey() {
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, "0");
+  const d = String(now.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
+function isTodayOrFutureEvent(event) {
+  if (!event.date) return true;
+  return event.date >= getTodayDateKey();
+}
+
 /** Group by date; tabs ordered oldest → newest (ascending). */
 function groupByDate(events) {
   const map = new Map();
@@ -454,7 +467,7 @@ async function loadSchedule() {
 
     const data = await res.json();
     const events = normalizeEvents(data);
-    const grouped = groupByDate(events);
+    const grouped = groupByDate(events.filter(isTodayOrFutureEvent));
 
     if (statusEl) statusEl.remove();
     renderSchedule(grouped);
