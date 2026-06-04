@@ -583,6 +583,343 @@
       "company": "DMD",
       "notes": "粉丝可在周边区域参与活动",
       "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "06:00 PM",
+      "star": "JACKSON WANG",
+      "event": "House of Magnum",
+      "location": "Parkside Hall, Central Park",
+      "type": "线下",
+      "company": "",
+      "notes": "活动设置有粉丝区，但是位置有限",
+      "image": "images/202606/05/18.jpeg"
+    }
+  ],
+  "merchandise": [
+    {
+      "name": "DMD 官方小卡套组",
+      "star": "DMD",
+      "category": "小卡",
+      "price": "¥88",
+      "status": "现货",
+      "image": "images/DMD1/1.jpeg",
+      "notes": "测试数据：含随机小卡，可搜索 DMD 或 小卡。"
+    },
+    {
+      "name": "Gemini Fourth 双人小卡",
+      "star": "Gemini Fourth",
+      "category": "小卡",
+      "price": "¥68",
+      "status": "预售",
+      "image": "images/DMD1/2.jpeg",
+      "notes": "测试数据：适合搜索 Gemini、Fourth、双人。"
+    },
+    {
+      "name": "Joong Dunk 拍立得小卡",
+      "star": "Joong Dunk",
+      "category": "小卡",
+      "price": "¥75",
+      "status": "现货",
+      "image": "images/DMD1/3.jpeg",
+      "notes": "测试数据：活动款、拍立得风格。"
+    },
+    {
+      "name": "Win Metawin 代言品牌小卡",
+      "star": "Win",
+      "category": "小卡",
+      "price": "¥60",
+      "status": "现货",
+      "image": "images/DMD1/899e16d3-23e6-49d9-863e-a8998128aaf9.jpeg",
+      "notes": "测试数据：可搜索 Win、Metawin、代言。"
+    },
+    {
+      "name": "Nanon 限定收藏小卡",
+      "star": "Nanon",
+      "category": "小卡",
+      "price": "¥55",
+      "status": "售罄",
+      "image": "images/DMD1/5d98bb0f-83a0-4e18-8cd7-2057216d348d.jpeg",
+      "notes": "测试数据：售罄状态，用于测试搜索结果。"
+    },
+    {
+      "name": "DMD Mini Doll 娃娃",
+      "star": "DMD",
+      "category": "娃娃",
+      "price": "¥188",
+      "status": "现货",
+      "image": "images/DMD1/1.jpeg",
+      "notes": "测试数据：DMD 娃娃现货。"
+    },
+    {
+      "name": "Gemini 星星造型娃娃",
+      "star": "Gemini",
+      "category": "娃娃",
+      "price": "¥168",
+      "status": "预售",
+      "image": "images/DMD1/2.jpeg",
+      "notes": "测试数据：搜索 Gemini 或 星星。"
+    },
+    {
+      "name": "Fourth 音乐主题娃娃",
+      "star": "Fourth",
+      "category": "娃娃",
+      "price": "¥168",
+      "status": "现货",
+      "image": "images/DMD1/3.jpeg",
+      "notes": "测试数据：音乐主题，Fourth 粉丝向。"
+    },
+    {
+      "name": "Joong Dunk 情侣款娃娃",
+      "star": "Joong Dunk",
+      "category": "娃娃",
+      "price": "¥298",
+      "status": "补货中",
+      "image": "images/DMD1/899e16d3-23e6-49d9-863e-a8998128aaf9.jpeg",
+      "notes": "测试数据：双人套装，补货中。"
+    },
+    {
+      "name": "Santa Perth 毛绒挂件",
+      "star": "Santa Perth",
+      "category": "娃娃",
+      "price": "¥99",
+      "status": "现货",
+      "image": "images/DMD1/5d98bb0f-83a0-4e18-8cd7-2057216d348d.jpeg",
+      "notes": "测试数据：挂件娃娃，可搜索 Perth。"
+    },
+    {
+      "name": "DMD Logo 应援 T 恤",
+      "star": "DMD",
+      "category": "衣服",
+      "price": "¥128",
+      "status": "现货",
+      "image": "images/DMD1/1.jpeg",
+      "notes": "测试数据：黑色 T 恤，适合线下活动。"
+    },
+    {
+      "name": "Gemini Fourth 联名卫衣",
+      "star": "Gemini Fourth",
+      "category": "衣服",
+      "price": "¥268",
+      "status": "预售",
+      "image": "images/DMD1/2.jpeg",
+      "notes": "测试数据：联名卫衣，可搜索 卫衣。"
+    },
+    {
+      "name": "Win 同款棒球帽",
+      "star": "Win",
+      "category": "衣服",
+      "price": "¥118",
+      "status": "现货",
+      "image": "images/DMD1/3.jpeg",
+      "notes": "测试数据：帽子类周边。"
+    },
+    {
+      "name": "Nanon 演唱会外套",
+      "star": "Nanon",
+      "category": "衣服",
+      "price": "¥328",
+      "status": "补货中",
+      "image": "images/DMD1/899e16d3-23e6-49d9-863e-a8998128aaf9.jpeg",
+      "notes": "测试数据：外套、演唱会关键词。"
+    },
+    {
+      "name": "Joong Dunk 应援围巾",
+      "star": "Joong Dunk",
+      "category": "衣服",
+      "price": "¥98",
+      "status": "现货",
+      "image": "images/DMD1/5d98bb0f-83a0-4e18-8cd7-2057216d348d.jpeg",
+      "notes": "测试数据：围巾类，可搜索 Joong 或 Dunk。"
+    },
+    {
+      "name": "Win Gentle Monster 代言礼盒",
+      "star": "Win",
+      "category": "代言",
+      "price": "咨询",
+      "status": "预售",
+      "image": "images/DMD1/1.jpeg",
+      "notes": "测试数据：品牌代言礼盒。"
+    },
+    {
+      "name": "Fourth DrPONG 代言套装",
+      "star": "Fourth",
+      "category": "代言",
+      "price": "¥199",
+      "status": "现货",
+      "image": "images/DMD1/2.jpeg",
+      "notes": "测试数据：护肤品牌代言。"
+    },
+    {
+      "name": "Gemini L'Oreal 代言收藏包",
+      "star": "Gemini",
+      "category": "代言",
+      "price": "¥158",
+      "status": "补货中",
+      "image": "images/DMD1/3.jpeg",
+      "notes": "测试数据：可搜索 L'Oreal、Gemini。"
+    },
+    {
+      "name": "Nanon Lenovo 代言周边",
+      "star": "Nanon",
+      "category": "代言",
+      "price": "¥128",
+      "status": "现货",
+      "image": "images/DMD1/899e16d3-23e6-49d9-863e-a8998128aaf9.jpeg",
+      "notes": "测试数据：科技品牌代言。"
+    },
+    {
+      "name": "Joong Dunk 美妆品牌赠品",
+      "star": "Joong Dunk",
+      "category": "代言",
+      "price": "咨询",
+      "status": "现货",
+      "image": "images/DMD1/5d98bb0f-83a0-4e18-8cd7-2057216d348d.jpeg",
+      "notes": "测试数据：品牌赠品、代言活动。"
+    },
+    {
+      "name": "DMD 明信片套组",
+      "star": "DMD",
+      "category": "其它",
+      "price": "¥45",
+      "status": "现货",
+      "image": "images/DMD1/1.jpeg",
+      "notes": "测试数据：其它类，明信片关键词。"
+    },
+    {
+      "name": "Gemini Fourth 海报筒",
+      "star": "Gemini Fourth",
+      "category": "其它",
+      "price": "¥58",
+      "status": "现货",
+      "image": "images/DMD1/2.jpeg",
+      "notes": "测试数据：海报、收藏。"
+    },
+    {
+      "name": "Win 亚克力立牌",
+      "star": "Win",
+      "category": "其它",
+      "price": "¥78",
+      "status": "预售",
+      "image": "images/DMD1/3.jpeg",
+      "notes": "测试数据：亚克力立牌。"
+    },
+    {
+      "name": "Nanon 手幅套装",
+      "star": "Nanon",
+      "category": "其它",
+      "price": "¥38",
+      "status": "现货",
+      "image": "images/DMD1/899e16d3-23e6-49d9-863e-a8998128aaf9.jpeg",
+      "notes": "测试数据：手幅，应援物。"
+    },
+    {
+      "name": "Santa Perth 贴纸包",
+      "star": "Santa Perth",
+      "category": "其它",
+      "price": "¥29",
+      "status": "售罄",
+      "image": "images/DMD1/5d98bb0f-83a0-4e18-8cd7-2057216d348d.jpeg",
+      "notes": "测试数据：贴纸包，售罄。"
+    },
+    {
+      "name": "Bright Win 双人收藏卡",
+      "star": "Bright Win",
+      "category": "小卡",
+      "price": "¥88",
+      "status": "现货",
+      "image": "images/DMD1/1.jpeg",
+      "notes": "测试数据：搜索 Bright 或 Win。"
+    },
+    {
+      "name": "Tay New 旅行小卡",
+      "star": "Tay New",
+      "category": "小卡",
+      "price": "¥66",
+      "status": "预售",
+      "image": "images/DMD1/2.jpeg",
+      "notes": "测试数据：旅行主题。"
+    },
+    {
+      "name": "Pond Phuwin 生日娃娃",
+      "star": "Pond Phuwin",
+      "category": "娃娃",
+      "price": "¥188",
+      "status": "现货",
+      "image": "images/DMD1/3.jpeg",
+      "notes": "测试数据：生日限定。"
+    },
+    {
+      "name": "First Khaotung 毛绒钥匙扣",
+      "star": "First Khaotung",
+      "category": "娃娃",
+      "price": "¥79",
+      "status": "现货",
+      "image": "images/DMD1/899e16d3-23e6-49d9-863e-a8998128aaf9.jpeg",
+      "notes": "测试数据：钥匙扣娃娃。"
+    },
+    {
+      "name": "Bright 同款衬衫",
+      "star": "Bright",
+      "category": "衣服",
+      "price": "¥238",
+      "status": "补货中",
+      "image": "images/DMD1/5d98bb0f-83a0-4e18-8cd7-2057216d348d.jpeg",
+      "notes": "测试数据：衬衫、同款。"
+    },
+    {
+      "name": "Tay New 应援夹克",
+      "star": "Tay New",
+      "category": "衣服",
+      "price": "¥299",
+      "status": "预售",
+      "image": "images/DMD1/1.jpeg",
+      "notes": "测试数据：夹克。"
+    },
+    {
+      "name": "Pond Phuwin 饮料代言礼包",
+      "star": "Pond Phuwin",
+      "category": "代言",
+      "price": "咨询",
+      "status": "现货",
+      "image": "images/DMD1/2.jpeg",
+      "notes": "测试数据：饮料品牌，代言礼包。"
+    },
+    {
+      "name": "First Khaotung 香水代言卡",
+      "star": "First Khaotung",
+      "category": "代言",
+      "price": "¥108",
+      "status": "售罄",
+      "image": "images/DMD1/3.jpeg",
+      "notes": "测试数据：香水品牌。"
+    },
+    {
+      "name": "Bright Win 海报套装",
+      "star": "Bright Win",
+      "category": "其它",
+      "price": "¥92",
+      "status": "现货",
+      "image": "images/DMD1/899e16d3-23e6-49d9-863e-a8998128aaf9.jpeg",
+      "notes": "测试数据：海报套装。"
+    },
+    {
+      "name": "Tay New 签名板",
+      "star": "Tay New",
+      "category": "其它",
+      "price": "咨询",
+      "status": "预售",
+      "image": "images/DMD1/5d98bb0f-83a0-4e18-8cd7-2057216d348d.jpeg",
+      "notes": "测试数据：签名板关键词。"
+    },
+    {
+      "name": "Pond Phuwin 文件夹",
+      "star": "Pond Phuwin",
+      "category": "其它",
+      "price": "¥35",
+      "status": "现货",
+      "image": "images/DMD1/1.jpeg",
+      "notes": "测试数据：文件夹。"
     }
   ]
 }
