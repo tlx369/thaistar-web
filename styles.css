@@ -1726,6 +1726,22 @@ body {
   border-color: var(--ink);
 }
 
+.module-tab--active,
+.module-tab--active:hover,
+.date-tab--active,
+.date-tab--active:hover,
+.merch-category-tab--active,
+.merch-category-tab--active:hover {
+  color: #fff;
+}
+
+.date-tab--active .date-tab__label,
+.date-tab--active .date-tab__weekday,
+.date-tab--active:hover .date-tab__label,
+.date-tab--active:hover .date-tab__weekday {
+  color: #fff;
+}
+
 .event-card__time {
   color: var(--coral);
 }
