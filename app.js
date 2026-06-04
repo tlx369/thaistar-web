@@ -4,10 +4,27 @@
 const DATA_URL = "data.json";
 
 const EVENT_FIELDS = ["date", "time", "star", "event", "location", "type", "notes", "image"];
+const MERCH_FIELDS = ["name", "star", "category", "price", "status", "image", "notes"];
+const MERCH_SEARCH_FIELDS = ["name", "star", "category", "price", "status", "notes"];
+const MERCH_CATEGORY_ALL = "全部";
+const MERCH_CATEGORY_OTHER = "其它";
+const MERCH_CATEGORIES = [
+  MERCH_CATEGORY_ALL,
+  "娃娃",
+  "小卡",
+  "衣服",
+  "徽章",
+  "代言",
+  MERCH_CATEGORY_OTHER,
+];
 const WEEKDAYS = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
 
 const scheduleEl = document.getElementById("schedule");
 const statusEl = document.getElementById("schedule-status");
+const merchandiseEl = document.getElementById("merchandise");
+const moduleTabs = [...document.querySelectorAll(".module-tab")];
+const todayEventCountEl = document.getElementById("today-event-count");
+const merchCountEl = document.getElementById("merch-count");
 
 /** 将 data.json 解析为统一的事件列表 */
 function normalizeEvents(data) {
@@ -35,6 +52,26 @@ function normalizeEvents(data) {
   return events;
 }
 
+function normalizeMerchandise(data) {
+  const list = data && Array.isArray(data.merchandise) ? data.merchandise : [];
+  const merchandise = [];
+
+  for (const item of list) {
+    if (!item || typeof item !== "object") continue;
+
+    const record = {};
+    MERCH_FIELDS.forEach((key) => {
+      const value = item[key];
+      record[key] = value == null ? "" : String(value).trim();
+    });
+
+    if (!record.name && !record.star && !record.category) continue;
+    merchandise.push(record);
+  }
+
+  return merchandise;
+}
+
 function timeSortKey(timeStr) {
   if (!timeStr) return 99999;
   const isPm = /下午|PM/i.test(timeStr);
@@ -60,6 +97,17 @@ function getTodayDateKey() {
 function isTodayOrFutureEvent(event) {
   if (!event.date) return true;
   return event.date >= getTodayDateKey();
+}
+
+function updateHeroStats(events, merchandise) {
+  if (todayEventCountEl) {
+    const today = getTodayDateKey();
+    todayEventCountEl.textContent = String(events.filter((event) => event.date === today).length);
+  }
+
+  if (merchCountEl) {
+    merchCountEl.textContent = String(merchandise.length);
+  }
 }
 
 /** Group by date; tabs ordered oldest → newest (ascending). */
@@ -102,6 +150,15 @@ function createBadge(type) {
   const span = document.createElement("span");
   span.className = online ? "badge badge--online" : "badge badge--offline";
   span.textContent = type.trim() || (online ? "线上" : "线下");
+  return span;
+}
+
+function createMerchStatusBadge(status) {
+  const value = status.trim() || "咨询";
+  const span = document.createElement("span");
+  span.className = "merch-card__status";
+  span.dataset.status = value;
+  span.textContent = value;
   return span;
 }
 
@@ -178,14 +235,6 @@ function createEventCard(event, index) {
     body.appendChild(artist);
   }
 
-  const eventName = event.event?.trim();
-  if (eventName) {
-    const title = document.createElement("p");
-    title.className = "event-card__title";
-    title.textContent = `活动：${eventName}`;
-    body.appendChild(title);
-  }
-
   const location = event.location?.trim();
   if (location) {
     const loc = document.createElement("p");
@@ -193,6 +242,14 @@ function createEventCard(event, index) {
     const locationPrefix = isOnlineType(event.type || "") ? "频道：" : "地址：";
     loc.textContent = `${locationPrefix}${location}`;
     body.appendChild(loc);
+  }
+
+  const eventName = event.event?.trim();
+  if (eventName) {
+    const title = document.createElement("p");
+    title.className = "event-card__title";
+    title.textContent = `活动：${eventName}`;
+    body.appendChild(title);
   }
 
   const notesText = event.notes?.trim();
@@ -229,6 +286,123 @@ function createEventCard(event, index) {
 
   article.appendChild(body);
   return article;
+}
+
+function createMerchCard(item, index) {
+  const imageUrl = resolveImageUrl(item.image);
+  const article = document.createElement("article");
+  article.className = `merch-card${index % 2 === 1 ? " merch-card--alt" : ""}${
+    imageUrl ? " merch-card--has-image" : ""
+  }`;
+
+  if (imageUrl) {
+    const media = document.createElement("div");
+    media.className = "merch-card__media";
+
+    const img = document.createElement("img");
+    img.className = "merch-card__image";
+    img.src = imageUrl;
+    img.alt = item.name ? `${item.name} 商品图` : `${item.star || "明星周边"} 商品图`;
+    img.loading = "lazy";
+    img.decoding = "async";
+
+    img.addEventListener("error", () => {
+      media.remove();
+      article.classList.remove("merch-card--has-image");
+    });
+
+    media.appendChild(img);
+    article.appendChild(media);
+  }
+
+  const body = document.createElement("div");
+  body.className = "merch-card__body";
+
+  const meta = document.createElement("div");
+  meta.className = "merch-card__meta";
+
+  if (item.category) {
+    const category = document.createElement("span");
+    category.className = "merch-card__category";
+    category.textContent = item.category;
+    meta.appendChild(category);
+  }
+
+  meta.appendChild(createMerchStatusBadge(item.status));
+  body.appendChild(meta);
+
+  const title = document.createElement("h3");
+  title.className = "merch-card__title";
+  title.textContent = item.name || "明星周边";
+  body.appendChild(title);
+
+  if (item.star) {
+    const star = document.createElement("p");
+    star.className = "merch-card__star";
+    star.textContent = `艺人：${item.star}`;
+    body.appendChild(star);
+  }
+
+  const footer = document.createElement("div");
+  footer.className = "merch-card__footer";
+
+  const price = document.createElement("p");
+  price.className = "merch-card__price";
+  price.textContent = item.price || "咨询";
+  footer.appendChild(price);
+
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "merch-card__contact js-copy-wechat";
+  button.textContent = "微信咨询";
+  button.setAttribute("aria-label", `复制微信号咨询${item.name || "明星周边"}`);
+  footer.appendChild(button);
+  body.appendChild(footer);
+
+  if (item.notes) {
+    const notes = document.createElement("p");
+    notes.className = "merch-card__notes";
+    notes.textContent = item.notes;
+    body.appendChild(notes);
+  }
+
+  article.appendChild(body);
+  return article;
+}
+
+function getMerchCategory(item) {
+  const category = item.category?.trim();
+  if (!category) return MERCH_CATEGORY_OTHER;
+  return MERCH_CATEGORIES.includes(category) ? category : MERCH_CATEGORY_OTHER;
+}
+
+function matchesMerchSearch(item, keyword) {
+  const q = keyword.trim().toLowerCase();
+  if (!q) return true;
+
+  return MERCH_SEARCH_FIELDS.some((field) => item[field]?.toLowerCase().includes(q));
+}
+
+function getFilteredMerchandise(items, category, keyword) {
+  return items.filter((item) => {
+    const inCategory = category === MERCH_CATEGORY_ALL || getMerchCategory(item) === category;
+    return inCategory && matchesMerchSearch(item, keyword);
+  });
+}
+
+function renderMerchGrid(listEl, countEl, emptyEl, items, activeCategory, keyword) {
+  const filtered = getFilteredMerchandise(items, activeCategory, keyword);
+  listEl.replaceChildren();
+
+  filtered.forEach((item, index) => {
+    const li = document.createElement("li");
+    li.appendChild(createMerchCard(item, index));
+    listEl.appendChild(li);
+  });
+
+  countEl.textContent = `${activeCategory} · ${filtered.length} 个周边`;
+  emptyEl.hidden = filtered.length > 0;
+  listEl.hidden = filtered.length === 0;
 }
 
 function createDayPanel(dateKey, events, isActive) {
@@ -427,6 +601,135 @@ function renderSchedule(grouped) {
   scheduleEl.appendChild(shell);
 }
 
+function renderMerchandise(items) {
+  if (!merchandiseEl) return;
+  merchandiseEl.replaceChildren();
+
+  if (items.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "merch-empty";
+    empty.textContent = "暂无明星周边，请稍后再来看看。";
+    merchandiseEl.appendChild(empty);
+    return;
+  }
+
+  const shell = document.createElement("div");
+  shell.className = "merch-shell";
+
+  const header = document.createElement("div");
+  header.className = "merch-section-header";
+
+  const title = document.createElement("h2");
+  title.className = "merch-section-header__title";
+  title.textContent = "明星周边";
+  header.appendChild(title);
+
+  const intro = document.createElement("p");
+  intro.className = "merch-section-header__intro";
+  intro.textContent = "按大类查看周边，也可以在当前大类内搜索明星名或商品名。";
+  header.appendChild(intro);
+  shell.appendChild(header);
+
+  const controls = document.createElement("div");
+  controls.className = "merch-controls";
+
+  const categoryTabs = document.createElement("div");
+  categoryTabs.className = "merch-category-tabs";
+  categoryTabs.setAttribute("role", "tablist");
+  categoryTabs.setAttribute("aria-label", "选择周边大类");
+
+  const searchWrap = document.createElement("label");
+  searchWrap.className = "merch-search";
+
+  const searchText = document.createElement("span");
+  searchText.className = "merch-search__label";
+  searchText.textContent = "搜索";
+  searchWrap.appendChild(searchText);
+
+  const searchInput = document.createElement("input");
+  searchInput.className = "merch-search__input";
+  searchInput.type = "search";
+  searchInput.placeholder = "明星名 / 产品名 / 关键字";
+  searchInput.autocomplete = "off";
+  searchWrap.appendChild(searchInput);
+
+  controls.appendChild(categoryTabs);
+  controls.appendChild(searchWrap);
+  shell.appendChild(controls);
+
+  const resultMeta = document.createElement("p");
+  resultMeta.className = "merch-result-meta";
+  shell.appendChild(resultMeta);
+
+  const list = document.createElement("ul");
+  list.className = "merch-grid";
+  shell.appendChild(list);
+
+  const noResults = document.createElement("p");
+  noResults.className = "merch-results-empty";
+  noResults.textContent = "当前大类下没有匹配的周边。";
+  noResults.hidden = true;
+  shell.appendChild(noResults);
+
+  let activeCategory = MERCH_CATEGORY_ALL;
+
+  const updateResults = () => {
+    renderMerchGrid(list, resultMeta, noResults, items, activeCategory, searchInput.value);
+  };
+
+  MERCH_CATEGORIES.forEach((category) => {
+    const tab = document.createElement("button");
+    tab.type = "button";
+    tab.className = `merch-category-tab${
+      category === activeCategory ? " merch-category-tab--active" : ""
+    }`;
+    tab.textContent = category;
+    tab.setAttribute("role", "tab");
+    tab.setAttribute("aria-selected", category === activeCategory ? "true" : "false");
+
+    tab.addEventListener("click", () => {
+      activeCategory = category;
+      [...categoryTabs.children].forEach((btn) => {
+        const isActive = btn.textContent === activeCategory;
+        btn.classList.toggle("merch-category-tab--active", isActive);
+        btn.setAttribute("aria-selected", isActive ? "true" : "false");
+      });
+      updateResults();
+    });
+
+    categoryTabs.appendChild(tab);
+  });
+
+  searchInput.addEventListener("input", updateResults);
+  updateResults();
+
+  merchandiseEl.appendChild(shell);
+}
+
+function activateModule(targetId) {
+  const panels = [scheduleEl, merchandiseEl].filter(Boolean);
+
+  panels.forEach((panel) => {
+    const isActive = panel.id === targetId;
+    panel.classList.toggle("content-panel--active", isActive);
+    panel.hidden = !isActive;
+  });
+
+  moduleTabs.forEach((tab) => {
+    const isActive = tab.dataset.moduleTarget === targetId;
+    tab.classList.toggle("module-tab--active", isActive);
+    tab.setAttribute("aria-selected", isActive ? "true" : "false");
+  });
+}
+
+function wireModuleTabs() {
+  moduleTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      activateModule(tab.dataset.moduleTarget);
+    });
+  });
+}
+
 function showError(message) {
   scheduleEl.replaceChildren();
   const box = document.createElement("div");
@@ -467,10 +770,13 @@ async function loadSchedule() {
 
     const data = await res.json();
     const events = normalizeEvents(data);
+    const merchandise = normalizeMerchandise(data);
     const grouped = groupByDate(events.filter(isTodayOrFutureEvent));
 
     if (statusEl) statusEl.remove();
+    updateHeroStats(events, merchandise);
     renderSchedule(grouped);
+    renderMerchandise(merchandise);
   } catch (err) {
     console.error("Failed to load schedule:", err);
     showError(
@@ -479,4 +785,5 @@ async function loadSchedule() {
   }
 }
 
+wireModuleTabs();
 loadSchedule();

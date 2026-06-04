@@ -30,8 +30,8 @@
   --title-mint: #00bfa5;
   --title-slate: #2c3e50;
   --max-width: 42rem;
-  --poster-width: 110px;
-  --poster-height: 145px;
+  --poster-width: 132px;
+  --poster-height: 174px;
   --poster-radius: 0.65rem;
 }
 
@@ -268,10 +268,64 @@ body {
   outline-offset: 2px;
 }
 
-/* Schedule layout */
-.schedule {
+/* Module tabs */
+.module-tabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 1.05rem;
+  padding: 0.25rem;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 999px;
+  box-shadow: 0 4px 18px rgba(20, 184, 166, 0.08);
+}
+
+.module-tab {
+  min-width: 5.5rem;
+  margin: 0;
+  padding: 0.48rem 0.95rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--slate-500, var(--slate-600));
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.module-tab:hover {
+  color: var(--slate-800);
+  transform: translateY(-1px);
+}
+
+.module-tab--active {
+  color: #fff;
+  background: linear-gradient(135deg, var(--mint-500), var(--pink-500));
+  box-shadow: 0 5px 16px rgba(20, 184, 166, 0.18);
+}
+
+.module-tab:focus-visible {
+  outline: 2px solid var(--mint-400);
+  outline-offset: 3px;
+}
+
+/* Shared content layout */
+.site-main {
   position: relative;
   z-index: 1;
+}
+
+.content-panel[hidden] {
+  display: none !important;
+}
+
+/* Schedule layout */
+.schedule {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.25rem 3rem;
@@ -497,7 +551,7 @@ body {
   width: var(--poster-width);
   height: var(--poster-height);
   margin: 0.75rem 0 0.75rem 0.65rem;
-  align-self: center;
+  align-self: flex-start;
   overflow: hidden;
   border-radius: var(--poster-radius);
   background: linear-gradient(135deg, var(--mint-50), var(--pink-50));
@@ -698,6 +752,338 @@ body {
   border: 1px solid rgba(236, 72, 153, 0.2);
 }
 
+/* Merchandise */
+.merchandise {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+}
+
+.merch-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.merch-section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.35rem 0.15rem 0;
+}
+
+.merch-section-header__title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--slate-900);
+  line-height: 1.25;
+}
+
+.merch-section-header__intro {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--slate-400);
+}
+
+.merch-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 0.85rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.merch-category-tabs {
+  display: flex;
+  gap: 0.45rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.1rem;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.merch-category-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.merch-category-tab {
+  flex: 0 0 auto;
+  min-height: 2rem;
+  margin: 0;
+  padding: 0.42rem 0.82rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--slate-600);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.merch-category-tab:hover {
+  border-color: rgba(45, 212, 191, 0.36);
+  color: var(--slate-900);
+  transform: translateY(-1px);
+}
+
+.merch-category-tab--active {
+  color: #fff;
+  background: linear-gradient(135deg, var(--mint-500), var(--pink-500));
+  border-color: transparent;
+}
+
+.merch-category-tab:focus-visible {
+  outline: 2px solid var(--mint-400);
+  outline-offset: 2px;
+}
+
+.merch-search {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 2.45rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid rgba(20, 184, 166, 0.22);
+  border-radius: 999px;
+  background: rgba(240, 253, 249, 0.68);
+}
+
+.merch-search__label {
+  flex: 0 0 auto;
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--mint-500);
+}
+
+.merch-search__input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--slate-800);
+  font-family: var(--font-body);
+  font-size: 0.86rem;
+}
+
+.merch-search__input::placeholder {
+  color: var(--slate-400);
+}
+
+.merch-result-meta {
+  margin: -0.2rem 0 0;
+  padding: 0 0.15rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--slate-400);
+}
+
+.merch-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.merch-card {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.merch-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.merch-card--alt {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(252, 231, 243, 0.42));
+}
+
+.merch-card__media {
+  flex: 0 0 auto;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, var(--mint-50), var(--pink-50));
+}
+
+.merch-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.merch-card__body {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem;
+}
+
+.merch-card:not(.merch-card--has-image) .merch-card__body {
+  padding: 1rem;
+}
+
+.merch-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.merch-card__category,
+.merch-card__status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.45rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.merch-card__category {
+  color: var(--mint-500);
+  background: rgba(204, 251, 241, 0.62);
+  border: 1px solid rgba(20, 184, 166, 0.18);
+}
+
+.merch-card__status {
+  color: var(--pink-500);
+  background: rgba(252, 231, 243, 0.78);
+  border: 1px solid rgba(236, 72, 153, 0.18);
+}
+
+.merch-card__status[data-status="售罄"] {
+  color: var(--slate-400);
+  background: var(--slate-100);
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+.merch-card__title {
+  margin: 0.1rem 0 0;
+  font-family: var(--font-title);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.35;
+  color: var(--slate-900);
+  word-break: break-word;
+}
+
+.merch-card__star {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--slate-600);
+  word-break: break-word;
+}
+
+.merch-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  margin-top: auto;
+  padding-top: 0.35rem;
+}
+
+.merch-card__price {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--pink-500);
+  white-space: nowrap;
+}
+
+.merch-card__contact {
+  flex: 0 0 auto;
+  min-height: 2rem;
+  padding: 0.42rem 0.78rem;
+  border: 1px solid rgba(20, 184, 166, 0.24);
+  border-radius: 999px;
+  background: rgba(240, 253, 249, 0.88);
+  color: var(--mint-500);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1;
+  transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.merch-card__contact:hover {
+  background: var(--mint-100);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.16);
+  transform: translateY(-1px);
+}
+
+.merch-card__contact:focus-visible {
+  outline: 2px solid var(--mint-400);
+  outline-offset: 2px;
+}
+
+.merch-card__notes {
+  margin: 0.2rem 0 0;
+  padding-top: 0.45rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+  color: var(--slate-400);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.merch-empty {
+  margin: 2rem 0;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--slate-600);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.merch-results-empty {
+  margin: 0.4rem 0 0;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--slate-500, var(--slate-600));
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px dashed rgba(148, 163, 184, 0.32);
+  border-radius: var(--radius-lg);
+}
+
 /* Footer */
 .site-footer {
   position: relative;
@@ -735,6 +1121,10 @@ body {
     padding-bottom: 4rem;
   }
 
+  .merchandise {
+    padding-bottom: 4rem;
+  }
+
   .schedule-shell {
     gap: 1.5rem;
   }
@@ -757,6 +1147,26 @@ body {
 
   .event-card__title {
     font-size: 0.95rem;
+  }
+
+  .merch-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .merch-card {
+    flex-direction: column;
+  }
+
+  .merch-card__media {
+    flex: 0 0 auto;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    min-height: 0;
+  }
+
+  .merch-card__body {
+    padding: 1rem;
   }
 }
 
@@ -781,7 +1191,19 @@ body {
     transition: none;
   }
 
+  .module-tab,
+  .merch-card,
+  .merch-card__contact {
+    transition: none;
+  }
+
   .event-card:hover {
+    transform: none;
+  }
+
+  .module-tab:hover,
+  .merch-card:hover,
+  .merch-card__contact:hover {
     transform: none;
   }
 
@@ -796,5 +1218,591 @@ body {
 
   .date-tab::after {
     transition: none;
+  }
+}
+
+/* Visual refresh: mobile-first fan magazine + shop */
+:root {
+  --ink: #121826;
+  --muted: #7c8799;
+  --line: rgba(18, 24, 38, 0.1);
+  --paper: #fffdfa;
+  --surface: rgba(255, 255, 255, 0.92);
+  --warm: #fff3e8;
+  --coral: #ff5c7a;
+  --teal: #00b7a8;
+  --amber: #ffb84d;
+  --shadow-card: 0 18px 42px rgba(18, 24, 38, 0.1);
+  --radius-lg: 1.1rem;
+  --radius-xl: 1.35rem;
+}
+
+body {
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, #fff8ef 0%, #f7fbff 42%, #fff 100%);
+}
+
+.bg-blob {
+  display: none;
+}
+
+.site-header {
+  padding: 1.15rem 1rem 1rem;
+  text-align: left;
+}
+
+.site-header__inner {
+  max-width: 48rem;
+  padding: 1.1rem;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(255, 243, 232, 0.78)),
+    linear-gradient(115deg, rgba(0, 183, 168, 0.12), rgba(255, 92, 122, 0.1));
+  border: 1px solid rgba(255, 255, 255, 0.96);
+  border-radius: 1.35rem;
+  box-shadow: var(--shadow-card);
+}
+
+.site-header__eyebrow {
+  margin-bottom: 0.35rem;
+  color: var(--coral);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+}
+
+.site-header__title {
+  justify-content: flex-start;
+  padding: 0;
+  font-size: clamp(2.05rem, 10vw, 3.2rem);
+  letter-spacing: 0.01em;
+}
+
+.site-header__title::before {
+  display: none;
+}
+
+.site-header__title-brand {
+  color: var(--ink);
+  font-weight: 850;
+  letter-spacing: 0;
+}
+
+.site-header__title-num {
+  margin: 0 0.28rem;
+  color: var(--coral);
+  font-weight: 900;
+}
+
+.site-header__title-zh {
+  color: var(--teal);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.site-header__services {
+  margin-top: 0.55rem;
+  padding: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-top: 0.95rem;
+}
+
+.hero-stat {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.72rem 0.82rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  border-radius: 0.9rem;
+}
+
+.hero-stat__value {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.hero-stat__label {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.site-header__wechat {
+  justify-content: flex-start;
+  margin-top: 0.8rem;
+  padding: 0;
+  color: var(--muted);
+}
+
+#wechat-id {
+  color: var(--teal);
+}
+
+.copy-tag,
+.merch-card__contact,
+.schedule-error__retry {
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 18px rgba(0, 183, 168, 0.1);
+}
+
+.module-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.3rem;
+  background: rgba(18, 24, 38, 0.06);
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  border-radius: 1rem;
+  box-shadow: none;
+}
+
+.module-tab {
+  min-width: 0;
+  padding: 0.72rem 0.5rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  border-radius: 0.75rem;
+}
+
+.module-tab--active {
+  color: #fff;
+  background: var(--ink);
+  box-shadow: 0 10px 22px rgba(18, 24, 38, 0.18);
+}
+
+.site-main {
+  margin-top: 0.1rem;
+}
+
+.schedule,
+.merchandise {
+  max-width: 48rem;
+  padding: 0 1rem 3rem;
+}
+
+.date-tabs {
+  margin: 0;
+  border: 0;
+}
+
+.date-tabs::after {
+  display: none;
+}
+
+.date-tabs__scroll {
+  gap: 0.5rem;
+  padding: 0.1rem 0 0.2rem;
+}
+
+.date-tab {
+  min-width: 4.6rem;
+  padding: 0.62rem 0.78rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  box-shadow: 0 10px 24px rgba(18, 24, 38, 0.06);
+}
+
+.date-tab::after {
+  display: none;
+}
+
+.date-tab--active {
+  color: #fff;
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.date-tab--active .date-tab__label,
+.date-tab--active .date-tab__weekday {
+  color: #fff;
+}
+
+.date-tab__weekday {
+  color: var(--muted);
+}
+
+.card-list {
+  gap: 0.85rem;
+}
+
+.event-card {
+  background: var(--surface);
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  border-radius: 1.2rem;
+  box-shadow: 0 14px 34px rgba(18, 24, 38, 0.08);
+}
+
+.event-card__accent {
+  width: 0;
+}
+
+.event-card--alt .event-card__body {
+  background: transparent;
+}
+
+.event-card--has-image .event-card__media {
+  margin: 0.9rem 0 0.9rem 0.9rem;
+  border-radius: 0.95rem;
+  box-shadow: 0 12px 24px rgba(18, 24, 38, 0.12);
+}
+
+.event-card--has-image .event-card__body {
+  padding: 0.9rem 0.95rem 0.95rem 0.85rem;
+}
+
+.event-card__meta {
+  gap: 0.45rem;
+}
+
+.event-card__time {
+  color: var(--teal);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.event-card--alt .event-card__time {
+  color: var(--coral);
+}
+
+.badge,
+.merch-card__category,
+.merch-card__status {
+  border-radius: 999px;
+  font-weight: 900;
+}
+
+.badge--offline,
+.badge--online {
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.event-card__artist {
+  color: var(--ink);
+  font-size: 1.02rem;
+  letter-spacing: 0.01em;
+}
+
+.event-card__title {
+  color: #404a5d;
+  font-weight: 650;
+}
+
+.event-card__location {
+  color: var(--muted);
+}
+
+.event-card__location::before {
+  background: var(--amber);
+}
+
+.event-card__notes {
+  color: var(--muted);
+  background: #f7f8fa;
+  border-left: 3px solid var(--coral);
+  border-radius: 0.85rem;
+}
+
+.merch-shell {
+  gap: 0.9rem;
+}
+
+.merch-section-header {
+  padding: 0.2rem 0.1rem;
+}
+
+.merch-section-header__title {
+  font-size: 1.35rem;
+  letter-spacing: 0;
+}
+
+.merch-section-header__intro {
+  color: var(--muted);
+}
+
+.merch-controls {
+  padding: 0.82rem;
+  background: var(--surface);
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  border-radius: 1.15rem;
+  box-shadow: 0 14px 34px rgba(18, 24, 38, 0.08);
+}
+
+.merch-category-tabs {
+  gap: 0.5rem;
+}
+
+.merch-category-tab {
+  color: var(--muted);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+}
+
+.merch-category-tab--active {
+  color: #fff;
+  background: var(--ink);
+}
+
+.merch-search {
+  background: #f7f8fa;
+  border-color: transparent;
+  border-radius: 0.85rem;
+}
+
+.merch-search__label {
+  color: var(--coral);
+}
+
+.merch-grid {
+  gap: 1rem;
+}
+
+.merch-card {
+  background: #fff;
+  border: 1px solid rgba(18, 24, 38, 0.08);
+  border-radius: 1.15rem;
+  box-shadow: 0 14px 34px rgba(18, 24, 38, 0.08);
+}
+
+.merch-card--alt {
+  background: #fff;
+}
+
+.merch-card__media {
+  background: #f2f4f7;
+}
+
+.merch-card__body {
+  gap: 0.45rem;
+}
+
+.merch-card__title {
+  font-size: 1.05rem;
+}
+
+.merch-card__star {
+  color: var(--muted);
+}
+
+.merch-card__category {
+  color: var(--teal);
+  background: rgba(0, 183, 168, 0.1);
+  border-color: rgba(0, 183, 168, 0.18);
+}
+
+.merch-card__status {
+  color: var(--coral);
+  background: rgba(255, 92, 122, 0.1);
+  border-color: rgba(255, 92, 122, 0.18);
+}
+
+.merch-card__price {
+  color: var(--ink);
+  font-size: 1.12rem;
+}
+
+.merch-card__contact {
+  color: #fff;
+  background: var(--teal);
+  border-color: var(--teal);
+  box-shadow: 0 10px 22px rgba(0, 183, 168, 0.22);
+}
+
+.merch-card__notes {
+  color: var(--muted);
+}
+
+.schedule-empty,
+.schedule-error,
+.merch-empty,
+.merch-results-empty {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1.15rem;
+  box-shadow: 0 14px 34px rgba(18, 24, 38, 0.08);
+}
+
+.site-footer {
+  padding-top: 0;
+}
+
+@media (min-width: 640px) {
+  .site-header {
+    padding-top: 1.4rem;
+  }
+
+  .site-header__inner {
+    padding: 1.35rem;
+  }
+
+  .hero-stats {
+    max-width: 22rem;
+  }
+
+  .schedule,
+  .merchandise {
+    padding-bottom: 4rem;
+  }
+
+  .event-card__artist {
+    font-size: 1.1rem;
+  }
+}
+
+/* Premium tone refinement */
+:root {
+  --ink: #171512;
+  --muted: #81796d;
+  --line: rgba(39, 34, 27, 0.1);
+  --paper: #faf7f1;
+  --surface: rgba(255, 253, 248, 0.94);
+  --warm: #f3eadc;
+  --coral: #9f6f4f;
+  --teal: #667a6a;
+  --amber: #c6a15b;
+  --shadow-card: 0 18px 48px rgba(44, 36, 25, 0.1);
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(198, 161, 91, 0.18), transparent 34rem),
+    linear-gradient(180deg, #f7f1e8 0%, #fbfaf7 46%, #f6f2ea 100%);
+}
+
+.site-header__inner {
+  background:
+    linear-gradient(145deg, rgba(255, 253, 248, 0.96), rgba(243, 234, 220, 0.74)),
+    linear-gradient(120deg, rgba(198, 161, 91, 0.14), rgba(102, 122, 106, 0.08));
+  border-color: rgba(255, 253, 248, 0.95);
+}
+
+.site-header__eyebrow,
+.site-header__title-num,
+.merch-search__label {
+  color: var(--coral);
+}
+
+.site-header__title-zh,
+#wechat-id {
+  color: var(--teal);
+}
+
+.hero-stat,
+.date-tab,
+.event-card,
+.merch-controls,
+.merch-card,
+.schedule-empty,
+.schedule-error,
+.merch-empty,
+.merch-results-empty {
+  background: var(--surface);
+  border-color: rgba(39, 34, 27, 0.1);
+  box-shadow: var(--shadow-card);
+}
+
+.module-tab--active,
+.date-tab--active,
+.merch-category-tab--active {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.event-card__time {
+  color: var(--coral);
+}
+
+.event-card--alt .event-card__time {
+  color: var(--teal);
+}
+
+.badge--offline,
+.badge--online {
+  color: var(--ink);
+  background: rgba(255, 253, 248, 0.82);
+}
+
+.event-card__artist {
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.event-card__location {
+  margin-top: 0.42rem;
+  padding: 0.68rem 0.78rem 0.68rem 2.05rem;
+  color: #332f29;
+  background: linear-gradient(135deg, rgba(198, 161, 91, 0.18), rgba(255, 253, 248, 0.82));
+  border: 1px solid rgba(198, 161, 91, 0.22);
+  border-radius: 0.9rem;
+  font-size: 0.92rem;
+  font-weight: 850;
+  line-height: 1.45;
+}
+
+.event-card__location::before {
+  left: 0.78rem;
+  top: 0.98rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  background: var(--amber);
+  box-shadow: 0 0 0 4px rgba(198, 161, 91, 0.16);
+}
+
+.event-card__title {
+  margin-top: 0.42rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.event-card__notes {
+  background: rgba(255, 253, 248, 0.7);
+  border-left-color: rgba(159, 111, 79, 0.62);
+}
+
+.merch-card__category {
+  color: var(--teal);
+  background: rgba(102, 122, 106, 0.12);
+  border-color: rgba(102, 122, 106, 0.18);
+}
+
+.merch-card__status {
+  color: var(--coral);
+  background: rgba(159, 111, 79, 0.12);
+  border-color: rgba(159, 111, 79, 0.18);
+}
+
+.merch-card__contact {
+  color: #fff;
+  background: var(--ink);
+  border-color: var(--ink);
+  box-shadow: 0 12px 26px rgba(23, 21, 18, 0.18);
+}
+
+@media (min-width: 640px) {
+  .event-card__location {
+    font-size: 0.98rem;
+  }
+
+  .event-card__title {
+    font-size: 0.86rem;
   }
 }
