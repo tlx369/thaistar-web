@@ -609,15 +609,6 @@
   ],
   "merchandise": [
     {
-      "name": "avocean",
-      "star": "jimmy sea",
-      "category": "娃娃",
-      "price": "¥399",
-      "status": "现货",
-      "image": "images/zb/1.JPG",
-      "notes": "fancon版，包邮从深圳寄出"
-    },
-    {
       "name": "permpoon",
       "star": "pondphunwin",
       "category": "娃娃",
@@ -651,6 +642,69 @@
       "price": "¥78",
       "status": "现货",
       "image": "images/zb/5.JPG",
+      "notes": "包邮从深圳寄出"
+    },
+    {
+      "name": "guinzly",
+      "star": "jossgawin",
+      "category": "娃娃",
+      "price": "¥330",
+      "status": "现货",
+      "image": "images/zb/6.JPG",
+      "notes": "fancon版本，包邮从深圳寄出"
+    },
+    {
+      "name": "lookkhunnoo",
+      "star": "geminifourth",
+      "category": "娃娃",
+      "price": "¥350",
+      "status": "现货",
+      "image": "images/zb/7.JPG",
+      "notes": "fancon版本，包邮从深圳寄出"
+    },
+    {
+      "name": "polcasan",
+      "star": "taynew",
+      "category": "娃娃",
+      "price": "¥269",
+      "status": "现货",
+      "image": "images/zb/8.JPG",
+      "notes": "发声版本，包邮从深圳寄出"
+    },
+    {
+      "name": "permpoon",
+      "star": "pondphunwin",
+      "category": "徽章",
+      "price": "¥88",
+      "status": "现货",
+      "image": "images/zb/9.JPG",
+      "notes": "包邮从深圳寄出"
+    },
+    {
+      "name": "龙石长腿",
+      "star": "riize拉椅子",
+      "category": "娃娃",
+      "price": "¥169",
+      "status": "现货",
+      "image": "images/zb/90.JPG",
+      "notes": "包邮从深圳寄出"
+    },
+    {
+      "name": "龙狗长腿",
+      "star": "riize拉椅子",
+      "category": "娃娃",
+      "price": "¥189",
+      "status": "现货",
+      "image": "images/zb/91.JPG",
+      "notes": "包邮从深圳寄出"
+    },
+    {
+      "name": "豆兵10CM磁吸",
+      "star": "riize拉椅子",
+      "category": "娃娃",
+      "price": "¥209",
+      "status": "现货",
+      "image": "images/zb/92.JPG",
       "notes": "包邮从深圳寄出"
     }
   ]
