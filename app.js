@@ -25,6 +25,8 @@ const merchandiseEl = document.getElementById("merchandise");
 const moduleTabs = [...document.querySelectorAll(".module-tab")];
 const todayEventCountEl = document.getElementById("today-event-count");
 const merchCountEl = document.getElementById("merch-count");
+const moduleScheduleCountEl = document.getElementById("module-schedule-count");
+const moduleMerchCountEl = document.getElementById("module-merch-count");
 
 /** 将 data.json 解析为统一的事件列表 */
 function normalizeEvents(data) {
@@ -100,13 +102,23 @@ function isTodayOrFutureEvent(event) {
 }
 
 function updateHeroStats(events, merchandise) {
+  const today = getTodayDateKey();
+  const todayEventCount = events.filter((event) => event.date === today).length;
+
   if (todayEventCountEl) {
-    const today = getTodayDateKey();
-    todayEventCountEl.textContent = String(events.filter((event) => event.date === today).length);
+    todayEventCountEl.textContent = String(todayEventCount);
   }
 
   if (merchCountEl) {
     merchCountEl.textContent = String(merchandise.length);
+  }
+
+  if (moduleScheduleCountEl) {
+    moduleScheduleCountEl.textContent = String(todayEventCount);
+  }
+
+  if (moduleMerchCountEl) {
+    moduleMerchCountEl.textContent = String(merchandise.length);
   }
 }
 
@@ -751,6 +763,8 @@ function showError(message) {
 }
 
 async function loadSchedule() {
+  updateHeroStats([], []);
+
   if (statusEl) {
     scheduleEl.replaceChildren(statusEl);
     statusEl.hidden = false;

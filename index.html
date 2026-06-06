@@ -24,16 +24,6 @@
         <span class="site-header__title-zh">追星站</span>
       </h1>
       <p class="site-header__services">线下追星群组 · 明星周边 · 线下追星服务</p>
-      <div class="hero-stats" aria-label="站点概览">
-        <div class="hero-stat">
-          <span class="hero-stat__value" id="today-event-count">--</span>
-          <span class="hero-stat__label">今日行程</span>
-        </div>
-        <div class="hero-stat">
-          <span class="hero-stat__value" id="merch-count">--</span>
-          <span class="hero-stat__label">周边在售</span>
-        </div>
-      </div>
       <p class="site-header__wechat">
         专属追星助手，请加微信：<span id="wechat-id">tlx369tlx369</span><button
           type="button"
@@ -55,7 +45,8 @@
           aria-controls="schedule"
           aria-selected="true"
         >
-          行程表
+          <span>行程表</span>
+          <span class="module-tab__count" id="module-schedule-count">--</span>
         </button>
         <button
           type="button"
@@ -64,7 +55,8 @@
           aria-controls="merchandise"
           aria-selected="false"
         >
-          明星周边
+          <span>明星周边</span>
+          <span class="module-tab__count" id="module-merch-count">--</span>
         </button>
       </nav>
     </div>

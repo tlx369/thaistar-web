@@ -1307,38 +1307,6 @@ body {
   font-size: 0.86rem;
 }
 
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.65rem;
-  margin-top: 0.95rem;
-}
-
-.hero-stat {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.5rem;
-  padding: 0.72rem 0.82rem;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(18, 24, 38, 0.08);
-  border-radius: 0.9rem;
-}
-
-.hero-stat__value {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 900;
-  color: var(--ink);
-  line-height: 1;
-}
-
-.hero-stat__label {
-  color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 800;
-}
-
 .site-header__wechat {
   justify-content: flex-start;
   margin-top: 0.8rem;
@@ -1373,16 +1341,41 @@ body {
 
 .module-tab {
   min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
   padding: 0.72rem 0.5rem;
   color: var(--muted);
   font-size: 0.88rem;
   border-radius: 0.75rem;
 }
 
+.module-tab__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.55rem;
+  height: 1.35rem;
+  padding: 0 0.42rem;
+  border-radius: 999px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.82);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
 .module-tab--active {
   color: #fff;
   background: var(--ink);
   box-shadow: 0 10px 22px rgba(18, 24, 38, 0.18);
+}
+
+.module-tab--active .module-tab__count {
+  color: var(--ink);
+  background: #fff;
 }
 
 .site-main {
@@ -1653,10 +1646,6 @@ body {
     padding: 1.35rem;
   }
 
-  .hero-stats {
-    max-width: 22rem;
-  }
-
   .schedule,
   .merchandise {
     padding-bottom: 4rem;
@@ -1705,7 +1694,6 @@ body {
   color: var(--teal);
 }
 
-.hero-stat,
 .date-tab,
 .event-card,
 .merch-controls,
