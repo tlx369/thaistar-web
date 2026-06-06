@@ -15,6 +15,21 @@
   <div class="bg-blob bg-blob--mint" aria-hidden="true"></div>
   <div class="bg-blob bg-blob--pink" aria-hidden="true"></div>
 
+  <div class="intro-pop" id="intro-pop" aria-hidden="true">
+    <div class="intro-pop__stage">
+      <div class="intro-pop__doll intro-pop__doll--one">
+        <img src="images/zb/1.JPG" alt="" />
+      </div>
+      <div class="intro-pop__doll intro-pop__doll--two">
+        <img src="images/zb/2.JPG" alt="" />
+      </div>
+      <div class="intro-pop__doll intro-pop__doll--three">
+        <img src="images/zb/3.JPG" alt="" />
+      </div>
+      <p class="intro-pop__text">今日追星情报已送达</p>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="site-header__inner">
       <p class="site-header__eyebrow">✦ Thai Star</p>
@@ -153,6 +168,19 @@
               showToast("复制失败，请手动复制微信号：" + WECHAT_ID);
             });
         });
+      }
+
+      const introPop = document.getElementById("intro-pop");
+      if (introPop) {
+        const hideIntro = function () {
+          introPop.classList.add("intro-pop--hidden");
+          setTimeout(function () {
+            introPop.remove();
+          }, 420);
+        };
+
+        introPop.addEventListener("click", hideIntro);
+        setTimeout(hideIntro, 1600);
       }
     })();
   </script>

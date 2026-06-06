@@ -1810,3 +1810,170 @@ body {
     font-size: 0.86rem;
   }
 }
+
+/* Opening doll animation */
+.intro-pop {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  display: grid;
+  place-items: end center;
+  padding: 1.25rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 78%, rgba(198, 161, 91, 0.24), transparent 18rem),
+    rgba(250, 247, 241, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.intro-pop--hidden {
+  pointer-events: none;
+  animation: introHide 0.38s ease forwards;
+}
+
+.intro-pop__stage {
+  position: relative;
+  width: min(100%, 26rem);
+  height: 16rem;
+}
+
+.intro-pop__stage::after {
+  content: "";
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  bottom: 2.35rem;
+  height: 1.15rem;
+  background: radial-gradient(ellipse at center, rgba(44, 36, 25, 0.2), transparent 70%);
+  border: 0;
+  border-radius: 999px;
+  filter: blur(8px);
+  opacity: 0.72;
+}
+
+.intro-pop__doll {
+  position: absolute;
+  bottom: 1.95rem;
+  width: 7.4rem;
+  aspect-ratio: 1 / 1;
+  padding: 0.34rem;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(255, 253, 248, 0.95);
+  border-radius: 50%;
+  box-shadow: 0 16px 34px rgba(44, 36, 25, 0.2);
+  transform: translateY(9rem) rotate(var(--tilt));
+  animation: dollClimb 0.68s cubic-bezier(0.2, 0.85, 0.2, 1.1) forwards,
+    dollWiggle 1s ease-in-out 0.78s infinite;
+}
+
+.intro-pop__doll img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.intro-pop__doll--one {
+  --tilt: -9deg;
+  left: 4%;
+  width: 6.8rem;
+  animation-delay: 0.04s, 0.82s;
+}
+
+.intro-pop__doll--two {
+  --tilt: 3deg;
+  left: 50%;
+  width: 8rem;
+  margin-left: -4rem;
+  z-index: 2;
+  animation-delay: 0.12s, 0.9s;
+}
+
+.intro-pop__doll--three {
+  --tilt: 10deg;
+  right: 4%;
+  width: 6.8rem;
+  animation-delay: 0.2s, 0.98s;
+}
+
+.intro-pop__text {
+  position: absolute;
+  left: 50%;
+  bottom: 0.15rem;
+  z-index: 3;
+  margin: 0;
+  padding: 0.5rem 0.95rem;
+  color: #fff;
+  background: var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 12px 28px rgba(23, 21, 18, 0.2);
+  font-size: 0.88rem;
+  font-weight: 900;
+  white-space: nowrap;
+  transform: translate(-50%, 1rem);
+  opacity: 0;
+  animation: introText 0.32s ease 0.48s forwards;
+}
+
+@keyframes dollClimb {
+  0% {
+    transform: translateY(9rem) rotate(var(--tilt)) scale(0.86);
+  }
+
+  72% {
+    transform: translateY(-0.45rem) rotate(var(--tilt)) scale(1.04);
+  }
+
+  100% {
+    transform: translateY(0) rotate(var(--tilt)) scale(1);
+  }
+}
+
+@keyframes dollWiggle {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -0.22rem;
+  }
+}
+
+@keyframes introText {
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes introFade {
+  0%,
+  82% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes introHide {
+  to {
+    opacity: 0;
+    transform: scale(1.01);
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-pop {
+    display: none;
+  }
+}
