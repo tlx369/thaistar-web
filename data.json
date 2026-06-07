@@ -597,6 +597,17 @@
     },
     {
       "date": "2026-06-09",
+      "time": "05:00 PM",
+      "star": "TU, JUNIOR, MARK",
+      "event": "Lenskart x Popmart Sweet Bean Pop up",
+      "location": "Parade Gallery, B1 Floor, One Bangkok",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/09/17.jpeg"
+    },
+    {
+      "date": "2026-06-09",
       "time": "06:00 PM",
       "star": "FOURTH",
       "event": "GALA PREMIERE กฤษดาพาราไดซ์ Kijsada Paradise",
@@ -605,6 +616,17 @@
       "company": "",
       "notes": "仅限持有 Wristband 的人员进入发布会区域",
       "image": "images/202606/09/18.jpg"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "06:30 PM",
+      "star": "TAY",
+      "event": "SK-II GenOptics CC Primer Green Launch",
+      "location": "Hall Of Fame, M Floor, Siam Paragon",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/09/18-1.jpeg"
     }
   ],
   "merchandise": [
