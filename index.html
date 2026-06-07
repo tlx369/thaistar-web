@@ -73,6 +73,16 @@
           <span>明星周边</span>
           <span class="module-tab__count" id="module-merch-count">--</span>
         </button>
+        <button
+          type="button"
+          class="module-tab"
+          data-module-target="groups"
+          aria-controls="groups"
+          aria-selected="false"
+        >
+          <span>追星群组</span>
+          <span class="module-tab__count" id="module-groups-count">--</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -93,6 +103,13 @@
     <section
       class="content-panel merchandise"
       id="merchandise"
+      aria-live="polite"
+      hidden
+    ></section>
+
+    <section
+      class="content-panel groups"
+      id="groups"
       aria-live="polite"
       hidden
     ></section>

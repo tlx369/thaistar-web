@@ -5,6 +5,7 @@ const DATA_URL = "data.json";
 
 const EVENT_FIELDS = ["date", "time", "star", "event", "location", "type", "notes", "image"];
 const MERCH_FIELDS = ["name", "star", "category", "price", "status", "image", "notes"];
+const GROUP_FIELDS = ["name", "image"];
 const MERCH_SEARCH_FIELDS = ["name", "star", "category", "price", "status", "notes"];
 const MERCH_CATEGORY_ALL = "全部";
 const MERCH_CATEGORY_OTHER = "其它";
@@ -22,11 +23,13 @@ const WEEKDAYS = ["周日", "周一", "周二", "周三", "周四", "周五", "�
 const scheduleEl = document.getElementById("schedule");
 const statusEl = document.getElementById("schedule-status");
 const merchandiseEl = document.getElementById("merchandise");
+const groupsEl = document.getElementById("groups");
 const moduleTabs = [...document.querySelectorAll(".module-tab")];
 const todayEventCountEl = document.getElementById("today-event-count");
 const merchCountEl = document.getElementById("merch-count");
 const moduleScheduleCountEl = document.getElementById("module-schedule-count");
 const moduleMerchCountEl = document.getElementById("module-merch-count");
+const moduleGroupsCountEl = document.getElementById("module-groups-count");
 
 /** 将 data.json 解析为统一的事件列表 */
 function normalizeEvents(data) {
@@ -74,6 +77,26 @@ function normalizeMerchandise(data) {
   return merchandise;
 }
 
+function normalizeGroups(data) {
+  const list = data && Array.isArray(data.groups) ? data.groups : [];
+  const groups = [];
+
+  for (const item of list) {
+    if (!item || typeof item !== "object") continue;
+
+    const record = {};
+    GROUP_FIELDS.forEach((key) => {
+      const value = item[key];
+      record[key] = value == null ? "" : String(value).trim();
+    });
+
+    if (!record.name && !record.image) continue;
+    groups.push(record);
+  }
+
+  return groups;
+}
+
 function timeSortKey(timeStr) {
   if (!timeStr) return 99999;
   const isPm = /下午|PM/i.test(timeStr);
@@ -101,7 +124,7 @@ function isTodayOrFutureEvent(event) {
   return event.date >= getTodayDateKey();
 }
 
-function updateHeroStats(events, merchandise) {
+function updateHeroStats(events, merchandise, groups = []) {
   const today = getTodayDateKey();
   const todayEventCount = events.filter((event) => event.date === today).length;
 
@@ -119,6 +142,10 @@ function updateHeroStats(events, merchandise) {
 
   if (moduleMerchCountEl) {
     moduleMerchCountEl.textContent = String(merchandise.length);
+  }
+
+  if (moduleGroupsCountEl) {
+    moduleGroupsCountEl.textContent = String(groups.length);
   }
 }
 
@@ -378,6 +405,54 @@ function createMerchCard(item, index) {
     body.appendChild(notes);
   }
 
+  article.appendChild(body);
+  return article;
+}
+
+function createGroupCard(group, index) {
+  const imageUrl = resolveImageUrl(group.image);
+  const article = document.createElement("article");
+  article.className = `group-card${index % 2 === 1 ? " group-card--alt" : ""}${
+    imageUrl ? " group-card--has-image" : ""
+  }`;
+
+  const media = document.createElement("div");
+  media.className = "group-card__media";
+
+  if (imageUrl) {
+    const img = document.createElement("img");
+    img.className = "group-card__image";
+    img.src = imageUrl;
+    img.alt = group.name ? `${group.name} 群图片` : "追星群组图片";
+    img.loading = "lazy";
+    img.decoding = "async";
+
+    img.addEventListener("error", () => {
+      media.classList.add("group-card__media--empty");
+      media.replaceChildren("暂无群图");
+      article.classList.remove("group-card--has-image");
+    });
+
+    media.appendChild(img);
+  } else {
+    media.classList.add("group-card__media--empty");
+    media.textContent = "暂无群图";
+  }
+
+  const body = document.createElement("div");
+  body.className = "group-card__body";
+
+  const label = document.createElement("p");
+  label.className = "group-card__label";
+  label.textContent = "微信群";
+  body.appendChild(label);
+
+  const title = document.createElement("h3");
+  title.className = "group-card__title";
+  title.textContent = group.name || "追星群组";
+  body.appendChild(title);
+
+  article.appendChild(media);
   article.appendChild(body);
   return article;
 }
@@ -718,8 +793,50 @@ function renderMerchandise(items) {
   merchandiseEl.appendChild(shell);
 }
 
+function renderGroups(groups) {
+  if (!groupsEl) return;
+  groupsEl.replaceChildren();
+
+  if (groups.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "groups-empty";
+    empty.textContent = "暂无追星群组，请稍后再来看看。";
+    groupsEl.appendChild(empty);
+    return;
+  }
+
+  const shell = document.createElement("div");
+  shell.className = "groups-shell";
+
+  const header = document.createElement("div");
+  header.className = "groups-section-header";
+
+  const title = document.createElement("h2");
+  title.className = "groups-section-header__title";
+  title.textContent = "追星群组";
+  header.appendChild(title);
+
+  const intro = document.createElement("p");
+  intro.className = "groups-section-header__intro";
+  intro.textContent = "添加感兴趣的微信群，和同担一起看行程、约线下、收情报。";
+  header.appendChild(intro);
+  shell.appendChild(header);
+
+  const list = document.createElement("ul");
+  list.className = "groups-grid";
+
+  groups.forEach((group, index) => {
+    const li = document.createElement("li");
+    li.appendChild(createGroupCard(group, index));
+    list.appendChild(li);
+  });
+
+  shell.appendChild(list);
+  groupsEl.appendChild(shell);
+}
+
 function activateModule(targetId) {
-  const panels = [scheduleEl, merchandiseEl].filter(Boolean);
+  const panels = [scheduleEl, merchandiseEl, groupsEl].filter(Boolean);
 
   panels.forEach((panel) => {
     const isActive = panel.id === targetId;
@@ -763,7 +880,7 @@ function showError(message) {
 }
 
 async function loadSchedule() {
-  updateHeroStats([], []);
+  updateHeroStats([], [], []);
 
   if (statusEl) {
     scheduleEl.replaceChildren(statusEl);
@@ -785,12 +902,14 @@ async function loadSchedule() {
     const data = await res.json();
     const events = normalizeEvents(data);
     const merchandise = normalizeMerchandise(data);
+    const groups = normalizeGroups(data);
     const grouped = groupByDate(events.filter(isTodayOrFutureEvent));
 
     if (statusEl) statusEl.remove();
-    updateHeroStats(events, merchandise);
+    updateHeroStats(events, merchandise, groups);
     renderSchedule(grouped);
     renderMerchandise(merchandise);
+    renderGroups(groups);
   } catch (err) {
     console.error("Failed to load schedule:", err);
     showError(
