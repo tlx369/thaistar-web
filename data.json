@@ -519,6 +519,17 @@
       "image": "images/DMD.jpeg"
     },
     {
+      "date": "2026-06-08",
+      "time": "06:30 PM",
+      "star": "LATTE, KIM",
+      "event": "THAILAND Y CONTENT AWARDS 2025",
+      "location": "SCB NEXT TECH HALL, 4th Floor, SIAM PARAGON",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动",
+      "image": "images/202606/08/18.jpeg"
+    },
+    {
       "date": "2026-06-10",
       "time": "06:00 PM",
       "star": "NORTH, OTTO",
@@ -552,6 +563,17 @@
       "image": "images/DMD.jpeg"
     },
     {
+      "date": "2026-06-12",
+      "time": "05:00 PM",
+      "star": "PUNG, COPPER, FIFA",
+      "event": "CENTRAL FOOTBALL SOCIAL CLUB",
+      "location": "G Floor, The Corner Shop, Central Chidlom",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动",
+      "image": "images/202606/12/17.jpeg"
+    },
+    {
       "date": "2026-06-13",
       "time": "03:00 PM",
       "star": "NET, JJ, LATTE, KIM",
@@ -571,7 +593,7 @@
       "type": "线下",
       "company": "DMD",
       "notes": "粉丝可在周边区域参与活动",
-      "image": "images/DMD.jpeg"
+      "image": "images/202606/14/0.jpeg"
     },
     {
       "date": "2026-06-14",
@@ -583,6 +605,28 @@
       "company": "DMD",
       "notes": "粉丝可在周边区域参与活动",
       "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-15",
+      "time": "07:30 PM",
+      "star": "TEETEE, POR",
+      "event": "รวมพลตี้ตี้ปอกับ TRUE5G",
+      "location": "centralwOrld (ลานเซ็นทรัลเวิร์ล)",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可参与活动",
+      "image": "images/202606/15/19.jpeg"
+    },
+    {
+      "date": "2026-06-16",
+      "time": "05:55 PM",
+      "star": "TLE, FIRSTONE",
+      "event": "SHEEP 555",
+      "location": "7th Floor, centralwOrld",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "活动结束后将举行聚会",
+      "image": "images/202606/16/17.jpeg"
     },
     {
       "date": "2026-06-05",
