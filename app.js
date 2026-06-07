@@ -114,7 +114,7 @@ function updateHeroStats(events, merchandise) {
   }
 
   if (moduleScheduleCountEl) {
-    moduleScheduleCountEl.textContent = String(todayEventCount);
+    moduleScheduleCountEl.textContent = String(events.filter(isTodayOrFutureEvent).length);
   }
 
   if (moduleMerchCountEl) {
