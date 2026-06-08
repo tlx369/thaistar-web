@@ -196,6 +196,35 @@ body {
   color: var(--slate-400);
 }
 
+.seo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  margin: 1rem auto 0;
+}
+
+.seo-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--slate-800);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 22px rgba(20, 184, 166, 0.08);
+}
+
+.seo-actions a:hover,
+.seo-actions a:focus-visible {
+  border-color: rgba(236, 72, 153, 0.3);
+  color: var(--pink-500);
+}
+
 .site-header__wechat {
   display: flex;
   flex-wrap: wrap;
@@ -1092,10 +1121,95 @@ body {
   text-align: center;
 }
 
+.footer-links {
+  margin: 0 0 0.45rem;
+}
+
+.footer-links a {
+  color: var(--slate-400);
+  font-size: 0.72rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--slate-600);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .site-footer p {
   margin: 0;
   font-size: 0.75rem;
   color: var(--slate-400);
+}
+
+.seo-page {
+  color: var(--slate-800);
+}
+
+.seo-hero,
+.seo-main {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 2rem, var(--max-width));
+  margin: 0 auto;
+}
+
+.seo-hero {
+  padding: 3rem 0 1.5rem;
+  text-align: center;
+}
+
+.seo-hero h1 {
+  margin: 0;
+  color: var(--slate-900);
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 9vw, 3.15rem);
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+
+.seo-hero p {
+  margin: 1rem auto 0;
+  max-width: 36rem;
+  color: var(--slate-600);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.seo-main {
+  display: grid;
+  gap: 1rem;
+  padding: 0 0 2rem;
+}
+
+.seo-section {
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.78);
+  padding: 1.1rem 1.15rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.seo-section h2 {
+  margin: 0 0 0.55rem;
+  color: var(--slate-900);
+  font-size: 1.08rem;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.seo-section p,
+.seo-section ul {
+  margin: 0;
+  color: var(--slate-600);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.seo-section ul {
+  padding-left: 1.2rem;
 }
 
 /* Tablet & desktop */

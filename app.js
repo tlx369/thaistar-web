@@ -1,7 +1,7 @@
 /**
  * 泰流行369 行程表 — 从本地 data.json 加载数据
  */
-const DATA_URL = "data.json";
+const DATA_URL = `data.json?v=${Date.now()}`;
 
 const EVENT_FIELDS = ["date", "time", "star", "event", "location", "type", "notes", "image"];
 const MERCH_FIELDS = ["name", "star", "category", "price", "status", "image", "notes"];
