@@ -706,6 +706,28 @@
       "image": "images/202606/11/19.jpeg"
     },
     {
+      "date": "2026-06-11",
+      "time": "01:00 PM",
+      "star": "DEW, NYCHA, SKY",
+      "event": "WEAVING MATTER AND MEMORY",
+      "location": "Bangkok Kunsthalle",
+      "type": "线下",
+      "company": "",
+      "notes": "本次活动为封闭活动，仅限受邀者参加。",
+      "image": "images/202606/11/13.jpeg"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "06:00 PM",
+      "star": "NEW, POLCASAN",
+      "event": "Samsung | PowerMall Electronica Showcase",
+      "location": "SIAM PARAGON, SCBX NEXT TECH, FL.4",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/11/18.jpeg"
+    },
+    {
       "date": "2026-06-12",
       "time": "04:00 PM",
       "star": "FORD, FLUKE",
@@ -739,6 +761,50 @@
       "image": "images/202606/12/1830.jpeg"
     },
     {
+      "date": "2026-06-12",
+      "time": "08:00 PM",
+      "star": "NET, JJ, JOOKKROO, LATTE, KIM, TMILK",
+      "event": "LOVE UPON A TIME SERIES FINAL EP.",
+      "location": "MGI HALL, BRAVO BKK",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "需要门票；本次活动为私人活动，仅限有资格人员参加。",
+      "image": "images/202606/12/200.jpeg"
+    },
+    {
+      "date": "2026-06-12",
+      "time": "08:00 PM",
+      "star": "NUNEW",
+      "event": "LOVE UPON A TIME SERIES FINAL EP.",
+      "location": "MGI HALL, BRAVO BKK",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "需要门票；本次活动为私人活动，仅限有资格人员参加。",
+      "image": "images/202606/12/201.jpeg"
+    },
+    {
+      "date": "2026-06-12",
+      "time": "08:00 PM",
+      "star": "PARK, NAT, GEMS, NORTH, OTTO, PORSCHE",
+      "event": "LOVE UPON A TIME SERIES FINAL EP.",
+      "location": "MGI HALL, BRAVO BKK",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "需要门票；本次活动为私人活动，仅限有资格人员参加。",
+      "image": "images/202606/12/202.jpeg"
+    },
+    {
+      "date": "2026-06-12",
+      "time": "08:00 PM",
+      "star": "COPPER, FIFA, PHUPHA, WAVE, FEW, NAN, NICK",
+      "event": "LOVE UPON A TIME SERIES FINAL EP.",
+      "location": "MGI HALL, BRAVO BKK",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "需要门票；本次活动为私人活动，仅限有资格人员参加。",
+      "image": "images/202606/12/203.jpeg"
+    },
+    {
       "date": "2026-06-13",
       "time": "02:00 PM",
       "star": "OFF",
@@ -748,6 +814,17 @@
       "company": "",
       "notes": "",
       "image": "images/202606/13/14.jpeg"
+    },
+    {
+      "date": "2026-06-13",
+      "time": "02:00 PM",
+      "star": "AVOCEAN",
+      "event": "The Pawpular Contest & Pet Market by The M.O.V.E. by Honda",
+      "location": "Emsphere, Em Glass, G Floor",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/13/14-1.jpeg"
     },
     {
       "date": "2026-06-13",
@@ -816,6 +893,72 @@
       "image": "images/202606/18/17.jpeg"
     },
     {
+      "date": "2026-06-19",
+      "time": "06:00 PM",
+      "star": "NUT, HONG",
+      "event": "Destiny Clinic",
+      "location": "Central Pinklao",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/19/18.jpeg"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "05:30 PM",
+      "star": "JUNIOR, MARK",
+      "event": "Destiny Clinic",
+      "location": "Central Pinklao",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/20/1730.jpeg"
+    },
+    {
+      "date": "2026-06-21",
+      "time": "05:30 PM",
+      "star": "MAXKY, BAS",
+      "event": "Destiny Clinic",
+      "location": "Central Pinklao",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/21/1730.jpeg"
+    },
+    {
+      "date": "2026-06-24",
+      "time": "06:00 PM",
+      "star": "PERTH, SANTA",
+      "event": "Destiny Clinic",
+      "location": "Central Pinklao",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/24/18.jpeg"
+    },
+    {
+      "date": "2026-07-18",
+      "time": "06:00 PM",
+      "star": "PERTH, SANTA",
+      "event": "Perth Santa Devil's Kiss Concert",
+      "location": "PARAGON HALL",
+      "type": "线下/线上",
+      "company": "",
+      "notes": "需要门票；5月17日 10:00 开票。",
+      "image": "images/202607/18/18.jpeg"
+    },
+    {
+      "date": "2026-07-19",
+      "time": "06:00 PM",
+      "star": "PERTH, SANTA",
+      "event": "Perth Santa Devil's Kiss Concert",
+      "location": "PARAGON HALL",
+      "type": "线下/线上",
+      "company": "",
+      "notes": "需要门票；5月17日 10:00 开票。",
+      "image": "images/202607/18/18.jpeg"
+    },
+    {
       "date": "2026-07-25",
       "time": "05:00 PM",
       "star": "Boun, Prem, Earth, Mix, First, Khaotung",
@@ -825,6 +968,61 @@
       "company": "",
       "notes": "需要门票",
       "image": "images/202607/25/17.jpeg"
+    },
+    {
+      "date": "2026-07-25",
+      "time": "01:00 PM",
+      "star": "上百位艺人",
+      "event": "monster music festival 2026",
+      "location": "Queen Sirikit National Convention Center",
+      "type": "线下",
+      "company": "",
+      "notes": "需要门票；5月8日至7月24日售票。",
+      "image": "images/202607/25/13.jpeg"
+    },
+    {
+      "date": "2026-07-24",
+      "time": "04:00 PM",
+      "star": "bus",
+      "event": "BUS LIGHT AS ONE CONCERT",
+      "location": "IMPACT ARENA",
+      "type": "线下",
+      "company": "",
+      "notes": "需要门票",
+      "image": "images/202607/24/16.jpeg"
+    },
+    {
+      "date": "2026-07-25",
+      "time": "04:00 PM",
+      "star": "bus",
+      "event": "BUS LIGHT AS ONE CONCERT",
+      "location": "IMPACT ARENA",
+      "type": "线下",
+      "company": "",
+      "notes": "需要门票",
+      "image": "images/202607/24/16.jpeg"
+    },
+    {
+      "date": "2026-07-26",
+      "time": "04:00 PM",
+      "star": "bus",
+      "event": "BUS LIGHT AS ONE CONCERT",
+      "location": "IMPACT ARENA",
+      "type": "线下",
+      "company": "",
+      "notes": "需要门票",
+      "image": "images/202607/24/16.jpeg"
+    },
+    {
+      "date": "2026-07-26",
+      "time": "01:00 PM",
+      "star": "上百位艺人",
+      "event": "monster music festival 2026",
+      "location": "Queen Sirikit National Convention Center",
+      "type": "线下",
+      "company": "",
+      "notes": "需要门票；5月8日至7月24日售票。",
+      "image": "images/202607/25/13.jpeg"
     },
     {
       "date": "2026-07-28",
@@ -891,17 +1089,6 @@
       "company": "DMD",
       "notes": "需要门票；7月4日开票。",
       "image": "images/202608/15/0.jpeg"
-    },
-    {
-      "date": "2026-06-12",
-      "time": "TBC",
-      "star": "DMD艺人",
-      "event": "DMD Concert",
-      "location": "MGI Hall, Bravo BKK",
-      "type": "线下",
-      "company": "DMD",
-      "notes": "需要门票；6月6日 10:00 开票。",
-      "image": "images/202606/12/0.jpeg"
     }
   ],
   "groups": [
