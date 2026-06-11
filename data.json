@@ -882,6 +882,39 @@
       "image": "images/202606/14/1930.jpeg"
     },
     {
+      "date": "2026-06-14",
+      "time": "08:30 PM",
+      "star": "NAMPING, TLE, FIRSTONE, PORSCHE, OTTO, AOF",
+      "event": "ICONSIAM UNITY of PRIDE: PRIDE & GREET",
+      "location": "River Park, G Floor, ICONSIAM",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "免费入场；18:00起可入场。",
+      "image": "images/202606/14/18.jpeg"
+    },
+    {
+      "date": "2026-06-16",
+      "time": "08:00 AM",
+      "star": "LINGLING, ORM",
+      "event": "In Love Forever วาดฝันวันวิวาห์ Blessing Ceremony",
+      "location": "Channel 3 Nong Khaem",
+      "type": "线下",
+      "company": "",
+      "notes": "活动时间 08:00-14:00；仅限有资格人员参加。",
+      "image": "images/202606/16/8.jpeg"
+    },
+    {
+      "date": "2026-06-17",
+      "time": "06:00 PM",
+      "star": "GEMINI, FOURTH, POND, PHUWIN, SKY, NANI",
+      "event": "GrabFood House ถูกกว่าชัวร์ ทุกโมเมนต์",
+      "location": "Parkside Hall, Central Park Bangkok",
+      "type": "线下",
+      "company": "",
+      "notes": "需通过活动规则领取权益；Standing Zone 6月13日开放领取。",
+      "image": "images/202606/17/17.jpeg"
+    },
+    {
       "date": "2026-06-18",
       "time": "05:00 PM",
       "star": "DMD全体艺人",
@@ -891,6 +924,17 @@
       "company": "DMD",
       "notes": "线上直播：YouTube Mandee Channel；Golden Amber Carpet Zone 为站席区。",
       "image": "images/202606/18/17.jpeg"
+    },
+    {
+      "date": "2026-06-18",
+      "time": "05:30 PM",
+      "star": "POND, PHUWIN, PERMPOON",
+      "event": "SALZ and SYSTEMA Exclusive Fan Meet",
+      "location": "Lotus's Rama 4",
+      "type": "线下",
+      "company": "",
+      "notes": "100个免费名额，6月12日填表",
+      "image": "images/202606/18/1730.jpeg"
     },
     {
       "date": "2026-06-19",
@@ -935,6 +979,50 @@
       "company": "",
       "notes": "",
       "image": "images/202606/24/18.jpeg"
+    },
+    {
+      "date": "2026-06-24",
+      "time": "06:00 PM",
+      "star": "AOM KORNNAPHAT",
+      "event": "Tops of Beauty",
+      "location": "Promotion C Zone, 1st Floor, Central WestGate",
+      "type": "线下",
+      "company": "",
+      "notes": "Special Fans 10名；10:00-14:00 购买产品参与抽选。",
+      "image": "images/202606/24/18-1.jpeg"
+    },
+    {
+      "date": "2026-06-30",
+      "time": "TBC",
+      "star": "WU The Series Cast",
+      "event": "WU Destiny Fan Party",
+      "location": "",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "特别派对，详细时间地点待公布。",
+      "image": "images/202606/30/6274f47a-288c-4fa4-a7b1-2986393dc712.jpeg"
+    },
+    {
+      "date": "2026-07-01",
+      "time": "08:00 PM",
+      "star": "WU The Series Cast",
+      "event": "WU Destiny After Party",
+      "location": "MCC Hall Fl. 3, The Mall Lifestore Bangkapi",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "需要门票；6月14日 10:00 开票；7:15 PM 开门。",
+      "image": "images/202606/30/6274f47a-288c-4fa4-a7b1-2986393dc712.jpeg"
+    },
+    {
+      "date": "2026-07-09",
+      "time": "06:00 PM",
+      "star": "KENG, NAMPING",
+      "event": "Friends of Pisen: Power Your Day Together",
+      "location": "Eden 1, CentralWorld",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202607/9/18.jpeg"
     },
     {
       "date": "2026-07-18",
