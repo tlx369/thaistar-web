@@ -806,6 +806,17 @@
     },
     {
       "date": "2026-06-13",
+      "time": "10:00 AM",
+      "star": "DAOU, OFFROAD",
+      "event": "CATDOG N JOY FUNFEST",
+      "location": "Megabangna FoodWalk Plaza G Floor",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/13/10.jpeg"
+    },
+    {
+      "date": "2026-06-13",
       "time": "11:00 AM",
       "star": "FOURTH",
       "event": "CeraVe Sun Club กันแดดตัวจบที่หมอผิวแนะนำ",
@@ -960,6 +971,17 @@
     },
     {
       "date": "2026-06-14",
+      "time": "06:30 PM",
+      "star": "DAOU",
+      "event": "BUSKING ซ่าซ่าไปกับต้าห์อู",
+      "location": "Outdoor Square B, centralwOrld",
+      "type": "线下",
+      "company": "",
+      "notes": "活动结束后将举行聚会；活动结束后不接受礼物。",
+      "image": "images/202606/14/1830.jpeg"
+    },
+    {
+      "date": "2026-06-14",
       "time": "07:30 PM",
       "star": "GEMINI, FOURTH, LOOK KHUNNOO",
       "event": "กฤษดาพาราไดซ์ SF FRIENDS SCREENING",
@@ -1001,6 +1023,17 @@
       "company": "",
       "notes": "需通过活动规则领取权益；Standing Zone 6月13日开放领取。",
       "image": "images/202606/17/17.jpeg"
+    },
+    {
+      "date": "2026-06-17",
+      "time": "06:00 PM",
+      "star": "DAOU",
+      "event": "NEW MG URBAN",
+      "location": "BCC Hall @ Central Ladprao",
+      "type": "线下",
+      "company": "",
+      "notes": "仅限有资格人员参加。",
+      "image": "images/202606/17/0.jpeg"
     },
     {
       "date": "2026-06-18",
