@@ -586,14 +586,14 @@
     },
     {
       "date": "2026-06-14",
-      "time": "TBC",
+      "time": "06:00 PM",
       "star": "PETE, REEONN",
       "event": "SIAM CENTER COLOR OF T-BEAUTY",
       "location": "The Ideapolis, Siam Center",
       "type": "线下",
       "company": "DMD",
       "notes": "粉丝可在周边区域参与活动",
-      "image": "images/202606/14/0.jpeg"
+      "image": "images/202606/14/18-1.jpeg"
     },
     {
       "date": "2026-06-14",
@@ -608,6 +608,39 @@
     },
     {
       "date": "2026-06-15",
+      "time": "03:00 PM",
+      "star": "LOVE",
+      "event": "Issey Miyake Lumiere d’Issey",
+      "location": "Beauty Galerie, 1st Floor, Central Ladprao",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/15/15.jpeg"
+    },
+    {
+      "date": "2026-06-15",
+      "time": "03:00 PM",
+      "star": "SEA",
+      "event": "Narciso Rodriguez For Him Musc Santal",
+      "location": "Beauty Galerie, 1st Floor, Central Ladprao",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/15/15-1.jpeg"
+    },
+    {
+      "date": "2026-06-15",
+      "time": "03:30 PM",
+      "star": "TU",
+      "event": "GANNI New Concept Store at EmQuartier",
+      "location": "GANNI, M Floor, EmQuartier",
+      "type": "线下",
+      "company": "",
+      "notes": "本次活动为封闭活动，仅限有资格人员参加；粉丝可到活动周边为艺人送上鼓励，位置有限。",
+      "image": "images/202606/15/1530.jpeg"
+    },
+    {
+      "date": "2026-06-15",
       "time": "07:30 PM",
       "star": "TEETEE, POR",
       "event": "รวมพลตี้ตี้ปอกับ TRUE5G",
@@ -616,6 +649,17 @@
       "company": "DMD",
       "notes": "粉丝可参与活动",
       "image": "images/202606/15/19.jpeg"
+    },
+    {
+      "date": "2026-06-16",
+      "time": "03:30 PM",
+      "star": "TLE",
+      "event": "LONGCHAMP FALL 26 TREASURE HUNT EVENT",
+      "location": "centralwOrld",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可到活动周边为艺人送上鼓励；14:00起可进入活动区域。",
+      "image": "images/202606/16/1530.jpeg"
     },
     {
       "date": "2026-06-16",
