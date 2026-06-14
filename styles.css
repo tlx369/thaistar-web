@@ -1526,6 +1526,7 @@ body {
 .groups,
 .event-buying {
   max-width: 48rem;
+  margin: 0 auto;
   padding: 0 1rem 3rem;
 }
 
@@ -1765,6 +1766,10 @@ body {
 }
 
 /* WeChat groups */
+.groups {
+  margin: 0 auto;
+}
+
 .groups-shell {
   display: flex;
   flex-direction: column;

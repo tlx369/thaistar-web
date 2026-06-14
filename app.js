@@ -1,7 +1,7 @@
 /**
  * 泰流行369 行程表 — 从本地 data.json 加载数据
  */
-const DATA_URL = "data.json?v=20260614";
+const DATA_URL = "data.json?v=20260614-2";
 const UMAMI_WEBSITE_ID = "52e1dec3-5e58-4681-96fe-53e09c223d75";
 const THUMBNAIL_ROOT = "images/thumbs/";
 
@@ -1576,7 +1576,7 @@ async function loadSchedule() {
   }
 
   try {
-    const res = await fetch(DATA_URL);
+    const res = await fetch(DATA_URL, { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     const data = await res.json();
