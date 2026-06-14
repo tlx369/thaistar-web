@@ -194,6 +194,12 @@ const moduleScheduleCountEl = document.getElementById("module-schedule-count");
 const moduleMerchCountEl = document.getElementById("module-merch-count");
 const moduleGroupsCountEl = document.getElementById("module-groups-count");
 const moduleEventBuyingCountEl = document.getElementById("module-event-buying-count");
+const deferredModules = {
+  merchandise: [],
+  groups: [],
+  merchandiseRendered: false,
+  groupsRendered: false,
+};
 
 /** 将 data.json 解析为统一的事件列表 */
 function normalizeEvents(data) {
@@ -544,13 +550,17 @@ function createMerchCard(item, index) {
   }`;
 
   if (imageUrl) {
-    const media = document.createElement("div");
+    const media = document.createElement("button");
+    media.type = "button";
     media.className = "merch-card__media";
+    media.dataset.merchImageSrc = imageUrl;
+    media.dataset.merchImageTitle = item.name ? `${item.name} 商品图` : "明星周边商品图";
+    media.setAttribute("aria-label", `查看${media.dataset.merchImageTitle}`);
 
     const img = document.createElement("img");
     img.className = "merch-card__image";
     img.src = imageSources.display;
-    img.alt = item.name ? `${item.name} 商品图` : `${item.star || "明星周边"} 商品图`;
+    img.alt = media.dataset.merchImageTitle;
     img.loading = "lazy";
     img.decoding = "async";
 
@@ -626,14 +636,19 @@ function createGroupCard(group, index) {
     imageUrl ? " group-card--has-image" : ""
   }`;
 
-  const media = document.createElement("div");
+  const media = document.createElement(imageUrl ? "button" : "div");
   media.className = "group-card__media";
 
   if (imageUrl) {
+    media.type = "button";
+    media.dataset.groupImageSrc = imageUrl;
+    media.dataset.groupImageTitle = group.name ? `${group.name} 群图片` : "追星群组图片";
+    media.setAttribute("aria-label", `查看${media.dataset.groupImageTitle}`);
+
     const img = document.createElement("img");
     img.className = "group-card__image";
     img.src = imageSources.display;
-    img.alt = group.name ? `${group.name} 群图片` : "追星群组图片";
+    img.alt = media.dataset.groupImageTitle;
     img.loading = "lazy";
     img.decoding = "async";
 
@@ -1364,6 +1379,26 @@ function wireScheduleImagePreview() {
   });
 }
 
+function wireMerchImagePreview() {
+  if (!merchandiseEl) return;
+
+  merchandiseEl.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-merch-image-src]");
+    if (!button) return;
+    openEventBuyingLightbox(button.dataset.merchImageSrc, button.dataset.merchImageTitle);
+  });
+}
+
+function wireGroupImagePreview() {
+  if (!groupsEl) return;
+
+  groupsEl.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-group-image-src]");
+    if (!button) return;
+    openEventBuyingLightbox(button.dataset.groupImageSrc, button.dataset.groupImageTitle);
+  });
+}
+
 function loadAnalyticsWhenIdle() {
   if (!UMAMI_WEBSITE_ID || location.protocol === "file:") return;
 
@@ -1467,6 +1502,16 @@ function wireEventBuying() {
 }
 
 function activateModule(targetId) {
+  if (targetId === "merchandise" && !deferredModules.merchandiseRendered) {
+    renderMerchandise(deferredModules.merchandise);
+    deferredModules.merchandiseRendered = true;
+  }
+
+  if (targetId === "groups" && !deferredModules.groupsRendered) {
+    renderGroups(deferredModules.groups);
+    deferredModules.groupsRendered = true;
+  }
+
   const panels = [scheduleEl, merchandiseEl, groupsEl, eventBuyingEl].filter(Boolean);
 
   panels.forEach((panel) => {
@@ -1541,10 +1586,20 @@ async function loadSchedule() {
     const grouped = groupByDate(events.filter(isTodayOrFutureEvent));
 
     if (statusEl) statusEl.remove();
+    deferredModules.merchandise = merchandise;
+    deferredModules.groups = groups;
+    deferredModules.merchandiseRendered = false;
+    deferredModules.groupsRendered = false;
     updateHeroStats(events, merchandise, groups);
     renderSchedule(grouped);
-    renderMerchandise(merchandise);
-    renderGroups(groups);
+    if (merchandiseEl?.classList.contains("content-panel--active")) {
+      renderMerchandise(merchandise);
+      deferredModules.merchandiseRendered = true;
+    }
+    if (groupsEl?.classList.contains("content-panel--active")) {
+      renderGroups(groups);
+      deferredModules.groupsRendered = true;
+    }
   } catch (err) {
     console.error("Failed to load schedule:", err);
     showError(
@@ -1555,6 +1610,8 @@ async function loadSchedule() {
 
 wireModuleTabs();
 wireScheduleImagePreview();
+wireMerchImagePreview();
+wireGroupImagePreview();
 wireEventBuying();
 loadAnalyticsWhenIdle();
 loadSchedule();
