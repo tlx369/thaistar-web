@@ -1138,6 +1138,10 @@ function renderEventBuyingList() {
     const li = document.createElement("li");
     const article = document.createElement("article");
     article.className = "event-buying-list-card";
+    article.dataset.eventBuyingDetail = item.id;
+    article.tabIndex = 0;
+    article.setAttribute("role", "button");
+    article.setAttribute("aria-label", `进入${item.title}详情页`);
 
     const imageUrl = resolveImageUrl(item.images && item.images[0]);
     const media = document.createElement("div");
@@ -1146,20 +1150,12 @@ function renderEventBuyingList() {
       : "event-buying-list-card__media event-buying-list-card__media--empty";
 
     if (imageUrl) {
-      const imageButton = document.createElement("button");
-      imageButton.type = "button";
-      imageButton.className = "event-buying-list-card__image-button";
-      imageButton.dataset.eventBuyingPreviewSrc = imageUrl;
-      imageButton.dataset.eventBuyingPreviewTitle = `${item.title} 活动图片`;
-      imageButton.setAttribute("aria-label", `查看${item.title}完整活动图片`);
-
       const img = document.createElement("img");
       img.src = imageUrl;
       img.alt = `${item.title} 活动图片`;
       img.loading = "lazy";
       img.className = "event-buying-list-card__image";
-      imageButton.appendChild(img);
-      media.appendChild(imageButton);
+      media.appendChild(img);
     } else {
       media.textContent = "活动图片";
     }
@@ -1185,7 +1181,6 @@ function renderEventBuyingList() {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "event-buying-list-card__button";
-    button.dataset.eventBuyingDetail = item.id;
     button.textContent = "进入详情页";
     body.appendChild(button);
 
@@ -1333,9 +1328,9 @@ function wireEventBuying() {
   if (!eventBuyingEl) return;
 
   eventBuyingEl.addEventListener("click", (event) => {
-    const detailButton = event.target.closest("[data-event-buying-detail]");
-    if (detailButton) {
-      renderEventBuyingDetail(getEventBuyingItemById(detailButton.dataset.eventBuyingDetail));
+    const detailCard = event.target.closest("[data-event-buying-detail]");
+    if (detailCard) {
+      renderEventBuyingDetail(getEventBuyingItemById(detailCard.dataset.eventBuyingDetail));
       eventBuyingEl.scrollIntoView({ behavior: "smooth", block: "start" });
       return;
     }
@@ -1349,15 +1344,6 @@ function wireEventBuying() {
     const imageButton = event.target.closest(".event-buying-image");
     if (imageButton) {
       openEventBuyingLightbox(imageButton.dataset.imageSrc, imageButton.dataset.imageTitle);
-      return;
-    }
-
-    const listImageButton = event.target.closest("[data-event-buying-preview-src]");
-    if (listImageButton) {
-      openEventBuyingLightbox(
-        listImageButton.dataset.eventBuyingPreviewSrc,
-        listImageButton.dataset.eventBuyingPreviewTitle
-      );
       return;
     }
 
@@ -1382,6 +1368,17 @@ function wireEventBuying() {
       const index = Number(dot.dataset.eventBuyingGalleryDot);
       viewport.scrollTo({ left: viewport.clientWidth * index, behavior: "smooth" });
     }
+  });
+
+  eventBuyingEl.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+
+    const detailCard = event.target.closest("[data-event-buying-detail]");
+    if (!detailCard) return;
+
+    event.preventDefault();
+    renderEventBuyingDetail(getEventBuyingItemById(detailCard.dataset.eventBuyingDetail));
+    eventBuyingEl.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
   eventBuyingEl.addEventListener("scroll", (event) => {
