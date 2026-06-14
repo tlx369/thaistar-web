@@ -471,12 +471,19 @@ function createEventCard(event, index) {
     const media = document.createElement("div");
     media.className = "event-card__media";
 
+    const preview = document.createElement("button");
+    preview.type = "button";
+    preview.className = "event-card__image-button";
+    preview.dataset.scheduleImageSrc = imageUrl;
+    preview.dataset.scheduleImageTitle = event.event
+      ? `${event.star || "活动"} · ${event.event} 海报`
+      : `${event.star || "活动"} 海报`;
+    preview.setAttribute("aria-label", `查看${preview.dataset.scheduleImageTitle}`);
+
     const img = document.createElement("img");
     img.className = "event-card__poster";
     img.src = imageUrl;
-    img.alt = event.event
-      ? `${event.star || "活动"} · ${event.event} 海报`
-      : `${event.star || "活动"} 海报`;
+    img.alt = preview.dataset.scheduleImageTitle;
     img.loading = "lazy";
     img.decoding = "async";
 
@@ -485,7 +492,8 @@ function createEventCard(event, index) {
       article.classList.remove("event-card--has-image");
     });
 
-    media.appendChild(img);
+    preview.appendChild(img);
+    media.appendChild(preview);
     article.appendChild(media);
   }
 
@@ -1085,6 +1093,17 @@ function createEventBuyingGallery(item) {
   return gallery;
 }
 
+function getEventBuyingStartSortKey(item) {
+  const match = String(item.dateRange || "").match(/(\d{1,2})月(\d{1,2})日/);
+  if (!match) return 9999;
+
+  const month = Number(match[1]);
+  const day = Number(match[2]);
+  if (!month || !day) return 9999;
+
+  return month * 100 + day;
+}
+
 function renderEventBuyingList() {
   if (!eventBuyingEl) return;
   eventBuyingEl.replaceChildren();
@@ -1111,7 +1130,11 @@ function renderEventBuyingList() {
   const list = document.createElement("ul");
   list.className = "event-buying-list";
 
-  EVENT_BUYING_ITEMS.forEach((item) => {
+  const sortedItems = [...EVENT_BUYING_ITEMS].sort(
+    (a, b) => getEventBuyingStartSortKey(a) - getEventBuyingStartSortKey(b)
+  );
+
+  sortedItems.forEach((item) => {
     const li = document.createElement("li");
     const article = document.createElement("article");
     article.className = "event-buying-list-card";
@@ -1275,7 +1298,7 @@ function openEventBuyingLightbox(src, title) {
   openOriginal.rel = "noopener";
   openOriginal.download = "";
   openOriginal.className = "event-buying-lightbox__link";
-  openOriginal.textContent = "打开原图保存";
+  openOriginal.textContent = "保存图片";
   actions.appendChild(openOriginal);
   overlay.appendChild(actions);
 
@@ -1294,6 +1317,16 @@ function openEventBuyingLightbox(src, title) {
 
   document.body.appendChild(overlay);
   close.focus();
+}
+
+function wireScheduleImagePreview() {
+  if (!scheduleEl) return;
+
+  scheduleEl.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-schedule-image-src]");
+    if (!button) return;
+    openEventBuyingLightbox(button.dataset.scheduleImageSrc, button.dataset.scheduleImageTitle);
+  });
 }
 
 function wireEventBuying() {
@@ -1387,7 +1420,11 @@ function activateModule(targetId) {
 function wireModuleTabs() {
   moduleTabs.forEach((tab) => {
     tab.addEventListener("click", () => {
-      activateModule(tab.dataset.moduleTarget);
+      const targetId = tab.dataset.moduleTarget;
+      if (targetId === "event-buying" && eventBuyingEl?.querySelector(".event-buying-detail")) {
+        renderEventBuyingList();
+      }
+      activateModule(targetId);
     });
   });
 }
@@ -1452,5 +1489,6 @@ async function loadSchedule() {
 }
 
 wireModuleTabs();
+wireScheduleImagePreview();
 wireEventBuying();
 loadSchedule();
