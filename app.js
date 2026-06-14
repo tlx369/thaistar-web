@@ -1,7 +1,9 @@
 /**
  * 泰流行369 行程表 — 从本地 data.json 加载数据
  */
-const DATA_URL = `data.json?v=${Date.now()}`;
+const DATA_URL = "data.json?v=20260614";
+const UMAMI_WEBSITE_ID = "52e1dec3-5e58-4681-96fe-53e09c223d75";
+const THUMBNAIL_ROOT = "images/thumbs/";
 
 const EVENT_FIELDS = ["date", "time", "star", "event", "location", "type", "notes", "image"];
 const MERCH_FIELDS = ["name", "star", "category", "price", "status", "image", "notes"];
@@ -397,9 +399,41 @@ function resolveImageUrl(raw) {
   return value.replace(/^\.\//, "");
 }
 
+function getThumbnailUrl(imageUrl) {
+  if (!imageUrl) return null;
+  if (/^https?:\/\//i.test(imageUrl)) return imageUrl;
+  if (!/^images\//i.test(imageUrl) || imageUrl.startsWith(THUMBNAIL_ROOT)) return imageUrl;
+  if (!/\.(jpe?g|png|webp)$/i.test(imageUrl)) return imageUrl;
+  return `${THUMBNAIL_ROOT}${imageUrl.slice("images/".length)}`;
+}
+
+function resolveImageSources(raw) {
+  const original = resolveImageUrl(raw);
+  if (!original) return { original: null, display: null };
+  return {
+    original,
+    display: getThumbnailUrl(original),
+  };
+}
+
+function wireImageFallback(img, displayUrl, originalUrl, onFinalError) {
+  img.addEventListener("error", () => {
+    if (displayUrl && originalUrl && displayUrl !== originalUrl && img.dataset.fallbackTried !== "true") {
+      img.dataset.fallbackTried = "true";
+      img.src = originalUrl;
+      return;
+    }
+
+    if (typeof onFinalError === "function") {
+      onFinalError();
+    }
+  });
+}
+
 function createEventCard(event, index) {
   const alt = index % 2 === 1;
-  const imageUrl = resolveImageUrl(event.image);
+  const imageSources = resolveImageSources(event.image);
+  const imageUrl = imageSources.original;
 
   const article = document.createElement("article");
   article.className = `event-card${alt ? " event-card--alt" : ""}${
@@ -482,12 +516,12 @@ function createEventCard(event, index) {
 
     const img = document.createElement("img");
     img.className = "event-card__poster";
-    img.src = imageUrl;
+    img.src = imageSources.display;
     img.alt = preview.dataset.scheduleImageTitle;
     img.loading = "lazy";
     img.decoding = "async";
 
-    img.addEventListener("error", () => {
+    wireImageFallback(img, imageSources.display, imageUrl, () => {
       media.remove();
       article.classList.remove("event-card--has-image");
     });
@@ -502,7 +536,8 @@ function createEventCard(event, index) {
 }
 
 function createMerchCard(item, index) {
-  const imageUrl = resolveImageUrl(item.image);
+  const imageSources = resolveImageSources(item.image);
+  const imageUrl = imageSources.original;
   const article = document.createElement("article");
   article.className = `merch-card${index % 2 === 1 ? " merch-card--alt" : ""}${
     imageUrl ? " merch-card--has-image" : ""
@@ -514,12 +549,12 @@ function createMerchCard(item, index) {
 
     const img = document.createElement("img");
     img.className = "merch-card__image";
-    img.src = imageUrl;
+    img.src = imageSources.display;
     img.alt = item.name ? `${item.name} 商品图` : `${item.star || "明星周边"} 商品图`;
     img.loading = "lazy";
     img.decoding = "async";
 
-    img.addEventListener("error", () => {
+    wireImageFallback(img, imageSources.display, imageUrl, () => {
       media.remove();
       article.classList.remove("merch-card--has-image");
     });
@@ -584,7 +619,8 @@ function createMerchCard(item, index) {
 }
 
 function createGroupCard(group, index) {
-  const imageUrl = resolveImageUrl(group.image);
+  const imageSources = resolveImageSources(group.image);
+  const imageUrl = imageSources.original;
   const article = document.createElement("article");
   article.className = `group-card${index % 2 === 1 ? " group-card--alt" : ""}${
     imageUrl ? " group-card--has-image" : ""
@@ -596,12 +632,12 @@ function createGroupCard(group, index) {
   if (imageUrl) {
     const img = document.createElement("img");
     img.className = "group-card__image";
-    img.src = imageUrl;
+    img.src = imageSources.display;
     img.alt = group.name ? `${group.name} 群图片` : "追星群组图片";
     img.loading = "lazy";
     img.decoding = "async";
 
-    img.addEventListener("error", () => {
+    wireImageFallback(img, imageSources.display, imageUrl, () => {
       media.classList.add("group-card__media--empty");
       media.replaceChildren("暂无群图");
       article.classList.remove("group-card--has-image");
@@ -1014,7 +1050,8 @@ function getEventBuyingItemById(id) {
 }
 
 function createEventBuyingImage(src, title, index) {
-  const imageUrl = resolveImageUrl(src);
+  const imageSources = resolveImageSources(src);
+  const imageUrl = imageSources.original;
   if (!imageUrl) return null;
 
   const button = document.createElement("button");
@@ -1025,10 +1062,11 @@ function createEventBuyingImage(src, title, index) {
   button.setAttribute("aria-label", `查看${title}图片 ${index + 1}`);
 
   const img = document.createElement("img");
-  img.src = imageUrl;
+  img.src = imageSources.display;
   img.alt = `${title} 图片 ${index + 1}`;
   img.loading = "eager";
   img.className = "event-buying-image__img";
+  wireImageFallback(img, imageSources.display, imageUrl);
   button.appendChild(img);
 
   return button;
@@ -1143,7 +1181,8 @@ function renderEventBuyingList() {
     article.setAttribute("role", "button");
     article.setAttribute("aria-label", `进入${item.title}详情页`);
 
-    const imageUrl = resolveImageUrl(item.images && item.images[0]);
+    const imageSources = resolveImageSources(item.images && item.images[0]);
+    const imageUrl = imageSources.original;
     const media = document.createElement("div");
     media.className = imageUrl
       ? "event-buying-list-card__media"
@@ -1151,10 +1190,11 @@ function renderEventBuyingList() {
 
     if (imageUrl) {
       const img = document.createElement("img");
-      img.src = imageUrl;
+      img.src = imageSources.display;
       img.alt = `${item.title} 活动图片`;
       img.loading = "lazy";
       img.className = "event-buying-list-card__image";
+      wireImageFallback(img, imageSources.display, imageUrl);
       media.appendChild(img);
     } else {
       media.textContent = "活动图片";
@@ -1324,6 +1364,34 @@ function wireScheduleImagePreview() {
   });
 }
 
+function loadAnalyticsWhenIdle() {
+  if (!UMAMI_WEBSITE_ID || location.protocol === "file:") return;
+
+  const injectAnalytics = () => {
+    const script = document.createElement("script");
+    script.defer = true;
+    script.src = "https://cloud.umami.is/script.js";
+    script.dataset.websiteId = UMAMI_WEBSITE_ID;
+    script.crossOrigin = "anonymous";
+    document.head.appendChild(script);
+  };
+
+  const scheduleAnalytics = () => {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(injectAnalytics, { timeout: 3500 });
+      return;
+    }
+    window.setTimeout(injectAnalytics, 2500);
+  };
+
+  if (document.readyState === "complete") {
+    scheduleAnalytics();
+    return;
+  }
+
+  window.addEventListener("load", scheduleAnalytics, { once: true });
+}
+
 function wireEventBuying() {
   if (!eventBuyingEl) return;
 
@@ -1488,4 +1556,5 @@ async function loadSchedule() {
 wireModuleTabs();
 wireScheduleImagePreview();
 wireEventBuying();
+loadAnalyticsWhenIdle();
 loadSchedule();

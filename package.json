@@ -1,6 +1,7 @@
 {
   "scripts": {
     "check": "node scripts/check-site.js",
+    "thumbnails": "node scripts/generate-thumbnails.js",
     "backup": "node scripts/backup-site.js",
     "rollback": "node scripts/rollback-site.js"
   }
