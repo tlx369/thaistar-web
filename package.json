@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "check": "node scripts/check-site.js",
+    "backup": "node scripts/backup-site.js",
+    "rollback": "node scripts/rollback-site.js"
+  }
+}

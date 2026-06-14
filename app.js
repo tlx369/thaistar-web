@@ -19,17 +19,179 @@ const MERCH_CATEGORIES = [
   MERCH_CATEGORY_OTHER,
 ];
 const WEEKDAYS = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+const EVENT_BUYING_ITEMS = [
+  {
+    id: "vida-love-lesson-perthsanta",
+    title: "VIDA Love Lesson with PerthSanta",
+    dateRange: "6月14日 到 7月15日",
+    artist: "PerthSanta",
+    summary:
+      "购买 VIDA 指定保健品满 499 泰铢即可获得抽选机会，50 位幸运粉丝可参加 PerthSanta 近距离特别课堂。",
+    images: [
+      "images/hddm/6.14-7.15/1.jpeg",
+      "images/hddm/6.14-7.15/2.jpeg",
+      "images/hddm/6.14-7.15/3.jpeg",
+      "images/hddm/6.14-7.15/4.jpeg",
+    ],
+    detailTitle: "VIDA Love Lesson 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "VIDA 邀请大家参加 VIDA Love Lesson with PerthSanta。符合条件的参与者将有机会成为 50 位 Lucky Students 之一，参加与 PerthSanta 近距离互动的特别课堂，享受限定的专属时刻。",
+          "活动名额有限，最终中奖名单以官方公布为准。",
+        ],
+      },
+      {
+        heading: "参与方式",
+        body: [
+          "在指定参与门店购买 VIDA 保健品，单张收据消费满 499 泰铢即可获得 1 次抽选机会。每张收据可获得的抽选次数不设上限。",
+          "收据中必须至少包含 1 件 VIDA Magnesium Bisglycinate Plus 或 VIDA Apple Cider Vinegar。",
+          "完成购买后，需要在活动指定登记渠道提交资料。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "购买并累计抽选机会时间：2026年6月14日 至 2026年7月15日。",
+          "登记截止时间：2026年7月16日 23:59。",
+          "中奖名单公布：2026年7月31日。",
+          "活动日期：2026年8月15日。",
+        ],
+      },
+      {
+        heading: "前两日特别条件",
+        body: [
+          "仅限活动开始前 2 天，即 2026年6月14日 至 2026年6月15日，购买 VIDA 保健品满 499 泰铢，并且收据中包含 VIDA Magnesium Bisglycinate Plus 或 VIDA Apple Cider Vinegar 的顾客，可获得 2 倍抽选机会。",
+          "也就是说，在特别期间内符合条件的购买记录，将获得双倍抽选机会。",
+        ],
+      },
+      {
+        heading: "50 位幸运中奖者福利",
+        body: [
+          "1. 参加限定课堂 LOVE LESSON，与 PerthSanta 近距离互动：50 位。",
+          "2. 获得由 PerthSanta 送出的 VIDA Love Lesson Bag：50 位。",
+          "3. 获得 PerthSanta 双人合照拍立得含签名，形式为 PerthSanta 2:1：随机 20 位。",
+          "4. 与 PerthSanta 进行团体合照，形式为 PerthSanta 2:5：随机 30 位。",
+          "5. 参加舞台上的 PerthSanta 限定互动游戏：随机 10 位。",
+          "6. 获得 PerthSanta 颁发的 Top Student Award：随机 5 位。",
+          "7. 写下并分享给 PerthSanta 的个人感想：50 位。",
+          "8. 获得限定 Student ID PHOTOBOOTH：50 位。",
+          "9. 活动课前享用甜点与饮品，为 LOVE LESSON 补充能量：50 位。",
+        ],
+      },
+      {
+        heading: "登记与收据规则",
+        body: [
+          "登记时间为 2026年6月14日 至 2026年7月16日 23:59。",
+          "登记姓名必须与收据或订单资料上的完整姓名完全一致。",
+          "符合资格的订单状态必须为已完成。",
+          "之后被取消或退款的订单，将视为无效。",
+        ],
+      },
+      {
+        heading: "中奖公布与领奖规则",
+        body: [
+          "中奖名单将于 2026年7月31日 18:00 通过 VIDA 官方渠道公布。",
+          "幸运中奖者必须在 2026年8月4日 12:00 前提交证明并确认参加。未在期限内确认者，将视为放弃资格，名额会顺延给名单中的下一位中奖者。",
+          "每人限获得 1 份奖项，且必须本人到场参加。奖项不可转让，也不可兑换现金。",
+          "活动将于 2026年8月15日举行。",
+        ],
+      },
+      {
+        heading: "法律与注意事项",
+        body: [
+          "价值 1,000 泰铢或以上的奖项，中奖者需自行承担 5% 预扣税。本次奖项价值为每位中奖者 5,000 泰铢。",
+          "未满 20 岁的中奖者，必须取得父母或法定监护人的书面同意。",
+          "主办方保留无需事先通知即可修改活动条款与条件的权利。如有争议，以主办方最终决定为准。",
+          "许可证编号：2/2569，由 Samut Prakan Province 的 Phra Samut Chedi District Office 发出。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "eucerin-once-upon-a-glow-lingling",
+    title: "Eucerin presents Once Upon a Glow X LingLing",
+    dateRange: "6月12日 到 7月9日",
+    artist: "LingLing",
+    summary:
+      "购买指定 Eucerin Spotless Brightening 产品并登记收据，有机会成为 80 位幸运粉丝之一，参加 LingLing 限定近距离活动。",
+    images: [
+      "images/hddm/6.12-7.09/1.jpeg",
+      "images/hddm/6.12-7.09/2.jpeg",
+      "images/hddm/6.12-7.09/3.jpeg",
+      "images/hddm/6.12-7.09/4.jpeg",
+    ],
+    detailTitle: "Eucerin Once Upon a Glow 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "Eucerin 邀请大家参加 Eucerin presents Once Upon a Glow X LingLing。符合条件的参与者将有机会成为 80 位幸运中奖者之一，近距离见到 LingLing，享受限定且难忘的专属体验。",
+          "本次活动主题为 Enchanted Garden，是由粉丝投票选出的最受欢迎主题。活动现场还将有 LingLing 亲自准备的特别惊喜礼物，仅限本次活动提供。",
+        ],
+      },
+      {
+        heading: "购买方式",
+        body: [
+          "在 EVEANDBOY 全国门店，或通过 EVEANDBOY 官方线上渠道，购买参与活动的 Eucerin Spotless Brightening 指定产品。",
+          "购买时间为 2026年6月12日 00:01 至 2026年7月9日 23:59，须符合活动条款与条件。",
+        ],
+      },
+      {
+        heading: "名额设置",
+        body: [
+          "本次活动共有 80 位中奖名额。",
+          "其中包含 20 位 Special Fans 与 60 位 Lucky Fans。",
+          "Special Fans 将根据有效抽选机会数量排序计算；Lucky Fans 将从符合全部活动条款的登记参与者中随机抽选。",
+        ],
+      },
+      {
+        heading: "专属福利",
+        body: [
+          "Top 1 与 Top 2 Special Fans 可获得 LingLing 的限定 Special Gift。",
+          "中奖者将有机会参加 Private Talk 环节，并获得 LingLing 的特别明信片。",
+          "中奖者可与 LingLing 创造特别回忆，参加 Eucerin presents Once Upon a Glow X LingLing 的限定活动，并享有更多现场专属福利。",
+        ],
+      },
+      {
+        heading: "登记方式与时间",
+        body: [
+          "完成购买后，需要通过活动指定登记渠道提交收据。",
+          "登记时间为 2026年6月12日 至 2026年7月9日 23:59 前。",
+          "登记资料与收据需符合主办方指定条件。",
+        ],
+      },
+      {
+        heading: "中奖公布",
+        body: [
+          "中奖名单将于 2026年7月21日 12:00 通过 Eucerin Thailand 官方社交媒体渠道公布。",
+          "最终中奖资格、领奖方式与现场权益，以主办方公布及确认结果为准。",
+        ],
+      },
+      {
+        heading: "活动条款",
+        body: [
+          "活动条款与条件以主办方规定为准。",
+          "许可证编号：91/2569。",
+        ],
+      },
+    ],
+  },
+];
 
 const scheduleEl = document.getElementById("schedule");
 const statusEl = document.getElementById("schedule-status");
 const merchandiseEl = document.getElementById("merchandise");
 const groupsEl = document.getElementById("groups");
+const eventBuyingEl = document.getElementById("event-buying");
 const moduleTabs = [...document.querySelectorAll(".module-tab")];
 const todayEventCountEl = document.getElementById("today-event-count");
 const merchCountEl = document.getElementById("merch-count");
 const moduleScheduleCountEl = document.getElementById("module-schedule-count");
 const moduleMerchCountEl = document.getElementById("module-merch-count");
 const moduleGroupsCountEl = document.getElementById("module-groups-count");
+const moduleEventBuyingCountEl = document.getElementById("module-event-buying-count");
 
 /** 将 data.json 解析为统一的事件列表 */
 function normalizeEvents(data) {
@@ -146,6 +308,10 @@ function updateHeroStats(events, merchandise, groups = []) {
 
   if (moduleGroupsCountEl) {
     moduleGroupsCountEl.textContent = String(groups.length);
+  }
+
+  if (moduleEventBuyingCountEl) {
+    moduleEventBuyingCountEl.textContent = String(EVENT_BUYING_ITEMS.length);
   }
 }
 
@@ -835,8 +1001,375 @@ function renderGroups(groups) {
   groupsEl.appendChild(shell);
 }
 
+function getEventBuyingItemById(id) {
+  return EVENT_BUYING_ITEMS.find((item) => item.id === id) || EVENT_BUYING_ITEMS[0] || null;
+}
+
+function createEventBuyingImage(src, title, index) {
+  const imageUrl = resolveImageUrl(src);
+  if (!imageUrl) return null;
+
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "event-buying-image";
+  button.dataset.imageSrc = imageUrl;
+  button.dataset.imageTitle = `${title} 图片 ${index + 1}`;
+  button.setAttribute("aria-label", `查看${title}图片 ${index + 1}`);
+
+  const img = document.createElement("img");
+  img.src = imageUrl;
+  img.alt = `${title} 图片 ${index + 1}`;
+  img.loading = "eager";
+  img.className = "event-buying-image__img";
+  button.appendChild(img);
+
+  return button;
+}
+
+function createEventBuyingGallery(item) {
+  const gallery = document.createElement("div");
+  gallery.className = "event-buying-gallery";
+
+  const viewport = document.createElement("div");
+  viewport.className = "event-buying-gallery__viewport";
+
+  const track = document.createElement("div");
+  track.className = "event-buying-gallery__track";
+
+  const images = (item.images || [])
+    .map((src, index) => createEventBuyingImage(src, item.title, index))
+    .filter(Boolean);
+
+  images.forEach((image) => {
+    const slide = document.createElement("div");
+    slide.className = "event-buying-gallery__slide";
+    slide.appendChild(image);
+    track.appendChild(slide);
+  });
+
+  viewport.appendChild(track);
+  gallery.appendChild(viewport);
+
+  if (images.length > 1) {
+    const prev = document.createElement("button");
+    prev.type = "button";
+    prev.className = "event-buying-gallery__nav event-buying-gallery__nav--prev";
+    prev.dataset.eventBuyingGalleryPrev = "true";
+    prev.setAttribute("aria-label", "上一张活动图片");
+    prev.textContent = "‹";
+    gallery.appendChild(prev);
+
+    const next = document.createElement("button");
+    next.type = "button";
+    next.className = "event-buying-gallery__nav event-buying-gallery__nav--next";
+    next.dataset.eventBuyingGalleryNext = "true";
+    next.setAttribute("aria-label", "下一张活动图片");
+    next.textContent = "›";
+    gallery.appendChild(next);
+
+    const dots = document.createElement("div");
+    dots.className = "event-buying-gallery__dots";
+    images.forEach((_, index) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = `event-buying-gallery__dot${
+        index === 0 ? " event-buying-gallery__dot--active" : ""
+      }`;
+      dot.dataset.eventBuyingGalleryDot = String(index);
+      dot.setAttribute("aria-label", `查看第 ${index + 1} 张活动图片`);
+      dots.appendChild(dot);
+    });
+    gallery.appendChild(dots);
+  }
+
+  return gallery;
+}
+
+function renderEventBuyingList() {
+  if (!eventBuyingEl) return;
+  eventBuyingEl.replaceChildren();
+
+  const header = document.createElement("div");
+  header.className = "event-buying-header";
+
+  const eyebrow = document.createElement("p");
+  eyebrow.className = "event-buying-header__eyebrow";
+  eyebrow.textContent = "Ticket & Event Service";
+  header.appendChild(eyebrow);
+
+  const title = document.createElement("h2");
+  title.className = "event-buying-header__title";
+  title.textContent = "活动代买";
+  header.appendChild(title);
+
+  const intro = document.createElement("p");
+  intro.className = "event-buying-header__intro";
+  intro.textContent = "可查看正在整理的活动代买信息，进入详情后可看多张活动图、完整说明和规则。";
+  header.appendChild(intro);
+  eventBuyingEl.appendChild(header);
+
+  const list = document.createElement("ul");
+  list.className = "event-buying-list";
+
+  EVENT_BUYING_ITEMS.forEach((item) => {
+    const li = document.createElement("li");
+    const article = document.createElement("article");
+    article.className = "event-buying-list-card";
+
+    const imageUrl = resolveImageUrl(item.images && item.images[0]);
+    const media = document.createElement("div");
+    media.className = imageUrl
+      ? "event-buying-list-card__media"
+      : "event-buying-list-card__media event-buying-list-card__media--empty";
+
+    if (imageUrl) {
+      const imageButton = document.createElement("button");
+      imageButton.type = "button";
+      imageButton.className = "event-buying-list-card__image-button";
+      imageButton.dataset.eventBuyingPreviewSrc = imageUrl;
+      imageButton.dataset.eventBuyingPreviewTitle = `${item.title} 活动图片`;
+      imageButton.setAttribute("aria-label", `查看${item.title}完整活动图片`);
+
+      const img = document.createElement("img");
+      img.src = imageUrl;
+      img.alt = `${item.title} 活动图片`;
+      img.loading = "lazy";
+      img.className = "event-buying-list-card__image";
+      imageButton.appendChild(img);
+      media.appendChild(imageButton);
+    } else {
+      media.textContent = "活动图片";
+    }
+
+    const body = document.createElement("div");
+    body.className = "event-buying-list-card__body";
+
+    const date = document.createElement("p");
+    date.className = "event-buying-list-card__date";
+    date.textContent = item.dateRange;
+    body.appendChild(date);
+
+    const artist = document.createElement("p");
+    artist.className = "event-buying-list-card__artist";
+    artist.textContent = `艺人：${item.artist}`;
+    body.appendChild(artist);
+
+    const summary = document.createElement("p");
+    summary.className = "event-buying-list-card__summary";
+    summary.textContent = item.summary;
+    body.appendChild(summary);
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "event-buying-list-card__button";
+    button.dataset.eventBuyingDetail = item.id;
+    button.textContent = "进入详情页";
+    body.appendChild(button);
+
+    article.appendChild(media);
+    article.appendChild(body);
+    li.appendChild(article);
+    list.appendChild(li);
+  });
+
+  eventBuyingEl.appendChild(list);
+}
+
+function renderEventBuyingDetail(item) {
+  if (!eventBuyingEl || !item) return;
+  eventBuyingEl.replaceChildren();
+
+  const detail = document.createElement("article");
+  detail.className = "event-buying-detail";
+
+  const backButton = document.createElement("button");
+  backButton.type = "button";
+  backButton.className = "event-buying-detail__back";
+  backButton.dataset.eventBuyingBack = "true";
+  backButton.textContent = "返回活动列表";
+  detail.appendChild(backButton);
+
+  const header = document.createElement("header");
+  header.className = "event-buying-detail__header";
+
+  const date = document.createElement("p");
+  date.className = "event-buying-detail__date";
+  date.textContent = item.dateRange;
+  header.appendChild(date);
+
+  const title = document.createElement("h2");
+  title.className = "event-buying-detail__title";
+  title.textContent = item.title;
+  header.appendChild(title);
+
+  const artist = document.createElement("p");
+  artist.className = "event-buying-detail__artist";
+  artist.textContent = `艺人：${item.artist}`;
+  header.appendChild(artist);
+
+  const summary = document.createElement("p");
+  summary.className = "event-buying-detail__summary";
+  summary.textContent = item.summary;
+  header.appendChild(summary);
+  detail.appendChild(header);
+
+  detail.appendChild(createEventBuyingGallery(item));
+
+  const content = document.createElement("div");
+  content.className = "event-buying-detail__content";
+
+  (item.detailSections || []).forEach((section) => {
+    const block = document.createElement("section");
+    block.className = "event-buying-rule-block";
+
+    const heading = document.createElement("h3");
+    heading.textContent = section.heading;
+    block.appendChild(heading);
+
+    (section.body || []).forEach((text) => {
+      const p = document.createElement("p");
+      p.textContent = text;
+      block.appendChild(p);
+    });
+
+    content.appendChild(block);
+  });
+
+  const contact = document.createElement("button");
+  contact.type = "button";
+  contact.className = "event-buying-detail__contact js-copy-wechat";
+  contact.textContent = "复制微信号咨询";
+  content.appendChild(contact);
+
+  detail.appendChild(content);
+  eventBuyingEl.appendChild(detail);
+}
+
+function openEventBuyingLightbox(src, title) {
+  if (!src) return;
+
+  const overlay = document.createElement("div");
+  overlay.className = "event-buying-lightbox";
+  overlay.setAttribute("role", "dialog");
+  overlay.setAttribute("aria-modal", "true");
+  overlay.setAttribute("aria-label", title || "活动图片预览");
+
+  const close = document.createElement("button");
+  close.type = "button";
+  close.className = "event-buying-lightbox__close";
+  close.textContent = "关闭";
+  overlay.appendChild(close);
+
+  const img = document.createElement("img");
+  img.src = src;
+  img.alt = title || "活动图片预览";
+  img.className = "event-buying-lightbox__image";
+  overlay.appendChild(img);
+
+  const actions = document.createElement("div");
+  actions.className = "event-buying-lightbox__actions";
+
+  const openOriginal = document.createElement("a");
+  openOriginal.href = src;
+  openOriginal.target = "_blank";
+  openOriginal.rel = "noopener";
+  openOriginal.download = "";
+  openOriginal.className = "event-buying-lightbox__link";
+  openOriginal.textContent = "打开原图保存";
+  actions.appendChild(openOriginal);
+  overlay.appendChild(actions);
+
+  const removeOverlay = () => overlay.remove();
+  close.addEventListener("click", removeOverlay);
+  overlay.addEventListener("click", (event) => {
+    if (event.target === overlay) removeOverlay();
+  });
+  document.addEventListener(
+    "keydown",
+    (event) => {
+      if (event.key === "Escape") removeOverlay();
+    },
+    { once: true }
+  );
+
+  document.body.appendChild(overlay);
+  close.focus();
+}
+
+function wireEventBuying() {
+  if (!eventBuyingEl) return;
+
+  eventBuyingEl.addEventListener("click", (event) => {
+    const detailButton = event.target.closest("[data-event-buying-detail]");
+    if (detailButton) {
+      renderEventBuyingDetail(getEventBuyingItemById(detailButton.dataset.eventBuyingDetail));
+      eventBuyingEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+
+    if (event.target.closest("[data-event-buying-back]")) {
+      renderEventBuyingList();
+      eventBuyingEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+
+    const imageButton = event.target.closest(".event-buying-image");
+    if (imageButton) {
+      openEventBuyingLightbox(imageButton.dataset.imageSrc, imageButton.dataset.imageTitle);
+      return;
+    }
+
+    const listImageButton = event.target.closest("[data-event-buying-preview-src]");
+    if (listImageButton) {
+      openEventBuyingLightbox(
+        listImageButton.dataset.eventBuyingPreviewSrc,
+        listImageButton.dataset.eventBuyingPreviewTitle
+      );
+      return;
+    }
+
+    const gallery = event.target.closest(".event-buying-gallery");
+    if (!gallery) return;
+
+    const viewport = gallery.querySelector(".event-buying-gallery__viewport");
+    if (!viewport) return;
+
+    if (event.target.closest("[data-event-buying-gallery-prev]")) {
+      viewport.scrollBy({ left: -viewport.clientWidth, behavior: "smooth" });
+      return;
+    }
+
+    if (event.target.closest("[data-event-buying-gallery-next]")) {
+      viewport.scrollBy({ left: viewport.clientWidth, behavior: "smooth" });
+      return;
+    }
+
+    const dot = event.target.closest("[data-event-buying-gallery-dot]");
+    if (dot) {
+      const index = Number(dot.dataset.eventBuyingGalleryDot);
+      viewport.scrollTo({ left: viewport.clientWidth * index, behavior: "smooth" });
+    }
+  });
+
+  eventBuyingEl.addEventListener("scroll", (event) => {
+    const viewport = event.target.closest(".event-buying-gallery__viewport");
+    if (!viewport) return;
+
+    const gallery = viewport.closest(".event-buying-gallery");
+    const dots = [...gallery.querySelectorAll(".event-buying-gallery__dot")];
+    if (dots.length === 0) return;
+
+    const activeIndex = Math.round(viewport.scrollLeft / Math.max(viewport.clientWidth, 1));
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("event-buying-gallery__dot--active", index === activeIndex);
+    });
+  }, true);
+
+  renderEventBuyingList();
+}
+
 function activateModule(targetId) {
-  const panels = [scheduleEl, merchandiseEl, groupsEl].filter(Boolean);
+  const panels = [scheduleEl, merchandiseEl, groupsEl, eventBuyingEl].filter(Boolean);
 
   panels.forEach((panel) => {
     const isActive = panel.id === targetId;
@@ -919,4 +1452,5 @@ async function loadSchedule() {
 }
 
 wireModuleTabs();
+wireEventBuying();
 loadSchedule();

@@ -1443,7 +1443,7 @@ body {
 
 .module-tabs {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   width: 100%;
   margin-top: 1rem;
   padding: 0.3rem;
@@ -1461,7 +1461,7 @@ body {
   gap: 0.45rem;
   padding: 0.72rem 0.5rem;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.8rem;
   border-radius: 0.75rem;
 }
 
@@ -1498,7 +1498,8 @@ body {
 
 .schedule,
 .merchandise,
-.groups {
+.groups,
+.event-buying {
   max-width: 48rem;
   padding: 0 1rem 3rem;
 }
@@ -1848,6 +1849,419 @@ body {
   word-break: break-word;
 }
 
+/* Event buying */
+.event-buying {
+  margin: 0 auto;
+}
+
+.event-buying-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  padding: 0.2rem 0.1rem 0.45rem;
+  color: var(--ink);
+}
+
+.event-buying-header__eyebrow {
+  margin: 0;
+  color: var(--teal);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.event-buying-header__title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.event-buying-header__intro {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+.event-buying-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.event-buying-list-card {
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid rgba(39, 34, 27, 0.1);
+  border-radius: 1.15rem;
+  box-shadow: var(--shadow-card);
+}
+
+.event-buying-list-card__media {
+  flex: 0 0 110px;
+  width: 110px;
+  min-height: 145px;
+  margin: 0.9rem 0 0.9rem 0.9rem;
+  background: #fff;
+  border-radius: 0.95rem;
+  box-shadow: 0 12px 24px rgba(18, 24, 38, 0.12);
+  overflow: hidden;
+}
+
+.event-buying-list-card__image-button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #fff;
+  cursor: zoom-in;
+}
+
+.event-buying-list-card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.event-buying-list-card__media--empty {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  background: rgba(243, 234, 220, 0.62);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.event-buying-list-card__body {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.9rem 0.95rem 0.95rem 0.85rem;
+}
+
+.event-buying-list-card__date,
+.event-buying-detail__date {
+  width: fit-content;
+  margin: 0;
+  padding: 0.22rem 0.58rem;
+  color: var(--coral);
+  background: rgba(159, 111, 79, 0.1);
+  border: 1px solid rgba(159, 111, 79, 0.16);
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.event-buying-list-card__artist {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-title);
+  font-size: 1.02rem;
+  font-weight: 900;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.event-buying-list-card__summary {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.event-buying-list-card__button,
+.event-buying-detail__back,
+.event-buying-detail__contact,
+.event-buying-lightbox__close,
+.event-buying-lightbox__link {
+  min-height: 2.35rem;
+  padding: 0.62rem 0.9rem;
+  border-radius: 0.85rem;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 900;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.event-buying-list-card__button,
+.event-buying-detail__contact {
+  width: fit-content;
+  margin-top: 0.15rem;
+  color: #fff;
+  background: var(--teal);
+  border: 1px solid var(--teal);
+  box-shadow: 0 10px 22px rgba(102, 122, 106, 0.22);
+}
+
+.event-buying-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-buying-detail__back {
+  width: fit-content;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.event-buying-detail__header,
+.event-buying-detail__content {
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid rgba(39, 34, 27, 0.1);
+  border-radius: 1.15rem;
+  box-shadow: var(--shadow-card);
+}
+
+.event-buying-detail__title {
+  margin: 0.55rem 0 0;
+  color: var(--ink);
+  font-family: var(--font-title);
+  font-size: 1.45rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.event-buying-detail__artist,
+.event-buying-detail__summary {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.event-buying-detail__artist {
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.event-buying-gallery {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.event-buying-gallery__viewport {
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 1rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.event-buying-gallery__viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.event-buying-gallery__track {
+  display: flex;
+}
+
+.event-buying-gallery__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  scroll-snap-align: center;
+}
+
+.event-buying-gallery__nav {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 2.45rem;
+  height: 2.45rem;
+  padding: 0;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(39, 34, 27, 0.12);
+  border-radius: 999px;
+  box-shadow: 0 12px 28px rgba(18, 24, 38, 0.14);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 900;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.event-buying-gallery__nav--prev {
+  left: 0.65rem;
+}
+
+.event-buying-gallery__nav--next {
+  right: 0.65rem;
+}
+
+.event-buying-gallery__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.event-buying-gallery__dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(129, 121, 109, 0.34);
+  cursor: pointer;
+}
+
+.event-buying-gallery__dot--active {
+  width: 1.35rem;
+  background: var(--teal);
+}
+
+.event-buying-image {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  border: 1px solid rgba(39, 34, 27, 0.1);
+  border-radius: 1rem;
+  background: #fff;
+  cursor: zoom-in;
+  box-shadow: 0 12px 28px rgba(18, 24, 38, 0.08);
+}
+
+.event-buying-image__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+}
+
+.event-buying-detail__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-buying-rule-block {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(39, 34, 27, 0.1);
+}
+
+.event-buying-rule-block h3 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.event-buying-rule-block p {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.85;
+}
+
+.event-buying-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(18, 24, 38, 0.88);
+}
+
+.event-buying-lightbox__image {
+  display: block;
+  max-width: 100%;
+  max-height: 78dvh;
+  object-fit: contain;
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.event-buying-lightbox__close,
+.event-buying-lightbox__link {
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.event-buying-lightbox__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.event-buying-list-card__button:hover,
+.event-buying-detail__contact:hover,
+.event-buying-detail__back:hover,
+.event-buying-lightbox__close:hover,
+.event-buying-lightbox__link:hover {
+  transform: translateY(-1px);
+}
+
+.event-buying-list-card__button:focus-visible,
+.event-buying-detail__contact:focus-visible,
+.event-buying-detail__back:focus-visible,
+.event-buying-image:focus-visible,
+.event-buying-gallery__nav:focus-visible,
+.event-buying-gallery__dot:focus-visible,
+.event-buying-lightbox__close:focus-visible,
+.event-buying-lightbox__link:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
+}
+
+@media (max-width: 380px) {
+  .event-buying-list-card__media {
+    flex-basis: 96px;
+    width: 96px;
+    min-height: 126px;
+    margin: 0.75rem 0 0.75rem 0.75rem;
+  }
+
+  .event-buying-list-card__body {
+    padding: 0.75rem 0.8rem;
+  }
+
+  .event-buying-list-card__artist {
+    font-size: 0.95rem;
+  }
+
+  .event-buying-list-card__summary {
+    font-size: 0.76rem;
+  }
+}
+
 .schedule-empty,
 .schedule-error,
 .merch-empty,
@@ -1874,7 +2288,8 @@ body {
 
   .schedule,
   .merchandise,
-  .groups {
+  .groups,
+  .event-buying {
     padding-bottom: 4rem;
   }
 
@@ -1884,6 +2299,21 @@ body {
 
   .groups-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .event-buying-header__title {
+    font-size: 1.5rem;
+  }
+
+  .event-buying-list-card__body,
+  .event-buying-detail__header,
+  .event-buying-detail__content {
+    padding: 1.2rem;
+  }
+
+  .event-buying-gallery__viewport {
+    max-width: 34rem;
+    margin: 0 auto;
   }
 }
 

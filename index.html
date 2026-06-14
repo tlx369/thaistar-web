@@ -76,7 +76,7 @@
           aria-controls="merchandise"
           aria-selected="false"
         >
-          <span>明星周边</span>
+          <span>周边</span>
           <span class="module-tab__count" id="module-merch-count">--</span>
         </button>
         <button
@@ -86,8 +86,18 @@
           aria-controls="groups"
           aria-selected="false"
         >
-          <span>追星群组</span>
+          <span>交流群</span>
           <span class="module-tab__count" id="module-groups-count">--</span>
+        </button>
+        <button
+          type="button"
+          class="module-tab"
+          data-module-target="event-buying"
+          aria-controls="event-buying"
+          aria-selected="false"
+        >
+          <span>活动代买</span>
+          <span class="module-tab__count" id="module-event-buying-count">--</span>
         </button>
       </nav>
     </div>
@@ -119,6 +129,14 @@
       aria-live="polite"
       hidden
     ></section>
+
+    <section
+      class="content-panel event-buying"
+      id="event-buying"
+      aria-live="polite"
+      hidden
+    >
+    </section>
   </main>
 
   <footer class="site-footer">
