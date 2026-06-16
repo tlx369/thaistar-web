@@ -1,14 +1,36 @@
 {
   "events": [
     {
-      "date": "2026-06-03",
-      "time": "11:00 AM",
-      "star": "JOONG DUNK",
-      "event": "House Of Magnum",
-      "location": "",
+      "date": "2026-06-01",
+      "time": "06:00 PM",
+      "star": "NUNEW, NONGZON",
+      "event": "MERCI X NUNEW LAB-PROVEN & GENTLE FORMULA",
+      "location": "Eden Zone, 1st Floor, centralwOrld",
       "type": "线下",
-      "notes": "本次活动为私人活动，仅限授权人员参加。粉丝可在周边区域表示支持。",
-      "image": "images/202606/03/6-3-11.jpeg"
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-03",
+      "time": "",
+      "star": "NAMTAN",
+      "event": "PRADA MODE NEW YORK",
+      "location": "New York, USA.",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/03/6-3-0.jpeg"
+    },
+    {
+      "date": "2026-06-03",
+      "time": "02:00 PM",
+      "star": "NET, JJ",
+      "event": "WRAPPED IN SCENT WITH NET JJ",
+      "location": "Zone B, 1st Floor, Central Westgate",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-06-03",
@@ -22,13 +44,13 @@
     },
     {
       "date": "2026-06-03",
-      "time": "",
-      "star": "NAMTAN",
-      "event": "PRADA MODE NEW YORK",
-      "location": "New York, USA.",
+      "time": "11:00 AM",
+      "star": "JOONG DUNK",
+      "event": "House Of Magnum",
+      "location": "",
       "type": "线下",
-      "notes": "",
-      "image": "images/202606/03/6-3-0.jpeg"
+      "notes": "本次活动为私人活动，仅限授权人员参加。粉丝可在周边区域表示支持。",
+      "image": "images/202606/03/6-3-11.jpeg"
     },
     {
       "date": "2026-06-04",
@@ -49,408 +71,6 @@
       "type": "线下",
       "notes": "本次活动为私人活动，仅限授权人员参加。粉丝可在品牌指定的地点表达支持。",
       "image": "images/202606/04/6-4-14.jpeg"
-    },
-    {
-      "date": "2026-06-04",
-      "time": "07:00 PM",
-      "star": "JUNIOR",
-      "event": "GO HAIR 6.6 Mid Year Sale with Junior ผมสวยX6 เพราะเมะพกโกแฮร์",
-      "location": "LIVE Shopee: @Go Hair official",
-      "type": "线上",
-      "notes": "",
-      "image": "images/202606/04/6-4-19-1.jpeg"
-    },
-    {
-      "date": "2026-06-04",
-      "time": "07:00 PM",
-      "star": "FOURTH",
-      "event": "รายการ Flex 104.5",
-      "location": "LIVE YouTube: FlexConnect",
-      "type": "线上",
-      "notes": "",
-      "image": "images/202606/04/6-4-19.jpeg"
-    },
-    {
-      "date": "2026-06-05",
-      "time": "",
-      "star": "GEMINI",
-      "event": "L'Oreal Paris Get Your Gloss with Gemini",
-      "location": "",
-      "type": "线下",
-      "notes": "本次活动为私人活动，仅限授权人员参加。",
-      "image": "images/202606/05/6-5-0.jpeg"
-    },
-    {
-      "date": "2026-06-05",
-      "time": "01:00 PM",
-      "star": "GREAT BRIGHT",
-      "event": "The Standard 9th Anniversary Open House \"Open The Bookshelf Of Meaning\"",
-      "location": "",
-      "type": "线下",
-      "notes": "本次活动为私人活动，仅限授权人员参加。",
-      "image": "images/202606/05/6-5-13.jpeg"
-    },
-    {
-      "date": "2026-06-05",
-      "time": "03:00 PM",
-      "star": "NANON",
-      "event": "Lenovo Activation",
-      "location": "SCBX Next Stage, 4h Floor, Siam Paragon",
-      "type": "线下",
-      "notes": "",
-      "image": "images/202606/05/6-5-15.jpeg"
-    },
-    {
-      "date": "2026-06-05",
-      "time": "05:00 PM",
-      "star": "SURF JAVA JAN JINGJING",
-      "event": "THAILAND INTERNATIONAL LGBTQ+ FILM & TV FESTIVAL 2026",
-      "location": "Infinite City Hall, 5'h Floor, Siam Paragon",
-      "type": "线下",
-      "notes": "",
-      "image": "images/202606/05/6-5-17.jpeg"
-    },
-    {
-      "date": "2026-06-05",
-      "time": "06:00 PM",
-      "star": "FOURTH",
-      "event": "LIVE: DrPONG×FOURTH",
-      "location": "LIVE TikTok: drpongshop",
-      "type": "线上",
-      "notes": "",
-      "image": "images/202606/05/6-5-18.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "08:15 AM",
-      "star": "NAMTAN FILM",
-      "event": "รายการ เปรี้ยวปาก",
-      "location": "ช่อง 3HD",
-      "type": "线上",
-      "notes": "",
-      "image": "images/202606/06/8.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "12:30 PM",
-      "star": "SANTA",
-      "event": "Friendly Me Beauty Black Carpet Event",
-      "location": "Union Mall, G Floor",
-      "type": "线下",
-      "notes": "",
-      "image": "images/202606/06/12-1.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "12:00 PM",
-      "star": "EST",
-      "event": "6.6 เอส พาท้าคิสกับ ลิป Maybelline Candy Collection ใหม่",
-      "location": "LIVE Shopee: Maybelline_thailand",
-      "type": "线上",
-      "notes": "",
-      "image": "images/202606/06/12.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "01:00 PM",
-      "star": "NEW POLCASAN",
-      "event": "It'S SKIN Beauty day with New & Polcasan",
-      "location": "",
-      "type": "线下",
-      "notes": "本次活动为私人活动，仅限授权人员参加。",
-      "image": "images/202606/06/13.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "02:00 PM",
-      "star": "JIMMY AVOCEAN",
-      "event": "NEKKOx City of Pets Fun Fair 2026",
-      "location": "Robinson Lifestyle Saraburi",
-      "type": "线下",
-      "notes": "",
-      "image": "images/202606/06/14.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "03:30 PM",
-      "star": "SURF JAVA",
-      "event": "Friendly Me Beauty Black Carpet Event",
-      "location": "Union Mall, G Floor",
-      "type": "线下",
-      "notes": "",
-      "image": "images/202606/06/15-1.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "03:30 PM",
-      "star": "LYKN",
-      "event": "GOTCHA POP 4 CONCERT",
-      "location": "Queen Sirikit National Convention Center (QSNCC)",
-      "type": "线下",
-      "notes": "需要门票",
-      "image": "images/202606/06/15-2.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "03:30 PM",
-      "star": "FELIZZ",
-      "event": "GOTCHA POP 4 CONCERT",
-      "location": "Queen Sirikit National Convention Center (QSNCC)",
-      "type": "线下",
-      "notes": "需要门票",
-      "image": "images/202606/06/15-3.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "03:30 PM",
-      "star": "JASPER",
-      "event": "GOTCHA POP 4 CONCERT",
-      "location": "Queen Sirikit National Convention Center (QSNCC)",
-      "type": "线下",
-      "notes": "需要门票",
-      "image": "images/202606/06/15-4.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "03:30 PM",
-      "star": "CLO'VER",
-      "event": "GOTCHA POP 4 CONCERT",
-      "location": "Queen Sirikit National Convention Center (QSNCC)",
-      "type": "线下",
-      "notes": "需要门票",
-      "image": "images/202606/06/15.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "06:30 PM",
-      "star": "SEA",
-      "event": "Friendly Me Beauty Black Carpet Event",
-      "location": "Union Mall, G Floor",
-      "type": "线下",
-      "notes": "",
-      "image": "images/202606/06/18-1.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "06:00 PM",
-      "star": "PHUWIN PERMPOON LEO",
-      "event": "NNKK * Pet'n Me Super Pet \"MEOW CATPITAL\"",
-      "location": "Work & Play Area, 1 st Floor, Central Rama 9",
-      "type": "线下",
-      "notes": "",
-      "image": "images/202606/06/18.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "07:00 PM",
-      "star": "FOURTH",
-      "event": "SKINTIFIC Live X FOURTH",
-      "location": "LIVE TikTok: skintific.th",
-      "type": "线上",
-      "notes": "",
-      "image": "images/202606/06/19.jpeg"
-    },
-    {
-      "date": "2026-06-07",
-      "time": "01:00 PM",
-      "star": "PREM",
-      "event": "Friendly Me Shinee Candy Lip Tint Exclusive Workshop with PREM",
-      "location": "",
-      "type": "线下",
-      "notes": "本次活动为私人活动，仅限授权人员参加",
-      "image": "images/202606/07/13.jpeg"
-    },
-    {
-      "date": "2026-06-07",
-      "time": "02:00 PM",
-      "star": "PREM",
-      "event": "รายการ ท้า..ร้องท่อนฮุก",
-      "location": "YouTube : ตู้ซ่อนหมี",
-      "type": "线上",
-      "notes": "",
-      "image": "images/202606/07/14-1.jpeg"
-    },
-    {
-      "date": "2026-06-07",
-      "time": "02:45 PM",
-      "star": "PHUWIN",
-      "event": "CAT TSHIRT 2026",
-      "location": "Queen Sirikit National Convention Center (QSNCC)",
-      "type": "线下",
-      "notes": "需要门票",
-      "image": "images/202606/07/14.jpeg"
-    },
-    {
-      "date": "2026-06-07",
-      "time": "03:00 PM",
-      "star": "LEGO",
-      "event": "mami Fresh & Fun with LEGO Rapeepong",
-      "location": "",
-      "type": "线下",
-      "notes": "本次活动为私人活动，仅限授权人员参加",
-      "image": "images/202606/07/15.jpeg"
-    },
-    {
-      "date": "2026-06-05",
-      "time": "03:00 PM",
-      "star": "TAY",
-      "event": "PIPATCHARA MARINE The First Reveal",
-      "location": "PIPATCHARA Headquarter 111 Praditmanutham",
-      "type": "线下",
-      "notes": "本次活动为私人活动，仅限授权人员参加",
-      "image": "images/202606/05/15.jpeg"
-    },
-    {
-      "date": "2026-06-05",
-      "time": "04:30 PM",
-      "star": "POLCASAN",
-      "event": "World Milk Day 2026",
-      "location": "Siam Square",
-      "type": "线下",
-      "notes": "",
-      "image": "images/202606/05/16.jpeg"
-    },
-    {
-      "date": "2026-06-05",
-      "time": "05:00 PM",
-      "star": "SKY, ALMOND, PROGRESS",
-      "event": "Lazada 6.6 ตกดีลเด็ด",
-      "location": "Chulalongkorn University Centenary Park",
-      "type": "线下/线上",
-      "notes": "LIVE LazLive/TikTok : LazadaTH",
-      "image": "images/202606/05/17.jpeg"
-    },
-    {
-      "date": "2026-06-05",
-      "time": "07:00 PM",
-      "star": "ALMOND, PROGRESS",
-      "event": "รายการ รับสายผมหน่อย",
-      "location": "TikTok, YouTube : เม้นท์ก่อนเข้านอน",
-      "type": "线上",
-      "notes": "",
-      "image": "images/202606/05/19.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "12:00 PM",
-      "star": "TAY",
-      "event": "L’Oreal Paris Matte Glow Skin Item recommended by Tay",
-      "location": "Shopee : L’Oreal",
-      "type": "线上",
-      "notes": "",
-      "image": "images/202606/06/06-1/12.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "01:30 PM",
-      "star": "POND",
-      "event": "3CE x Pond 6.6 Shopee Live",
-      "location": "Shopee : 3CE Thailand",
-      "type": "线上",
-      "notes": "",
-      "image": "images/202606/06/06-1/13.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "03:30 PM",
-      "star": "JACKIE",
-      "event": "GOTCHA POP 4 CONCERT",
-      "location": "Queen Sirikit National Convention Center (QSNCC)",
-      "type": "线下",
-      "notes": "",
-      "image": "images/202606/06/06-1/15-1.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "03:00 PM",
-      "star": "SEA",
-      "event": "PERCY Be Happy with Sea",
-      "location": "",
-      "type": "线下",
-      "notes": "本次活动为私人活动，仅限授权人员参加",
-      "image": "images/202606/06/06-1/15.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "04:00 PM",
-      "star": "MARK, OHM",
-      "event": "집들이 by LG ทุกก้าวของการใช้ชีวิตในบ้าน เริ่มต้นกับแอลจี",
-      "location": "Glass Elevator Area, Central World",
-      "type": "线下",
-      "notes": "",
-      "image": "images/202606/06/06-1/16.jpeg"
-    },
-    {
-      "date": "2026-06-06",
-      "time": "08:30 PM",
-      "star": "PERTH",
-      "event": "Dewy Tint with Perth ดูไลฟ์ให้ฟิน ตามช้อปดิวอี้ทินท์ barenbliss",
-      "location": "TikTok : barenbliss_th",
-      "type": "线上",
-      "notes": "",
-      "image": "images/202606/06/06-1/20.jpeg"
-    },
-    {
-      "date": "2026-06-07",
-      "time": "02:00 PM",
-      "star": "WILLIAM, EST",
-      "event": "งาน Laurier ทุกวิถีมั่นใจ กับ William Est",
-      "location": "Big C Ratchada",
-      "type": "线下",
-      "notes": "",
-      "image": "images/202606/07/7-1/14.jpeg"
-    },
-    {
-      "date": "2026-06-07",
-      "time": "04:00 PM",
-      "star": "NUT, HONG, LEO",
-      "event": "TORO x Pet’n Me Super Pet “MEOW CATPITAL”",
-      "location": "Work & Play Area, 1st Floor, Central Rama 9",
-      "type": "线下",
-      "notes": "",
-      "image": "images/202606/07/7-1/16.jpeg"
-    },
-    {
-      "date": "2026-06-07",
-      "time": "06:00 PM",
-      "star": "ARM",
-      "event": "ลิลลี่ไม่ชอบไวน์ OUTING",
-      "location": "LOBBY, GMM Grammy Place",
-      "type": "线下",
-      "notes": "所有人可免费参加活动并全程观看",
-      "image": "images/202606/07/7-1/18-1.jpeg"
-    },
-    {
-      "date": "2026-06-07",
-      "time": "06:00 PM",
-      "star": "JAN, JINGJING, KAPOOK, CIIZE",
-      "event": "ลิลลี่ไม่ชอบไวน์ OUTING",
-      "location": "LOBBY, GMM Grammy Place",
-      "type": "线下",
-      "notes": "所有人可免费参加活动并全程观看",
-      "image": "images/202606/07/7-1/18.jpeg"
-    },
-    {
-      "date": "2026-06-01",
-      "time": "06:00 PM",
-      "star": "NUNEW, NONGZON",
-      "event": "MERCI X NUNEW LAB-PROVEN & GENTLE FORMULA",
-      "location": "Eden Zone, 1st Floor, centralwOrld",
-      "type": "线下",
-      "company": "DMD",
-      "notes": "粉丝可在周边区域参与活动",
-      "image": "images/DMD.jpeg"
-    },
-    {
-      "date": "2026-06-03",
-      "time": "02:00 PM",
-      "star": "NET, JJ",
-      "event": "WRAPPED IN SCENT WITH NET JJ",
-      "location": "Zone B, 1st Floor, Central Westgate",
-      "type": "线下",
-      "company": "DMD",
-      "notes": "粉丝可在周边区域参与活动",
-      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-06-04",
@@ -486,6 +106,76 @@
       "image": "images/DMD.jpeg"
     },
     {
+      "date": "2026-06-04",
+      "time": "07:00 PM",
+      "star": "FOURTH",
+      "event": "รายการ Flex 104.5",
+      "location": "LIVE YouTube: FlexConnect",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/04/6-4-19.jpeg"
+    },
+    {
+      "date": "2026-06-04",
+      "time": "07:00 PM",
+      "star": "JUNIOR",
+      "event": "GO HAIR 6.6 Mid Year Sale with Junior ผมสวยX6 เพราะเมะพกโกแฮร์",
+      "location": "LIVE Shopee: @Go Hair official",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/04/6-4-19-1.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "",
+      "star": "GEMINI",
+      "event": "L'Oreal Paris Get Your Gloss with Gemini",
+      "location": "",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加。",
+      "image": "images/202606/05/6-5-0.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "01:00 PM",
+      "star": "GREAT BRIGHT",
+      "event": "The Standard 9th Anniversary Open House \"Open The Bookshelf Of Meaning\"",
+      "location": "",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加。",
+      "image": "images/202606/05/6-5-13.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "03:00 PM",
+      "star": "NANON",
+      "event": "Lenovo Activation",
+      "location": "SCBX Next Stage, 4h Floor, Siam Paragon",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/05/6-5-15.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "03:00 PM",
+      "star": "TAY",
+      "event": "PIPATCHARA MARINE The First Reveal",
+      "location": "PIPATCHARA Headquarter 111 Praditmanutham",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加",
+      "image": "images/202606/05/15.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "04:30 PM",
+      "star": "POLCASAN",
+      "event": "World Milk Day 2026",
+      "location": "Siam Square",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/05/16.jpeg"
+    },
+    {
       "date": "2026-06-05",
       "time": "05:00 PM",
       "star": "KIM, OHM",
@@ -495,6 +185,47 @@
       "company": "DMD",
       "notes": "粉丝可在周边区域参与活动",
       "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "05:00 PM",
+      "star": "SKY, ALMOND, PROGRESS",
+      "event": "Lazada 6.6 ตกดีลเด็ด",
+      "location": "Chulalongkorn University Centenary Park",
+      "type": "线下/线上",
+      "notes": "LIVE LazLive/TikTok : LazadaTH",
+      "image": "images/202606/05/17.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "05:00 PM",
+      "star": "SURF JAVA JAN JINGJING",
+      "event": "THAILAND INTERNATIONAL LGBTQ+ FILM & TV FESTIVAL 2026",
+      "location": "Infinite City Hall, 5'h Floor, Siam Paragon",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/05/6-5-17.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "06:00 PM",
+      "star": "FOURTH",
+      "event": "LIVE: DrPONG×FOURTH",
+      "location": "LIVE TikTok: drpongshop",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/05/6-5-18.jpeg"
+    },
+    {
+      "date": "2026-06-05",
+      "time": "06:00 PM",
+      "star": "JACKSON WANG",
+      "event": "House of Magnum",
+      "location": "Parkside Hall, Central Park",
+      "type": "线下",
+      "company": "",
+      "notes": "活动设置有粉丝区，但是位置有限",
+      "image": "images/202606/05/18.jpeg"
     },
     {
       "date": "2026-06-05",
@@ -508,6 +239,266 @@
       "image": "images/DMD.jpeg"
     },
     {
+      "date": "2026-06-05",
+      "time": "07:00 PM",
+      "star": "ALMOND, PROGRESS",
+      "event": "รายการ รับสายผมหน่อย",
+      "location": "TikTok, YouTube : เม้นท์ก่อนเข้านอน",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/05/19.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "01:00 PM",
+      "star": "NEW POLCASAN",
+      "event": "It'S SKIN Beauty day with New & Polcasan",
+      "location": "",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加。",
+      "image": "images/202606/06/13.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "01:30 PM",
+      "star": "POND",
+      "event": "3CE x Pond 6.6 Shopee Live",
+      "location": "Shopee : 3CE Thailand",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/06/06-1/13.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "02:00 PM",
+      "star": "JIMMY AVOCEAN",
+      "event": "NEKKOx City of Pets Fun Fair 2026",
+      "location": "Robinson Lifestyle Saraburi",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/06/14.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "03:00 PM",
+      "star": "SEA",
+      "event": "PERCY Be Happy with Sea",
+      "location": "",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加",
+      "image": "images/202606/06/06-1/15.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "03:30 PM",
+      "star": "CLO'VER",
+      "event": "GOTCHA POP 4 CONCERT",
+      "location": "Queen Sirikit National Convention Center (QSNCC)",
+      "type": "线下",
+      "notes": "需要门票",
+      "image": "images/202606/06/15.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "03:30 PM",
+      "star": "FELIZZ",
+      "event": "GOTCHA POP 4 CONCERT",
+      "location": "Queen Sirikit National Convention Center (QSNCC)",
+      "type": "线下",
+      "notes": "需要门票",
+      "image": "images/202606/06/15-3.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "03:30 PM",
+      "star": "JACKIE",
+      "event": "GOTCHA POP 4 CONCERT",
+      "location": "Queen Sirikit National Convention Center (QSNCC)",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/06/06-1/15-1.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "03:30 PM",
+      "star": "JASPER",
+      "event": "GOTCHA POP 4 CONCERT",
+      "location": "Queen Sirikit National Convention Center (QSNCC)",
+      "type": "线下",
+      "notes": "需要门票",
+      "image": "images/202606/06/15-4.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "03:30 PM",
+      "star": "LYKN",
+      "event": "GOTCHA POP 4 CONCERT",
+      "location": "Queen Sirikit National Convention Center (QSNCC)",
+      "type": "线下",
+      "notes": "需要门票",
+      "image": "images/202606/06/15-2.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "03:30 PM",
+      "star": "SURF JAVA",
+      "event": "Friendly Me Beauty Black Carpet Event",
+      "location": "Union Mall, G Floor",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/06/15-1.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "04:00 PM",
+      "star": "MARK, OHM",
+      "event": "집들이 by LG ทุกก้าวของการใช้ชีวิตในบ้าน เริ่มต้นกับแอลจี",
+      "location": "Glass Elevator Area, Central World",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/06/06-1/16.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "06:00 PM",
+      "star": "PHUWIN PERMPOON LEO",
+      "event": "NNKK * Pet'n Me Super Pet \"MEOW CATPITAL\"",
+      "location": "Work & Play Area, 1 st Floor, Central Rama 9",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/06/18.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "06:30 PM",
+      "star": "SEA",
+      "event": "Friendly Me Beauty Black Carpet Event",
+      "location": "Union Mall, G Floor",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/06/18-1.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "07:00 PM",
+      "star": "FOURTH",
+      "event": "SKINTIFIC Live X FOURTH",
+      "location": "LIVE TikTok: skintific.th",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/06/19.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "08:15 AM",
+      "star": "NAMTAN FILM",
+      "event": "รายการ เปรี้ยวปาก",
+      "location": "ช่อง 3HD",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/06/8.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "08:30 PM",
+      "star": "PERTH",
+      "event": "Dewy Tint with Perth ดูไลฟ์ให้ฟิน ตามช้อปดิวอี้ทินท์ barenbliss",
+      "location": "TikTok : barenbliss_th",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/06/06-1/20.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "12:00 PM",
+      "star": "EST",
+      "event": "6.6 เอส พาท้าคิสกับ ลิป Maybelline Candy Collection ใหม่",
+      "location": "LIVE Shopee: Maybelline_thailand",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/06/12.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "12:00 PM",
+      "star": "TAY",
+      "event": "L’Oreal Paris Matte Glow Skin Item recommended by Tay",
+      "location": "Shopee : L’Oreal",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/06/06-1/12.jpeg"
+    },
+    {
+      "date": "2026-06-06",
+      "time": "12:30 PM",
+      "star": "SANTA",
+      "event": "Friendly Me Beauty Black Carpet Event",
+      "location": "Union Mall, G Floor",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/06/12-1.jpeg"
+    },
+    {
+      "date": "2026-06-07",
+      "time": "01:00 PM",
+      "star": "PREM",
+      "event": "Friendly Me Shinee Candy Lip Tint Exclusive Workshop with PREM",
+      "location": "",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加",
+      "image": "images/202606/07/13.jpeg"
+    },
+    {
+      "date": "2026-06-07",
+      "time": "02:00 PM",
+      "star": "PREM",
+      "event": "รายการ ท้า..ร้องท่อนฮุก",
+      "location": "YouTube : ตู้ซ่อนหมี",
+      "type": "线上",
+      "notes": "",
+      "image": "images/202606/07/14-1.jpeg"
+    },
+    {
+      "date": "2026-06-07",
+      "time": "02:00 PM",
+      "star": "WILLIAM, EST",
+      "event": "งาน Laurier ทุกวิถีมั่นใจ กับ William Est",
+      "location": "Big C Ratchada",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/07/7-1/14.jpeg"
+    },
+    {
+      "date": "2026-06-07",
+      "time": "02:45 PM",
+      "star": "PHUWIN",
+      "event": "CAT TSHIRT 2026",
+      "location": "Queen Sirikit National Convention Center (QSNCC)",
+      "type": "线下",
+      "notes": "需要门票",
+      "image": "images/202606/07/14.jpeg"
+    },
+    {
+      "date": "2026-06-07",
+      "time": "03:00 PM",
+      "star": "LEGO",
+      "event": "mami Fresh & Fun with LEGO Rapeepong",
+      "location": "",
+      "type": "线下",
+      "notes": "本次活动为私人活动，仅限授权人员参加",
+      "image": "images/202606/07/15.jpeg"
+    },
+    {
+      "date": "2026-06-07",
+      "time": "04:00 PM",
+      "star": "NUT, HONG, LEO",
+      "event": "TORO x Pet’n Me Super Pet “MEOW CATPITAL”",
+      "location": "Work & Play Area, 1st Floor, Central Rama 9",
+      "type": "线下",
+      "notes": "",
+      "image": "images/202606/07/7-1/16.jpeg"
+    },
+    {
       "date": "2026-06-07",
       "time": "05:00 PM",
       "star": "TEETEE, POR",
@@ -517,6 +508,37 @@
       "company": "DMD",
       "notes": "粉丝可在周边区域参与活动",
       "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-07",
+      "time": "06:00 PM",
+      "star": "ARM",
+      "event": "ลิลลี่ไม่ชอบไวน์ OUTING",
+      "location": "LOBBY, GMM Grammy Place",
+      "type": "线下",
+      "notes": "所有人可免费参加活动并全程观看",
+      "image": "images/202606/07/7-1/18-1.jpeg"
+    },
+    {
+      "date": "2026-06-07",
+      "time": "06:00 PM",
+      "star": "JAN, JINGJING, KAPOOK, CIIZE",
+      "event": "ลิลลี่ไม่ชอบไวน์ OUTING",
+      "location": "LOBBY, GMM Grammy Place",
+      "type": "线下",
+      "notes": "所有人可免费参加活动并全程观看",
+      "image": "images/202606/07/7-1/18.jpeg"
+    },
+    {
+      "date": "2026-06-08",
+      "time": "06:00 PM",
+      "star": "PERTH, SANTA, DOMIIA",
+      "event": "COLONY SF FRIENDS SCREENING",
+      "location": "SF WORLD CINEMA CENTRAL WORLD",
+      "type": "线下",
+      "company": "",
+      "notes": "本次活动为封闭活动，仅限持有电影票的人员参加。",
+      "image": "images/202606/09/18-2.jpeg"
     },
     {
       "date": "2026-06-08",
@@ -530,6 +552,50 @@
       "image": "images/202606/08/18.jpeg"
     },
     {
+      "date": "2026-06-09",
+      "time": "05:00 PM",
+      "star": "TU, JUNIOR, MARK",
+      "event": "Lenskart x Popmart Sweet Bean Pop up",
+      "location": "Parade Gallery, B1 Floor, One Bangkok",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/09/17.jpeg"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "06:00 PM",
+      "star": "FOURTH",
+      "event": "GALA PREMIERE กฤษดาพาราไดซ์ Kijsada Paradise",
+      "location": "Eden zone, 1st Floor, centralwOrld",
+      "type": "线下",
+      "company": "",
+      "notes": "仅限持有 Wristband 的人员进入发布会区域",
+      "image": "images/202606/09/18.jpg"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "06:30 PM",
+      "star": "TAY",
+      "event": "SK-II GenOptics CC Primer Green Launch",
+      "location": "Hall Of Fame, M Floor, Siam Paragon",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/09/18-1.jpeg"
+    },
+    {
+      "date": "2026-06-10",
+      "time": "05:30 PM",
+      "star": "ALMOND, PROGRESS, LEO",
+      "event": "กิจกรรมสุดพิเศษ “ต้นส้มอยู่บ้านเขา แต่ผลส้มหล่นลงตะกร้าเราดีกว่า”",
+      "location": "LOBBY, GMM GRAMMY PLACE",
+      "type": "线下",
+      "company": "",
+      "notes": "所有人可免费参加活动并全程观看。",
+      "image": "images/202606/10/1730.jpeg"
+    },
+    {
       "date": "2026-06-10",
       "time": "06:00 PM",
       "star": "NORTH, OTTO",
@@ -539,6 +605,17 @@
       "company": "DMD",
       "notes": "粉丝可在周边区域参与活动",
       "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "01:00 PM",
+      "star": "DEW, NYCHA, SKY",
+      "event": "WEAVING MATTER AND MEMORY",
+      "location": "Bangkok Kunsthalle",
+      "type": "线下",
+      "company": "",
+      "notes": "本次活动为封闭活动，仅限受邀者参加。",
+      "image": "images/202606/11/13.jpeg"
     },
     {
       "date": "2026-06-11",
@@ -563,6 +640,39 @@
       "image": "images/DMD.jpeg"
     },
     {
+      "date": "2026-06-11",
+      "time": "06:00 PM",
+      "star": "NEW, POLCASAN",
+      "event": "Samsung | PowerMall Electronica Showcase",
+      "location": "SIAM PARAGON, SCBX NEXT TECH, FL.4",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/11/18.jpeg"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "07:00 PM",
+      "star": "SANTA, OFF, JOONG",
+      "event": "Burberry Summer at The Standard, Bangkok Mahanakhon",
+      "location": "The Standard, Bangkok Mahanakhon",
+      "type": "线下",
+      "company": "",
+      "notes": "粉丝可在周边区域参与活动，位置有限。",
+      "image": "images/202606/11/19.jpeg"
+    },
+    {
+      "date": "2026-06-12",
+      "time": "04:00 PM",
+      "star": "FORD, FLUKE",
+      "event": "งาน TO BE NO.1",
+      "location": "Saohaiwimonwittayanukul School, Saraburi",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/12/16.jpeg"
+    },
+    {
       "date": "2026-06-12",
       "time": "05:00 PM",
       "star": "PUNG, COPPER, FIFA",
@@ -574,6 +684,105 @@
       "image": "images/202606/12/17.jpeg"
     },
     {
+      "date": "2026-06-12",
+      "time": "06:00 PM",
+      "star": "BOUN, PREM, PAODY, FIRST, KHAOTUNG, YUZU MUMU",
+      "event": "COLONY SF FRIENDS SCREENING",
+      "location": "SF WORLD CINEMA CENTRAL WORLD",
+      "type": "线下",
+      "company": "",
+      "notes": "本次活动为封闭活动，仅限持有电影票的人员参加。",
+      "image": "images/202606/12/18.jpeg"
+    },
+    {
+      "date": "2026-06-12",
+      "time": "06:30 PM",
+      "star": "NUT, HONG, ARM, GODJI",
+      "event": "AESTURA “Skin 101”",
+      "location": "Eden Zone, 1st Floor, CentralWorld",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/12/1830.jpeg"
+    },
+    {
+      "date": "2026-06-12",
+      "time": "08:00 PM",
+      "star": "COPPER, FIFA, PHUPHA, WAVE, FEW, NAN, NICK",
+      "event": "LOVE UPON A TIME SERIES FINAL EP.",
+      "location": "MGI HALL, BRAVO BKK",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "需要门票；本次活动为私人活动，仅限有资格人员参加。",
+      "image": "images/202606/12/203.jpeg"
+    },
+    {
+      "date": "2026-06-12",
+      "time": "08:00 PM",
+      "star": "NET, JJ, JOOKKROO, LATTE, KIM, TMILK",
+      "event": "LOVE UPON A TIME SERIES FINAL EP.",
+      "location": "MGI HALL, BRAVO BKK",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "需要门票；本次活动为私人活动，仅限有资格人员参加。",
+      "image": "images/202606/12/200.jpeg"
+    },
+    {
+      "date": "2026-06-12",
+      "time": "08:00 PM",
+      "star": "NUNEW",
+      "event": "LOVE UPON A TIME SERIES FINAL EP.",
+      "location": "MGI HALL, BRAVO BKK",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "需要门票；本次活动为私人活动，仅限有资格人员参加。",
+      "image": "images/202606/12/201.jpeg"
+    },
+    {
+      "date": "2026-06-12",
+      "time": "08:00 PM",
+      "star": "PARK, NAT, GEMS, NORTH, OTTO, PORSCHE",
+      "event": "LOVE UPON A TIME SERIES FINAL EP.",
+      "location": "MGI HALL, BRAVO BKK",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "需要门票；本次活动为私人活动，仅限有资格人员参加。",
+      "image": "images/202606/12/202.jpeg"
+    },
+    {
+      "date": "2026-06-13",
+      "time": "02:00 PM",
+      "star": "AVOCEAN",
+      "event": "The Pawpular Contest & Pet Market by The M.O.V.E. by Honda",
+      "location": "Emsphere, Em Glass, G Floor",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/13/14-1.jpeg"
+    },
+    {
+      "date": "2026-06-13",
+      "time": "02:00 PM",
+      "star": "OFF",
+      "event": "UT GRAPHIC-T UNIVERSE EVENT",
+      "location": "Fashion Hall, 1st Floor, Siam Paragon",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/13/14.jpeg"
+    },
+    {
+      "date": "2026-06-13",
+      "time": "02:00 PM",
+      "star": "POLCASAN, PERMPOON, LOOK KHUNNOO, METAA",
+      "event": "Babi Mild & Twelve Plus Cutieverse Land Exclusive Meeting",
+      "location": "Major Cineplex Sukhumvit Ekkamai",
+      "type": "线下",
+      "company": "",
+      "notes": "本次活动为封闭活动，仅限有资格人员参加。",
+      "image": "images/202606/13/14-2.jpeg"
+    },
+    {
       "date": "2026-06-13",
       "time": "03:00 PM",
       "star": "NET, JJ, LATTE, KIM",
@@ -583,6 +792,127 @@
       "company": "DMD",
       "notes": "粉丝可在周边区域参与活动",
       "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-13",
+      "time": "05:00 PM",
+      "star": "MILK, LOVE, NAMTAN, FILM, EMI, BONNIE, VIEW, MIM, JUNE, MEWNICH, JAN, JINGJING, PAHN, FOND, KAPOOK, CIIZE",
+      "event": "Blush Blossom Fan Fest 2026 Midnight Bloom",
+      "location": "BITEC LIVE",
+      "type": "线下/线上",
+      "company": "",
+      "notes": "需要门票",
+      "image": "images/202606/13/17.jpeg"
+    },
+    {
+      "date": "2026-06-13",
+      "time": "05:00 PM",
+      "star": "NEW",
+      "event": "AESTURA “Skin 101”",
+      "location": "Eden Zone, 1st Floor, CentralWorld",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/13/17-1.jpeg"
+    },
+    {
+      "date": "2026-06-13",
+      "time": "10:00 AM",
+      "star": "DAOU, OFFROAD",
+      "event": "CATDOG N JOY FUNFEST",
+      "location": "Megabangna FoodWalk Plaza G Floor",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/13/10.jpeg"
+    },
+    {
+      "date": "2026-06-13",
+      "time": "11:00 AM",
+      "star": "FOURTH",
+      "event": "CeraVe Sun Club กันแดดตัวจบที่หมอผิวแนะนำ",
+      "location": "Parc Paragon, Siam Paragon",
+      "type": "线下",
+      "company": "",
+      "notes": "粉丝区已经在6月10日填表",
+      "image": "images/202606/13/11.jpeg"
+    },
+    {
+      "date": "2026-06-13",
+      "time": "12:00 PM",
+      "star": "LUKE, MICK, SURF, JAVA",
+      "event": "CeraVe Sun Club กันแดดตัวจบที่หมอผิวแนะนำ",
+      "location": "Parc Paragon, Siam Paragon",
+      "type": "线下",
+      "company": "",
+      "notes": "粉丝区已经在6月10日填表",
+      "image": "images/202606/13/12.jpeg"
+    },
+    {
+      "date": "2026-06-14",
+      "time": "02:00 PM",
+      "star": "SKY, TU",
+      "event": "GDH โตมาด้วยกัน ออร์เคสตรามูฟวี่คอนเสิร์ต",
+      "location": "One Bangkok Forum",
+      "type": "线下",
+      "company": "",
+      "notes": "本次活动为封闭活动，仅限持有演唱会门票的人员参加。",
+      "image": "images/202606/14/14.jpeg"
+    },
+    {
+      "date": "2026-06-14",
+      "time": "03:00 PM",
+      "star": "KEN",
+      "event": "Central Grand Grand Sales HEAVY x NIYOM JEANS",
+      "location": "Promotion Area, G Floor, Central Nakhon Pathom",
+      "type": "线下",
+      "company": "",
+      "notes": "非曼谷，佛统尚泰购物中心",
+      "image": "images/202606/14/15.jpeg"
+    },
+    {
+      "date": "2026-06-14",
+      "time": "03:00 PM",
+      "star": "WAVE",
+      "event": "THE GREATEST GRAND SALE",
+      "location": "ลานกีฬาลมไม้, 1st Floor, Central Chiangrai",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-14",
+      "time": "04:00 PM",
+      "star": "PERTH, SANTA",
+      "event": "CeraVe Sun Club กันแดดตัวจบที่หมอผิวแนะนำ",
+      "location": "Parc Paragon, Siam Paragon",
+      "type": "线下",
+      "company": "",
+      "notes": "粉丝区已经在6月10日填表",
+      "image": "images/202606/14/16.jpeg"
+    },
+    {
+      "date": "2026-06-14",
+      "time": "05:00 PM",
+      "star": "FOURTH, LOOK KHUNNOO",
+      "event": "SKINTIFIC ใกล้ขนาดนี้..ผิวดีเกินต้าน with FOURTH & PiXXiE",
+      "location": "The Storeys, One Bangkok",
+      "type": "线下",
+      "company": "",
+      "notes": "粉丝区已经于6月11日填表",
+      "image": "images/202606/14/17.jpeg"
+    },
+    {
+      "date": "2026-06-14",
+      "time": "05:00 PM",
+      "star": "MILK, LOVE, NAMTAN, FILM, EMI, BONNIE, VIEW, MIM, JUNE, MEWNICH, JAN, JINGJING, PAHN, FOND, KAPOOK, CIIZE",
+      "event": "Blush Blossom Fan Fest 2026 Midnight Bloom",
+      "location": "BITEC LIVE",
+      "type": "线下/线上",
+      "company": "",
+      "notes": "需要门票",
+      "image": "images/202606/14/17-1.jpeg"
     },
     {
       "date": "2026-06-14",
@@ -597,14 +927,58 @@
     },
     {
       "date": "2026-06-14",
-      "time": "03:00 PM",
-      "star": "WAVE",
-      "event": "THE GREATEST GRAND SALE",
-      "location": "ลานกีฬาลมไม้, 1st Floor, Central Chiangrai",
+      "time": "06:30 PM",
+      "star": "DAOU",
+      "event": "BUSKING ซ่าซ่าไปกับต้าห์อู",
+      "location": "Outdoor Square B, centralwOrld",
+      "type": "线下",
+      "company": "",
+      "notes": "活动结束后将举行聚会；活动结束后不接受礼物。",
+      "image": "images/202606/14/1830.jpeg"
+    },
+    {
+      "date": "2026-06-14",
+      "time": "07:30 PM",
+      "star": "GEMINI, FOURTH, LOOK KHUNNOO",
+      "event": "กฤษดาพาราไดซ์ SF FRIENDS SCREENING",
+      "location": "SF WORLD CINEMA CENTRAL WORLD",
+      "type": "线下",
+      "company": "",
+      "notes": "本次活动为封闭活动，仅限持有电影票的人员参加。",
+      "image": "images/202606/14/1930.jpeg"
+    },
+    {
+      "date": "2026-06-14",
+      "time": "07:30 PM",
+      "star": "SKY, TU",
+      "event": "GDH โตมาด้วยกัน ออร์เคสตรามูฟวี่คอนเสิร์ต",
+      "location": "One Bangkok Forum",
+      "type": "线下",
+      "company": "",
+      "notes": "本次活动为封闭活动，仅限持有演唱会门票的人员参加。",
+      "image": "images/202606/14/14.jpeg"
+    },
+    {
+      "date": "2026-06-14",
+      "time": "08:30 PM",
+      "star": "NAMPING, TLE, FIRSTONE, PORSCHE, OTTO, AOF",
+      "event": "ICONSIAM UNITY of PRIDE: PRIDE & GREET",
+      "location": "River Park, G Floor, ICONSIAM",
       "type": "线下",
       "company": "DMD",
-      "notes": "粉丝可在周边区域参与活动",
-      "image": "images/DMD.jpeg"
+      "notes": "免费入场；18:00起可入场。",
+      "image": "images/202606/14/18.jpeg"
+    },
+    {
+      "date": "2026-06-14",
+      "time": "11:00 AM",
+      "star": "DEW, TEE",
+      "event": "CeraVe Sun Club กันแดดตัวจบที่หมอผิวแนะนำ",
+      "location": "Parc Paragon, Siam Paragon",
+      "type": "线下",
+      "company": "",
+      "notes": "粉丝区已经在6月10日填表",
+      "image": "images/202606/14/11.jpeg"
     },
     {
       "date": "2026-06-15",
@@ -663,6 +1037,17 @@
     },
     {
       "date": "2026-06-16",
+      "time": "05:00 PM",
+      "star": "DAOU, OFFROAD",
+      "event": "เปิดตัวสินค้า OREO ใหม่",
+      "location": "Eden, 1st Floor, centralwOrld",
+      "type": "线下",
+      "company": "",
+      "notes": "开放活动，粉丝可到活动周边为艺人送上鼓励。",
+      "image": "images/202606/16/8405192f-23e8-4c89-a9c6-f68b12a0d933.jpeg"
+    },
+    {
+      "date": "2026-06-16",
       "time": "05:55 PM",
       "star": "TLE, FIRSTONE",
       "event": "SHEEP 555",
@@ -671,380 +1056,6 @@
       "company": "DMD",
       "notes": "活动结束后将举行聚会",
       "image": "images/202606/16/17.jpeg"
-    },
-    {
-      "date": "2026-06-05",
-      "time": "06:00 PM",
-      "star": "JACKSON WANG",
-      "event": "House of Magnum",
-      "location": "Parkside Hall, Central Park",
-      "type": "线下",
-      "company": "",
-      "notes": "活动设置有粉丝区，但是位置有限",
-      "image": "images/202606/05/18.jpeg"
-    },
-    {
-      "date": "2026-06-08",
-      "time": "06:00 PM",
-      "star": "PERTH, SANTA, DOMIIA",
-      "event": "COLONY SF FRIENDS SCREENING",
-      "location": "SF WORLD CINEMA CENTRAL WORLD",
-      "type": "线下",
-      "company": "",
-      "notes": "本次活动为封闭活动，仅限持有电影票的人员参加。",
-      "image": "images/202606/09/18-2.jpeg"
-    },
-    {
-      "date": "2026-06-09",
-      "time": "05:00 PM",
-      "star": "TU, JUNIOR, MARK",
-      "event": "Lenskart x Popmart Sweet Bean Pop up",
-      "location": "Parade Gallery, B1 Floor, One Bangkok",
-      "type": "线下",
-      "company": "",
-      "notes": "",
-      "image": "images/202606/09/17.jpeg"
-    },
-    {
-      "date": "2026-06-09",
-      "time": "06:00 PM",
-      "star": "FOURTH",
-      "event": "GALA PREMIERE กฤษดาพาราไดซ์ Kijsada Paradise",
-      "location": "Eden zone, 1st Floor, centralwOrld",
-      "type": "线下",
-      "company": "",
-      "notes": "仅限持有 Wristband 的人员进入发布会区域",
-      "image": "images/202606/09/18.jpg"
-    },
-    {
-      "date": "2026-06-09",
-      "time": "06:30 PM",
-      "star": "TAY",
-      "event": "SK-II GenOptics CC Primer Green Launch",
-      "location": "Hall Of Fame, M Floor, Siam Paragon",
-      "type": "线下",
-      "company": "",
-      "notes": "",
-      "image": "images/202606/09/18-1.jpeg"
-    },
-    {
-      "date": "2026-06-10",
-      "time": "05:30 PM",
-      "star": "ALMOND, PROGRESS, LEO",
-      "event": "กิจกรรมสุดพิเศษ “ต้นส้มอยู่บ้านเขา แต่ผลส้มหล่นลงตะกร้าเราดีกว่า”",
-      "location": "LOBBY, GMM GRAMMY PLACE",
-      "type": "线下",
-      "company": "",
-      "notes": "所有人可免费参加活动并全程观看。",
-      "image": "images/202606/10/1730.jpeg"
-    },
-    {
-      "date": "2026-06-11",
-      "time": "07:00 PM",
-      "star": "SANTA, OFF, JOONG",
-      "event": "Burberry Summer at The Standard, Bangkok Mahanakhon",
-      "location": "The Standard, Bangkok Mahanakhon",
-      "type": "线下",
-      "company": "",
-      "notes": "粉丝可在周边区域参与活动，位置有限。",
-      "image": "images/202606/11/19.jpeg"
-    },
-    {
-      "date": "2026-06-11",
-      "time": "01:00 PM",
-      "star": "DEW, NYCHA, SKY",
-      "event": "WEAVING MATTER AND MEMORY",
-      "location": "Bangkok Kunsthalle",
-      "type": "线下",
-      "company": "",
-      "notes": "本次活动为封闭活动，仅限受邀者参加。",
-      "image": "images/202606/11/13.jpeg"
-    },
-    {
-      "date": "2026-06-11",
-      "time": "06:00 PM",
-      "star": "NEW, POLCASAN",
-      "event": "Samsung | PowerMall Electronica Showcase",
-      "location": "SIAM PARAGON, SCBX NEXT TECH, FL.4",
-      "type": "线下",
-      "company": "",
-      "notes": "",
-      "image": "images/202606/11/18.jpeg"
-    },
-    {
-      "date": "2026-06-12",
-      "time": "04:00 PM",
-      "star": "FORD, FLUKE",
-      "event": "งาน TO BE NO.1",
-      "location": "Saohaiwimonwittayanukul School, Saraburi",
-      "type": "线下",
-      "company": "",
-      "notes": "",
-      "image": "images/202606/12/16.jpeg"
-    },
-    {
-      "date": "2026-06-12",
-      "time": "06:00 PM",
-      "star": "BOUN, PREM, PAODY, FIRST, KHAOTUNG, YUZU MUMU",
-      "event": "COLONY SF FRIENDS SCREENING",
-      "location": "SF WORLD CINEMA CENTRAL WORLD",
-      "type": "线下",
-      "company": "",
-      "notes": "本次活动为封闭活动，仅限持有电影票的人员参加。",
-      "image": "images/202606/12/18.jpeg"
-    },
-    {
-      "date": "2026-06-12",
-      "time": "06:30 PM",
-      "star": "NUT, HONG, ARM, GODJI",
-      "event": "AESTURA “Skin 101”",
-      "location": "Eden Zone, 1st Floor, CentralWorld",
-      "type": "线下",
-      "company": "",
-      "notes": "",
-      "image": "images/202606/12/1830.jpeg"
-    },
-    {
-      "date": "2026-06-12",
-      "time": "08:00 PM",
-      "star": "NET, JJ, JOOKKROO, LATTE, KIM, TMILK",
-      "event": "LOVE UPON A TIME SERIES FINAL EP.",
-      "location": "MGI HALL, BRAVO BKK",
-      "type": "线下",
-      "company": "DMD",
-      "notes": "需要门票；本次活动为私人活动，仅限有资格人员参加。",
-      "image": "images/202606/12/200.jpeg"
-    },
-    {
-      "date": "2026-06-12",
-      "time": "08:00 PM",
-      "star": "NUNEW",
-      "event": "LOVE UPON A TIME SERIES FINAL EP.",
-      "location": "MGI HALL, BRAVO BKK",
-      "type": "线下",
-      "company": "DMD",
-      "notes": "需要门票；本次活动为私人活动，仅限有资格人员参加。",
-      "image": "images/202606/12/201.jpeg"
-    },
-    {
-      "date": "2026-06-12",
-      "time": "08:00 PM",
-      "star": "PARK, NAT, GEMS, NORTH, OTTO, PORSCHE",
-      "event": "LOVE UPON A TIME SERIES FINAL EP.",
-      "location": "MGI HALL, BRAVO BKK",
-      "type": "线下",
-      "company": "DMD",
-      "notes": "需要门票；本次活动为私人活动，仅限有资格人员参加。",
-      "image": "images/202606/12/202.jpeg"
-    },
-    {
-      "date": "2026-06-12",
-      "time": "08:00 PM",
-      "star": "COPPER, FIFA, PHUPHA, WAVE, FEW, NAN, NICK",
-      "event": "LOVE UPON A TIME SERIES FINAL EP.",
-      "location": "MGI HALL, BRAVO BKK",
-      "type": "线下",
-      "company": "DMD",
-      "notes": "需要门票；本次活动为私人活动，仅限有资格人员参加。",
-      "image": "images/202606/12/203.jpeg"
-    },
-    {
-      "date": "2026-06-13",
-      "time": "10:00 AM",
-      "star": "DAOU, OFFROAD",
-      "event": "CATDOG N JOY FUNFEST",
-      "location": "Megabangna FoodWalk Plaza G Floor",
-      "type": "线下",
-      "company": "",
-      "notes": "",
-      "image": "images/202606/13/10.jpeg"
-    },
-    {
-      "date": "2026-06-13",
-      "time": "11:00 AM",
-      "star": "FOURTH",
-      "event": "CeraVe Sun Club กันแดดตัวจบที่หมอผิวแนะนำ",
-      "location": "Parc Paragon, Siam Paragon",
-      "type": "线下",
-      "company": "",
-      "notes": "粉丝区已经在6月10日填表",
-      "image": "images/202606/13/11.jpeg"
-    },
-    {
-      "date": "2026-06-13",
-      "time": "12:00 PM",
-      "star": "LUKE, MICK, SURF, JAVA",
-      "event": "CeraVe Sun Club กันแดดตัวจบที่หมอผิวแนะนำ",
-      "location": "Parc Paragon, Siam Paragon",
-      "type": "线下",
-      "company": "",
-      "notes": "粉丝区已经在6月10日填表",
-      "image": "images/202606/13/12.jpeg"
-    },
-    {
-      "date": "2026-06-13",
-      "time": "02:00 PM",
-      "star": "OFF",
-      "event": "UT GRAPHIC-T UNIVERSE EVENT",
-      "location": "Fashion Hall, 1st Floor, Siam Paragon",
-      "type": "线下",
-      "company": "",
-      "notes": "",
-      "image": "images/202606/13/14.jpeg"
-    },
-    {
-      "date": "2026-06-13",
-      "time": "02:00 PM",
-      "star": "AVOCEAN",
-      "event": "The Pawpular Contest & Pet Market by The M.O.V.E. by Honda",
-      "location": "Emsphere, Em Glass, G Floor",
-      "type": "线下",
-      "company": "",
-      "notes": "",
-      "image": "images/202606/13/14-1.jpeg"
-    },
-    {
-      "date": "2026-06-13",
-      "time": "02:00 PM",
-      "star": "POLCASAN, PERMPOON, LOOK KHUNNOO, METAA",
-      "event": "Babi Mild & Twelve Plus Cutieverse Land Exclusive Meeting",
-      "location": "Major Cineplex Sukhumvit Ekkamai",
-      "type": "线下",
-      "company": "",
-      "notes": "本次活动为封闭活动，仅限有资格人员参加。",
-      "image": "images/202606/13/14-2.jpeg"
-    },
-    {
-      "date": "2026-06-13",
-      "time": "05:00 PM",
-      "star": "MILK, LOVE, NAMTAN, FILM, EMI, BONNIE, VIEW, MIM, JUNE, MEWNICH, JAN, JINGJING, PAHN, FOND, KAPOOK, CIIZE",
-      "event": "Blush Blossom Fan Fest 2026 Midnight Bloom",
-      "location": "BITEC LIVE",
-      "type": "线下/线上",
-      "company": "",
-      "notes": "需要门票",
-      "image": "images/202606/13/17.jpeg"
-    },
-    {
-      "date": "2026-06-13",
-      "time": "05:00 PM",
-      "star": "NEW",
-      "event": "AESTURA “Skin 101”",
-      "location": "Eden Zone, 1st Floor, CentralWorld",
-      "type": "线下",
-      "company": "",
-      "notes": "",
-      "image": "images/202606/13/17-1.jpeg"
-    },
-    {
-      "date": "2026-06-14",
-      "time": "11:00 AM",
-      "star": "DEW, TEE",
-      "event": "CeraVe Sun Club กันแดดตัวจบที่หมอผิวแนะนำ",
-      "location": "Parc Paragon, Siam Paragon",
-      "type": "线下",
-      "company": "",
-      "notes": "粉丝区已经在6月10日填表",
-      "image": "images/202606/14/11.jpeg"
-    },
-    {
-      "date": "2026-06-14",
-      "time": "02:00 PM",
-      "star": "SKY, TU",
-      "event": "GDH โตมาด้วยกัน ออร์เคสตรามูฟวี่คอนเสิร์ต",
-      "location": "One Bangkok Forum",
-      "type": "线下",
-      "company": "",
-      "notes": "本次活动为封闭活动，仅限持有演唱会门票的人员参加。",
-      "image": "images/202606/14/14.jpeg"
-    },
-    {
-      "date": "2026-06-14",
-      "time": "03:00 PM",
-      "star": "KEN",
-      "event": "Central Grand Grand Sales HEAVY x NIYOM JEANS",
-      "location": "Promotion Area, G Floor, Central Nakhon Pathom",
-      "type": "线下",
-      "company": "",
-      "notes": "非曼谷，佛统尚泰购物中心",
-      "image": "images/202606/14/15.jpeg"
-    },
-    {
-      "date": "2026-06-14",
-      "time": "07:30 PM",
-      "star": "SKY, TU",
-      "event": "GDH โตมาด้วยกัน ออร์เคสตรามูฟวี่คอนเสิร์ต",
-      "location": "One Bangkok Forum",
-      "type": "线下",
-      "company": "",
-      "notes": "本次活动为封闭活动，仅限持有演唱会门票的人员参加。",
-      "image": "images/202606/14/14.jpeg"
-    },
-    {
-      "date": "2026-06-14",
-      "time": "04:00 PM",
-      "star": "PERTH, SANTA",
-      "event": "CeraVe Sun Club กันแดดตัวจบที่หมอผิวแนะนำ",
-      "location": "Parc Paragon, Siam Paragon",
-      "type": "线下",
-      "company": "",
-      "notes": "粉丝区已经在6月10日填表",
-      "image": "images/202606/14/16.jpeg"
-    },
-    {
-      "date": "2026-06-14",
-      "time": "05:00 PM",
-      "star": "FOURTH, LOOK KHUNNOO",
-      "event": "SKINTIFIC ใกล้ขนาดนี้..ผิวดีเกินต้าน with FOURTH & PiXXiE",
-      "location": "The Storeys, One Bangkok",
-      "type": "线下",
-      "company": "",
-      "notes": "粉丝区已经于6月11日填表",
-      "image": "images/202606/14/17.jpeg"
-    },
-    {
-      "date": "2026-06-14",
-      "time": "05:00 PM",
-      "star": "MILK, LOVE, NAMTAN, FILM, EMI, BONNIE, VIEW, MIM, JUNE, MEWNICH, JAN, JINGJING, PAHN, FOND, KAPOOK, CIIZE",
-      "event": "Blush Blossom Fan Fest 2026 Midnight Bloom",
-      "location": "BITEC LIVE",
-      "type": "线下/线上",
-      "company": "",
-      "notes": "需要门票",
-      "image": "images/202606/14/17-1.jpeg"
-    },
-    {
-      "date": "2026-06-14",
-      "time": "06:30 PM",
-      "star": "DAOU",
-      "event": "BUSKING ซ่าซ่าไปกับต้าห์อู",
-      "location": "Outdoor Square B, centralwOrld",
-      "type": "线下",
-      "company": "",
-      "notes": "活动结束后将举行聚会；活动结束后不接受礼物。",
-      "image": "images/202606/14/1830.jpeg"
-    },
-    {
-      "date": "2026-06-14",
-      "time": "07:30 PM",
-      "star": "GEMINI, FOURTH, LOOK KHUNNOO",
-      "event": "กฤษดาพาราไดซ์ SF FRIENDS SCREENING",
-      "location": "SF WORLD CINEMA CENTRAL WORLD",
-      "type": "线下",
-      "company": "",
-      "notes": "本次活动为封闭活动，仅限持有电影票的人员参加。",
-      "image": "images/202606/14/1930.jpeg"
-    },
-    {
-      "date": "2026-06-14",
-      "time": "08:30 PM",
-      "star": "NAMPING, TLE, FIRSTONE, PORSCHE, OTTO, AOF",
-      "event": "ICONSIAM UNITY of PRIDE: PRIDE & GREET",
-      "location": "River Park, G Floor, ICONSIAM",
-      "type": "线下",
-      "company": "DMD",
-      "notes": "免费入场；18:00起可入场。",
-      "image": "images/202606/14/18.jpeg"
     },
     {
       "date": "2026-06-16",
@@ -1058,26 +1069,15 @@
       "image": "images/202606/16/8.jpeg"
     },
     {
-      "date": "2026-06-16",
-      "time": "05:00 PM",
-      "star": "DAOU, OFFROAD",
-      "event": "เปิดตัวสินค้า OREO ใหม่",
-      "location": "Eden, 1st Floor, centralwOrld",
-      "type": "线下",
-      "company": "",
-      "notes": "开放活动，粉丝可到活动周边为艺人送上鼓励。",
-      "image": "images/202606/16/8405192f-23e8-4c89-a9c6-f68b12a0d933.jpeg"
-    },
-    {
       "date": "2026-06-17",
-      "time": "06:00 PM",
-      "star": "GEMINI, FOURTH, POND, PHUWIN, SKY, NANI",
-      "event": "GrabFood House ถูกกว่าชัวร์ ทุกโมเมนต์",
-      "location": "Parkside Hall, Central Park Bangkok",
+      "time": "05:00 PM",
+      "star": "ZEE, NUNEW",
+      "event": "SHARE THE LOVE, SPREAD THE LAUGHING WITH ZEENUNEW",
+      "location": "G Floor, Union Mall",
       "type": "线下",
-      "company": "",
-      "notes": "需通过活动规则领取权益；Standing Zone 6月13日开放领取。",
-      "image": "images/202606/17/17.jpeg"
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动。",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-06-17",
@@ -1089,6 +1089,17 @@
       "company": "",
       "notes": "仅限有资格人员参加。",
       "image": "images/202606/17/0.jpeg"
+    },
+    {
+      "date": "2026-06-17",
+      "time": "06:00 PM",
+      "star": "GEMINI, FOURTH, POND, PHUWIN, SKY, NANI",
+      "event": "GrabFood House ถูกกว่าชัวร์ ทุกโมเมนต์",
+      "location": "Parkside Hall, Central Park Bangkok",
+      "type": "线下",
+      "company": "",
+      "notes": "需通过活动规则领取权益；Standing Zone 6月13日开放领取。",
+      "image": "images/202606/17/17.jpeg"
     },
     {
       "date": "2026-06-18",
@@ -1114,14 +1125,14 @@
     },
     {
       "date": "2026-06-18",
-      "time": "06:00 PM",
-      "star": "TAY, POLCASAN",
-      "event": "THEPOP 2026",
-      "location": "centralwOrld Pulse, 7th Floor, centralwOrld",
+      "time": "05:30 PM",
+      "star": "POND, PHUWIN, PERMPOON",
+      "event": "SALZ and SYSTEMA Exclusive Fan Meet",
+      "location": "Lotus's Rama 4",
       "type": "线下",
       "company": "",
-      "notes": "",
-      "image": "images/202606/18/18.jpeg"
+      "notes": "100个免费名额，6月12日填表",
+      "image": "images/202606/18/1730.jpeg"
     },
     {
       "date": "2026-06-18",
@@ -1136,25 +1147,14 @@
     },
     {
       "date": "2026-06-18",
-      "time": "05:30 PM",
-      "star": "POND, PHUWIN, PERMPOON",
-      "event": "SALZ and SYSTEMA Exclusive Fan Meet",
-      "location": "Lotus's Rama 4",
-      "type": "线下",
-      "company": "",
-      "notes": "100个免费名额，6月12日填表",
-      "image": "images/202606/18/1730.jpeg"
-    },
-    {
-      "date": "2026-06-19",
-      "time": "12:00 PM",
-      "star": "HONG",
-      "event": "Lancôme Idôle Peach n' Roses Roadshow - Mega Bangna Edition",
-      "location": "EVEANDBOY Mega Bangna",
+      "time": "06:00 PM",
+      "star": "TAY, POLCASAN",
+      "event": "THEPOP 2026",
+      "location": "centralwOrld Pulse, 7th Floor, centralwOrld",
       "type": "线下",
       "company": "",
       "notes": "",
-      "image": "images/202606/19/12.jpeg"
+      "image": "images/202606/18/18.jpeg"
     },
     {
       "date": "2026-06-19",
@@ -1179,6 +1179,39 @@
       "image": "images/202606/19/1830.jpeg"
     },
     {
+      "date": "2026-06-19",
+      "time": "12:00 PM",
+      "star": "HONG",
+      "event": "Lancôme Idôle Peach n' Roses Roadshow - Mega Bangna Edition",
+      "location": "EVEANDBOY Mega Bangna",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202606/19/12.jpeg"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "01:00 PM",
+      "star": "NET, JJ",
+      "event": "LA ROCHE-POSAY X EVEANDBOY SKINTOPIA",
+      "location": "Zpell, Future Park",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动；活动结束后有粉丝聚集。",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "02:00 PM",
+      "star": "WAVE",
+      "event": "KORAT SHOPPING FESTIVAL BY DEVY",
+      "location": "Grand Hall, 1st Floor, The Mall Korat",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动。",
+      "image": "images/DMD.jpeg"
+    },
+    {
       "date": "2026-06-20",
       "time": "03:00 PM",
       "star": "PAUL",
@@ -1188,6 +1221,17 @@
       "company": "",
       "notes": "",
       "image": "images/202606/20/15.jpeg"
+    },
+    {
+      "date": "2026-06-20",
+      "time": "03:30 PM",
+      "star": "COPPER, FIFA",
+      "event": "GO HAIR X EVEANDBOY: CLASS OF CONFIDENCE WITH COPPERFIFA",
+      "location": "EVEANDBOY, The Mall Lifestore Bangkapi",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动。",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-06-20",
@@ -1202,14 +1246,14 @@
     },
     {
       "date": "2026-06-21",
-      "time": "07:00 PM",
-      "star": "POND",
-      "event": "Prada Spring Summer 2027 Menswear Fashion Show",
-      "location": "Fondazione Prada, 2 Largo Isarco, 20139 Milan, Italy",
+      "time": "02:00 PM",
+      "star": "JJ",
+      "event": "JJ BIRTHDAY CELEBRATION",
+      "location": "สถานสงเคราะห์บ้านเด็กอ่อนพญาไท อ.ปากเกร็ด จ.นนทบุรี",
       "type": "线下",
-      "company": "",
-      "notes": "非曼谷，米兰；本次活动为封闭活动，仅限有资格人员参加；粉丝区需通过 Prada LINE Official Account @prada_th 预约。",
-      "image": "images/202606/21/0.jpeg"
+      "company": "DMD",
+      "notes": "粉丝可参加活动。",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-06-21",
@@ -1221,6 +1265,50 @@
       "company": "",
       "notes": "",
       "image": "images/202606/21/1730.jpeg"
+    },
+    {
+      "date": "2026-06-21",
+      "time": "07:00 PM",
+      "star": "POND",
+      "event": "Prada Spring Summer 2027 Menswear Fashion Show",
+      "location": "Fondazione Prada, 2 Largo Isarco, 20139 Milan, Italy",
+      "type": "线下",
+      "company": "",
+      "notes": "非曼谷，米兰；本次活动为封闭活动，仅限有资格人员参加；粉丝区需通过 Prada LINE Official Account @prada_th 预约。",
+      "image": "images/202606/21/0.jpeg"
+    },
+    {
+      "date": "2026-06-21",
+      "time": "10:00 AM",
+      "star": "YIM",
+      "event": "YIM BIRTHDAY CELEBRATION",
+      "location": "สถานสงเคราะห์บ้านเด็กอ่อนพญาไท อ.ปากเกร็ด จ.นนทบุรี",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可参加活动。",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-23",
+      "time": "02:30 PM",
+      "star": "TEETEE, POR",
+      "event": "MILLE CLEAR ACNE SUN PROTECTION X TEETEEPOR",
+      "location": "Union Co-Event Space, Zone A, G Floor, Union Mall",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动。",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-24",
+      "time": "06:00 PM",
+      "star": "AOM KORNNAPHAT",
+      "event": "Tops of Beauty",
+      "location": "Promotion C Zone, 1st Floor, Central WestGate",
+      "type": "线下",
+      "company": "",
+      "notes": "Special Fans 10名；10:00-14:00 购买产品参与抽选。",
+      "image": "images/202606/24/24-18.jpeg"
     },
     {
       "date": "2026-06-24",
@@ -1236,13 +1324,13 @@
     {
       "date": "2026-06-24",
       "time": "06:00 PM",
-      "star": "AOM KORNNAPHAT",
-      "event": "Tops of Beauty",
-      "location": "Promotion C Zone, 1st Floor, Central WestGate",
+      "star": "TEETEE, POR",
+      "event": "Better Hair Better Day with Teetee-Por x ardermis",
+      "location": "1st Floor, Central Westgate",
       "type": "线下",
-      "company": "",
-      "notes": "Special Fans 10名；10:00-14:00 购买产品参与抽选。",
-      "image": "images/202606/24/24-18.jpeg"
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动。",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-06-24",
@@ -1265,6 +1353,17 @@
       "company": "",
       "notes": "粉丝可到现场周边为艺人送上鼓励；活动结束后不接受礼物。",
       "image": "images/202606/25/17.jpeg"
+    },
+    {
+      "date": "2026-06-25",
+      "time": "05:30 PM",
+      "star": "TEETEE, POR",
+      "event": "TEETEEPOR X WITHAT",
+      "location": "Eden Zone, 1st Floor, centralWorld",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动。",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-06-25",
@@ -1320,6 +1419,28 @@
       "company": "",
       "notes": "",
       "image": "images/202606/27/27-15.jpeg"
+    },
+    {
+      "date": "2026-06-27",
+      "time": "03:00 PM",
+      "star": "LINGLING",
+      "event": "MISTINE PRO Active Perfection Unleash Your Ultimate Moment",
+      "location": "Sphere Gallery 1, M Floor, Emsphere",
+      "type": "线下",
+      "company": "",
+      "notes": "粉丝可到现场周边为艺人送上鼓励；活动结束后不接受礼物。",
+      "image": "images/202606/27/6cd68fac-67d8-4445-b8ab-da41a62ec0f8.jpeg"
+    },
+    {
+      "date": "2026-06-27",
+      "time": "03:30 PM",
+      "star": "NET, JJ",
+      "event": "BEAUTRIUM ASIAN BEAUTY X GLAD2GLOW",
+      "location": "Eden Zone, 1st Floor, centralWorld",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动。",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-06-27",
@@ -1433,6 +1554,17 @@
     },
     {
       "date": "2026-06-28",
+      "time": "06:00 PM",
+      "star": "PHUPHA, PUNG",
+      "event": "SIAM CENTER COLOR OF T-BEAUTY",
+      "location": "Siam Center, The Ideapolis",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动。",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-28",
       "time": "07:00 PM",
       "star": "ZEE, NUNEW",
       "event": "Tops of Beauty by Looks",
@@ -1441,6 +1573,28 @@
       "company": "DMD",
       "notes": "",
       "image": "images/202606/28/28-19.jpeg"
+    },
+    {
+      "date": "2026-06-28",
+      "time": "11:00 AM",
+      "star": "SAVE",
+      "event": "SAVE BIRTHDAY CELEBRATION",
+      "location": "สถานสงเคราะห์บ้านเด็กอ่อนพญาไท อ.ปากเกร็ด จ.นนทบุรี",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可参加活动。",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-06-29",
+      "time": "05:00 PM",
+      "star": "LATTE, KIM",
+      "event": "JUDYDOLL X LATTE&KIM : LOVE UPON A BLOOM",
+      "location": "Eden Zone, 1st Floor, centralWorld",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动。",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-06-29",
@@ -1463,6 +1617,17 @@
       "company": "",
       "notes": "",
       "image": "images/202606/29/29-18.jpeg"
+    },
+    {
+      "date": "2026-06-29",
+      "time": "06:00 PM",
+      "star": "TLE, FIRSTONE",
+      "event": "BENICE X TLE FIRSTONE @LOTUS'S",
+      "location": "Lotus's Rama 4",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可在周边区域参与活动。",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-06-29",
@@ -1529,17 +1694,6 @@
       "company": "DMD",
       "notes": "",
       "image": "images/202606/30/30-19.jpeg"
-    },
-    {
-      "date": "2026-06-27",
-      "time": "03:00 PM",
-      "star": "LINGLING",
-      "event": "MISTINE PRO Active Perfection Unleash Your Ultimate Moment",
-      "location": "Sphere Gallery 1, M Floor, Emsphere",
-      "type": "线下",
-      "company": "",
-      "notes": "粉丝可到现场周边为艺人送上鼓励；活动结束后不接受礼物。",
-      "image": "images/202606/27/6cd68fac-67d8-4445-b8ab-da41a62ec0f8.jpeg"
     },
     {
       "date": "2026-06-30",
@@ -1630,28 +1784,6 @@
       "image": "images/202607/18/18.jpeg"
     },
     {
-      "date": "2026-07-25",
-      "time": "05:00 PM",
-      "star": "Boun, Prem, Earth, Mix, First, Khaotung",
-      "event": "Feel Fan Fun Party Concert",
-      "location": "UNION HALL, UNION MALL",
-      "type": "线下/线上",
-      "company": "",
-      "notes": "需要门票",
-      "image": "images/202607/25/17.jpeg"
-    },
-    {
-      "date": "2026-07-25",
-      "time": "01:00 PM",
-      "star": "上百位艺人",
-      "event": "monster music festival 2026",
-      "location": "Queen Sirikit National Convention Center",
-      "type": "线下",
-      "company": "",
-      "notes": "需要门票；5月8日至7月24日售票。",
-      "image": "images/202607/25/13.jpeg"
-    },
-    {
       "date": "2026-07-24",
       "time": "04:00 PM",
       "star": "bus",
@@ -1664,6 +1796,17 @@
     },
     {
       "date": "2026-07-25",
+      "time": "01:00 PM",
+      "star": "上百位艺人",
+      "event": "monster music festival 2026",
+      "location": "Queen Sirikit National Convention Center",
+      "type": "线下",
+      "company": "",
+      "notes": "需要门票；5月8日至7月24日售票。",
+      "image": "images/202607/25/13.jpeg"
+    },
+    {
+      "date": "2026-07-25",
       "time": "04:00 PM",
       "star": "bus",
       "event": "BUS LIGHT AS ONE CONCERT",
@@ -1674,15 +1817,15 @@
       "image": "images/202607/24/16.jpeg"
     },
     {
-      "date": "2026-07-26",
-      "time": "04:00 PM",
-      "star": "bus",
-      "event": "BUS LIGHT AS ONE CONCERT",
-      "location": "IMPACT ARENA",
-      "type": "线下",
+      "date": "2026-07-25",
+      "time": "05:00 PM",
+      "star": "Boun, Prem, Earth, Mix, First, Khaotung",
+      "event": "Feel Fan Fun Party Concert",
+      "location": "UNION HALL, UNION MALL",
+      "type": "线下/线上",
       "company": "",
       "notes": "需要门票",
-      "image": "images/202607/24/16.jpeg"
+      "image": "images/202607/25/17.jpeg"
     },
     {
       "date": "2026-07-26",
@@ -1696,6 +1839,17 @@
       "image": "images/202607/25/13.jpeg"
     },
     {
+      "date": "2026-07-26",
+      "time": "04:00 PM",
+      "star": "bus",
+      "event": "BUS LIGHT AS ONE CONCERT",
+      "location": "IMPACT ARENA",
+      "type": "线下",
+      "company": "",
+      "notes": "需要门票",
+      "image": "images/202607/24/16.jpeg"
+    },
+    {
       "date": "2026-07-28",
       "time": "05:00 PM",
       "star": "JOSS, GAWIN",
@@ -1705,6 +1859,17 @@
       "company": "",
       "notes": "需要门票",
       "image": "images/202607/28/17.jpeg"
+    },
+    {
+      "date": "2026-08-01",
+      "time": "TBC",
+      "star": "DMD全体艺人",
+      "event": "DMD Sport Day 2026 High School Vibes",
+      "location": "Indoor Stadium Huamark",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "需要门票；6月27日开票。",
+      "image": "images/202608/1/0.jpeg"
     },
     {
       "date": "2026-08-08",
@@ -1729,28 +1894,6 @@
       "image": "images/202608/9/18.jpeg"
     },
     {
-      "date": "2026-09-26",
-      "time": "TBC",
-      "star": "WAR WANARAT, DAOU PITTAYA, KENG HARIT, JACKIE JACKRIN, NUNEW CHAWARIN, MARCKRIS BUS, COPPER BUS",
-      "event": "Rookie-Divos Concert",
-      "location": "BITEC LIVE",
-      "type": "线下",
-      "company": "",
-      "notes": "需要门票；6月27日 10:00 开票。",
-      "image": "images/202609/26/0.jpeg"
-    },
-    {
-      "date": "2026-08-01",
-      "time": "TBC",
-      "star": "DMD全体艺人",
-      "event": "DMD Sport Day 2026 High School Vibes",
-      "location": "Indoor Stadium Huamark",
-      "type": "线下",
-      "company": "DMD",
-      "notes": "需要门票；6月27日开票。",
-      "image": "images/202608/1/0.jpeg"
-    },
-    {
       "date": "2026-08-15",
       "time": "TBC",
       "star": "Teetee, Por, North, Otto, Thee, Hugh, Wave",
@@ -1760,6 +1903,17 @@
       "company": "DMD",
       "notes": "需要门票；7月4日开票。",
       "image": "images/202608/15/0.jpeg"
+    },
+    {
+      "date": "2026-09-26",
+      "time": "TBC",
+      "star": "WAR WANARAT, DAOU PITTAYA, KENG HARIT, JACKIE JACKRIN, NUNEW CHAWARIN, MARCKRIS BUS, COPPER BUS",
+      "event": "Rookie-Divos Concert",
+      "location": "BITEC LIVE",
+      "type": "线下",
+      "company": "",
+      "notes": "需要门票；6月27日 10:00 开票。",
+      "image": "images/202609/26/0.jpeg"
     }
   ],
   "groups": [
