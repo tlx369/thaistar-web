@@ -1,7 +1,7 @@
 /**
  * 泰流行369 行程表 — 从本地 data.json 加载数据
  */
-const DATA_URL = "data.json?v=20260614-2";
+const DATA_URL = "data.json?v=20260616";
 const UMAMI_WEBSITE_ID = "52e1dec3-5e58-4681-96fe-53e09c223d75";
 const THUMBNAIL_ROOT = "images/thumbs/";
 
@@ -176,6 +176,134 @@ const EVENT_BUYING_ITEMS = [
         body: [
           "活动条款与条件以主办方规定为准。",
           "许可证编号：91/2569。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "dao-coffee-perth-santa-devils-kiss-concert",
+    title: "Dao Coffee แจกบัตร Perth Santa Devil’s Kiss concert",
+    dateRange: "6月12日 到 7月4日",
+    artist: "PerthSanta",
+    summary:
+      "购买 Dao Coffee 指定咖啡满 95 泰铢并提交收据，有机会成为 20 位幸运粉丝，获得演唱会门票或合照权益。",
+    images: [
+      "images/hddm/6.12-7.04/1.jpeg",
+      "images/hddm/6.12-7.04/2.jpeg",
+      "images/hddm/6.12-7.04/3.jpeg",
+      "images/hddm/6.12-7.04/4.jpeg",
+    ],
+    detailTitle: "Dao Coffee x PerthSanta 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "Dao Coffee 举办 Perth Santa Devil’s Kiss concert 赠票活动。参与者有机会成为 20 位 Lucky Fans，获得 Perth Santa Devil’s Kiss concert 相关奖项，并在活动中享有与艺人合照的特别权益。",
+          "活动日期为 2026年7月19日。",
+        ],
+      },
+      {
+        heading: "参与方式",
+        body: [
+          "在 7-Eleven 任一门店、All Online 或 7-Delivery 购买任意口味、任意规格的 Dao Coffee，单张收据满 95 泰铢即可获得 1 次抽选机会。",
+          "每张收据可获得 1 次机会；提交越多符合条件的收据，获得抽选机会越多。",
+          "完成购买后，需要通过活动指定登记渠道提交资料。",
+          "请保留收据作为领奖证明。收据需包含完整资料，包括收据编号、购买日期、Dao Coffee 商品信息，以及订单成功金额。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "参与时间：2026年6月12日 00:01 至 2026年7月4日 23:59。",
+          "抽奖日期：2026年7月7日。",
+          "中奖公布：2026年7月8日。",
+          "演唱会及权益使用日期：2026年7月19日。",
+        ],
+      },
+      {
+        heading: "奖项设置",
+        body: [
+          "一等奖：Perth Santa Devil’s Kiss concert 2026年7月19日演唱会门票，并包含与艺人合照权益，形式为 2:1。共 10 份，每份价值 5,500 泰铢。",
+          "二等奖：2026年7月19日与艺人合照权益，形式为 2:1，并附 Dao Coffee 礼盒套装。共 10 份，每份价值 965 泰铢。",
+          "获得二等奖的中奖者，需自行持有任一日期的 Perth Santa Devil’s Kiss concert 入场门票，方可使用该权益。",
+        ],
+      },
+      {
+        heading: "领奖与现场规则",
+        body: [
+          "中奖者需按主办方指定方式确认资格，并在规定期限内完成确认。",
+          "演唱会门票领取地点为 Paragon Hall 5 楼，领取时间为 2026年7月19日 10:30 至 13:00。",
+          "合照权益需在演唱会结束后，于 Paragon Hall 5 楼按现场安排登记使用。",
+          "具体领奖、确认与现场安排以主办方最终公布为准。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "活动条款与条件以主办方规定为准。",
+          "许可证编号：111/2569。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "cerave-ha-water-gel-the-plump-and-cool-lab",
+    title: "CeraVe HA Water Gel The Plump and Cool Lab",
+    dateRange: "6月3日 到 7月5日",
+    artist: "Tee Wave",
+    summary:
+      "购买 CeraVe HA Water Gel 搭配指定保湿产品满 999 泰铢并登记收据，有机会参与近距离见面、拍立得合照、游戏与 Hi-Bye 权益。",
+    images: [
+      "images/hddm/6.03-7.05/1.jpeg",
+      "images/hddm/6.03-7.05/2.jpeg",
+    ],
+    detailTitle: "CeraVe HA Water Gel 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "CeraVeThailand 邀请大家参与 CeraVe HA Water Gel The Plump and Cool Lab 活动。符合条件的参与者将有机会和 Tee、Wave 近距离互动，留下限定回忆。",
+          "活动福利包含近距离团体见面、2:1 拍立得合照与现场签名、上台互动游戏，以及活动结束前的 Hi-Bye 环节。",
+        ],
+      },
+      {
+        heading: "参与方式",
+        body: [
+          "购买至少 1 件 CeraVe HA Water Gel，并搭配参与活动的指定保湿产品，单张收据净消费满 999 泰铢或以上。",
+          "参与活动的购买渠道为 BEAUTRIUM 各门店，以及 BEAUTRIUM 官方线上渠道。",
+          "完成购买后，需要清楚拍摄收据照片，并通过活动指定登记渠道提交资料，即可获得 1 次 Lucky Draw 登记机会。",
+        ],
+      },
+      {
+        heading: "参与商品",
+        body: [
+          "指定组合需包含 CeraVe HA Water Gel 至少 1 件。",
+          "可搭配参与活动的保湿产品，例如 CeraVe Facial Moisturising Lotion PM、CeraVe Facial Moisturising Lotion SPF50 AM、CeraVe Oil Control Moisturising Gel-Cream 等，具体以主办方活动商品清单为准。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "购买与登记时间：2026年6月3日 至 2026年7月5日。",
+          "中奖名单公布：2026年7月10日 16:00。",
+          "最终中奖资格、领奖与活动安排，以主办方公布及确认结果为准。",
+        ],
+      },
+      {
+        heading: "活动福利",
+        body: [
+          "Exclusive Group Meeting：近距离参与限定团体见面活动。",
+          "2:1 拍立得合照：与 Tee、Wave 进行 2:1 拍立得合照，并获得现场签名。",
+          "舞台游戏互动：有机会登台与两位艺人一起参与互动游戏。",
+          "Hi-Bye 权益：活动结束前可近距离与艺人道别互动。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "登记资料与收据需清晰、完整，并符合主办方指定条件。",
+          "活动条款与条件以 CeraVeThailand 及主办方规定为准。",
+          "许可证编号：1242/2569。",
         ],
       },
     ],
