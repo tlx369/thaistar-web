@@ -308,6 +308,79 @@ const EVENT_BUYING_ITEMS = [
       },
     ],
   },
+  {
+    id: "smooto-live-marathon-lykn",
+    title: "7.7 Smooto Live Marathon x LYKN",
+    dateRange: "6月16日 到 6月30日",
+    artist: "LYKN",
+    summary:
+      "购买 Smooto 指定唇部产品满 500 泰铢即可获得抽选机会，有机会成为 30 位 Lucky Fans 参与直播活动并获得合照权益。",
+    images: [
+      "images/hddm/6.16-6.30/1.jpeg",
+      "images/hddm/6.16-6.30/2.jpeg",
+      "images/hddm/6.16-6.30/3.jpeg",
+    ],
+    detailTitle: "Smooto Live Marathon x LYKN 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "Smooto 举办 7.7 Smooto Live Marathon x LYKN 活动。符合条件的参与者将有机会成为 30 位 Lucky Fans 之一，参与 2026年7月7日的直播活动。",
+          "活动时间为 2026年7月7日 18:00 至 19:30，将通过 TikTok Live 进行。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "购买资格期间：2026年6月16日 至 2026年6月30日。",
+          "收据登记期间：2026年6月16日 至 2026年7月1日 12:00（泰国时间）。",
+          "入选名单公布：2026年7月3日 14:00。",
+        ],
+      },
+      {
+        heading: "参与商品",
+        body: [
+          "参与者需在活动期间购买 Smooto Insta Glam Flash Tint（袋装或盒装）或 Smooto Pumping Jelly Lip（袋装、盒装或棒状装）。",
+          "收据或订单确认中，必须至少包含 1 盒 Smooto Insta Glam Flash Tint LYKN Edition，才符合本活动参与资格。",
+          "只有符合资格的 Smooto 唇部产品购买金额会被计算为活动抽选机会。",
+        ],
+      },
+      {
+        heading: "抽选机会计算",
+        body: [
+          "每购买参与活动商品满 500 泰铢，可获得 1 次参与活动抽选机会。",
+          "500 泰铢 = 1 次机会。",
+          "1,000 泰铢 = 2 次机会。",
+          "1,500 泰铢 = 3 次机会。",
+          "2,000 泰铢 = 4 次机会。",
+        ],
+      },
+      {
+        heading: "登记规则",
+        body: [
+          "参与者必须通过指定登记表提交完整且准确的资料，并附上有效购买证明。",
+          "购买证明必须清楚显示购买日期、收据编号或订单编号、商品明细，以及购买金额。",
+          "每张收据或每个订单编号只能登记 1 次，不可重复使用。",
+          "提交登记表不代表一定能参加活动。入选名单将于 2026年7月3日公布，并通过登记时提供的资料联系入选者。",
+        ],
+      },
+      {
+        heading: "活动福利",
+        body: [
+          "入选者可获得活动席位。",
+          "入选者可获得 5:5 数位合照权益，共 1 张。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "主办方保留根据实际购买金额，核对所有提交资料、购买证明与有效抽选机会数量的权利。",
+          "用于参与本活动的商品不可退款、不可换货，也不可在任何情况下退回。",
+          "主办方可视情况调整活动条款与条件；所有事项以主办方最终决定为准。",
+        ],
+      },
+    ],
+  },
 ];
 
 const scheduleEl = document.getElementById("schedule");
