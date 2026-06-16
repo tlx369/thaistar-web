@@ -702,6 +702,29 @@ function getFilteredMerchandise(items, category, keyword) {
   });
 }
 
+function renderDayPanelEvents(panel, events) {
+  if (!panel || panel.dataset.rendered === "true") return;
+  panel.replaceChildren();
+
+  if (events.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "day-panel__empty";
+    empty.textContent = "这一天暂无行程安排。";
+    panel.appendChild(empty);
+  } else {
+    const list = document.createElement("ul");
+    list.className = "card-list";
+    events.forEach((ev, i) => {
+      const li = document.createElement("li");
+      li.appendChild(createEventCard(ev, i));
+      list.appendChild(li);
+    });
+    panel.appendChild(list);
+  }
+
+  panel.dataset.rendered = "true";
+}
+
 function renderMerchGrid(listEl, countEl, emptyEl, items, activeCategory, keyword) {
   const filtered = getFilteredMerchandise(items, activeCategory, keyword);
   listEl.replaceChildren();
@@ -728,28 +751,13 @@ function createDayPanel(dateKey, events, isActive) {
   panel.role = "tabpanel";
   panel.setAttribute("aria-labelledby", tabId);
   panel.dataset.date = iso;
+  panel.dataset.rendered = "false";
 
   if (!isActive) {
     panel.hidden = true;
   } else {
     panel.classList.add("day-panel--active");
-  }
-
-  const list = document.createElement("ul");
-  list.className = "card-list";
-
-  if (events.length === 0) {
-    const empty = document.createElement("p");
-    empty.className = "day-panel__empty";
-    empty.textContent = "这一天暂无行程安排。";
-    panel.appendChild(empty);
-  } else {
-    events.forEach((ev, i) => {
-      const li = document.createElement("li");
-      li.appendChild(createEventCard(ev, i));
-      list.appendChild(li);
-    });
-    panel.appendChild(list);
+    renderDayPanelEvents(panel, events);
   }
 
   return panel;
@@ -797,7 +805,7 @@ function scrollTabIntoView(tab, scrollContainer) {
 const PANEL_TRANSITION_MS = 280;
 
 function activateDateTab(iso, tabList) {
-  const { tabs, panels, scrollEl } = tabList;
+  const { tabs, panels, scrollEl, eventsByDate } = tabList;
 
   tabs.forEach((tab) => {
     const isActive = tab.dataset.date === iso;
@@ -810,6 +818,7 @@ function activateDateTab(iso, tabList) {
     const isActive = panel.dataset.date === iso;
 
     if (isActive) {
+      renderDayPanelEvents(panel, eventsByDate.get(panel.dataset.date) || []);
       panel.hidden = false;
       requestAnimationFrame(() => panel.classList.add("day-panel--active"));
       return;
@@ -884,19 +893,22 @@ function renderSchedule(grouped) {
 
   const tabs = [];
   const panels = [];
+  const eventsByDate = new Map();
 
   grouped.forEach(([dateKey, events], index) => {
     const isActive = index === 0;
+    const { iso } = formatDateMeta(dateKey);
     const tab = createDateTab(dateKey, isActive);
     const panel = createDayPanel(dateKey, events, isActive);
 
+    eventsByDate.set(iso, events);
     tabs.push(tab);
     panels.push(panel);
     scrollEl.appendChild(tab);
     panelsWrap.appendChild(panel);
   });
 
-  const tabList = { tabs, panels, scrollEl };
+  const tabList = { tabs, panels, scrollEl, eventsByDate };
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
@@ -1576,7 +1588,7 @@ async function loadSchedule() {
   }
 
   try {
-    const res = await fetch(DATA_URL, { cache: "no-store" });
+    const res = await fetch(DATA_URL);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     const data = await res.json();

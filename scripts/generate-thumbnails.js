@@ -5,8 +5,8 @@ const { spawnSync } = require("child_process");
 const ROOT = path.resolve(__dirname, "..");
 const IMAGE_ROOT = path.join(ROOT, "images");
 const THUMB_ROOT = path.join(IMAGE_ROOT, "thumbs");
-const MAX_SIZE = 520;
-const IMAGE_RE = /(["'`])(images\/(?!thumbs\/)[^"'`)]+\.(?:jpe?g|png|webp))\1/gi;
+const MAX_SIZE = 420;
+const IMAGE_RE = /(["'`])(images\/[^"'`)]+\.(?:jpe?g|png|webp))\1/gi;
 
 function readJsonImages() {
   const jsonPath = path.join(ROOT, "data.json");
@@ -29,22 +29,40 @@ function readJsonImages() {
 }
 
 function readInlineImages() {
-  const appPath = path.join(ROOT, "app.js");
-  const appJs = fs.readFileSync(appPath, "utf8");
-  return [...appJs.matchAll(IMAGE_RE)].map((match) => match[2]);
+  const sourceFiles = ["app.js", "index.html", "fans-guide.html"];
+  return sourceFiles.flatMap((file) => {
+    const sourcePath = path.join(ROOT, file);
+    if (!fs.existsSync(sourcePath)) return [];
+    const source = fs.readFileSync(sourcePath, "utf8");
+    return [...source.matchAll(IMAGE_RE)].map((match) => match[2]);
+  });
 }
 
 function normalizeImagePath(value) {
   if (!value || /^https?:\/\//i.test(value) || value.includes("..")) return null;
   const cleaned = value.replace(/^\.\//, "").split(/[?#]/)[0];
-  if (!cleaned.startsWith("images/") || cleaned.startsWith("images/thumbs/")) return null;
+  if (!cleaned.startsWith("images/")) return null;
+  const sourcePath = cleaned.startsWith("images/thumbs/")
+    ? `images/${cleaned.slice("images/thumbs/".length)}`
+    : cleaned;
   if (!/\.(jpe?g|png|webp)$/i.test(cleaned)) return null;
-  return cleaned;
+  return sourcePath;
 }
 
 function shouldGenerate(srcPath, outPath) {
   if (!fs.existsSync(outPath)) return true;
-  return fs.statSync(srcPath).mtimeMs > fs.statSync(outPath).mtimeMs;
+  if (fs.statSync(srcPath).mtimeMs > fs.statSync(outPath).mtimeMs) return true;
+
+  const info = spawnSync("sips", ["-g", "pixelWidth", "-g", "pixelHeight", outPath], {
+    encoding: "utf8",
+  });
+  if (info.status !== 0) return true;
+
+  const width = Number((info.stdout.match(/pixelWidth:\s*(\d+)/) || [])[1]);
+  const height = Number((info.stdout.match(/pixelHeight:\s*(\d+)/) || [])[1]);
+  if (!width || !height) return true;
+
+  return Math.max(width, height) > MAX_SIZE;
 }
 
 function generateOne(relativePath) {
