@@ -106,6 +106,15 @@ function checkDataJson() {
       addWarning(`${label}: type 建议使用 “线上” 或 “线下”，当前是 ${event.type}`);
     }
     checkLocalAsset(event.image, `${label}.image`);
+    if (event.images !== undefined) {
+      if (!Array.isArray(event.images)) {
+        addError(`${label}.images: 必须是图片路径数组`);
+      } else {
+        event.images.forEach((image, imageIndex) => {
+          checkLocalAsset(image, `${label}.images[${imageIndex}]`);
+        });
+      }
+    }
   });
 
   merchandise.forEach((item, index) => {

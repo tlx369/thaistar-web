@@ -1,7 +1,7 @@
 /**
  * 泰流行369 行程表 — 从本地 data.json 加载数据
  */
-const DATA_URL = "data.json?v=20260616-3";
+const DATA_URL = "data.json?v=20260625-8";
 const UMAMI_WEBSITE_ID = "52e1dec3-5e58-4681-96fe-53e09c223d75";
 const THUMBNAIL_ROOT = "images/thumbs/";
 
@@ -420,6 +420,9 @@ function normalizeEvents(data) {
       const value = item[key];
       record[key] = value == null ? "" : String(value).trim();
     });
+    if (Array.isArray(item.images)) {
+      record.images = item.images.map((image) => String(image || "").trim()).filter(Boolean);
+    }
 
     if (!record.date && !record.star && !record.event) continue;
     events.push(record);
@@ -623,6 +626,18 @@ function resolveImageSources(raw) {
   };
 }
 
+function resolveImageGallery(item) {
+  const rawImages = Array.isArray(item?.images) && item.images.length > 0 ? item.images : [item?.image];
+  const seen = new Set();
+  return rawImages
+    .map(resolveImageSources)
+    .filter((source) => {
+      if (!source.original || seen.has(source.original)) return false;
+      seen.add(source.original);
+      return true;
+    });
+}
+
 function wireImageFallback(img, displayUrl, originalUrl, onFinalError) {
   img.addEventListener("error", () => {
     if (displayUrl && originalUrl && displayUrl !== originalUrl && img.dataset.fallbackTried !== "true") {
@@ -639,8 +654,8 @@ function wireImageFallback(img, displayUrl, originalUrl, onFinalError) {
 
 function createEventCard(event, index) {
   const alt = index % 2 === 1;
-  const imageSources = resolveImageSources(event.image);
-  const imageUrl = imageSources.original;
+  const gallerySources = resolveImageGallery(event);
+  const imageUrl = gallerySources[0]?.original;
 
   const article = document.createElement("article");
   article.className = `event-card${alt ? " event-card--alt" : ""}${
@@ -714,26 +729,47 @@ function createEventCard(event, index) {
 
     const preview = document.createElement("button");
     preview.type = "button";
-    preview.className = "event-card__image-button";
+    preview.className = `event-card__image-button event-card__image-button--count-${Math.min(
+      gallerySources.length,
+      4
+    )}`;
     preview.dataset.scheduleImageSrc = imageUrl;
+    preview.dataset.scheduleImageList = JSON.stringify(gallerySources.map((source) => source.original));
     preview.dataset.scheduleImageTitle = event.event
       ? `${event.star || "活动"} · ${event.event} 海报`
       : `${event.star || "活动"} 海报`;
     preview.setAttribute("aria-label", `查看${preview.dataset.scheduleImageTitle}`);
 
-    const img = document.createElement("img");
-    img.className = "event-card__poster";
-    img.src = imageSources.display;
-    img.alt = preview.dataset.scheduleImageTitle;
-    img.loading = "lazy";
-    img.decoding = "async";
+    const visibleSources = gallerySources.slice(0, 4);
+    visibleSources.forEach((imageSources, imageIndex) => {
+      const tile = document.createElement("span");
+      tile.className = "event-card__poster-tile";
 
-    wireImageFallback(img, imageSources.display, imageUrl, () => {
-      media.remove();
-      article.classList.remove("event-card--has-image");
+      const img = document.createElement("img");
+      img.className = "event-card__poster";
+      img.src = imageSources.display;
+      img.alt = preview.dataset.scheduleImageTitle;
+      img.loading = "lazy";
+      img.decoding = "async";
+
+      wireImageFallback(img, imageSources.display, imageSources.original, () => {
+        tile.remove();
+        if (!preview.querySelector(".event-card__poster-tile")) {
+          media.remove();
+          article.classList.remove("event-card--has-image");
+        }
+      });
+
+      tile.appendChild(img);
+      if (imageIndex === 3 && gallerySources.length > 4) {
+        const more = document.createElement("span");
+        more.className = "event-card__poster-more";
+        more.textContent = `+${gallerySources.length - 4}`;
+        tile.appendChild(more);
+      }
+      preview.appendChild(tile);
     });
 
-    preview.appendChild(img);
     media.appendChild(preview);
     article.appendChild(media);
   }
@@ -1531,8 +1567,12 @@ function renderEventBuyingDetail(item) {
   eventBuyingEl.appendChild(detail);
 }
 
-function openEventBuyingLightbox(src, title) {
-  if (!src) return;
+function openEventBuyingLightbox(src, title, gallerySources, startIndex = 0) {
+  const images = (Array.isArray(gallerySources) && gallerySources.length > 0 ? gallerySources : [src]).filter(
+    Boolean
+  );
+  if (images.length === 0) return;
+  let activeIndex = Math.max(0, Math.min(startIndex, images.length - 1));
 
   const overlay = document.createElement("div");
   overlay.className = "event-buying-lightbox";
@@ -1543,20 +1583,44 @@ function openEventBuyingLightbox(src, title) {
   const close = document.createElement("button");
   close.type = "button";
   close.className = "event-buying-lightbox__close";
-  close.textContent = "关闭";
-  overlay.appendChild(close);
+  close.setAttribute("aria-label", "关闭");
+
+  const stage = document.createElement("div");
+  stage.className = "event-buying-lightbox__stage";
+  stage.appendChild(close);
 
   const img = document.createElement("img");
-  img.src = src;
   img.alt = title || "活动图片预览";
   img.className = "event-buying-lightbox__image";
-  overlay.appendChild(img);
+  stage.appendChild(img);
+  overlay.appendChild(stage);
+
+  const counter = document.createElement("div");
+  counter.className = "event-buying-lightbox__counter";
+  overlay.appendChild(counter);
 
   const actions = document.createElement("div");
   actions.className = "event-buying-lightbox__actions";
 
+  let prev;
+  let next;
+  if (images.length > 1) {
+    prev = document.createElement("button");
+    prev.type = "button";
+    prev.className = "event-buying-lightbox__nav event-buying-lightbox__nav--prev";
+    prev.setAttribute("aria-label", "上一张");
+    prev.textContent = "‹";
+    overlay.appendChild(prev);
+
+    next = document.createElement("button");
+    next.type = "button";
+    next.className = "event-buying-lightbox__nav event-buying-lightbox__nav--next";
+    next.setAttribute("aria-label", "下一张");
+    next.textContent = "›";
+    overlay.appendChild(next);
+  }
+
   const openOriginal = document.createElement("a");
-  openOriginal.href = src;
   openOriginal.target = "_blank";
   openOriginal.rel = "noopener";
   openOriginal.download = "";
@@ -1565,19 +1629,37 @@ function openEventBuyingLightbox(src, title) {
   actions.appendChild(openOriginal);
   overlay.appendChild(actions);
 
-  const removeOverlay = () => overlay.remove();
+  const renderImage = () => {
+    const currentSrc = images[activeIndex];
+    img.src = currentSrc;
+    openOriginal.href = currentSrc;
+    counter.textContent = images.length > 1 ? `${activeIndex + 1} / ${images.length}` : "";
+  };
+
+  const showImage = (direction) => {
+    activeIndex = (activeIndex + direction + images.length) % images.length;
+    renderImage();
+  };
+
+  const handleKeydown = (event) => {
+    if (event.key === "Escape") removeOverlay();
+    if (images.length > 1 && event.key === "ArrowLeft") showImage(-1);
+    if (images.length > 1 && event.key === "ArrowRight") showImage(1);
+  };
+
+  const removeOverlay = () => {
+    document.removeEventListener("keydown", handleKeydown);
+    overlay.remove();
+  };
   close.addEventListener("click", removeOverlay);
+  prev?.addEventListener("click", () => showImage(-1));
+  next?.addEventListener("click", () => showImage(1));
   overlay.addEventListener("click", (event) => {
     if (event.target === overlay) removeOverlay();
   });
-  document.addEventListener(
-    "keydown",
-    (event) => {
-      if (event.key === "Escape") removeOverlay();
-    },
-    { once: true }
-  );
+  document.addEventListener("keydown", handleKeydown);
 
+  renderImage();
   document.body.appendChild(overlay);
   close.focus();
 }
@@ -1588,7 +1670,17 @@ function wireScheduleImagePreview() {
   scheduleEl.addEventListener("click", (event) => {
     const button = event.target.closest("[data-schedule-image-src]");
     if (!button) return;
-    openEventBuyingLightbox(button.dataset.scheduleImageSrc, button.dataset.scheduleImageTitle);
+    let gallerySources = [];
+    try {
+      gallerySources = JSON.parse(button.dataset.scheduleImageList || "[]");
+    } catch (error) {
+      gallerySources = [];
+    }
+    openEventBuyingLightbox(
+      button.dataset.scheduleImageSrc,
+      button.dataset.scheduleImageTitle,
+      gallerySources
+    );
   });
 }
 

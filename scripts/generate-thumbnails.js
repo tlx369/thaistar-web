@@ -15,6 +15,7 @@ function readJsonImages() {
 
   for (const event of data.events || []) {
     if (event.image) images.push(event.image);
+    if (Array.isArray(event.images)) images.push(...event.images);
   }
 
   for (const item of data.merchandise || []) {
