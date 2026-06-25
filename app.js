@@ -1,7 +1,7 @@
 /**
  * 泰流行369 行程表 — 从本地 data.json 加载数据
  */
-const DATA_URL = "data.json?v=20260625-8";
+const DATA_URL = "data.json?v=20260625-9";
 const UMAMI_WEBSITE_ID = "52e1dec3-5e58-4681-96fe-53e09c223d75";
 const THUMBNAIL_ROOT = "images/thumbs/";
 
@@ -544,12 +544,20 @@ function groupByDate(events) {
 }
 
 function formatDateMeta(isoDate) {
-  const d = new Date(`${isoDate}T12:00:00`);
+  const match = String(isoDate || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) {
+    return { tabLabel: isoDate, weekday: "", iso: isoDate };
+  }
+
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+  const d = new Date(year, month - 1, day);
   if (Number.isNaN(d.getTime())) {
     return { tabLabel: isoDate, weekday: "", iso: isoDate };
   }
   return {
-    tabLabel: `${d.getMonth() + 1}月${d.getDate()}日`,
+    tabLabel: `${month}月${day}日`,
     weekday: WEEKDAYS[d.getDay()],
     iso: isoDate,
   };
