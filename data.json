@@ -1766,6 +1766,17 @@
     },
     {
       "date": "2026-06-29",
+      "time": "04:00 PM",
+      "star": "POND, PHUWIN",
+      "event": "THE BEAUTY EVOLUTION OF DERMATIGE AESTHETIC",
+      "location": "Central Court, centralWorld",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202606/29/1.jpeg"
+    },
+    {
+      "date": "2026-06-29",
       "time": "05:00 PM",
       "star": "LATTE, KIM",
       "event": "JUDYDOLL X LATTE&KIM : LOVE UPON A BLOOM",
@@ -1854,6 +1865,17 @@
     },
     {
       "date": "2026-06-30",
+      "time": "04:30 PM",
+      "star": "JIMMY",
+      "event": "ELEVATE YOUR SWEET MOMENT",
+      "location": "Siam Square One, G Floor (in front of EVEANDBOY)",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202606/30/1.jpeg"
+    },
+    {
+      "date": "2026-06-30",
       "time": "05:00 PM",
       "star": "YIN ANAN",
       "event": "Tops of Beauty by Looks",
@@ -1930,6 +1952,32 @@
       "image": "images/202607/6/17.jpeg"
     },
     {
+      "date": "2026-07-07",
+      "time": "08:00 PM",
+      "star": "DEW, TEE",
+      "event": "MR.KILL The First Page",
+      "location": "MCC Hall, Floor 3, The Mall Lifestore Bangkapi",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "Gates open 7:00 PM；门票于 6月28日 13:00 开售。",
+      "image": "images/202607/7/1.jpeg"
+    },
+    {
+      "date": "2026-07-09",
+      "time": "12:00 PM",
+      "star": "KING MAN, BABII, POLCASAN, PERMPOON, AVOCEAN, LOOK KHUNNOO, JUMMO, MUVMUV, LUNAR, ANY",
+      "event": "Thailand Character & Content Expo (TCEX) 2026",
+      "location": "Paragon Hall, 5th Floor, Siam Paragon",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202607/9/1.jpeg",
+      "images": [
+        "images/202607/9/1.jpeg",
+        "images/202607/9/2.jpeg"
+      ]
+    },
+    {
       "date": "2026-07-09",
       "time": "06:00 PM",
       "star": "KENG, NAMPING",
@@ -1939,6 +1987,128 @@
       "company": "",
       "notes": "",
       "image": "images/202607/9/18.jpeg"
+    },
+    {
+      "date": "2026-07-10",
+      "time": "12:30 PM",
+      "star": "MOMO, REXXA, JEWEL, LYKYOU, MR. SATURNWORLD, LOOK KHUNNOO, NONG NOOONG, JUMMO",
+      "event": "Thailand Character & Content Expo (TCEX) 2026",
+      "location": "Paragon Hall, 5th Floor, Siam Paragon",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202607/10/1.jpeg",
+      "images": [
+        "images/202607/10/1.jpeg",
+        "images/202607/10/2.jpeg"
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "time": "12:30 PM",
+      "star": "PERMPOON, JAIDEE, SAMRUAY, WESLEY, GUINZLY, SMYLE, NEONA, VIMMY",
+      "event": "Thailand Character & Content Expo (TCEX) 2026",
+      "location": "Paragon Hall, 5th Floor, Siam Paragon",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202607/11/1.jpeg",
+      "images": [
+        "images/202607/11/1.jpeg",
+        "images/202607/11/2.jpeg"
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "time": "01:00 PM",
+      "star": "TESHOW, PING",
+      "event": "Y Book Fair 11 | GMMTV OFFICIAL MERCHANDISE - Match Point เปิดตัวนิยาย รักนี้ต้องเสิร์ฟ",
+      "location": "QSNCC, Event Hall, Level B2",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "集合地点：B2 层停车场区域，柱位 D25-F25。",
+      "image": "images/202607/11/3.jpeg"
+    },
+    {
+      "date": "2026-07-11",
+      "time": "02:00 PM",
+      "star": "TESHOW, PING",
+      "event": "Y Book Fair 11 | Fan Sign บูธ GMMTV OFFICIAL MERCHANDISE",
+      "location": "QSNCC, Meeting Room 201, Level B2",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "集合地点：B2 层停车场区域，柱位 D25-F25。",
+      "image": "images/202607/11/3.jpeg"
+    },
+    {
+      "date": "2026-07-11",
+      "time": "04:00 PM",
+      "star": "KAPOOK, CIIZE",
+      "event": "Y Book Fair 11 | Fan Sign บูธ GMMTV OFFICIAL MERCHANDISE",
+      "location": "QSNCC, Meeting Room 201, Level B2",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "集合地点：B2 层停车场区域，柱位 D25-F25。",
+      "image": "images/202607/11/4.jpeg"
+    },
+    {
+      "date": "2026-07-11",
+      "time": "06:00 PM",
+      "star": "JAN, JINGJING, JEWEL",
+      "event": "Y Book Fair 11 | Fan Sign บูธ GMMTV OFFICIAL MERCHANDISE",
+      "location": "QSNCC, Meeting Room 201, Level B2",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "集合地点：B2 层停车场区域，柱位 D25-F25。",
+      "image": "images/202607/11/5.jpeg"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "12:30 PM",
+      "star": "DOMIIA, CERI, METAA, NILKNHAKE, PAODY, TOMAFOX, AVOCEAN, YUZU MUMU",
+      "event": "Thailand Character & Content Expo (TCEX) 2026",
+      "location": "Paragon Hall, 5th Floor, Siam Paragon",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202607/12/1.jpeg",
+      "images": [
+        "images/202607/12/1.jpeg",
+        "images/202607/12/2.jpeg"
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "time": "02:00 PM",
+      "star": "KEN, PAUL, JUSTIN, KEATON",
+      "event": "Y Book Fair 11 | Fan Sign บูธ GMMTV OFFICIAL MERCHANDISE",
+      "location": "QSNCC, Meeting Room 201, Level B2",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "集合地点：B2 层停车场区域，柱位 D25-F25。",
+      "image": "images/202607/12/5.jpeg"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "04:00 PM",
+      "star": "ALMOND, PROGRESS, PONPON",
+      "event": "Y Book Fair 11 | Fan Sign บูธ GMMTV OFFICIAL MERCHANDISE",
+      "location": "QSNCC, Meeting Room 201, Level B2",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "集合地点：B2 层停车场区域，柱位 D25-F25。",
+      "image": "images/202607/12/3.jpeg"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "06:00 PM",
+      "star": "EARTH, MIX, MR. SATURNWORLD",
+      "event": "Y Book Fair 11 | Fan Sign บูธ GMMTV OFFICIAL MERCHANDISE",
+      "location": "QSNCC, Meeting Room 201, Level B2",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "集合地点：B2 层停车场区域，柱位 D25-F25。",
+      "image": "images/202607/12/4.jpeg"
     },
     {
       "date": "2026-07-18",
@@ -2093,6 +2263,61 @@
       "company": "DMD",
       "notes": "需要门票；7月4日开票。",
       "image": "images/202608/15/0.jpeg"
+    },
+    {
+      "date": "2026-08-21",
+      "time": "06:00 PM",
+      "star": "POND, PHUWIN",
+      "event": "PondPhuwin Space Soul-Odyssey Concert",
+      "location": "Impact Arena, Muang Thong Thani",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "可通过 TTM LIVE 全球直播；门票于 6月28日 10:00 开售。",
+      "image": "images/202608/21/1.jpeg"
+    },
+    {
+      "date": "2026-08-22",
+      "time": "06:00 PM",
+      "star": "POND, PHUWIN",
+      "event": "PondPhuwin Space Soul-Odyssey Concert",
+      "location": "Impact Arena, Muang Thong Thani",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "可通过 TTM LIVE 全球直播；门票于 6月28日 10:00 开售。",
+      "image": "images/202608/21/1.jpeg"
+    },
+    {
+      "date": "2026-08-23",
+      "time": "06:00 PM",
+      "star": "POND, PHUWIN",
+      "event": "PondPhuwin Space Soul-Odyssey Concert",
+      "location": "Impact Arena, Muang Thong Thani",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "可通过 TTM LIVE 全球直播；门票于 6月28日 10:00 开售。",
+      "image": "images/202608/21/1.jpeg"
+    },
+    {
+      "date": "2026-08-29",
+      "time": "05:00 PM",
+      "star": "Krist, Singto, Gunsmile, Fluke, New, Neen, Off, Jan, Wawa, Ice, Oat, Prince",
+      "event": "SOTUS 10th Anniversary Concert",
+      "location": "Union Hall, Union Mall",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "可通过 TTM LIVE 全球直播；门票于 7月5日 10:00 开售，普通售票 7月6日 10:00 开始。",
+      "image": "images/202608/29/1.jpeg"
+    },
+    {
+      "date": "2026-08-30",
+      "time": "05:00 PM",
+      "star": "Krist, Singto, Gunsmile, Fluke, New, Neen, Off, Jan, Wawa, Ice, Oat, Prince",
+      "event": "SOTUS 10th Anniversary Concert",
+      "location": "Union Hall, Union Mall",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "可通过 TTM LIVE 全球直播；门票于 7月5日 10:00 开售，普通售票 7月6日 10:00 开始。",
+      "image": "images/202608/29/1.jpeg"
     },
     {
       "date": "2026-09-26",
