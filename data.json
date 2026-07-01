@@ -1997,6 +1997,30 @@
     },
     {
       "date": "2026-07-03",
+      "time": "03:00 PM",
+      "star": "LISA, WIN, ANNE, EMI, BONNIE, PHUTATCHAI, PEEMWASU",
+      "event": "ULTIMUNE Studio: LISA's Backstage POP UP EVENT",
+      "location": "centralWorld",
+      "type": "线下",
+      "notes": "15:00 ULTIMUNE x Verdy Pop up at Beacon 3；16:00 Exclusive showcase；16:30 LISA 活动开始。",
+      "image": "images/202607/3/88.jpeg",
+      "images": [
+        "images/202607/3/88.jpeg",
+        "images/202607/3/99.jpeg"
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "time": "05:00 PM",
+      "star": "GAWIN",
+      "event": "Grand Opening Central Northville",
+      "location": "Grand Opening area, G Floor, Central Northville",
+      "type": "线下",
+      "notes": "粉丝可在周边区域为艺人加油。",
+      "image": "images/202607/3/00.jpeg"
+    },
+    {
+      "date": "2026-07-03",
       "time": "06:00 PM",
       "star": "LEGO, HONG, TUI, LYKYOU",
       "event": "TOY STORY 5 SF FRIENDS SCREENING",
