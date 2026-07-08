@@ -2317,6 +2317,16 @@
       "image": "images/202607/10/3.jpeg"
     },
     {
+      "date": "2026-07-10",
+      "time": "06:00 PM",
+      "star": "POND, PHUWIN, PERMPOON",
+      "type": "线下",
+      "location": "FoodWalk Zone, G Floor, Megabangna",
+      "event": "Moshi Moshi School of Friendship Special Event x PondPhuwin",
+      "image": "images/202607/10/5.jpeg",
+      "notes": ""
+    },
+    {
       "date": "2026-07-11",
       "time": "12:30 PM",
       "star": "PERMPOON, JAIDEE, SAMRUAY, WESLEY, GUINZLY, SMYLE, NEONA, VIMMY",
@@ -2409,6 +2419,16 @@
       "image": "images/202607/11/5.jpeg"
     },
     {
+      "date": "2026-07-11",
+      "time": "07:00 PM",
+      "star": "NORTH, OTTO, COPPER, FIFA",
+      "type": "线下",
+      "location": "Central Court Zone, 1st Floor, centralWorld",
+      "event": "PRAEW TALK 2026 : STAGE OF STORIES",
+      "image": "images/202607/11/9.jpeg",
+      "notes": "粉丝可到周边区域应援"
+    },
+    {
       "date": "2026-07-12",
       "time": "12:30 PM",
       "star": "DOMIIA, CERI, METAA, NILKNHAKE, PAODY, TOMAFOX, AVOCEAN, YUZU MUMU",
@@ -2458,6 +2478,16 @@
     },
     {
       "date": "2026-07-12",
+      "time": "03:00 PM",
+      "star": "SURF, JAVA, MARK",
+      "type": "线下",
+      "location": "Beautrium Flagship Store Siam Square",
+      "event": "Sulwhasoo First Journey at BEAUTRIUM",
+      "image": "images/202607/12/13.jpeg",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-12",
       "time": "04:00 PM",
       "star": "POND, PHUWIN",
       "event": "TPLUS 7th Anniversary with PondPhuwin",
@@ -2499,6 +2529,26 @@
       "company": "GMMTV",
       "notes": "",
       "image": "images/202607/12/7.jpeg"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "05:45 PM",
+      "star": "BOOK",
+      "type": "线下",
+      "location": "Wachirabenchathat Park (Suan Rot Fai)",
+      "event": "DNA x ALL MEMBER MILK RUN PRESENTED BY 7-ELEVEN",
+      "image": "images/202607/12/12.jpeg",
+      "notes": "闭门活动，仅限有资格参与者"
+    },
+    {
+      "date": "2026-07-12",
+      "time": "05:45 PM",
+      "star": "SEA",
+      "type": "线下",
+      "location": "Wachirabenchathat Park (Suan Rot Fai)",
+      "event": "PROTEN x ALL MEMBER MILK RUN PRESENTED BY 7-ELEVEN",
+      "image": "images/202607/12/11.jpeg",
+      "notes": "闭门活动，仅限有资格参与者"
     },
     {
       "date": "2026-07-12",
