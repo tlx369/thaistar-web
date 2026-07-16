@@ -1037,6 +1037,17 @@
     },
     {
       "date": "2026-06-16",
+      "time": "03:30 PM",
+      "star": "TLE",
+      "event": "LONGCHAMP FALL 26 TREASURE HUNT EVENT",
+      "location": "centralwOrld",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "粉丝可到现场周边为艺人送上鼓励；活动区域 02:00 PM 开放入场。",
+      "image": "images/202606/16/1530.jpeg"
+    },
+    {
+      "date": "2026-06-16",
       "time": "05:00 PM",
       "star": "DAOU, OFFROAD",
       "event": "เปิดตัวสินค้า OREO ใหม่",
@@ -2584,6 +2595,149 @@
       "image": "images/DMD.jpeg"
     },
     {
+      "date": "2026-07-17",
+      "time": "04:00 PM",
+      "star": "EST",
+      "event": "DR.Ally THE GRAND PRESENTER EVENT",
+      "location": "Union Mall, G Floor",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202607/17/1.jpeg"
+    },
+    {
+      "date": "2026-07-17",
+      "time": "06:00 PM",
+      "star": "NAMTAN, FILM, LUNAR, VIEW, MIM, VIMMY",
+      "event": "MOANA SF FRIENDS SCREENING",
+      "location": "SF WORLD CINEMA CENTRAL WORLD",
+      "type": "线下",
+      "company": "",
+      "notes": "需要电影票。",
+      "image": "images/202607/17/4.jpeg"
+    },
+    {
+      "date": "2026-07-17",
+      "time": "06:30 PM",
+      "star": "GREAT",
+      "event": "DR.Ally THE GRAND PRESENTER EVENT",
+      "location": "Union Mall, G Floor",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202607/17/2.jpeg"
+    },
+    {
+      "date": "2026-07-17",
+      "time": "06:30 PM",
+      "star": "JOONG",
+      "event": "#Legend 100 List Social Club",
+      "location": "Event Hall, 2nd Floor, Central Chidlom",
+      "type": "线下",
+      "company": "",
+      "notes": "活动仅限有资格人员参加。",
+      "image": "images/202607/17/5.jpeg"
+    },
+    {
+      "date": "2026-07-17",
+      "time": "08:00 PM",
+      "star": "MARK",
+      "event": "DR.Ally THE GRAND PRESENTER EVENT",
+      "location": "Union Mall, G Floor",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202607/17/3.jpeg"
+    },
+    {
+      "date": "2026-07-18",
+      "time": "02:00 PM",
+      "star": "JACKIE",
+      "event": "niko and ... Fashion Island OPENING EVENT",
+      "location": "Event Space (Next to niko and ...), 1F, Grand Station, Fashion Island",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202607/18/2.jpeg"
+    },
+    {
+      "date": "2026-07-18",
+      "time": "03:00 PM",
+      "star": "GUN",
+      "event": "Celebration Uranus Clinic 2026",
+      "location": "Central Khon Kaen",
+      "type": "线下",
+      "company": "",
+      "notes": "非曼谷，孔敬尚泰购物中心。",
+      "image": "images/202607/18/3.jpeg"
+    },
+    {
+      "date": "2026-07-18",
+      "time": "03:00 PM",
+      "star": "JOONG, DUNK",
+      "event": "Grand Opening Uranus Clinic 2026",
+      "location": "Central Chonburi",
+      "type": "线下",
+      "company": "",
+      "notes": "非曼谷，春武里尚泰购物中心。",
+      "image": "images/202607/18/4.jpeg"
+    },
+    {
+      "date": "2026-07-18",
+      "time": "04:30 PM",
+      "star": "JACKIE",
+      "event": "est cola 3x3 basketball u-league final match",
+      "location": "Level 1, Mega Plaza Mega Bangna",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202607/18/7.jpeg"
+    },
+    {
+      "date": "2026-07-18",
+      "time": "04:30 PM",
+      "star": "MARC, ASTON",
+      "event": "est cola 3x3 basketball u-league final match",
+      "location": "Level 1, Mega Plaza Mega Bangna",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202607/18/8.jpeg"
+    },
+    {
+      "date": "2026-07-18",
+      "time": "05:00 PM",
+      "star": "EST",
+      "event": "Mix & Cool Party by NESCAFÉ Ready-to-Mix",
+      "location": "Block I, Siam Square",
+      "type": "线下",
+      "company": "",
+      "notes": "粉丝可到现场周边为艺人送上鼓励，现场位置有限。",
+      "image": "images/202607/18/5.jpeg"
+    },
+    {
+      "date": "2026-07-18",
+      "time": "05:30 PM",
+      "star": "TAY, NEW, POLCASAN, MOND, RYU, LEO",
+      "event": "หมาเห่าเครื่องบิน | กุ๊กกี้ให้คู่กัน",
+      "location": "UNION MALL 4 FL. (OPPOSITE VINTAGE VILLAGE)",
+      "type": "线下",
+      "company": "",
+      "notes": "所有人都可免费参加活动并在活动周边观看。",
+      "image": "images/202607/18/1.jpeg"
+    },
+    {
+      "date": "2026-07-18",
+      "time": "06:00 PM",
+      "star": "JUNIOR",
+      "event": "The Alpha Camp",
+      "location": "UNION MALL 5 FL., UNION CO-EVENT STUDIO",
+      "type": "线下/线上",
+      "company": "",
+      "notes": "YouTube: Project Alpha。",
+      "image": "images/202607/18/6.jpeg"
+    },
+    {
       "date": "2026-07-18",
       "time": "06:00 PM",
       "star": "PERTH, SANTA",
@@ -2593,6 +2747,28 @@
       "company": "",
       "notes": "需要门票；5月17日 10:00 开票。",
       "image": "images/202607/18/18.jpeg"
+    },
+    {
+      "date": "2026-07-19",
+      "time": "02:00 PM",
+      "star": "LENG",
+      "event": "B-quik x Impact Speed Fest",
+      "location": "IMPACT Challenger Hall 2-3, Muang Thong Thani",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202607/19/1.jpeg"
+    },
+    {
+      "date": "2026-07-19",
+      "time": "03:00 PM",
+      "star": "BOOM",
+      "event": "Celebration Uranus Clinic 2026",
+      "location": "Central Khon Kaen",
+      "type": "线下",
+      "company": "",
+      "notes": "非曼谷，孔敬尚泰购物中心。",
+      "image": "images/202607/19/2.jpeg"
     },
     {
       "date": "2026-07-19",
