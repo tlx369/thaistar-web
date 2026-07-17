@@ -2000,10 +2000,10 @@ async function loadSchedule() {
   }
 
   try {
-    const res = await fetch(DATA_URL);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-
-    const data = await res.json();
+    const data = window.TLX369_DATA || (await fetch(DATA_URL).then((res) => {
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.json();
+    }));
     const events = normalizeEvents(data);
     const merchandise = normalizeMerchandise(data);
     const groups = normalizeGroups(data);

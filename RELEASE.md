@@ -18,6 +18,12 @@ npm run backup
 - 添加或替换 `images/` 里的图片
 - 修改 `index.html`、`app.js`、`styles.css`
 
+修改 `data.json` 后，生成供浏览器并行加载的数据脚本：
+
+```bash
+npm run site-data
+```
+
 ## 3. 发布前检查
 
 ```bash
