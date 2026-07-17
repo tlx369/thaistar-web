@@ -2607,6 +2607,17 @@
     },
     {
       "date": "2026-07-17",
+      "time": "05:00 PM",
+      "star": "THOMAS",
+      "event": "มหกรรมของดีกลุ่มเขตกรุงธนใต้ ครั้งที่ 19",
+      "location": "M Grand Hall, G Floor, The Mall Lifestore Bangkae",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-17",
       "time": "06:00 PM",
       "star": "NAMTAN, FILM, LUNAR, VIEW, MIM, VIMMY",
       "event": "MOANA SF FRIENDS SCREENING",
@@ -2619,17 +2630,6 @@
     {
       "date": "2026-07-17",
       "time": "06:30 PM",
-      "star": "GREAT",
-      "event": "DR.Ally THE GRAND PRESENTER EVENT",
-      "location": "Union Mall, G Floor",
-      "type": "线下",
-      "company": "",
-      "notes": "",
-      "image": "images/202607/17/2.jpeg"
-    },
-    {
-      "date": "2026-07-17",
-      "time": "06:30 PM",
       "star": "JOONG",
       "event": "#Legend 100 List Social Club",
       "location": "Event Hall, 2nd Floor, Central Chidlom",
@@ -2637,6 +2637,28 @@
       "company": "",
       "notes": "活动仅限有资格人员参加。",
       "image": "images/202607/17/5.jpeg"
+    },
+    {
+      "date": "2026-07-17",
+      "time": "06:30 PM",
+      "star": "NET, JJ, OHM, PHUPHA",
+      "event": "#LEGEND 100LIST SOCIAL CLUB EVENT 2026",
+      "location": "Event Hall, 2nd Floor, Central Chidlom",
+      "notes": "粉丝可到现场周边为艺人送上鼓励；活动结束后将举行聚会",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-17",
+      "time": "06:30 PM",
+      "star": "GREAT",
+      "event": "DR.Ally THE GRAND PRESENTER EVENT",
+      "location": "Union Mall, G Floor",
+      "type": "线下",
+      "company": "",
+      "notes": "",
+      "image": "images/202607/17/2.jpeg"
     },
     {
       "date": "2026-07-17",
@@ -2659,6 +2681,17 @@
       "company": "",
       "notes": "",
       "image": "images/202607/18/2.jpeg"
+    },
+    {
+      "date": "2026-07-18",
+      "time": "03:00 PM",
+      "star": "NORTH",
+      "event": "BANGKOK SHOPPING FESTIVAL WEAR EVER BY NIYOMJEANS",
+      "location": "The Mall Lifestore Ngamwongwan",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-07-18",
@@ -2717,6 +2750,17 @@
     },
     {
       "date": "2026-07-18",
+      "time": "05:00 PM",
+      "star": "THOMAS",
+      "event": "ORIGINALS GOLF THE 2026 FALL WINTER COLLECTION SHOWCASE",
+      "location": "Sports Mall Area, 2nd Floor, Siam Paragon",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-18",
       "time": "05:30 PM",
       "star": "TAY, NEW, POLCASAN, MOND, RYU, LEO",
       "event": "หมาเห่าเครื่องบิน | กุ๊กกี้ให้คู่กัน",
@@ -2729,13 +2773,13 @@
     {
       "date": "2026-07-18",
       "time": "06:00 PM",
-      "star": "JUNIOR",
-      "event": "The Alpha Camp",
-      "location": "UNION MALL 5 FL., UNION CO-EVENT STUDIO",
-      "type": "线下/线上",
-      "company": "",
-      "notes": "YouTube: Project Alpha。",
-      "image": "images/202607/18/6.jpeg"
+      "star": "TLE, FIRSTONE",
+      "event": "INFINITY MEDICAL CLINIC",
+      "location": "G Floor, Central Pinklao",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-07-18",
@@ -2747,6 +2791,17 @@
       "company": "",
       "notes": "需要门票；5月17日 10:00 开票。",
       "image": "images/202607/18/18.jpeg"
+    },
+    {
+      "date": "2026-07-18",
+      "time": "06:00 PM",
+      "star": "JUNIOR",
+      "event": "The Alpha Camp",
+      "location": "UNION MALL 5 FL., UNION CO-EVENT STUDIO",
+      "type": "线下/线上",
+      "company": "",
+      "notes": "YouTube: Project Alpha。",
+      "image": "images/202607/18/6.jpeg"
     },
     {
       "date": "2026-07-19",
@@ -2783,6 +2838,28 @@
     },
     {
       "date": "2026-07-19",
+      "time": "03:00 PM",
+      "star": "PHUPHA",
+      "event": "ROBINSON JEANS FEST BY NIYOMJEANS",
+      "location": "Robinson Lifestyle Suphanburi",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-19",
+      "time": "04:00 PM",
+      "star": "TLE, FIRSTONE",
+      "event": "ENTRÉE MEET & CHIPS เต็มโปรตีน ฟินอร่อยเลิฟ WITH TLE&FIRSTONE",
+      "location": "FASHION HALL 1, G Floor, THE MALL LIFESTORE BANGKAPI",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-19",
       "time": "06:00 PM",
       "star": "PERTH, SANTA",
       "event": "Perth Santa Devil's Kiss Concert",
@@ -2791,6 +2868,28 @@
       "company": "",
       "notes": "需要门票；5月17日 10:00 开票。",
       "image": "images/202607/18/18.jpeg"
+    },
+    {
+      "date": "2026-07-20",
+      "time": "05:00 PM",
+      "star": "TEETEE, POR",
+      "event": "SUPRA FRESH AEROBIC DANCE PARTY",
+      "location": "Union Co-Event Space, Zone A, G Floor, Union Mall",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-21",
+      "time": "06:00 PM",
+      "star": "TEETEE, POR",
+      "event": "INFINITY MEDICAL CLINIC",
+      "location": "G Floor, Central Pinklao",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-07-21",
@@ -2858,6 +2957,17 @@
     },
     {
       "date": "2026-07-25",
+      "time": "10:00 AM",
+      "star": "THOMAS",
+      "event": "THOMAS BIRTHDAY CELEBRATION",
+      "location": "วัดพระยายังรังสรรค์ เขตคลองสามวา กรุงเทพมหานคร",
+      "notes": "粉丝俱乐部可参加活动",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-25",
       "time": "01:00 PM",
       "star": "上百位艺人",
       "event": "monster music festival 2026",
@@ -2879,6 +2989,17 @@
     },
     {
       "date": "2026-07-25",
+      "time": "03:00 PM",
+      "star": "KIM",
+      "event": "NIYOMJEANS EVENT",
+      "location": "THE MALL KORAT",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-25",
       "time": "04:00 PM",
       "star": "bus",
       "event": "BUS LIGHT AS ONE CONCERT",
@@ -2887,6 +3008,17 @@
       "company": "",
       "notes": "需要门票",
       "image": "images/202607/24/16.jpeg"
+    },
+    {
+      "date": "2026-07-25",
+      "time": "04:00 PM",
+      "star": "PHUPHA",
+      "event": "TROFI SILENT COLLECTION X PHUPHA",
+      "location": "MCC Hall Lifestyle Zone, The Mall Lifestore Ngamwongwan",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-07-25",
@@ -2920,6 +3052,17 @@
       "notes": ""
     },
     {
+      "date": "2026-07-25",
+      "time": "TBC",
+      "star": "KENG, NAMPING",
+      "event": "BEAUTILAB X KENG NAMPING เก่งทุกการปกปิด มั่นใจในฝาเดียว!",
+      "location": "M Lifestyle Hall, The Mall Lifestore Ngamwongwan",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
       "date": "2026-07-26",
       "time": "01:00 PM",
       "star": "上百位艺人",
@@ -2929,6 +3072,28 @@
       "company": "",
       "notes": "需要门票；5月8日至7月24日售票。",
       "image": "images/202607/25/13.jpeg"
+    },
+    {
+      "date": "2026-07-26",
+      "time": "01:30 PM",
+      "star": "MAX, NAT, MARK, OHM, GEMS, FEW",
+      "event": "ที่สามของเธอ YOUR THIRD SERIES EP.1 : NOW YOUR SEA THIRD",
+      "location": "Siam Pavalai, 6th Floor, Siam Paragon",
+      "notes": "粉丝可到现场周边为艺人送上鼓励；仅限有资格者参加",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-26",
+      "time": "01:30 PM",
+      "star": "JJ, PUNG, PORSCHE, NORTH, OTTO, FIFA, TON",
+      "event": "ร่วมเดินพรมงาน \"ที่สามของเธอ YOUR THIRD SERIES EP.1 : NOW YOUR SEA THIRD\"",
+      "location": "Siam Pavalai, 6th Floor, Siam Paragon",
+      "notes": "粉丝可到现场周边为艺人送上鼓励；仅限有资格者参加",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-07-26",
@@ -2953,6 +3118,17 @@
     },
     {
       "date": "2026-07-26",
+      "time": "04:00 PM",
+      "star": "TLE",
+      "event": "VETSYNOVA LUCKY FANS WITH TLE MATIMUN",
+      "location": "5th Floor, Central Pinklao",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-26",
       "time": "05:00 PM",
       "star": "PAHN, FOND",
       "type": "线下",
@@ -2970,6 +3146,17 @@
       "event": "Fan Sign บูธ GMMTV OFFICIAL MERCHANDISE งานมหกรรมนิยายนานาชาติ 2026",
       "image": "images/202607/26/3.jpeg",
       "notes": ""
+    },
+    {
+      "date": "2026-07-27",
+      "time": "12:19 PM",
+      "star": "TLE, FIRSTONE",
+      "event": "พิธีบวงสรวงซีรีส์ เมื่อผมอยากเป็นนางเอกแสนของแฟนเก่า YOU(R)TUBER SERIES",
+      "location": "Phenix Pratunam, 6th Floor",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-07-27",
@@ -3044,6 +3231,17 @@
     },
     {
       "date": "2026-07-28",
+      "time": "06:00 PM",
+      "star": "WAVE, THEE",
+      "event": "FAN CONNECT MEET CONNECT REMEMBER",
+      "location": "Central Chaengwattana",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-28",
       "time": "07:00 PM",
       "star": "DEW, TEE",
       "type": "线下",
@@ -3084,6 +3282,17 @@
     },
     {
       "date": "2026-07-30",
+      "time": "12:00 PM",
+      "star": "TLE, FIRSTONE",
+      "event": "มหกรรมนิยายนานาชาติ 2026 - ATLANTA",
+      "location": "5th Floor, Samyan Mitrtown",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-30",
       "time": "03:00 PM",
       "star": "SING, CHIMON",
       "type": "线下",
@@ -3101,6 +3310,17 @@
       "event": "Fan Sign บูธ GMMTV OFFICIAL MERCHANDISE งานมหกรรมนิยายนานาชาติ 2026",
       "image": "images/202607/30/2.jpeg",
       "notes": ""
+    },
+    {
+      "date": "2026-07-30",
+      "time": "05:00 PM",
+      "star": "NUNEW",
+      "event": "WITHAT SWEET SCENT SWEET MOMENT WITH NUNEW",
+      "location": "Zpotlight, G Floor, Zpell @ Future Park Rangsit",
+      "notes": "粉丝可到现场周边为艺人送上鼓励",
+      "type": "线下",
+      "company": "DMD",
+      "image": "images/DMD.jpeg"
     },
     {
       "date": "2026-07-30",
