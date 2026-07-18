@@ -2871,6 +2871,39 @@
     },
     {
       "date": "2026-07-20",
+      "time": "04:30 PM",
+      "star": "MUVMUV, LUNAR, ANY",
+      "event": "THAILAND CONTENT MARKET 2026",
+      "location": "Main Stage, Hall 1, Queen Sirikit National Convention Center",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "需提前注册；区域有限，仅限已注册人员参加。",
+      "image": "images/202607/7月增加/13.jpeg"
+    },
+    {
+      "date": "2026-07-20",
+      "time": "04:30 PM",
+      "star": "TESHOW, PING, PAHN, FOND",
+      "event": "THAILAND CONTENT MARKET 2026",
+      "location": "Main Stage, Hall 1, Queen Sirikit National Convention Center",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "需提前注册；区域有限，仅限已注册人员参加。",
+      "image": "images/202607/7月增加/14.jpeg"
+    },
+    {
+      "date": "2026-07-20",
+      "time": "05:00 PM",
+      "star": "SKY",
+      "event": "Boots 30th Anniversary Sale Event",
+      "location": "1st Floor, Promotion Area (in front of CENTRAL Department Store), Central Rama 9",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202607/7月增加/10.jpeg"
+    },
+    {
+      "date": "2026-07-20",
       "time": "05:00 PM",
       "star": "TEETEE, POR",
       "event": "SUPRA FRESH AEROBIC DANCE PARTY",
@@ -2879,6 +2912,39 @@
       "type": "线下",
       "company": "DMD",
       "image": "images/DMD.jpeg"
+    },
+    {
+      "date": "2026-07-20",
+      "time": "06:00 PM",
+      "star": "WILLIAM, LEGO, NUT, HONG, TUI",
+      "event": "CATCHA x LYKN : Lab ลับ อัปพลังความซ่าส์",
+      "location": "Co-Event Hall, 5th Floor, Union Mall",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202607/7月增加/8.jpeg"
+    },
+    {
+      "date": "2026-07-20",
+      "time": "06:00 PM",
+      "star": "NANI, PREM, WINNY, NEONA, PAODY, SAMRUAY",
+      "event": "MOANA SF FRIENDS SCREENING",
+      "location": "SF WORLD CINEMA CENTRAL WORLD",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "本次活动为封闭活动，仅限持有电影票的人员参加。",
+      "image": "images/202607/7月增加/12.jpeg"
+    },
+    {
+      "date": "2026-07-21",
+      "time": "05:00 PM",
+      "star": "POND",
+      "event": "LA ROCHE-POSAY EFFACLAR CHEMISTRY CLASS WITH POND NARAVIT",
+      "location": "Union Mall",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202607/7月增加/9.jpeg"
     },
     {
       "date": "2026-07-21",
@@ -2923,6 +2989,17 @@
       "company": "",
       "notes": "特别现场表演及舞台专属访谈。",
       "image": "images/202607/7月增加/2.jpeg"
+    },
+    {
+      "date": "2026-07-22",
+      "time": "06:00 PM",
+      "star": "TU",
+      "event": "Dior Boutique Opening",
+      "location": "Siam Paragon",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "本次活动为私人活动，仅限授权人员参加。粉丝可到现场周边为艺人送上鼓励（区域有限）。",
+      "image": "images/202607/7月增加/11.jpeg"
     },
     {
       "date": "2026-07-24",
