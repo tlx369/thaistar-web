@@ -3164,13 +3164,13 @@
     {
       "date": "2026-07-26",
       "time": "01:30 PM",
-      "star": "JJ, PUNG, PORSCHE, NORTH, OTTO, FIFA, TON",
+      "star": "JJ, PUNG, PORSCHE, NORTH, OTTO, FIFA, TON, HEARTDY, JOOKKROO, MR.TOKY, TMILK",
       "event": "ร่วมเดินพรมงาน \"ที่สามของเธอ YOUR THIRD SERIES EP.1 : NOW YOUR SEA THIRD\"",
       "location": "Siam Pavalai, 6th Floor, Siam Paragon",
       "notes": "粉丝可到现场周边为艺人送上鼓励；仅限有资格者参加",
       "type": "线下",
       "company": "DMD",
-      "image": "images/DMD.jpeg"
+      "image": "images/202607/7月增加/26.jpeg"
     },
     {
       "date": "2026-07-26",
@@ -3207,6 +3207,17 @@
     {
       "date": "2026-07-26",
       "time": "05:00 PM",
+      "star": "BOUN, PREM, EARTH, MIX, FIRST, KHAOTUNG",
+      "event": "Feel Fan Fun Party Concert",
+      "location": "Union Hall, Union Mall",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "新增第二场；需要门票（已售罄）；可通过 TTM LIVE 全球直播。",
+      "image": "images/202607/7月增加/19.jpeg"
+    },
+    {
+      "date": "2026-07-26",
+      "time": "05:00 PM",
       "star": "PAHN, FOND",
       "type": "线下",
       "location": "5th Floor, Samyan Mitrtown",
@@ -3225,15 +3236,26 @@
       "notes": ""
     },
     {
+      "date": "2026-07-26",
+      "time": "07:30 PM",
+      "star": "TESHOW, PING, SING, CHIMON",
+      "event": "Match Point The First Match",
+      "location": "World Max Cinema, SF World Cinema, centralwOrld",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "需要门票；18:30 开放入场；票价 2,000 / 2,500 泰铢。7月19日 10:00 在线优先售票，7月20日 10:00 常规售票。",
+      "image": "images/202607/7月增加/18.jpeg"
+    },
+    {
       "date": "2026-07-27",
       "time": "12:19 PM",
-      "star": "TLE, FIRSTONE",
+      "star": "TLE, FIRSTONE, GEMS, FEW, TON",
       "event": "พิธีบวงสรวงซีรีส์ เมื่อผมอยากเป็นนางเอกแสนของแฟนเก่า YOU(R)TUBER SERIES",
       "location": "Phenix Pratunam, 6th Floor",
-      "notes": "粉丝可到现场周边为艺人送上鼓励",
-      "type": "线下",
+      "notes": "粉丝可到现场周边为艺人送上鼓励；YouTube：Mandee Channel",
+      "type": "线下/线上",
       "company": "DMD",
-      "image": "images/DMD.jpeg"
+      "image": "images/202607/7月增加/27.jpeg"
     },
     {
       "date": "2026-07-27",
@@ -3440,6 +3462,17 @@
       "notes": ""
     },
     {
+      "date": "2026-07-31",
+      "time": "08:00 PM",
+      "star": "TAY, NEW, MOND, RYU, TUI, JUNO",
+      "event": "A Dog and A Plane Final EP. Fan Meeting",
+      "location": "centralwOrld PULSE Hall, 7th Floor, centralwOrld",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "需要门票；19:00 开放入场；票价 1,500 / 2,000 / 2,500 泰铢。7月25日 10:00 在线优先售票，7月26日 10:00 常规售票。",
+      "image": "images/202607/7月增加/17.jpeg"
+    },
+    {
       "date": "2026-08-01",
       "time": "03:00 PM",
       "star": "FIRST, KHAOTUNG, YUZU MUMU",
@@ -3597,6 +3630,50 @@
       "company": "GMMTV",
       "notes": "可通过 TTM LIVE 全球直播；门票于 7月5日 10:00 开售，普通售票 7月6日 10:00 开始。",
       "image": "images/202608/29/1.jpeg"
+    },
+    {
+      "date": "2026-09-05",
+      "time": "06:00 PM",
+      "star": "GEMINI",
+      "event": "Gemini Artventure Concert",
+      "location": "BITEC LIVE",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "需要门票；可通过 TTM LIVE 全球直播；7月11日 10:00 在线优先售票，7月12日 10:00 常规售票。",
+      "image": "images/202607/7月增加/15.jpeg"
+    },
+    {
+      "date": "2026-09-06",
+      "time": "06:00 PM",
+      "star": "GEMINI",
+      "event": "Gemini Artventure Concert",
+      "location": "BITEC LIVE",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "需要门票；可通过 TTM LIVE 全球直播；7月11日 10:00 在线优先售票，7月12日 10:00 常规售票。",
+      "image": "images/202607/7月增加/15.jpeg"
+    },
+    {
+      "date": "2026-09-19",
+      "time": "06:00 PM",
+      "star": "SKY, NANI",
+      "event": "SkyNani S to the N Fancon",
+      "location": "Thunder Dome, Muang Thong Thani",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "需要门票；可通过 TTM LIVE 全球直播；7月18日 10:00 在线优先售票，7月19日 10:00 常规售票。",
+      "image": "images/202607/7月增加/16.jpeg"
+    },
+    {
+      "date": "2026-09-20",
+      "time": "06:00 PM",
+      "star": "SKY, NANI",
+      "event": "SkyNani S to the N Fancon",
+      "location": "Thunder Dome, Muang Thong Thani",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "需要门票；可通过 TTM LIVE 全球直播；7月18日 10:00 在线优先售票，7月19日 10:00 常规售票。",
+      "image": "images/202607/7月增加/16.jpeg"
     },
     {
       "date": "2026-09-26",
