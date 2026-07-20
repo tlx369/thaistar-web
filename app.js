@@ -492,6 +492,103 @@ const EVENT_BUYING_ITEMS = [
       },
     ],
   },
+  {
+    id: "boots-cerave-glow-lab-phuwin-permpoon",
+    title: "GLOW LAB CeraVe Brightening Cleanser x Phuwin & Permpoon",
+    dateRange: "7月15日 到 8月7日",
+    artist: "Phuwin, Permpoon",
+    summary:
+      "在 Boots 全渠道购买指定 CeraVe 洁面产品满 999 泰铢并登记，有机会成为 6 位幸运者参加 Phuwin & Permpoon 独家活动。",
+    images: [
+      "images/hddm/7.15-8.07/1.jpeg",
+      "images/hddm/7.15-8.07/2.jpeg",
+      "images/hddm/7.15-8.07/3.jpeg",
+      "images/hddm/7.15-8.07/4.jpeg",
+    ],
+    detailTitle: "Boots x CeraVe Glow Lab 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "Boots x CeraVe 推出 GLOW LAB CeraVe Brightening Cleanser x Phuwin & Permpoon 活动。",
+          "活动通过购买指定 CeraVe 洁面产品并登记抽选，Boots 渠道将抽出 6 位幸运者。",
+          "中奖者可参加 2026年8月25日的 Exclusive 活动，与 Phuwin & Permpoon 近距离互动。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "购买与登记期间：2026年7月15日 至 2026年8月7日。",
+          "中奖活动日期：2026年8月25日。",
+        ],
+      },
+      {
+        heading: "购买渠道",
+        body: [
+          "Boots 全渠道均可参与。",
+          "购买完成后需通过活动指定登记入口提交资料，才可参与 Lucky Draw 抽选。",
+        ],
+      },
+      {
+        heading: "抽选名额与权益",
+        body: [
+          "Boots 渠道共抽选 6 位幸运者。",
+          "中奖者可参加 Exclusive 活动。",
+          "中奖者可与 Phuwin & Permpoon 拍摄 2:1 Polaroid。",
+          "中奖者可获得现场签名与照片文件。",
+        ],
+      },
+      {
+        heading: "消费门槛",
+        body: [
+          "每张收据购买指定参与商品满 999 泰铢，可获得 1 次抽选机会。",
+          "1 张收据 = 1 次机会。",
+          "收据必须包含 CeraVe Brightening Vitamin C Cleanser 236ml。",
+        ],
+      },
+      {
+        heading: "必买商品",
+        body: [
+          "CeraVe Brightening Vitamin C Cleanser 236ml 为必买商品，登记收据中必须包含该商品。",
+        ],
+      },
+      {
+        heading: "可搭配计算金额的参与商品",
+        body: [
+          "CeraVe SA Smoothing Cleanser：88ml / 236ml / 473ml。",
+          "CeraVe Hydrating Cleanser：88ml / 236ml / 473ml / 补充装。",
+          "CeraVe Foaming Cleanser：100ml / 473ml。",
+          "CeraVe Blemish Control Cleanser：88ml / 236ml / 473ml / 补充装。",
+          "CeraVe Hydrating Cream-to-Foam Cleanser：88ml / 236ml / 473ml。",
+        ],
+      },
+      {
+        heading: "收据登记要求",
+        body: [
+          "每张收据只能登记 1 次。",
+          "登记时需填写正确的收据或订单号码、购买日期、购买时间与符合资格的消费金额。",
+          "收据号码填写时不需要输入空格。",
+          "登记资料必须与收据资讯正确对应。",
+          "请保留真实收据，后续可能需要用于确认中奖资格。",
+        ],
+      },
+      {
+        heading: "收据示例说明",
+        body: [
+          "店铺收据需能看到订单号、日期、时间与有效消费金额。",
+          "Boots App 订单需能看到订单号、日期、时间、商品列表与符合资格的消费金额。",
+          "登记时以收据或订单中显示的有效消费金额作为资格计算依据。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "活动条件以 CeraVe Thailand 与 Boots 的最终规定为准。",
+          "许可证编号：1423-1430/2560。",
+        ],
+      },
+    ],
+  },
 ];
 
 const scheduleEl = document.getElementById("schedule");
