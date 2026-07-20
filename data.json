@@ -3003,6 +3003,17 @@
     },
     {
       "date": "2026-07-24",
+      "time": "TBC",
+      "star": "WILLIAM",
+      "event": "A Nature Journey with William in Chiang Mai",
+      "location": "Chiang Mai",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "私人活动，仅限有资格者参加。",
+      "image": "images/202607/7月增加/23.jpeg"
+    },
+    {
+      "date": "2026-07-24",
       "time": "04:00 PM",
       "star": "bus",
       "event": "BUS LIGHT AS ONE CONCERT",
@@ -3033,6 +3044,28 @@
       "notes": ""
     },
     {
+      "date": "2026-07-24",
+      "time": "06:00 PM",
+      "star": "SKY, SEA, SATANG, SMYLE, AVOCEAN, SAMRUAY",
+      "event": "MOANA SF FRIENDS SCREENING",
+      "location": "SF World Cinema, centralwOrld",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "封闭活动，仅限持有电影票的人员参加。",
+      "image": "images/202607/7月增加/25.jpeg"
+    },
+    {
+      "date": "2026-07-25",
+      "time": "TBC",
+      "star": "WILLIAM",
+      "event": "A Nature Journey with William in Chiang Mai",
+      "location": "Chiang Mai",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "私人活动，仅限有资格者参加。",
+      "image": "images/202607/7月增加/23.jpeg"
+    },
+    {
       "date": "2026-07-25",
       "time": "10:00 AM",
       "star": "THOMAS",
@@ -3053,6 +3086,17 @@
       "company": "",
       "notes": "需要门票；5月8日至7月24日售票。",
       "image": "images/202607/25/13.jpeg"
+    },
+    {
+      "date": "2026-07-25",
+      "time": "03:00 PM",
+      "star": "WINNY",
+      "event": "Bangkok Shopping Festival Wearever (Heavy Shoes)",
+      "location": "M Grand Hall, G Floor, The Mall Lifestore Bangkapi",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202607/7月增加/21.jpeg"
     },
     {
       "date": "2026-07-25",
@@ -3117,6 +3161,28 @@
       "company": "",
       "notes": "需要门票",
       "image": "images/202607/25/17.jpeg"
+    },
+    {
+      "date": "2026-07-25",
+      "time": "06:40 PM",
+      "star": "CHELSEA, SANGT, PREAM, JAOYING, ACARE, CHARI",
+      "event": "Monster Music Festival 2026",
+      "location": "Play Stage, Queen Sirikit National Convention Center (QSNCC)",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "需要音乐节门票。",
+      "image": "images/202607/7月增加/20.jpeg"
+    },
+    {
+      "date": "2026-07-25",
+      "time": "06:40 PM",
+      "star": "BARCODE, KEEN, ASHI, AUNGPAO",
+      "event": "Monster Music Festival 2026",
+      "location": "Play Stage, Queen Sirikit National Convention Center (QSNCC)",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "需要音乐节门票。",
+      "image": "images/202607/7月增加/22.jpeg"
     },
     {
       "date": "2026-07-25",
@@ -3224,6 +3290,17 @@
       "event": "Fan Sign บูธ GMMTV OFFICIAL MERCHANDISE งานมหกรรมนิยายนานาชาติ 2026",
       "image": "images/202607/26/2.jpeg",
       "notes": ""
+    },
+    {
+      "date": "2026-07-26",
+      "time": "06:45 PM",
+      "star": "WILLIAM, LEGO, NUT, HONG, TUI",
+      "event": "Monster Music Festival 2026",
+      "location": "CITY Stage, Queen Sirikit National Convention Center (QSNCC)",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "需要音乐节门票。",
+      "image": "images/202607/7月增加/24.jpeg"
     },
     {
       "date": "2026-07-26",
