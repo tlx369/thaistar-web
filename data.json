@@ -3742,6 +3742,127 @@
       "image": "images/DMD.jpeg"
     },
     {
+      "date": "2026-08-05",
+      "time": "TBC",
+      "star": "SKY",
+      "event": "UNIQLO 2026 Fall & Winter Collection Preview",
+      "location": "Dusit Thani Bangkok",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "私人活动，仅限受邀人员参加。",
+      "image": "images/202608/888888/39.jpeg"
+    },
+    {
+      "date": "2026-08-05",
+      "time": "05:30 PM",
+      "star": "JOSS, GAWIN, GUINZLY",
+      "event": "Spider-Man: Brand New Day SF Friends Screening",
+      "location": "SF World Cinema, centralwOrld",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "封闭活动，仅限持有电影票的人员参加。",
+      "image": "images/202608/888888/34.jpeg"
+    },
+    {
+      "date": "2026-08-05",
+      "time": "06:00 PM",
+      "star": "CHELSEA, SANGT, PREAM, JAOYING, ACARE, CHARI",
+      "event": "FELIZZ & CLO'VER Happening Stage",
+      "location": "One Bangkok Park",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202608/888888/35.jpeg"
+    },
+    {
+      "date": "2026-08-05",
+      "time": "07:00 PM",
+      "star": "BARCODE, KEEN, ASHI, AUNGPAO",
+      "event": "FELIZZ & CLO'VER Happening Stage",
+      "location": "One Bangkok Park",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202608/888888/42.jpeg"
+    },
+    {
+      "date": "2026-08-06",
+      "time": "12:30 PM",
+      "star": "GEMINI, MOND, MARC, PROM",
+      "event": "The Codechaos Experience – Chaos Feels Good",
+      "location": "1st Floor, Clubhouse, Silverlake Links Golf Club (Bangna–Trad Km. 18)",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "私人活动；仅限提前登记并获得资格的前100名粉丝进入指定区域。",
+      "image": "images/202608/888888/44.jpeg"
+    },
+    {
+      "date": "2026-08-06",
+      "time": "01:00 PM",
+      "star": "TESHOW, PING",
+      "event": "2026 World Cup Final Draw Campaign",
+      "location": "Thairath Newspaper Office",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "参加2026世界杯幸运抽奖活动。",
+      "image": "images/202608/888888/41.jpeg"
+    },
+    {
+      "date": "2026-08-06",
+      "time": "02:00 PM",
+      "star": "KAPOOK, CIIZE",
+      "event": "Jelly Bunny Hello Kitty 2026 Collection",
+      "location": "Jelly Bunny Store, 2nd Floor, centralwOrld",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202608/888888/38.jpeg"
+    },
+    {
+      "date": "2026-08-06",
+      "time": "04:00 PM",
+      "star": "NAMTAN",
+      "event": "FitFlop x Namtan: Thailand Brand Ambassador Announcement",
+      "location": "Event Arena, 1st Floor, Central @ centralwOrld",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202608/888888/33.jpeg"
+    },
+    {
+      "date": "2026-08-06",
+      "time": "06:00 PM",
+      "star": "JAN, JINGJING",
+      "event": "Converse – The Run Star Crush Launch",
+      "location": "Converse Flagship Store, M Floor, Siam Center",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202608/888888/32.jpeg"
+    },
+    {
+      "date": "2026-08-07",
+      "time": "02:00 PM",
+      "star": "EST",
+      "event": "Satur 1st Flagship Store",
+      "location": "2nd Floor, Central Ladprao",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202608/888888/43.jpeg"
+    },
+    {
+      "date": "2026-08-07",
+      "time": "07:00 PM",
+      "star": "FORCE, BOOK",
+      "event": "Shokubutsu Bloom Around",
+      "location": "Fashion Hall, 1st Floor, Siam Paragon",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202608/888888/37.jpeg"
+    },
+    {
       "date": "2026-08-08",
       "time": "06:00 PM",
       "star": "JUNIOR, MARK",
@@ -3751,6 +3872,28 @@
       "company": "",
       "notes": "需要门票；6月13日 10:00 开票。",
       "image": "images/202608/8/18.jpeg"
+    },
+    {
+      "date": "2026-08-08",
+      "time": "06:30 PM",
+      "star": "JAN, JINGJING",
+      "event": "The Alpha Camp #TheAlphaCamp7thLive",
+      "location": "Union Co-Event Studio, 5th Floor, Union Mall",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "YouTube 直播：Project Alpha。",
+      "image": "images/202608/888888/36.jpeg"
+    },
+    {
+      "date": "2026-08-08",
+      "time": "08:30 PM",
+      "star": "TESHOW",
+      "event": "To Be Number One Variety",
+      "location": "NBT Channel",
+      "type": "线上",
+      "company": "GMMTV",
+      "notes": "电视节目播出。",
+      "image": "images/202608/888888/30.jpeg"
     },
     {
       "date": "2026-08-08",
@@ -3817,6 +3960,39 @@
       "company": "DMD",
       "notes": "粉丝可到现场周边为艺人送上鼓励。",
       "image": "images/202608/888888/25.jpeg"
+    },
+    {
+      "date": "2026-08-09",
+      "time": "03:00 PM",
+      "star": "EST",
+      "event": "VIF Friends & Fur",
+      "location": "Lotus's Rattanathibet",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202608/888888/29.jpeg"
+    },
+    {
+      "date": "2026-08-09",
+      "time": "04:00 PM",
+      "star": "POLCASAN",
+      "event": "Nakaraj Awards Ceremony 8th",
+      "location": "Aksra Theatre",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202608/888888/31.jpeg"
+    },
+    {
+      "date": "2026-08-09",
+      "time": "05:30 PM",
+      "star": "GEMINI, LOOK KHUNNOO, SKY, SMYLE",
+      "event": "Spider-Man: Brand New Day SF Friends Screening",
+      "location": "SF World Cinema, centralwOrld",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "封闭活动，仅限持有电影票的人员参加。",
+      "image": "images/202608/888888/40.jpeg"
     },
     {
       "date": "2026-08-12",
