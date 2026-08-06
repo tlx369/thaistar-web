@@ -1279,6 +1279,202 @@ const EVENT_BUYING_ITEMS = [
       },
     ],
   },
+  {
+    id: "shokubutsu-teeteepor-bigc",
+    title: "Shokubutsu x TeeTee-Por",
+    dateRange: "7月31日 到 8月18日",
+    artist: "TeeTee, Por",
+    summary:
+      "购买指定 Shokubutsu Original Series 商品满 359 泰铢并登记收据，有机会成为 30 位 Lucky Fans，参加 TeeTee-Por 的 Shokubutsu 活动。",
+    images: [
+      "images/hddm/7.31-8.18 teeteepor/1.jpeg",
+      "images/hddm/7.31-8.18 teeteepor/2.jpeg",
+      "images/hddm/7.31-8.18 teeteepor/3.jpeg",
+      "images/hddm/7.31-8.18 teeteepor/4.jpeg",
+    ],
+    detailTitle: "Shokubutsu x TeeTee-Por 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "Shokubutsu 举办“Boost 可爱度，提升清新香气”主题活动，邀请粉丝参与 TeeTee & Por 的特别活动。",
+          "活动将选出 30 位 Lucky Fans。",
+          "活动日期：2026年8月26日。",
+          "活动时间：19:00 - 20:00。",
+          "活动地点：Big C Ratchadaphisek。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "参与期间：2026年7月31日 至 2026年8月18日 23:59。",
+          "收据登记截止：2026年8月18日 23:59。",
+          "中奖者筛选日期：2026年8月20日。",
+          "中奖名单公布：2026年8月21日 17:00。",
+          "中奖者确认期间：2026年8月21日 至 2026年8月23日。",
+          "团队联系确认期间：2026年8月24日 至 2026年8月25日。",
+        ],
+      },
+      {
+        heading: "参与方式",
+        body: [
+          "购买 Shokubutsu Original Series 新包装或旧包装指定商品。",
+          "任意配方、任意规格的指定商品均可参与。",
+          "每张收据购买满 359 泰铢，可获得 1 个参与机会。",
+          "计算金额为折扣后的实际金额。",
+          "购买渠道为 Big C 全国门店及 Big C Online。",
+          "购买后需通过活动指定登记入口提交收据并回答问题。",
+          "页面不展示外部登记链接或二维码，如需登记入口请咨询客服确认。",
+        ],
+      },
+      {
+        heading: "登记规则",
+        body: [
+          "每位参与者可提交多张收据，次数不限。",
+          "每张符合条件的收据可获得对应参与机会。",
+          "需在截止时间前完成收据上传、资料填写与问题回答。",
+          "主办方将从符合规则且回答最符合评审标准的参与者中选出 30 位 Lucky Fans。",
+          "每位中奖者最多只能选择并获得 1 个奖项。",
+        ],
+      },
+      {
+        heading: "第 1-10 名权益",
+        body: [
+          "可与艺人聊天 2 分钟。",
+          "可与艺人拍摄 2:1 合照。",
+          "可获得 2:1 Polaroid，并附艺人签名。",
+          "可获得 Shokubutsu 护肤产品 Gift Set，价值 185 泰铢。",
+        ],
+      },
+      {
+        heading: "第 11-15 名权益",
+        body: [
+          "可与艺人聊天 1 分钟。",
+          "可与艺人拍摄 2:1 合照。",
+          "可获得 2:1 Polaroid，并附艺人签名。",
+          "可获得 Shokubutsu 护肤产品 Gift Set，价值 185 泰铢。",
+        ],
+      },
+      {
+        heading: "第 16-25 名权益",
+        body: [
+          "可与艺人拍摄 2:5 团体合照。",
+          "可获得 Shokubutsu 护肤产品 Gift Set，价值 185 泰铢。",
+        ],
+      },
+      {
+        heading: "第 26-30 名权益",
+        body: [
+          "可与艺人在舞台上参与游戏环节。",
+          "可获得 Shokubutsu 护肤产品 Gift Set，价值 185 泰铢。",
+        ],
+      },
+      {
+        heading: "权益抽签",
+        body: [
+          "中奖者最终获得的权益顺位，将于 2026年8月26日活动当天在登记处由中奖者本人抽签决定。",
+          "所有 Lucky Fans 均可获得 Shokubutsu Gift Set。",
+        ],
+      },
+      {
+        heading: "Gift Set 内容",
+        body: [
+          "Shokubutsu Original 沐浴露 180ml，共 3 瓶，颜色随机。",
+          "Shokubutsu Original 沐浴露 90ml，共 1 瓶，颜色随机。",
+          "每份 Gift Set 总价值 185 泰铢。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "参与者需完整遵守购买、登记与回答问题规则。",
+          "活动资格与奖项不可转让。",
+          "主办方及活动执行方保留每位中奖者仅获得 1 个奖项的权利。",
+          "所有条件以主办方最终规定为准。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "amuse-skinready-go-glow-namping",
+    title: "AMUSE Skinready Go Glow with Namping",
+    dateRange: "8月6日 到 8月31日",
+    artist: "Namping",
+    summary:
+      "购买 AMUSE Skinready Toner Pads 任意配方满 900 泰铢并登记收据，有机会成为 10 位 Lucky Fans，参加 Namping 的 AMUSE Skinready 特别活动。",
+    images: [
+      "images/hddm/8.06-8.31 namping/1.jpeg",
+      "images/hddm/8.06-8.31 namping/2.jpeg",
+      "images/hddm/8.06-8.31 namping/3.jpeg",
+      "images/hddm/8.06-8.31 namping/4.jpeg",
+    ],
+    detailTitle: "AMUSE Skinready Go Glow with Namping 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "AMUSE Skinready 举办 Go Glow with Namping 特别活动。",
+          "活动将抽选 10 位 Lucky Fans，与 Namping 近距离参与专属活动。",
+          "活动日期：2026年9月6日。",
+          "活动地点将仅通知获得资格的中奖者。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "购买与参与期间：2026年8月6日 至 2026年8月31日。",
+          "抽选日期：2026年9月2日。",
+          "中奖名单公布：2026年9月3日。",
+          "中奖者确认权益：2026年9月4日。",
+          "活动日期：2026年9月6日。",
+        ],
+      },
+      {
+        heading: "参与商品",
+        body: [
+          "购买 AMUSE Skinready Toner Pads 任意配方即可参与。",
+          "参与商品包含 Skinready Rice PDRN Hydrating Cooling Pads。",
+          "参与商品包含 Skinready Rice PDRN Pore Calming Tear-Off Pads。",
+          "每张收据满 900 泰铢，可获得 1 个抽选机会。",
+          "金额以折扣后的实际支付金额计算。",
+        ],
+      },
+      {
+        heading: "购买渠道",
+        body: [
+          "AMUSE Store：centralwOrld 2楼 Eden Zone。",
+          "AMUSE Store：Central Ladprao 2楼，该门店自 2026年8月14日起开放参与。",
+        ],
+      },
+      {
+        heading: "Lucky Fans 权益",
+        body: [
+          "参加 AMUSE Live / Go Glow with Namping 专属活动。",
+          "可与 Namping 拍摄 1:1 Digital Photo。",
+          "获得品牌提供的特别纪念礼物。",
+          "奖品价值约 1,100 泰铢。",
+        ],
+      },
+      {
+        heading: "确认与入场",
+        body: [
+          "品牌方将联系并确认中奖者权益。",
+          "中奖者需在活动当天携带政府签发的有效证件原件，例如身份证、驾照或护照。",
+          "入场信息与活动地点以品牌方通知中奖者的内容为准。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "每位参与者最多只能获得 1 个奖项。",
+          "中奖权益不可转让，不可兑换现金或其它奖品。",
+          "参与订单需为有效购买，若发生退货、退款或换货，可能影响参与资格。",
+          "主办方保留调整条件、奖品与活动安排的权利。",
+          "如有争议，主办方最终决定为准。",
+        ],
+      },
+    ],
+  },
 ];
 
 const scheduleEl = document.getElementById("schedule");
