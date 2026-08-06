@@ -3863,15 +3863,37 @@
       "image": "images/202608/888888/37.jpeg"
     },
     {
-      "date": "2026-08-08",
+      "date": "2026-08-07",
       "time": "06:00 PM",
       "star": "JUNIOR, MARK",
       "event": "Junior Mark Sunny Moon Concert",
       "location": "BITEC LIVE",
       "type": "线下/线上",
-      "company": "",
-      "notes": "需要门票；6月13日 10:00 开票。",
-      "image": "images/202608/8/18.jpeg"
+      "company": "GMMTV",
+      "notes": "现场门票已售罄；TTM LIVE 全球直播票仍可购买。",
+      "image": "images/202608/888888/45.png"
+    },
+    {
+      "date": "2026-08-08",
+      "time": "01:00 PM",
+      "star": "SKY",
+      "event": "Maybelline Matte Max: The Weather Lab",
+      "location": "Orange Atrium, LG2, Sunway Pyramid, Malaysia",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "海报时间：马来西亚时间 14:00／泰国时间 13:00；粉丝可在活动区域外的 Orange Atrium 周边等候区支持艺人。",
+      "image": "images/202608/888888/47.jpeg"
+    },
+    {
+      "date": "2026-08-08",
+      "time": "04:30 PM",
+      "star": "GUN",
+      "event": "BORNTSTANDOUT Pop-Up",
+      "location": "Hall of Fame, M Floor, Siam Paragon",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202608/888888/46.jpeg"
     },
     {
       "date": "2026-08-08",
@@ -3929,15 +3951,15 @@
       "image": "images/202608/888888/26.jpeg"
     },
     {
-      "date": "2026-08-09",
+      "date": "2026-08-08",
       "time": "06:00 PM",
       "star": "JUNIOR, MARK",
       "event": "Junior Mark Sunny Moon Concert",
       "location": "BITEC LIVE",
       "type": "线下/线上",
-      "company": "",
-      "notes": "需要门票；6月13日 10:00 开票。",
-      "image": "images/202608/9/18.jpeg"
+      "company": "GMMTV",
+      "notes": "现场门票已售罄；TTM LIVE 全球直播票仍可购买。",
+      "image": "images/202608/888888/45.png"
     },
     {
       "date": "2026-08-09",
@@ -4084,6 +4106,17 @@
     },
     {
       "date": "2026-08-14",
+      "time": "05:00 PM",
+      "star": "ZEE, NUNEW",
+      "event": "LINE MAN LIVE",
+      "location": "Banking Zone, 1st Floor, Mega Bangna",
+      "type": "线下/线上",
+      "company": "DMD",
+      "notes": "Facebook、YouTube、TikTok：LINE MAN 同步直播；粉丝可到现场周边为艺人送上鼓励。",
+      "image": "images/202608/888888/49.jpeg"
+    },
+    {
+      "date": "2026-08-14",
       "time": "06:30 PM",
       "star": "THOMAS, KONG",
       "event": "Dr.Skinne Exclusive Thomas-Kong",
@@ -4183,14 +4216,14 @@
     },
     {
       "date": "2026-08-16",
-      "time": "02:00 PM",
+      "time": "01:00 PM",
       "star": "NUNEW",
       "event": "Painting Memories with NuNew",
       "location": "G Floor, Union Mall",
       "type": "线下",
       "company": "DMD",
       "notes": "粉丝可到现场周边为艺人送上鼓励。",
-      "image": "images/DMD.jpeg"
+      "image": "images/202608/888888/48.jpeg"
     },
     {
       "date": "2026-08-16",

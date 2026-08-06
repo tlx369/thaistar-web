@@ -589,6 +589,696 @@ const EVENT_BUYING_ITEMS = [
       },
     ],
   },
+  {
+    id: "friendly-me-summer-yacht-escape-seakeen",
+    title: "FRIENDLY ME Summer Yacht Escape with Sea Keen",
+    dateRange: "8月5日 到 8月25日",
+    artist: "Sea, Keen",
+    summary:
+      "购买 Friendly Me Flip Longwear Compact Foundation 累积消费，有机会成为 20 位幸运者与 Sea Keen 独家游艇同行，另有 10 位获得 Video Call 权益。",
+    images: [
+      "images/hddm/8.05-8.25 seakeen/1.jpeg",
+      "images/hddm/8.05-8.25 seakeen/3.jpeg",
+      "images/hddm/8.05-8.25 seakeen/5.jpeg",
+    ],
+    detailTitle: "FRIENDLY ME Summer Yacht Escape with Sea Keen 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "FRIENDLY ME 举办 Summer Yacht Escape with Sea Keen 活动，邀请粉丝通过购买指定商品累积消费参与排名与抽选。",
+          "活动日期为 2026年9月6日。",
+          "活动包含 20 位可与 Sea Keen 一同参加独家游艇活动的名额，以及 10 位 Video Call 幸运粉丝名额。",
+        ],
+      },
+      {
+        heading: "参与商品",
+        body: [
+          "参与商品为 Friendly Me Flip Longwear Compact Foundation。",
+          "商品价格为 890 泰铢。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "消费累积期间：2026年8月5日 至 2026年8月25日 23:30。",
+          "中奖名单公布：2026年8月29日 20:00。",
+          "活动举行日期：2026年9月6日。",
+        ],
+      },
+      {
+        heading: "购买与付款渠道",
+        body: [
+          "可通过 Transfer、Alipay、WeChat、Wise 等方式购买。",
+          "也可通过 Line Shopping 及活动指定官方购买渠道下单。",
+          "页面不展示外部登记或购买链接，如需确认登记入口请咨询客服。",
+        ],
+      },
+      {
+        heading: "消费排行更新",
+        body: [
+          "累积消费榜单会在每周二、周五更新。",
+          "第 1 次更新：2026年8月11日 19:00。",
+          "第 2 次更新：2026年8月14日 19:00。",
+          "第 3 次更新：2026年8月18日 19:00。",
+          "第 4 次更新：2026年8月21日 19:00。",
+          "第 5 次更新：2026年8月25日 19:00。",
+          "第 6 次更新：2026年8月25日 21:00。",
+          "第 7 次更新：2026年8月25日 23:00。",
+        ],
+      },
+      {
+        heading: "Top Spender 名额",
+        body: [
+          "Top Spender 1-20 可获得 Join Event 权益，与 Sea Keen 参加独家游艇活动。",
+          "Top Spender 1-20 均可获得与 Sea Keen 的 2:1 Photo 权益。",
+          "Top Spender 1-20 均可获得 2:1 Polaroid & Sign 权益。",
+          "Top 1-3 可获得 Exclusive Talk 2 分钟。",
+          "Top 4-10 可获得 Exclusive Talk 1 分钟。",
+          "Top 1-5 可参加游戏环节；Top 6-20 中将随机抽出 5 人参加游戏环节。",
+        ],
+      },
+      {
+        heading: "Lucky Fan 名额",
+        body: [
+          "Lucky Fan 1-10 可获得与 Sea Keen 的 Video Call 1 分钟权益。",
+          "Lucky Fan 1-10 可获得 Polaroid & Sign 权益。",
+          "Lucky Fan 的 Polaroid & Sign 仅限泰国境内寄送。",
+        ],
+      },
+      {
+        heading: "排行与资料规则",
+        body: [
+          "所有订单系统会自动累积为 Top Spender 排名。",
+          "排名会以订单中的姓名与电话号码为准；如资料不一致，参与者需在付款或通知管理员前确认并修正为参与活动所需的姓名与号码。",
+          "若累积消费金额相同，品牌将优先参考先完成下单或付款的第一张订单时间。",
+          "排名判断不会以相同消费金额中后续进入的订单为优先。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "活动权益不可转让。",
+          "参与活动即视为接受品牌规定的条件。",
+          "已下单商品不可因活动结果要求更换、取消或退款。",
+          "如产生争议，品牌方最终决定为准。",
+          "品牌方保留不提前通知即调整活动细节的权利。",
+          "配送费用依品牌规定收取；如为海外配送，将按实际情况收取配送费用。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "lenskart-the-fairies-within-gemini",
+    title: "Lenskart The Fairies Within x Gemini Lucky Fans",
+    dateRange: "8月6日 到 9月6日",
+    artist: "Gemini",
+    summary:
+      "购买任意 Lenskart 商品并上传收据登记，有机会成为 20 位 Special Lucky Fans，参加 Gemini Norawit 的 The Fairies Within 独家体验。",
+    images: [
+      "images/hddm/8.06-9.06 gemini /1.jpeg",
+      "images/hddm/8.06-9.06 gemini /2.jpeg",
+      "images/hddm/8.06-9.06 gemini /3.jpeg",
+    ],
+    detailTitle: "Lenskart The Fairies Within x Gemini 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "Lenskart 推出 The Fairies Within x Gemini Lucky Fans 活动。",
+          "购买任意 Lenskart 商品并完成登记后，有机会成为 20 位 Special Lucky Fans 之一。",
+          "中奖者将于 2026年9月18日参加 The Fairies Within 活动，与 Gemini Norawit 享受独家体验。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "登记期间：2026年8月6日 至 2026年9月6日 23:59。",
+          "中奖名单公布：2026年9月11日 12:00。",
+          "中奖者活动日期：2026年9月18日。",
+          "Lenskart Pop-Up Event: The Fairies Within 举办时间为 2026年9月17日 至 2026年9月23日。",
+        ],
+      },
+      {
+        heading: "活动地点",
+        body: [
+          "The Fairies Within 活动地点：Central Ladprao 1 楼。",
+          "中奖者专属活动时间：2026年9月18日 17:00 起。",
+        ],
+      },
+      {
+        heading: "参与方式",
+        body: [
+          "购买任意 Lenskart 商品，线上或线下门店购买均可参与。",
+          "每张收据最低消费 3,000 泰铢，可获得 1 次登记机会。",
+          "完成购买后需通过活动指定登记入口上传收据。",
+          "1 张收据 = 1 次机会，可累计多张收据参与，机会次数不限。",
+          "页面不展示外部登记链接或二维码，如需登记入口请咨询客服确认。",
+        ],
+      },
+      {
+        heading: "中奖权益",
+        body: [
+          "20 位 Special Lucky Fans 可获得活动 VIP 入场与座位。",
+          "可与 Gemini 进行 1:1 Photo Session。",
+          "可获得与 Gemini 的签名 Polaroid 照片 1 张。",
+          "可获得 Gemini 亲自选择的限定 Bitz Charm。",
+          "可获得 Lenskart 特别纪念品。",
+          "20 位 Lucky Fans 中将抽出 5 位，获得与 Gemini Norawit 的独家游戏环节资格。",
+        ],
+      },
+      {
+        heading: "参与资格",
+        body: [
+          "活动开放给所有国籍参与者。",
+          "参与者年龄需满 18 岁。",
+          "符合资格的订单必须已完成付款。",
+          "不支持货到付款订单。",
+          "取消、退款或换货订单不可参与。",
+        ],
+      },
+      {
+        heading: "中奖确认",
+        body: [
+          "中奖者将通过登记时提供的电话号码由主办方直接联系确认名额。",
+          "中奖者需在 2026年9月18日出示有效身份证件或护照，以及购买收据。",
+          "若中奖者无法符合活动条件，主办方可依规则选择候补中奖者。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "完整活动条款以 Lenskart 最终规定为准。",
+          "Lenskart 保留根据实际情况调整活动细节、活动规则或候补中奖者安排的权利。",
+          "所有登记资料与购买证明需真实、完整且清晰。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "eucerin-no1-brightening-celebration-lingling",
+    title: "EUCERIN NO.1 Brightening Celebration x LingLing",
+    dateRange: "8月1日 到 8月25日",
+    artist: "LingLing, LOLO",
+    summary:
+      "购买指定 Eucerin Spotless Brightening 产品并登记收据，有机会成为 100 位幸运者，参加 LingLing 与 LOLO 的独家庆祝活动。",
+    images: [
+      "images/hddm/8.01-8.25 lingling/1.jpeg",
+      "images/hddm/8.01-8.25 lingling/2.jpeg",
+      "images/hddm/8.01-8.25 lingling/3.jpeg",
+      "images/hddm/8.01-8.25 lingling/4.jpeg",
+      "images/hddm/8.01-8.25 lingling/5.jpeg",
+      "images/hddm/8.01-8.25 lingling/6.jpeg",
+      "images/hddm/8.01-8.25 lingling/7.jpeg",
+      "images/hddm/8.01-8.25 lingling/8.jpeg",
+      "images/hddm/8.01-8.25 lingling/9.jpeg",
+      "images/hddm/8.01-8.25 lingling/10.jpeg",
+      "images/hddm/8.01-8.25 lingling/11.jpeg",
+      "images/hddm/8.01-8.25 lingling/12.jpeg",
+      "images/hddm/8.01-8.25 lingling/13.jpeg",
+      "images/hddm/8.01-8.25 lingling/14.jpeg",
+      "images/hddm/8.01-8.25 lingling/15.jpeg",
+      "images/hddm/8.01-8.25 lingling/16.jpeg",
+      "images/hddm/8.01-8.25 lingling/17.jpeg",
+    ],
+    detailTitle: "EUCERIN NO.1 Brightening Celebration x LingLing 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "Eucerin x Watsons 举办 NO.1 Brightening Celebration x LingLing 活动。",
+          "本次活动将抽选 100 位幸运者参加 LingLing 的独家庆祝活动，并可在现场见到特别嘉宾 LOLO。",
+          "活动举行日期为 2026年9月15日，时间为 17:00 - 18:00。",
+          "活动地点：Siam Paragon 1楼 Fashion Hall。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "Fast Track Fans 参与期间：2026年8月1日 00:01 至 2026年8月5日 23:59。",
+          "Lucky Fans 参与期间：2026年8月1日 00:01 至 2026年8月25日 23:59。",
+          "Fast Track Fans 中奖公布：2026年8月20日 12:00。",
+          "Lucky Fans 中奖公布：2026年9月10日 20:00。",
+          "Fast Track Fans 确认身份期间：2026年8月20日 12:01 至 2026年8月22日 18:00。",
+          "Lucky Fans 确认身份期间：2026年9月10日 20:01 至 2026年9月12日 14:00。",
+        ],
+      },
+      {
+        heading: "参与方式",
+        body: [
+          "购买活动指定 Eucerin Spotless Brightening 产品。",
+          "可在 Watsons 全国门店购买，也可通过 Watsons 指定线上官方渠道购买。",
+          "购买后需通过活动指定登记入口提交收据与资料。",
+          "页面不展示外部网站链接、登记链接或二维码，如需登记入口请咨询客服确认。",
+        ],
+      },
+      {
+        heading: "机会计算",
+        body: [
+          "活动期间每消费满 2,000 泰铢可获得 1 个抽选机会。",
+          "计算金额以折扣后的实际支付金额为准，不包含运费。",
+          "每张收据的剩余金额不可与其它收据合并计算。",
+          "每张收据只能登记 1 次，不可重复使用，也不可用于登记其它 Eucerin 活动。",
+          "可提交多张收据参与，提交次数不限；提交越多，机会越多。",
+          "Fast Track 特别规则：2026年8月1日 至 2026年8月5日 期间，每张收据消费满 5,000 泰铢即可获得 3 个机会。",
+          "Fast Track 机会会先参与 Fast Track Fans 抽选；如未中奖，会自动进入 Lucky Fans 抽选，无需重复登记。",
+        ],
+      },
+      {
+        heading: "指定商品",
+        body: [
+          "Eucerin Spotless Brightening Booster Serum 30ml。",
+          "Eucerin Even Skin Spotless Brightening Boosting Essence 100ml。",
+          "Eucerin Spotless Brightening Gentle Cleansing Foam 150g。",
+          "Eucerin Spotless Brightening Amino Cleansing Foam 150ml。",
+          "Eucerin Spotless Brightening Day Fluid SPF 30 50ml。",
+          "Eucerin Spotless Brightening Night 50ml。",
+          "Eucerin Spotless Brightening Spot Correcting 5ml。",
+          "Eucerin Spotless Brightening Dark Eye Circle Corrector 15ml。",
+          "Eucerin Spotless Brightening Exfoliating Cleansing/Foaming Gel 400ml。",
+          "活动指定套组、买赠或折扣组合需以主办方公布的参与名单为准。",
+        ],
+      },
+      {
+        heading: "抽选名额",
+        body: [
+          "活动共抽选 100 位幸运者。",
+          "Fast Track Fans 10 位：从 2026年8月1日 至 2026年8月5日 期间购买并完成提交的有效机会中抽选。",
+          "Lucky Fans 90 位：从 2026年8月1日 至 2026年8月25日 全期间的有效机会中抽选，并排除已成为 Fast Track Fans 的中奖者。",
+          "每位中奖者最多只能获得 1 个中奖资格。",
+          "如中奖者未完成确认或资格不符，主办方会按候补名单递补；Fast Track 候补 5 位，Lucky Fans 候补 30 位。",
+        ],
+      },
+      {
+        heading: "Fast Track Fans 权益",
+        body: [
+          "参加 Eucerin Thiamidol NO.1 Brightening Celebration x LingLing 活动。",
+          "获得 Eucerin Spotless Brightening Booster Serum，并带有 LingLing 背面签名。",
+          "获得与 LingLing 的 Fan Sign + Hi-Bye 30 秒权益，并包含录影。",
+          "与 LingLing - LOLO 拍摄 2:1 合照，共 3 组动作。",
+          "获得 Polaroid 3 张、现场签名及 GIF Video 1 个文件。",
+          "获得 Exclusive Gift Eucerin x LingLing x LOLO。",
+          "获得 Special Gift Eucerin x LingLing。",
+          "现场随机获得 1 项特别权益：Morning Brightening Voice from LingLing 15 秒语音，或 Booster Shot with LingLing on Stage。",
+        ],
+      },
+      {
+        heading: "Lucky Fans 权益",
+        body: [
+          "获得 Special Gift Eucerin x LingLing。",
+          "与 LingLing 和 LOLO 进行 Photo Group 2:10 合照，共 9 组，每组 10 人，并获得数码照片文件。",
+          "Photo Group 分组按中奖顺序安排：第 1 组为 11-20 名，第 2 组为 21-30 名，依此类推至第 9 组 91-100 名。",
+          "现场随机获得 1 项特别权益：Role Play with LingLing，或 Mini Game with LingLing & LOLO 2:5。",
+          "Role Play 名额 5 位；Mini Game 名额 10 位；抽选结果以现场安排为准。",
+        ],
+      },
+      {
+        heading: "收据要求",
+        body: [
+          "门店购买需保留真实纸本收据。",
+          "线上购买可使用电子收据或 Watsons 系统订单证明。",
+          "证明需清楚显示收据号或订单号、购买日期、参与商品明细、支付金额与购买渠道。",
+          "如果收据较长，每张收据最多可上传 3 张图片。",
+          "收据日期、登记日期，以及主办方收到资料或证明的时间，都必须在活动期间内。",
+          "如收据内含非参与商品，仅计算符合资格商品的金额；非参与商品金额不计入机会。",
+        ],
+      },
+      {
+        heading: "确认与入场",
+        body: [
+          "主办方会在资料完整提交后进行检查，检查时间约为 48 个工作小时。",
+          "若中奖后主办方连续联系 3 次仍无法联系，或中奖者未在指定时间确认，将视为放弃资格。",
+          "中奖者入场时需出示身份证、驾照或官方证件原件；姓名需与登记资料一致。",
+          "外籍参与者可使用护照登记，并需提供泰国境内可联系的电话号码。",
+          "未满 18 岁中奖者需携带监护人书面同意文件原件。",
+          "活动权益不可转让，不可兑换现金或其它奖品。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "如发现伪造收据、重复使用收据、虚假证明或其它舞弊行为，主办方可取消资格并改由候补者递补。",
+          "活动细节、座位、拍照分组与现场流程可能依实际情况调整。",
+          "如有争议，主办方最终决定为准。",
+          "许可证编号：1687-1688/2569。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "moshi-moshi-billkin-is-calling",
+    title: "Moshi Moshi x BILLKIN is Calling",
+    dateRange: "8月3日 到 8月30日",
+    artist: "Billkin",
+    summary:
+      "购买 Moshi Moshi 指定商品满 499 泰铢即可获得抽选机会，有机会成为 150 位 Lucky Fans，与 Billkin 参加品牌发布活动。",
+    images: [
+      "images/hddm/8.03-8.30 BK/1.jpeg",
+      "images/hddm/8.03-8.30 BK/2.jpeg",
+      "images/hddm/8.03-8.30 BK/3.jpeg",
+      "images/hddm/8.03-8.30 BK/4.jpeg",
+      "images/hddm/8.03-8.30 BK/5.jpeg",
+    ],
+    detailTitle: "Moshi Moshi x BILLKIN is Calling 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "Moshi Moshi 举办 BILLKIN is Calling 特别活动，庆祝 Billkin 正式成为 Moshi Moshi 代言人。",
+          "活动将抽选 150 位 Lucky Fans，与 Billkin 一起参加品牌发布活动并获得现场权益。",
+          "活动日期：2026年9月6日。",
+          "活动时间：14:00 起。",
+          "活动地点：The Mall Lifestore Bangkapi，M Grand Hall G楼。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "参与及登记期间：2026年8月3日 15:00 至 2026年8月30日 23:59。",
+          "中奖名单公布：2026年9月3日。",
+          "活动举行日期：2026年9月6日。",
+        ],
+      },
+      {
+        heading: "参与方式",
+        body: [
+          "购买 Moshi Moshi 活动指定商品。",
+          "每消费满 499 泰铢，可获得 1 个抽选机会。",
+          "消费金额包含增值税。",
+          "不可合并多张收据或多个订单计算机会。",
+          "购买后需通过活动指定登记入口提交收据或订单证明。",
+          "页面不展示外部网站链接、登记链接或二维码，如需登记入口请咨询客服确认。",
+        ],
+      },
+      {
+        heading: "购买渠道",
+        body: [
+          "可在 Moshi Moshi 全国门店购买。",
+          "门店渠道不包含 Sampheng 分店与 Platinum 分店。",
+          "也可通过 Moshi Moshi Official Store 线上渠道购买，包括 Shopee、Lazada 与 TikTok Shop。",
+          "线上订单必须为已完成付款的有效订单。",
+          "线上订单如发生取消、退货、退款或换货，均不可参与。",
+        ],
+      },
+      {
+        heading: "中奖名额",
+        body: [
+          "活动共抽选 150 位 Lucky Fans。",
+          "Lucky Fans 每个名次均可获得 Moshi Moshi Special Gift。",
+          "Lucky Fans 每个名次均可获得活动入场区域与座位权益。",
+        ],
+      },
+      {
+        heading: "第 1-25 名权益",
+        body: [
+          "共 25 位。",
+          "获得与 Billkin 的 Group Photo 1:5 Digital 合照权益。",
+          "获得 Moshi Moshi x BILLKIN Premium Gift。",
+          "获得 Billkin 签名的 Exclusive 纪念品。",
+          "获得 Moshi Moshi Gift 与现场入场座位权益。",
+        ],
+      },
+      {
+        heading: "第 26-50 名权益",
+        body: [
+          "共 25 位。",
+          "获得 Moshi Moshi x BILLKIN Premium Gift。",
+          "获得 Billkin 签名的 Exclusive 纪念品。",
+          "获得 Moshi Moshi Gift 与现场入场座位权益。",
+        ],
+      },
+      {
+        heading: "第 51-150 名权益",
+        body: [
+          "共 100 位。",
+          "其中随机 50 位可获得 Moshi Moshi x BILLKIN Premium Gift。",
+          "随机 5 位可获得与 Billkin 上台参与 Mini Game 的权益。",
+          "获得 Moshi Moshi Gift 与现场入场座位权益。",
+        ],
+      },
+      {
+        heading: "门店收据要求",
+        body: [
+          "需拍摄完整且清晰的收据照片。",
+          "收据需显示净消费金额、购买日期与收据号码。",
+          "可使用简易税务发票或收据进行登记。",
+          "公司名义的完整税务发票不可参与。",
+          "购买 Gift Card 的收据不可参与。",
+        ],
+      },
+      {
+        heading: "线上订单要求",
+        body: [
+          "需上传订单页面截图作为证明。",
+          "订单证明需清楚显示实际支付金额、订单号码、下单日期与时间。",
+          "订单必须已经完成付款。",
+          "仅限 Moshi Moshi Official Store 的 Shopee、Lazada、TikTok Shop 订单。",
+          "不符合条件、资料不完整、取消、退货、退款或换货订单不可参与。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "活动权益不可转让。",
+          "不符合活动条件的订单或收据不可参与。",
+          "Moshi Moshi Retail Corporation Public Company Limited 员工不可参与本活动。",
+          "如发现违反规则或资料不实，主办方有权立即取消资格。",
+          "主办方保留不提前通知即调整活动条款的权利。",
+          "所有条件以主办方最终规定为准。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "bybo-boost-your-glow-teeteepor",
+    title: "BYBO Boost Your Glow Bare Your Skin With TeeTee-Por",
+    dateRange: "8月1日 到 8月30日",
+    artist: "TeeTee, Por",
+    summary:
+      "购买 BYBO Glow & Hydrate Flexfit Wrap Pad 并完成登记，有机会成为 30 位 Lucky Fans，参加 TeeTee-Por 的 BYBO 近距离活动。",
+    images: [
+      "images/hddm/8.01-8.30 teeteepor/1.jpeg",
+      "images/hddm/8.01-8.30 teeteepor/2.jpeg",
+    ],
+    detailTitle: "BYBO Boost Your Glow Bare Your Skin With TeeTee-Por 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "BYBO 举办 Boost Your Glow Bare Your Skin With TeeTee-Por 活动。",
+          "活动将抽选 30 位 Lucky Fans，参加 TeeTee-Por 的特别活动。",
+          "活动日期：2026年9月11日。",
+          "活动时间：18:00 - 20:00。",
+          "活动地点：Union Mall G楼。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "购买与登记期间：2026年8月1日 至 2026年8月30日。",
+          "中奖名单公布：2026年9月3日 12:00。",
+          "公布渠道为 BYBO 官方 Facebook 与 X。",
+        ],
+      },
+      {
+        heading: "参与商品",
+        body: [
+          "参与商品为 BYBO Glow & Hydrate Flexfit Wrap Pad。",
+          "仅限通过 BYBO Line Shopping 购买。",
+          "页面不展示外部购物链接、登记链接或二维码，如需购买或登记入口请咨询客服确认。",
+        ],
+      },
+      {
+        heading: "机会计算",
+        body: [
+          "购买 1 件参与商品，可获得 1 个抽选机会。",
+          "购买 3 件参与商品，可获得 4 个抽选机会。",
+          "特别加倍期间：2026年8月1日 至 2026年8月3日下单，可获得 2 倍机会。",
+          "特别加倍期间：2026年8月17日 至 2026年8月19日下单，可获得 2 倍机会。",
+          "可在活动期间持续累积抽选机会。",
+          "购买越多，机会越多。",
+        ],
+      },
+      {
+        heading: "登记方式",
+        body: [
+          "购买后需通过活动指定登记表提交资料。",
+          "登记时需附上订单证明。",
+          "仅计算已完成付款的有效订单。",
+          "登记资料与订单证明需完整、清晰且真实。",
+        ],
+      },
+      {
+        heading: "Lucky Fans 权益",
+        body: [
+          "共抽选 30 位 Lucky Fans。",
+          "第 1-10 名：获得 Fansign Polaroid 2:1，时长 1 分钟。",
+          "第 11-20 名：获得 2:1 Polaroid，并附签名。",
+          "第 21-30 名：获得 2:1 Digital Photo。",
+          "所有 Lucky Fans 均可获得 Special Seat。",
+          "所有 Lucky Fans 均可获得 BYBO Exclusive Gift。",
+          "30 位 Lucky Fans 中将随机抽出 20 位，与艺人一起参与游戏环节。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "活动权益不可转让。",
+          "活动期间购买的商品不可取消订单或申请退款。",
+          "仅从付款成功的订单中筛选中奖者。",
+          "主办方保留不提前通知即调整活动条件的权利。",
+          "所有条件以主办方最终规定为准。",
+          "许可证编号：43/2569。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "drpong-max-dose-pondphuwin",
+    title: "Dr.PONG Max Dose Series x PondPhuwin",
+    dateRange: "8月3日 到 8月29日",
+    artist: "Pond, Phuwin",
+    summary:
+      "购买指定 Dr.PONG 保健食品并登记订单，有机会成为 50 位幸运者，参加 Pond-Phuwin 的 Dr.PONG 独家近距离活动。",
+    images: [
+      "images/hddm/8.03-8.29 PPW/1.jpeg",
+      "images/hddm/8.03-8.29 PPW/2.jpeg",
+      "images/hddm/8.03-8.29 PPW/3.jpeg",
+    ],
+    detailTitle: "Dr.PONG x PondPhuwin Max Dose Series 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "Dr.PONG 举办 Max Dose Series x PondPhuwin 活动。",
+          "活动将抽选 50 位幸运者，与 Pond-Phuwin 参加独家近距离活动，并获得 Dr.PONG 特别纪念品。",
+          "活动日期：2026年9月5日。",
+          "活动地点：The Mall Lifestore Bangkapi，M Grand Hall。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "整体参与期间：2026年8月3日 00:00 至 2026年8月29日 23:59。",
+          "Tier 1 资格计算期间：2026年8月3日 10:00 至 2026年8月29日 23:59，或指定套组售完为止。",
+          "中奖名单公布：2026年9月1日 18:00。",
+          "中奖名单公布渠道为 Dr.PONG 官方 Facebook。",
+        ],
+      },
+      {
+        heading: "登记方式",
+        body: [
+          "购买后需通过活动指定登记入口提交资料。",
+          "登记时需上传购买收据或订单证明，用于确认参与资格。",
+          "页面不展示外部网站链接、登记链接或二维码，如需登记入口请咨询客服确认。",
+        ],
+      },
+      {
+        heading: "Tier 1 规则",
+        body: [
+          "Tier 1 共 10 个名额，为前排座位。",
+          "购买指定 Dr.PONG 保健食品套组 1 套，金额 3,490 泰铢，可获得 1 个抽选机会。",
+          "指定套组限量 500 套。",
+          "每 1 个订单最多可购买 2 套。",
+          "Tier 1 仅限通过 Dr.PONG 指定官方网站购买。",
+        ],
+      },
+      {
+        heading: "Tier 1 套组内容",
+        body: [
+          "Dr.PONG ASTAXANTHIN 6 mg 1 瓶。",
+          "Dr.PONG Triple C 1000 Vitamin C 1000 mg 60 粒 1 瓶。",
+          "Dr.PONG GLUTA 250 SL 1 瓶。",
+          "Dr.PONG ZINC 15 mg Zinc Bisglycinate 60 粒 1 瓶。",
+          "Dr.PONG B COMPLEX 1-6-12 Vitamin B1 B6 B12 60 粒 1 瓶。",
+          "Dr.PONG Magtein Magnesium L-Threonate 500 mg 60 粒 1 瓶。",
+          "Dr.PONG InnerDeo Japanese Persimmon Powder 1 瓶。",
+          "Dr.PONG MAG 350 mg Magnesium Bisglycinate 60 粒 1 瓶。",
+        ],
+      },
+      {
+        heading: "Tier 2 规则",
+        body: [
+          "Tier 2 共 20 个名额，为中后排座位。",
+          "购买指定 Dr.PONG 保健食品，每张收据满 1,000 泰铢可获得 1 个抽选机会。",
+          "计算金额为折扣后的实际支付金额，不包含运费。",
+          "例如消费 2,000 泰铢，可获得 2 个抽选机会。",
+          "可通过指定线上渠道或 Dr.PONG Flagship Store 全国门店购买。",
+        ],
+      },
+      {
+        heading: "Tier 2 指定商品",
+        body: [
+          "Dr.PONG ASTAXANTHIN 6 mg。",
+          "Dr.PONG B COMPLEX 1-6-12 Vitamin B1 B6 B12，30 粒或 60 粒。",
+          "Dr.PONG Triple C 1000 Vitamin C 1000 mg，30 粒或 60 粒。",
+          "Dr.PONG ZINC 15 mg Zinc Bisglycinate，60 粒或 120 粒。",
+          "Dr.PONG GLUTA 250 SL。",
+          "Dr.PONG Mag 350 mg Magnesium Oxide。",
+          "Dr.PONG Magtein Magnesium L-Threonate 500 mg。",
+          "Dr.PONG MAG 350 mg Magnesium Bisglycinate。",
+          "Dr.PONG InnerDeo Japanese Persimmon Powder。",
+        ],
+      },
+      {
+        heading: "Tier 3 规则",
+        body: [
+          "Tier 3 共 20 个名额，为后排座位。",
+          "购买指定 Dr.PONG 袋装保健食品，每张收据满 300 泰铢可获得 1 个抽选机会。",
+          "Tier 3 仅限通过 7-11 门店、7-11 App、7-11 Delivery 与 All Online 购买。",
+        ],
+      },
+      {
+        heading: "Tier 3 指定商品",
+        body: [
+          "Dr.PONG B COMPLEX 1-6-12 Vitamin 7 粒袋装。",
+          "Dr.PONG Daily Triple C 1000 Vitamin C 1000 mg 10 粒袋装。",
+          "Dr.PONG GLUTA 250 SL 5 粒袋装。",
+        ],
+      },
+      {
+        heading: "共同权益",
+        body: [
+          "所有 Tier 中奖者均可参加 Dr.PONG x PondPhuwin 活动。",
+          "活动资格为 1 人 1 权益。",
+          "每个 Tier 将随机抽出艺人互动游戏名额：Tier 1 抽 2 位，Tier 2 抽 2 位，Tier 3 抽 2 位。",
+        ],
+      },
+      {
+        heading: "Tier 1 权益",
+        body: [
+          "获得 Pond-Phuwin 特别纪念品并附现场签名。",
+          "获得 Pond-Phuwin 2:1 合照权益，包含 Polaroid 与数码照片，活动后由团队寄送。",
+          "获得由艺人交付的 Gift Set。",
+        ],
+      },
+      {
+        heading: "Tier 2 权益",
+        body: [
+          "获得 Pond-Phuwin 2:1 Digital 合照，活动后由团队发送文件。",
+          "获得 Pond-Phuwin 特别 Sticker，现场每人 1 张，共 5 款随机。",
+          "获得由艺人交付的 Gift Set。",
+        ],
+      },
+      {
+        heading: "Tier 3 权益",
+        body: [
+          "获得 Pond-Phuwin 2:5 Digital 合照，活动后由团队发送文件。",
+          "获得 Pond-Phuwin 现场拍摄 Polaroid 1 张并附现场签名，该内容不可重复发布。",
+          "获得由团队交付的 Gift Set。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "仅符合活动期间、指定商品、指定渠道与完成付款的订单可参与。",
+          "登记资料与收据或订单证明需真实、完整且清晰。",
+          "主办方保留依据实际购买资料核对机会次数与中奖资格的权利。",
+          "所有活动条件以 Dr.PONG 最终规定为准。",
+        ],
+      },
+    ],
+  },
 ];
 
 const scheduleEl = document.getElementById("schedule");
@@ -731,7 +1421,7 @@ function updateHeroStats(events, merchandise, groups = []) {
   }
 
   if (moduleEventBuyingCountEl) {
-    moduleEventBuyingCountEl.textContent = String(EVENT_BUYING_ITEMS.length);
+    moduleEventBuyingCountEl.textContent = String(getActiveEventBuyingItems().length);
   }
 }
 
@@ -1525,8 +2215,53 @@ function renderGroups(groups) {
   groupsEl.appendChild(shell);
 }
 
+function getEventBuyingDateParts(item) {
+  const matches = [...String(item.dateRange || "").matchAll(/(\d{1,2})月(\d{1,2})日/g)];
+  if (matches.length === 0) return null;
+
+  const start = {
+    month: Number(matches[0][1]),
+    day: Number(matches[0][2]),
+  };
+  const endMatch = matches[matches.length - 1];
+  const end = {
+    month: Number(endMatch[1]),
+    day: Number(endMatch[2]),
+  };
+
+  if (!start.month || !start.day || !end.month || !end.day) return null;
+  return { start, end };
+}
+
+function createEventBuyingDate(month, day, year = new Date().getFullYear()) {
+  return new Date(year, month - 1, day);
+}
+
+function getEventBuyingEndDate(item) {
+  const parts = getEventBuyingDateParts(item);
+  if (!parts) return null;
+
+  const currentYear = new Date().getFullYear();
+  const endYear = parts.end.month < parts.start.month ? currentYear + 1 : currentYear;
+  return createEventBuyingDate(parts.end.month, parts.end.day, endYear);
+}
+
+function isEventBuyingActive(item) {
+  const endDate = getEventBuyingEndDate(item);
+  if (!endDate || Number.isNaN(endDate.getTime())) return true;
+
+  const today = new Date();
+  const todayDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  return endDate >= todayDate;
+}
+
+function getActiveEventBuyingItems() {
+  return EVENT_BUYING_ITEMS.filter(isEventBuyingActive);
+}
+
 function getEventBuyingItemById(id) {
-  return EVENT_BUYING_ITEMS.find((item) => item.id === id) || EVENT_BUYING_ITEMS[0] || null;
+  const activeItems = getActiveEventBuyingItems();
+  return activeItems.find((item) => item.id === id) || activeItems[0] || null;
 }
 
 function createEventBuyingImage(src, title, index) {
@@ -1648,9 +2383,17 @@ function renderEventBuyingList() {
   const list = document.createElement("ul");
   list.className = "event-buying-list";
 
-  const sortedItems = [...EVENT_BUYING_ITEMS].sort(
+  const sortedItems = getActiveEventBuyingItems().sort(
     (a, b) => getEventBuyingStartSortKey(a) - getEventBuyingStartSortKey(b)
   );
+
+  if (sortedItems.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "event-buying-empty";
+    empty.textContent = "当前暂无进行中的活动代买。";
+    eventBuyingEl.appendChild(empty);
+    return;
+  }
 
   sortedItems.forEach((item) => {
     const li = document.createElement("li");
