@@ -3985,6 +3985,17 @@
     },
     {
       "date": "2026-08-09",
+      "time": "05:00 PM",
+      "star": "OFF, GUN",
+      "event": "The Mall Lifestore Women Inspired Sunflower Social Club",
+      "location": "M Grand Hall, G Floor, The Mall Lifestore Bangkapi",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202608/888888/50.jpeg"
+    },
+    {
+      "date": "2026-08-09",
       "time": "03:00 PM",
       "star": "EST",
       "event": "VIF Friends & Fur",
@@ -4015,6 +4026,28 @@
       "company": "GMMTV",
       "notes": "封闭活动，仅限持有电影票的人员参加。",
       "image": "images/202608/888888/40.jpeg"
+    },
+    {
+      "date": "2026-08-10",
+      "time": "05:30 PM",
+      "star": "SEA, KEEN, ALMOND, PROGRESS, NONG NOOONG, PONPON",
+      "event": "Spider-Man: Brand New Day SF Friends Screening",
+      "location": "SF World Cinema, centralwOrld",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "封闭活动，仅限持有电影票的人员参加。",
+      "image": "images/202608/888888/51.jpeg"
+    },
+    {
+      "date": "2026-08-11",
+      "time": "01:00 PM",
+      "star": "OFF, GEMINI",
+      "event": "Audemars Piguet Powerful Summer Pop-Up",
+      "location": "Level G, Central Embassy",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "",
+      "image": "images/202608/888888/52.jpeg"
     },
     {
       "date": "2026-08-12",
@@ -4182,6 +4215,17 @@
       "image": "images/202608/888888/20.jpeg"
     },
     {
+      "date": "2026-08-15",
+      "time": "TBC",
+      "star": "PERTH, SANTA",
+      "event": "VIDA Love Lesson with PerthSanta",
+      "location": "TBC",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "仅限活动抽选的50位中奖者参加；时间及地点待主办方通知。",
+      "image": "images/hddm/6.14-7.15/1.jpeg"
+    },
+    {
       "date": "2026-08-16",
       "time": "01:30 PM",
       "star": "KING MAN, BABII, TOMAFOX, YUZU MUMU, NONG NOOONG",
@@ -4314,6 +4358,17 @@
       "image": "images/202608/21/1.jpeg"
     },
     {
+      "date": "2026-08-22",
+      "time": "01:00 PM",
+      "star": "KENG, NAMPING",
+      "event": "KengNamping Fan Meet with S.Khonkaen",
+      "location": "Sphere Gallery 1, EMSPHERE",
+      "type": "线下/线上",
+      "company": "DMD",
+      "notes": "展位 10:00 起开放；TikTok @s.khonkaen 于 12:00–15:00 直播；线下活动 13:00 开始；Dress Code：红色或白色。",
+      "image": "images/202608/888888/54.jpeg"
+    },
+    {
       "date": "2026-08-23",
       "time": "06:00 PM",
       "star": "POND, PHUWIN",
@@ -4325,6 +4380,17 @@
       "image": "images/202608/21/1.jpeg"
     },
     {
+      "date": "2026-08-25",
+      "time": "TBC",
+      "star": "PHUWIN, PERMPOON",
+      "event": "GLOW LAB CeraVe Brightening Cleanser x Phuwin & Permpoon",
+      "location": "TBC",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "仅限 Boots x CeraVe 活动抽选的6位中奖者参加；时间及地点待主办方通知。",
+      "image": "images/hddm/7.15-8.07/1.jpeg"
+    },
+    {
       "date": "2026-08-26",
       "time": "05:00 PM",
       "star": "ORM",
@@ -4334,6 +4400,17 @@
       "company": "",
       "notes": "粉丝欢迎来到活动现场周边为艺人送上鼓励；活动结束后不接受聚集及礼物。",
       "image": "images/LO.jpeg"
+    },
+    {
+      "date": "2026-08-26",
+      "time": "07:00 PM",
+      "star": "TEETEE, POR",
+      "event": "Shokubutsu x TeeTee-Por",
+      "location": "Big C Ratchadaphisek",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "活动时间 19:00–20:00；仅限活动选出的30位 Lucky Fans 参加。",
+      "image": "images/hddm/7.31-8.18 teeteepor/1.jpeg"
     },
     {
       "date": "2026-08-27",
@@ -4413,6 +4490,17 @@
       "image": "images/202607/7月增加/15.jpeg"
     },
     {
+      "date": "2026-09-05",
+      "time": "TBC",
+      "star": "POND, PHUWIN",
+      "event": "Dr.PONG Max Dose Series x PondPhuwin",
+      "location": "M Grand Hall, The Mall Lifestore Bangkapi",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "仅限活动抽选的50位中奖者参加；活动时间待主办方通知。",
+      "image": "images/hddm/8.03-8.29 PPW/1.jpeg"
+    },
+    {
       "date": "2026-09-06",
       "time": "06:00 PM",
       "star": "GEMINI",
@@ -4422,6 +4510,72 @@
       "company": "GMMTV",
       "notes": "需要门票；可通过 TTM LIVE 全球直播；7月11日 10:00 在线优先售票，7月12日 10:00 常规售票。",
       "image": "images/202607/7月增加/15.jpeg"
+    },
+    {
+      "date": "2026-09-06",
+      "time": "02:00 PM",
+      "star": "BILLKIN",
+      "event": "Moshi Moshi x BILLKIN is Calling",
+      "location": "M Grand Hall, G Floor, The Mall Lifestore Bangkapi",
+      "type": "线下",
+      "company": "",
+      "notes": "14:00 起；仅限活动抽选的150位 Lucky Fans 参加。",
+      "image": "images/hddm/8.03-8.30 BK/1.jpeg"
+    },
+    {
+      "date": "2026-09-06",
+      "time": "TBC",
+      "star": "SEA, KEEN",
+      "event": "FRIENDLY ME Summer Yacht Escape with Sea Keen",
+      "location": "TBC",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "独家游艇活动，仅限20位 Top Spender 参加；时间及地点待主办方通知。",
+      "image": "images/hddm/8.05-8.25 seakeen/1.jpeg"
+    },
+    {
+      "date": "2026-09-06",
+      "time": "TBC",
+      "star": "NAMPING",
+      "event": "AMUSE Skinready Go Glow with Namping",
+      "location": "仅通知中奖者",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "仅限活动抽选的10位 Lucky Fans 参加；入场时间及地点由品牌方通知中奖者。",
+      "image": "images/hddm/8.06-8.31 namping/1.jpeg"
+    },
+    {
+      "date": "2026-09-11",
+      "time": "06:00 PM",
+      "star": "TEETEE, POR",
+      "event": "BYBO Boost Your Glow Bare Your Skin With TeeTee-Por",
+      "location": "G Floor, Union Mall",
+      "type": "线下",
+      "company": "DMD",
+      "notes": "活动时间 18:00–20:00；仅限活动抽选的30位 Lucky Fans 参加。",
+      "image": "images/hddm/8.01-8.30 teeteepor/1.jpeg"
+    },
+    {
+      "date": "2026-09-15",
+      "time": "05:00 PM",
+      "star": "LINGLING, LOLO",
+      "event": "EUCERIN NO.1 Brightening Celebration x LingLing",
+      "location": "Fashion Hall, 1st Floor, Siam Paragon",
+      "type": "线下",
+      "company": "",
+      "notes": "活动时间 17:00–18:00；仅限活动抽选的100位中奖者参加。",
+      "image": "images/hddm/8.01-8.25 lingling/1.jpeg"
+    },
+    {
+      "date": "2026-09-18",
+      "time": "05:00 PM",
+      "star": "GEMINI",
+      "event": "Lenskart The Fairies Within x Gemini Lucky Fans",
+      "location": "1st Floor, Central Ladprao",
+      "type": "线下",
+      "company": "GMMTV",
+      "notes": "17:00 起；仅限活动抽选的20位 Special Lucky Fans 参加。",
+      "image": "images/hddm/8.06-9.06 gemini /1.jpeg"
     },
     {
       "date": "2026-09-19",
@@ -4455,6 +4609,39 @@
       "company": "",
       "notes": "需要门票；6月27日 10:00 开票。",
       "image": "images/202609/26/0.jpeg"
+    },
+    {
+      "date": "2026-10-16",
+      "time": "06:00 PM",
+      "star": "FOURTH",
+      "event": "OHMY FOURTH Concert",
+      "location": "BITEC LIVE",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "需要门票；可通过 TTM LIVE 全球直播；票价 1,500–7,900 泰铢。8月16日 10:00 在线优先售票，8月17日 10:00 常规售票。",
+      "image": "images/202608/888888/53.jpeg"
+    },
+    {
+      "date": "2026-10-17",
+      "time": "06:00 PM",
+      "star": "FOURTH",
+      "event": "OHMY FOURTH Concert",
+      "location": "BITEC LIVE",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "需要门票；可通过 TTM LIVE 全球直播；票价 1,500–7,900 泰铢。8月16日 10:00 在线优先售票，8月17日 10:00 常规售票。",
+      "image": "images/202608/888888/53.jpeg"
+    },
+    {
+      "date": "2026-10-18",
+      "time": "06:00 PM",
+      "star": "FOURTH",
+      "event": "OHMY FOURTH Concert",
+      "location": "BITEC LIVE",
+      "type": "线下/线上",
+      "company": "GMMTV",
+      "notes": "需要门票；可通过 TTM LIVE 全球直播；票价 1,500–7,900 泰铢。8月16日 10:00 在线优先售票，8月17日 10:00 常规售票。",
+      "image": "images/202608/888888/53.jpeg"
     }
   ],
   "groups": [

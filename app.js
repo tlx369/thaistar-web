@@ -1,7 +1,7 @@
 /**
  * 泰流行369 行程表 — 从本地 data.json 加载数据
  */
-const DATA_URL = "data.json?v=20260718-july-extra-3";
+const DATA_URL = "data.json?v=20260808-kengnamping-1";
 const UMAMI_WEBSITE_ID = "52e1dec3-5e58-4681-96fe-53e09c223d75";
 const THUMBNAIL_ROOT = "images/thumbs/";
 
@@ -1137,7 +1137,6 @@ const EVENT_BUYING_ITEMS = [
     id: "drpong-max-dose-pondphuwin",
     title: "Dr.PONG Max Dose Series x PondPhuwin",
     dateRange: "8月3日 到 8月29日",
-    artist: "Pond, Phuwin",
     summary:
       "购买指定 Dr.PONG 保健食品并登记订单，有机会成为 50 位幸运者，参加 Pond-Phuwin 的 Dr.PONG 独家近距离活动。",
     images: [
@@ -1475,6 +1474,301 @@ const EVENT_BUYING_ITEMS = [
       },
     ],
   },
+  {
+    id: "sparkle-unlock-better-living-lingorm",
+    title: "DO DAY DREAM: Unlock for Better Living",
+    dateRange: "7月20日 到 8月15日",
+    artist: "LingLing, Orm",
+    summary:
+      "购买 Sparkle 指定商品满 799 泰铢并登记收据，有机会成为 60 位 Lucky Fans，参加 LingLing 与 Orm 的 Unlock for Better Living 活动。",
+    images: [
+      "images/hddm/7.20-8.15lingorm/1.jpeg",
+      "images/hddm/7.20-8.15lingorm/2.jpeg",
+      "images/hddm/7.20-8.15lingorm/3.jpeg",
+      "images/hddm/7.20-8.15lingorm/4.jpeg",
+    ],
+    detailTitle: "DO DAY DREAM: Unlock for Better Living 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "DO DAY DREAM 举办 Unlock for Better Living 活动，Sparkle 与 LESASHA 相关权益同步展示。",
+          "活动将抽选 60 位 Lucky Fans 参加现场活动。",
+          "活动日期：2026年8月20日。",
+          "活动时间：18:00 起。",
+          "活动地点：CentralWorld 1楼 Eden。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "登记参与期间：2026年7月20日 至 2026年8月15日 23:59。",
+          "中奖名单公布：2026年8月17日 17:00。",
+          "中奖者需于 2026年8月19日 17:00 前完成权益确认。",
+          "活动日期：2026年8月20日。",
+        ],
+      },
+      {
+        heading: "参与方式",
+        body: [
+          "购买 Sparkle 任意指定商品，单张收据满 799 泰铢，可获得 1 个 Lucky Fans 抽选机会。",
+          "需在活动期间内完成收据登记。",
+          "页面不展示外部登记链接或二维码，如需登记入口请咨询客服确认。",
+        ],
+      },
+      {
+        heading: "购买渠道",
+        body: [
+          "活动图中展示的购买渠道包含 7-Eleven、Watsons、Lotus's、Big C、Tops、EVEANDBOY、Boots、Gourmet Market、Home Fresh Mart、CJ Express、Foodland、Central、Robinson、Shopee、Lazada、TikTok Shop 等。",
+          "实际可参与渠道与商品以品牌方最终规则为准。",
+        ],
+      },
+      {
+        heading: "Lucky Fans 第 1-5 名权益",
+        body: [
+          "获得入场及座位权益，并可参与现场游戏环节，游戏名额以抽选为准。",
+          "获得 Hi-Bye 权益。",
+          "可与 Orm 进行 30 秒聊天，并可拥抱。",
+          "可获得 1:2 Polaroid 合照，并附现场签名。",
+          "获得特别纪念礼物。",
+        ],
+      },
+      {
+        heading: "Lucky Fans 第 6-10 名权益",
+        body: [
+          "获得入场及座位权益，并可参与现场游戏环节，游戏名额以抽选为准。",
+          "获得 Hi-Bye 权益。",
+          "可获得 1:2 Polaroid 合照，并附现场签名。",
+          "获得特别纪念礼物。",
+        ],
+      },
+      {
+        heading: "Lucky Fans 第 11-60 名权益",
+        body: [
+          "获得入场及座位权益，并可参与现场游戏环节，游戏名额以抽选为准。",
+          "获得 Hi-Bye 权益。",
+          "可获得 10:2 Digital 合照。",
+          "获得特别纪念礼物。",
+        ],
+      },
+      {
+        heading: "确认规则",
+        body: [
+          "中奖者名单将通过 Sparkle White 官方渠道公布。",
+          "中奖者需在指定时间内完成权益确认。",
+          "若未在规定时间内确认，视为放弃权益。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "参与资格以品牌方核对收据、登记资料与购买条件后的结果为准。",
+          "活动权益不可转让，不可兑换现金或其它奖品。",
+          "活动细节、权益安排与最终资格以主办方规定为准。",
+          "许可证编号：130/2569。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "its-skin-happy-trip-chiang-mai-junior",
+    title: "It'S SKIN Happy Trip Chiang Mai with Junior",
+    dateRange: "8月7日 到 8月25日",
+    artist: "Junior",
+    summary:
+      "购买 It'S SKIN x Junior Chiang Mai Set 并按规则累积消费或登记收据，有机会成为 20 位 Top Spender 参加清迈旅行，或成为 10 位 Lucky Fans 获得 Junior 视频通话权益。",
+    images: [
+      "images/hddm/8.07-8.25/1.jpeg",
+      "images/hddm/8.07-8.25/2.jpeg",
+      "images/hddm/8.07-8.25/3.jpeg",
+      "images/hddm/8.07-8.25/4.jpeg",
+    ],
+    detailTitle: "It'S SKIN Happy Trip Chiang Mai with Junior 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "It'S SKIN Thailand 举办 Happy Trip Chiang Mai with Junior 活动，邀请粉丝与 Junior 一起参加 2 天 1 夜清迈特别旅行。",
+          "活动共选出 30 位中奖者：20 位 Top Spender 可参加清迈旅行，10 位 Lucky Fans 可获得 Junior 视频通话权益。",
+          "清迈旅行日期：2026年9月26日 至 2026年9月27日。",
+        ],
+      },
+      {
+        heading: "活动时间",
+        body: [
+          "购买与消费累计期间：2026年8月7日 至 2026年8月25日 23:00。",
+          "Lucky Fan 收据提交截止：2026年8月26日 12:00。",
+          "Top Spender 与 Lucky Fan 名单公布：2026年8月28日 18:00 起。",
+          "清迈旅行日期：2026年9月26日 至 2026年9月27日。",
+        ],
+      },
+      {
+        heading: "Top Spender 20 位参与方式",
+        body: [
+          "首次购买后将自动加入 MAMI Membership，并开始累计消费金额。",
+          "以原价购买 It'S SKIN x Junior Chiang Mai Set，消费金额排名前 20 位者可获得清迈旅行权益。",
+          "可通过 It'S SKIN Thailand 店铺或官方客服渠道查询累计消费。",
+          "若多人累计金额相同，将优先计算首笔购买时间更早者。",
+        ],
+      },
+      {
+        heading: "Lucky Fan 10 位参与方式",
+        body: [
+          "以原价购买 It'S SKIN x Junior Chiang Mai Set 可获得抽选机会，1 套 = 1 个抽选名额。",
+          "需在收据上清楚写明姓名、联系电话与抽选名额数量，并按规定提交收据照片。",
+          "页面不展示外部登记链接或二维码，如需登记入口请咨询客服确认。",
+        ],
+      },
+      {
+        heading: "Top Spender 共同权益",
+        body: [
+          "Top Spender 20 位均可参加 It'S SKIN Happy Trip Chiang Mai with Junior。",
+          "均可获得 1 份礼物、1 张签名自拍 Polaroid、与 Junior 的 1:1 官方相机合照，以及 1 张与 Junior 的 1:1 签名 Polaroid。",
+        ],
+      },
+      {
+        heading: "Top Spender 分级权益",
+        body: [
+          "Top Spender 第 1 名：1:1 官方合照 2 个姿势、Junior 专属聊天 2 分钟、签名礼物、旅行后获得 1 张 A3 尺寸签名照片，并可参与 Junior 与 Top Spender 游戏环节。",
+          "Top Spender 第 2-3 名：1:1 官方合照 2 个姿势、Junior 专属聊天 2 分钟、签名礼物，并可参与 Junior 与 Top Spender 游戏环节。",
+          "Top Spender 第 4-5 名：1:1 官方合照 2 个姿势、Junior 专属聊天 1 分钟，并可参与 Junior 与 Top Spender 游戏环节。",
+          "Top Spender 第 6-10 名：1:1 官方合照 1 个姿势、Junior 专属聊天 1 分钟，并有机会被抽中参加游戏环节。",
+          "Top Spender 第 11-20 名：1:1 官方合照 1 个姿势，并有机会被抽中参加游戏环节。",
+        ],
+      },
+      {
+        heading: "Lucky Fan 10 位权益",
+        body: [
+          "可获得与 Junior 的 1 分钟视频通话权益。",
+          "可获得 1 张签名自拍 Polaroid。",
+        ],
+      },
+      {
+        heading: "购买与咨询渠道",
+        body: [
+          "可通过 It'S SKIN Thailand 店铺及官方线上渠道参与。",
+          "图中店铺包含 Central Rama 9 3楼、The Mall Bangkae M楼等。",
+          "页面不展示外部网站链接或二维码，如需购买或登记入口请咨询客服确认。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "参与资格、累计消费与中奖名单以品牌方审核结果为准。",
+          "参与权益不可转让，特殊情况需品牌方书面批准。",
+          "购买后不可退款。",
+          "如使用不同收件姓名或联系电话，需提前备注用于累计消费的姓名与电话，并通过官方客服确认。",
+          "参与者同意品牌方为宣传目的公布姓名、照片及相关信息。",
+          "品牌方保留调整活动规则、权益与条件的权利，最终决定以品牌方为准。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "koriko-meet-greet-keng-namping",
+    title: "Koriko Meet & Greet ยิ่งกล้า..ยิ่งใกล้",
+    dateRange: "8月1日 到 8月31日",
+    artist: "Keng, Namping",
+    summary:
+      "累计购买指定 Koriko 商品并登记收据，有机会成为 90 位 Top Spender 之一，参加与 Keng、Namping 的近距离 Meet & Greet；另有 Koriko Challenge 10 个特别名额。",
+    images: [
+      "images/hddm/8.01-8.31/IMG_2943.JPG",
+      "images/hddm/8.01-8.31/IMG_2944.JPG",
+      "images/hddm/8.01-8.31/IMG_2945.JPG",
+      "images/hddm/8.01-8.31/IMG_2946.JPG",
+      "images/hddm/8.01-8.31/IMG_2947.JPG",
+      "images/hddm/8.01-8.31/IMG_2948.JPG",
+      "images/hddm/8.01-8.31/IMG_2949.JPG",
+      "images/hddm/8.01-8.31/IMG_2950.JPG",
+      "images/hddm/8.01-8.31/IMG_2951.JPG",
+    ],
+    detailTitle: "Koriko Meet & Greet 活动规则",
+    detailSections: [
+      {
+        heading: "活动介绍",
+        body: [
+          "Koriko 举办 Koriko Meet & Greet “ยิ่งกล้า..ยิ่งใกล้”，邀请粉丝与 Keng、Namping 近距离见面。",
+          "活动共包含 90 位 Top Spender 名额，并另有 10 位 Koriko Challenge 特别名额。",
+          "活动地点：SF World Cinema, CentralWorld。",
+          "活动日期：2026年9月19日。",
+        ],
+      },
+      {
+        heading: "Top Spender 活动时间",
+        body: [
+          "购买累计与登记期间：2026年8月1日 00:01 至 2026年8月31日 23:00。",
+          "每日 23:50 前累计的消费，会在审核正确后于次日 18:00 后更新进系统。",
+          "排名更新时间：2026年8月8日、8月15日、8月22日、8月29日 20:30。",
+          "正式获奖名单公布：2026年9月4日 12:00。",
+        ],
+      },
+      {
+        heading: "Top Spender 参与方式",
+        body: [
+          "仅限指定参与店铺开具的有效收据：7-Eleven、Lawson 108、Gourmet Market、Jiffy、Max Mart、SF Cinema。",
+          "Koriko 官方线上店铺（Shopee、Lazada、TikTok）不计入本活动。",
+          "按指定步骤登记并上传收据或订单完成截图，需清楚显示收据号或订单号，以及 Koriko 商品净消费金额。",
+          "页面不展示外部登记链接或二维码，如需登记入口请咨询客服确认。",
+        ],
+      },
+      {
+        heading: "Top Spender 资格门槛",
+        body: [
+          "第 1-20 名：活动期间累计净消费不少于 30,000 泰铢。",
+          "第 21-90 名：活动期间累计净消费不少于 5,000 泰铢。",
+          "若累计金额相同，优先计算首笔购买或付款时间更早者。",
+          "参与者需保留纸质收据或订单原始凭证，供现场核验使用。",
+        ],
+      },
+      {
+        heading: "Top Spender 登记资料",
+        body: [
+          "需通过 Koriko 官方账号进入活动菜单，使用手机号登记并完成 OTP 验证。",
+          "登记姓名需与身份证或护照一致。",
+          "需完整、真实填写个人资料并上传清晰购买凭证。",
+          "若凭证遗失、信息不清晰或资料不符，主办方可取消资格。",
+        ],
+      },
+      {
+        heading: "Top Spender 权益",
+        body: [
+          "第 1-2 名：可获得 LEGO “Keng 或 Namping”（第 1 名优先选择）、与 Keng 和 Namping 玩游戏、2:1 自拍、2:1 签名拍立得、3 分钟 Exclusive Talk、亲签专属小卡、Koriko 特别礼物与 Hi-Bye 权益。",
+          "第 3-5 名：可获得舞台游戏、2:1 自拍、2:1 签名拍立得、2 分钟 Exclusive Talk、亲签专属小卡、Koriko 特别礼物与 Hi-Bye 权益。",
+          "第 6-20 名：可获得舞台游戏、2:1 签名拍立得、1 分钟 Exclusive Talk、亲签专属小卡、Koriko 特别礼物与 Hi-Bye 权益。",
+          "第 21-50 名：可获得 2:5 数码合照、1 分钟 Exclusive Talk、数码签名专属小卡、Koriko 特别礼物与 Hi-Bye 权益。",
+          "第 51-90 名：可获得 2:5 数码合照、30 秒 Exclusive Talk、数码签名专属小卡、Koriko 特别礼物与 Hi-Bye 权益。",
+        ],
+      },
+      {
+        heading: "Koriko Challenge",
+        body: [
+          "活动期间：2026年8月1日 至 2026年8月31日。",
+          "Challenge 1：#KorikoDanceChallenge，配合 Go Go Koriko 歌曲跳舞，主题为大胆、跳出框架。",
+          "Challenge 2：#KorikoDressUpChallenge，围绕大胆、跳出框架进行造型挑战。",
+          "创作内容需符合 “The Braver, The Closer” 主题，并出现任意口味 Koriko Sandwich 海苔。",
+          "发布时需带上活动指定标签；页面不展示外部跳转链接。",
+        ],
+      },
+      {
+        heading: "Challenge 奖励",
+        body: [
+          "每个 Challenge 各 5 个奖项：Engagement 3 名、Creative 2 名。",
+          "Engagement 以 TikTok 点赞与分享合计数评选。",
+          "Creative 由品牌方根据创意、呈现方式与品牌精神进行评选。",
+          "同一账号可参加两个 Challenge，但最多只能获得 1 个奖项。",
+          "10 位 Challenge 获奖者可获得参加 Koriko Meet & Greet “The Braver, The Closer” 与 Hi-Bye 环节的权益。",
+        ],
+      },
+      {
+        heading: "注意事项",
+        body: [
+          "活动权益不可转让。",
+          "规则、权益与名单以品牌方审核和公布为准。",
+          "品牌方保留修改活动规则与条件的权利，最终决定以品牌方为准。",
+        ],
+      },
+    ],
+  }
 ];
 
 const scheduleEl = document.getElementById("schedule");

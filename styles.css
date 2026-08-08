@@ -2996,3 +2996,285 @@ body {
     padding: 1rem 1.05rem;
   }
 }
+
+/* Activity purchase list hard guard: keep cards in one vertical itinerary-style column. */
+:where(
+  #activity-buy,
+  #activityBuy,
+  #activity-purchase,
+  #activityPurchase,
+  #event-purchase,
+  #eventPurchase,
+  #purchase-service,
+  #purchaseService,
+  #ticket-service,
+  #ticketService,
+  #hddm,
+  .activity-buy,
+  .activity-buy-list,
+  .activity-purchase,
+  .activity-purchase-list,
+  .event-purchase,
+  .event-purchase-list,
+  .purchase-events,
+  .purchase-list,
+  .proxy-events,
+  .proxy-list,
+  .hddm-list
+) {
+  display: flex !important;
+  flex-direction: column !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  align-items: stretch !important;
+  gap: 16px !important;
+  overflow: visible !important;
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+}
+
+:where(
+  #activity-buy,
+  #activityBuy,
+  #activity-purchase,
+  #activityPurchase,
+  #event-purchase,
+  #eventPurchase,
+  #purchase-service,
+  #purchaseService,
+  #ticket-service,
+  #ticketService,
+  #hddm,
+  .activity-buy,
+  .activity-buy-list,
+  .activity-purchase,
+  .activity-purchase-list,
+  .event-purchase,
+  .event-purchase-list,
+  .purchase-events,
+  .purchase-list,
+  .proxy-events,
+  .proxy-list,
+  .hddm-list
+) > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+}
+
+:where(
+  #activity-buy,
+  #activityBuy,
+  #activity-purchase,
+  #activityPurchase,
+  #event-purchase,
+  #eventPurchase,
+  #purchase-service,
+  #purchaseService,
+  #ticket-service,
+  #ticketService,
+  #hddm,
+  .activity-buy,
+  .activity-buy-list,
+  .activity-purchase,
+  .activity-purchase-list,
+  .event-purchase,
+  .event-purchase-list,
+  .purchase-events,
+  .purchase-list,
+  .proxy-events,
+  .proxy-list,
+  .hddm-list
+) :where(
+  .activity-card,
+  .activity-buy-card,
+  .activity-purchase-card,
+  .event-card,
+  .event-purchase-card,
+  .purchase-card,
+  .proxy-card,
+  .service-card,
+  article,
+  li
+) {
+  display: grid !important;
+  grid-template-columns: clamp(88px, 22vw, 132px) minmax(0, 1fr) !important;
+  align-items: center !important;
+  gap: 16px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  overflow: hidden !important;
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+}
+
+:where(
+  #activity-buy,
+  #activityBuy,
+  #activity-purchase,
+  #activityPurchase,
+  #event-purchase,
+  #eventPurchase,
+  #purchase-service,
+  #purchaseService,
+  #ticket-service,
+  #ticketService,
+  #hddm,
+  .activity-buy,
+  .activity-buy-list,
+  .activity-purchase,
+  .activity-purchase-list,
+  .event-purchase,
+  .event-purchase-list,
+  .purchase-events,
+  .purchase-list,
+  .proxy-events,
+  .proxy-list,
+  .hddm-list
+) :where(
+  .activity-card,
+  .activity-buy-card,
+  .activity-purchase-card,
+  .event-card,
+  .event-purchase-card,
+  .purchase-card,
+  .proxy-card,
+  .service-card,
+  article,
+  li
+) * {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+}
+
+:where(
+  #activity-buy,
+  #activityBuy,
+  #activity-purchase,
+  #activityPurchase,
+  #event-purchase,
+  #eventPurchase,
+  #purchase-service,
+  #purchaseService,
+  #ticket-service,
+  #ticketService,
+  #hddm,
+  .activity-buy,
+  .activity-buy-list,
+  .activity-purchase,
+  .activity-purchase-list,
+  .event-purchase,
+  .event-purchase-list,
+  .purchase-events,
+  .purchase-list,
+  .proxy-events,
+  .proxy-list,
+  .hddm-list
+) :where(
+  .activity-card,
+  .activity-buy-card,
+  .activity-purchase-card,
+  .event-card,
+  .event-purchase-card,
+  .purchase-card,
+  .proxy-card,
+  .service-card,
+  article,
+  li
+) img {
+  width: clamp(88px, 22vw, 132px) !important;
+  height: clamp(88px, 22vw, 132px) !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  flex: 0 0 auto !important;
+}
+
+@media (max-width: 640px) {
+  :where(
+    #activity-buy,
+    #activityBuy,
+    #activity-purchase,
+    #activityPurchase,
+    #event-purchase,
+    #eventPurchase,
+    #purchase-service,
+    #purchaseService,
+    #ticket-service,
+    #ticketService,
+    #hddm,
+    .activity-buy,
+    .activity-buy-list,
+    .activity-purchase,
+    .activity-purchase-list,
+    .event-purchase,
+    .event-purchase-list,
+    .purchase-events,
+    .purchase-list,
+    .proxy-events,
+    .proxy-list,
+    .hddm-list
+  ) :where(
+    .activity-card,
+    .activity-buy-card,
+    .activity-purchase-card,
+    .event-card,
+    .event-purchase-card,
+    .purchase-card,
+    .proxy-card,
+    .service-card,
+    article,
+    li
+  ) {
+    grid-template-columns: 92px minmax(0, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  :where(
+    #activity-buy,
+    #activityBuy,
+    #activity-purchase,
+    #activityPurchase,
+    #event-purchase,
+    #eventPurchase,
+    #purchase-service,
+    #purchaseService,
+    #ticket-service,
+    #ticketService,
+    #hddm,
+    .activity-buy,
+    .activity-buy-list,
+    .activity-purchase,
+    .activity-purchase-list,
+    .event-purchase,
+    .event-purchase-list,
+    .purchase-events,
+    .purchase-list,
+    .proxy-events,
+    .proxy-list,
+    .hddm-list
+  ) :where(
+    .activity-card,
+    .activity-buy-card,
+    .activity-purchase-card,
+    .event-card,
+    .event-purchase-card,
+    .purchase-card,
+    .proxy-card,
+    .service-card,
+    article,
+    li
+  ) img {
+    width: 92px !important;
+    height: 92px !important;
+  }
+}
